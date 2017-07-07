@@ -27,7 +27,10 @@ var map = new mapboxgl.Map({
 });
 
 map.addControl(new MapboxDirections({
-    accessToken: mapboxgl.accessToken
+    accessToken: mapboxgl.accessToken,
+    unit: 'metric',
+    profile: 'cycling',
+    proximity: [-1.54, 47.21]
 }), 'top-left');
 </script>
 
