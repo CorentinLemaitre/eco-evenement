@@ -40,14 +40,8 @@ map.addControl(new MapboxDirections({
     accessToken: mapboxgl.accessToken,
     unit: 'metric',
     profile: 'cycling',
-    proximity: [-1.54, 47.21],
-    controls.instructions: false
+    proximity: [-1.54, 47.21]
 }), 'top-right');
-
-map.on('load', function() {
- directions.setOrigin('Toronto, Ontario'); // On load, set the origin to "Toronto, Ontario".
- directions.setDestination('Montreal, Quebec'); // On load, set the destination to "Montreal, Quebec".
-});
     
 </script>
 
