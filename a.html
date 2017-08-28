@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/light-v9',
+    center: [-1.55, 47.23],
+    zoom: 12
+});
+map.on('load', function () {
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [
+                {
+                	                  
+                    "type": "Feature", "properties": { "id": "2", "title": "Stereolux - Micro", "description": "Flotation Toy Warning \/ Pop cinématique \/ Talitres \/ GB\nMarietta \/ Pop lo-fi \/ Born Bad \/ FR\nJulien Gasc \/ Pop baroque \/ Born Bad \/ FR\nCotillon  \/ Pop garage \/ Burger \/ USA", "date": "MERCREDI 25 OCTOBRE : 20H00", "prix": "\n15\/18€", "idnum": 2 }, "geometry": { "type": "Point", "coordinates": [ -1.563441459272242, 47.205088146582654 ] } },
+{ "type": "Feature", "properties": { "id": "1", "title": "Le Nid : Tour de Bretagne", "description": "Charlotte Bendiks \/ Electro \/  Love OD Communications \/ NOR", "date": "MERCREDI 25 OCTOBRE : 18H30", "prix": "Accès au nid (1€)", "idnum": 1 }, "geometry": { "type": "Point", "coordinates": [ -1.558205174921201, 47.217558577319494 ] } },
+{ "type": "Feature", "properties": { "id": "9", "title": "Musée d’Arts de Nantes - Galerie d'Art Moderne ", "description": "Carl Stone \/ Electro minimale \/ Unseen Worlds \/ USA-JAP \nAccident du travail \/ Ambient \/ Bruit Direct \/ FR", "date": "DIMANCHE 29 OCTOBRE : 15H00", "prix": "Accès au Musée (4\/8€)", "idnum": 9 }, "geometry": { "type": "Point", "coordinates": [ -1.547188482223842, 47.21938074295602 ] } },
+{ "type": "Feature", "properties": { "id": "3", "title": "Le lieu unique - Foyer haut", "description": "Jessica93 \/ Grunge coldwave DIY \/ Teenage Menopause \/ FR\nBig l Brave \/ Post-rock noise \/ Southern Lord\/ CAN\nJessica Moss \/ Post-rock minimaliste \/ Constellation \/CAN\nLarsen \/ Post-rock expérimental \/ Important \/ IT", "date": "JEUDI 26 OCTOBRE : 20H00", "prix": "10\/13€", "idnum": 3 }, "geometry": { "type": "Point", "coordinates": [ -1.545725217636976, 47.215508233783005 ] } },
+{ "type": "Feature", "properties": { "id": "4", "title": "Mira boutique : 1B rue de Voltaire", "description": "Seabuckthorn \/ Folk psyché \/ Lost Tribe Sound \/ GB", "date": "VENDREDI 27 OCTOBRE : 18H30", "prix": "Gratuit", "idnum": 4 }, "geometry": { "type": "Point", "coordinates": [ -1.563632828938275, 47.212606210694354 ] } },
+{ "type": "Feature", "properties": { "id": "5", "title": "Pôle étudiant (Université de Nantes)", "description": "Petit Fantôme \/ Pop \/ Because \/ FR\nBlanck Mass \/ Electro noise \/ Sacred Bones  \/ GB\nOrson Hentschel \/ Electro expérimentale \/ Denovali \/ ALL\nTrupa trupa \/ Post-krautrock \/ Ici d’Ailleurs \/ POL\nPuce Mary \/ Industriel noise \/ Posh Isolation \/ DAN", "date": "VENDREDI 27 OCTOBRE : 20H00", "prix": "15\/18 €", "idnum": 5 }, "geometry": { "type": "Point", "coordinates": [ -1.551632157839191, 47.245281273257675 ] } },
+{ "type": "Feature", "properties": { "id": "6", "title": "Centre Chorégraphique National de Nantes", "description": "Rhys Chatham + Will Guthrie \/ Post-minimalisme \/ USA-AUS\nLoscil \/ Electro ambient  \/ Kranky \/ CAN", "date": "SAMEDI 28 OCTOBRE : 15H00", "prix": "8\/11€", "idnum": 6 }, "geometry": { "type": "Point", "coordinates": [ 6.862440742936646, 47.64135027168625 ] } },
+{ "type": "Feature", "properties": { "id": "7", "title": "Pioche : 10 rue de Bel air", "description": "Doppeltgänger \/ Electro synthwave \/ Autoprod. \/ ESP", "date": "SAMEDI 28 OCTOBRE : 18H00", "prix": "Gratuit", "idnum": 7 }, "geometry": { "type": "Point", "coordinates": [ -1.5589382, 47.221123436457241 ] } },
+{ "type": "Feature", "properties": { "id": "8", "title": "Maison de quartier de Doulon", "description": "Zombie Zombie \/ Krautrock psyché \/ Versatile \/ FR \nJohn Maus \/ Synth-pop philosophique \/ Domino \/ USA\nChad VanGaalen \/ Folk rock \/ Sub Pop \/ CAN\nTonstartssbandht \/ Psych rock lo-fi \/ Mexican Summer \/ USA", "date": "SAMEDI 28 OCTOBRE : 19H30", "prix": "16\/19€", "idnum": 8 }, "geometry": { "type": "Point", "coordinates": [ -1.509255954132539, 47.236924463705734 ] } },
+{ "type": "Feature", "properties": { "id": "10", "title": "Le lieu unique - Bar et Grand atelier", "description": "Kevin Morby \/ Folk rock \/ Dead Oceans \/ USA\nMary Ocher \/ Expérimental \/ Klangbad \/ RUS-ALL\nRide \/ Shoegaze \/ Wichita \/ GB", "date": "DIMANCHE 29 OCTOBRE : 18H00", "prix": "22\/29€", "idnum": 10 }, "geometry": { "type": "Point", "coordinates": [ -1.545336514726019, 47.215422541841214 ] } 
+                    }
+                ]
+            }
+        },
+        "layout": {
+            "icon-image": "marker-15",
+           // "text-field": "{title}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0.6],
+            "text-anchor": "top"
+        }
+        
+        
+    });
+    
+    // When a click event occurs on a feature in the states layer, open a popup at the
+    // location of the click, with description HTML from its properties.
+    map.on('click', 'points', function (e) {
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.date)
+            .addTo(map);
+        map.flyTo({center : e.features[0].geometry.coordinates});
+    });
+
+    // Change the cursor to a pointer when the mouse is over the states layer.
+    map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+    });
+});
+</script>
+
+</body>
+</html>
