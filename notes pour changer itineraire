@@ -1,0 +1,49 @@
+<a href="https://maps.google.com/?q=1%20Rue%20de%20la%20Basse%20Ch%C3%AAnaie%2C%2044300%20Nantes%2C%20France" class="btn btn-default btn-block artist-action__place m-y" target="_blank"><svg class="icon size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-marker"></use></svg> Itinéraire </a>
+
+a remplacer par : 
+
+ 
+  <div class="w3-center w3-paddiing-128" id="itinerary">
+     <button onclick="getLocation()" class="btn btn-default btn-block artist-action__place m-y"> <svg class="icon size-16"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-marker"></use></svg> Itinéraire</button>
+  </div>
+	
+	
+<script src="https://use.fontawesome.com/acc5504c96.js"></script>
+  
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+// calculate the link
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
+    var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+latlon+"%7C47.182687,-1.530957";
+    var destineo_url = "http://www.destineo.fr/fr/journey/result/?search[from][autocomplete]=Votre+Position&search[from][autocomplete-hidden]="+destineo_loc+"3&search[to][autocomplete]=AAAAA+BBBBB&search[to][autocomplete-hidden]=-1.5311976000000413%3B47.1825993&search[datetime_represents]=arrival&search[datetime][time][hour]=15&search[datetime][time][minute]=00&search[datetime][date]=30%2F07%2F2017&search[modes][]=physical_mode%3ALocalTrain&search[modes][]=physical_mode%3ATramway&search[modes][]=physical_mode%3ABus&search[modes][]=physical_mode%3ACoach&search[count]=&search[min_nb_journeys]=2&search[max_nb_journeys]=3";
+    document.getElementById("itinerary").innerHTML = "<div class='w3-half'><a href="+geovelo_url+" target=_blank class='w3-center w3-xlarge'><button class='btn btn-default btn-block artist-action__place m-y'><i class='fa fa-bicycle fa-5x' title='Venir à vélo'></i><br> </button></a></div> <div class='w3-half'><a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button class='btn btn-default btn-block artist-action__place m-y'><i class='fa fa-bus fa-fw fa-5x' title='Venir en bus'></i><br></button></a></div>";
+}
+
+//in case of error
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
