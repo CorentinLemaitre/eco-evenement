@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+/* 
+TODO :
+! link with my own dataset !OK!
+! add my own style !OK!
+! start in saint aignan --
+! put zones beside the label !OK?
+! add interaction via the popup
+! add color for zones
+! 
+
+
+*/
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/corentinlemaitre/ciox45c1h001iqmmaemajxeqt',
+    center: [-1.6431227,47.1267053],
+    zoom: 13
+});
+
+map.on('load', function () {
+
+    map.addLayer({
+        'id': 'urban-areas-fill',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'https://corentinlemaitre.github.io/features.geojson'
+        },
+        'layout': {},
+        'paint': {
+            'fill-color': '#f08',
+            'fill-opacity': 0.4
+        }
+    // This is the important part of this example: the addLayer
+    // method takes 2 arguments: the layer as an object, and a string
+    // representing another layer's name. if the other layer
+    // exists in the stylesheet already, the new layer will be positioned
+    // right before that layer in the stack, making it possible to put
+    // 'overlays' anywhere in the layer stack.
+    }, 'water');
+});
+</script>
+
+</body>
+</html>
