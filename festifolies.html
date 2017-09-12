@@ -13,17 +13,51 @@
 </head>
 <body>
 
+<style>
+    /* STYLE la zone dessus la carte et sa police et son texte */
+.map-overlay-container {
+    position: absolute;
+    width: 30%;
+    top: 0px;
+    left: 0;
+    padding: 20px;
+    z-index: 1;
+}
+.map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.20);
+}
+.map-overlay h2,
+.map-overlay p {
+    margin: 0 0 10px;
+}
+</style>
+
 <div id='map'></div>
+
+<br>
+<div class='map-overlay-container'>
+  <div class='map-overlay'>
+    <h2 id='location-title'>Festi'Folies d'Automne</h2>
+    <p id='location-description'> 
+Les 30 septembre et 1er octobre 2017 : </br> 2 jours de fête et de spectacles GRATUITS !<br> De 14h30 à 1 h le samedi et de 11h à 19h le dimanche. <br> Entrée libre, nombreuses restauration sur place.</p>
+    <small><a href="http://www.saint-aignan-grandlieu.fr/Les-Festifolies-d-Automne-2017/La-Programmation">Plus d'info Festifolies</a></small>
+  </div>
+</div>
+
 <script>
 /* 
 TODO :
 ! link with my own dataset !OK!
 ! add my own style !OK!
-! start in saint aignan --
+! start in saint aignan !OK!
 ! put zones beside the label !OK?
-! add interaction via the popup
-! add color for zones
-! 
+! add interaction via the popup !OK!
+! add color for zones -via Mapbox
+! add the first zone of all the festival !
 
 
 */
@@ -31,8 +65,8 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxN
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/ciox45c1h001iqmmaemajxeqt',
-    center: [-1.6431227,47.1267053],
-    zoom: 13
+    center: [-1.6330552,47.122913],
+    zoom: 16
 });
 
 map.on('load', function () {
@@ -47,7 +81,7 @@ map.on('load', function () {
         'layout': {},
         'paint': {
             'fill-color': '#f08',
-            'fill-opacity': 0.4
+            'fill-opacity': 0.0
         }
     // This is the important part of this example: the addLayer
     // method takes 2 arguments: the layer as an object, and a string
@@ -56,6 +90,32 @@ map.on('load', function () {
     // right before that layer in the stack, making it possible to put
     // 'overlays' anywhere in the layer stack.
     }, 'water');
+    
+     // When a click event occurs on a feature in the states layer, open a popup at the
+    // location of the click, with description HTML from its properties.
+    map.on('click', 'urban-areas-fill', function (e) {
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+           // .setHTML(e.features[0].properties.name)
+           // .addTo(map);
+        map.flyTo({center : e.lngLat});
+        document.getElementById("location-title").innerHTML = e.features[0].properties.short;
+        document.getElementById("location-description").innerHTML = e.features[0].properties.description;
+//        document.getElementById("location-price").innerHTML = e.features[0].properties.prix;
+//        var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints=47.2175841,-1.5419186%7C"+e.features[0].properties.latlondest;
+//   		var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Gare+de+Nantes&search%5Bfrom%5D%5Bautocomplete-hidden%5D=-1.541918600000031%3B47.2175841&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
+//         document.getElementById("itinerary").innerHTML = "<a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button><i class='fa fa-bicycle fa-4x' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button><i class='fa fa-bus fa-fw fa-4x' title='Venir en bus'></i></button></a>";
+        
+        });
+    // Change the cursor to a pointer when the mouse is over the states layer.
+    map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+    });
+    
 });
 </script>
 
