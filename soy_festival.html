@@ -2,21 +2,14 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title></title>
+    <title>Carte interactive Festival Soy</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
     <style>
         body { margin:0; padding:0; }
         #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
-        <script src="https://use.fontawesome.com/acc5504c96.js"></script>
-
-</head>
-<body>
-
-<style>
-    /* STYLE la zone dessus la carte et sa police et son texte */
+          /* STYLE la zone dessus la carte et sa police et son texte */
 .map-overlay-container {
     position: absolute;
     width: 30%;
@@ -36,12 +29,19 @@
 .map-overlay p {
     margin: 0 0 10px;
 }
-</style>
+    </style>
+        <script src="https://use.fontawesome.com/acc5504c96.js"></script>
+
+</head>
+
 
 <div id='map'></div>
 
-<br>
+
+
 <div class='map-overlay-container'>
+    <center> <button onclick="getLocation()" id="localise"> ACTIVER LOCALISATION </button></center>
+    <br>
   <div class='map-overlay'>
     <h2 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h2>
     <p id='location-description'> 
@@ -57,7 +57,10 @@ Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanc
 </div>
 
 <script>
-    var location=null;
+var geovelostart="47.213991,-1.555275";
+var destineostart="-1.555275%3B47.213991";
+var geoveloend=null;
+var destineoend=null;
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
@@ -93,7 +96,7 @@ map.on('load', function () {
             "text-field": "{id}",
             "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
             "text-offset": [0, 0],
-            "text-anchor": "center",
+            "text-anchor": "center"
         }
         
         
@@ -110,8 +113,10 @@ map.on('load', function () {
         document.getElementById("location-title").innerHTML = e.features[0].properties.date;
         document.getElementById("location-description").innerHTML = e.features[0].properties.description;
         document.getElementById("location-price").innerHTML = e.features[0].properties.prix;
-        var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints=47.2175841,-1.5419186%7C"+e.features[0].properties.latlondest;
-   		var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Gare+de+Nantes&search%5Bfrom%5D%5Bautocomplete-hidden%5D=-1.541918600000031%3B47.2175841&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
+        geoveloend = e.features[0].properties.latlondest
+        destineoend = e.features[0].properties.destineodest
+        var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+geovelostart+"%7C"+e.features[0].properties.latlondest;
+   	var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Votre+Position&search%5Bfrom%5D%5Bautocomplete-hidden%5D="+destineostart+"&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
          document.getElementById("itinerary").innerHTML = "<a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button><i class='fa fa-bicycle fa-4x' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button><i class='fa fa-bus fa-fw fa-4x' title='Venir en bus'></i></button></a>";
         
         });
@@ -124,7 +129,7 @@ map.on('load', function () {
         map.getCanvas().style.cursor = '';
     });
 });
-var x = document.getElementById("demo");
+var x = document.getElementById("localise");
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -135,16 +140,12 @@ function getLocation() {
 
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    location = latlon;
-    /*
-    var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
-    var latlondest =get
-    var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+latlon+"%7C47.182687,-1.530957";
-    var destineo_url = "http://www.destineo.fr/fr/journey/result/?search[from][autocomplete]=Votre+Position&search[from][autocomplete-hidden]="+destineo_loc+"3&search[to][autocomplete]=Fete+du+quai+leon+secher&search[to][autocomplete-hidden]=-1.5311976000000413%3B47.1825993&search[datetime_represents]=arrival&search[datetime][time][hour]=15&search[datetime][time][minute]=00&search[datetime][date]=30%2F09%2F2017&search[modes][]=physical_mode%3ALocalTrain&search[modes][]=physical_mode%3ATramway&search[modes][]=physical_mode%3ABus&search[modes][]=physical_mode%3ACoach&search[count]=&search[min_nb_journeys]=2&search[max_nb_journeys]=3";
-    document.getElementById("itinerary").innerHTML = "<a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button><i class='fa fa-bicycle fa-2x' title='Venir à vélo'></i> </button></a>  <a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button><i class='fa fa-bus fa-fw fa-2x' title='Venir en bus'></i></button></a>";
+    geovelostart = latlon;
+    destineostart = position.coords.longitude + "%3B" + position.coords.latitude;
+    x.innerHTML = "LOCALISATION ACTIVE";
     // add a function to put on image as a link
-    */
 }
+
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
@@ -163,5 +164,5 @@ function showError(error) {
 }
 </script>
 
-</body>
+
 </html>
