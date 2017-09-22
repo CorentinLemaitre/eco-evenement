@@ -57,6 +57,7 @@ Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanc
 </div>
 
 <script>
+    var location=null;
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
@@ -131,15 +132,18 @@ function getLocation() {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
-/*
+
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
+    location = latlon;
+    /*
     var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
     var latlondest =get
     var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+latlon+"%7C47.182687,-1.530957";
     var destineo_url = "http://www.destineo.fr/fr/journey/result/?search[from][autocomplete]=Votre+Position&search[from][autocomplete-hidden]="+destineo_loc+"3&search[to][autocomplete]=Fete+du+quai+leon+secher&search[to][autocomplete-hidden]=-1.5311976000000413%3B47.1825993&search[datetime_represents]=arrival&search[datetime][time][hour]=15&search[datetime][time][minute]=00&search[datetime][date]=30%2F09%2F2017&search[modes][]=physical_mode%3ALocalTrain&search[modes][]=physical_mode%3ATramway&search[modes][]=physical_mode%3ABus&search[modes][]=physical_mode%3ACoach&search[count]=&search[min_nb_journeys]=2&search[max_nb_journeys]=3";
     document.getElementById("itinerary").innerHTML = "<a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button><i class='fa fa-bicycle fa-2x' title='Venir à vélo'></i> </button></a>  <a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button><i class='fa fa-bus fa-fw fa-2x' title='Venir en bus'></i></button></a>";
     // add a function to put on image as a link
+    */
 }
 function showError(error) {
     switch(error.code) {
@@ -157,7 +161,6 @@ function showError(error) {
             break;
     }
 }
-*/
 </script>
 
 </body>
