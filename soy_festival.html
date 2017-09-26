@@ -16,31 +16,42 @@
     width: 100%;
     top: 0px;
     left: 0;
-    padding: 20px;
+    padding: 10px;
     z-index: 1;
 }
 .map-overlay {
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     background-color: #fff;
+    max-height: 50%;
     border-radius: 3px;
     padding: 10px;
     box-shadow:0 1px 2px rgba(0,0,0,0.20);
+}
+button {
+    background-color: yellow;
+    z-index: 1;
+    position:fixed; bottom:10%;padding:20px;width:60%; left:20%
+}
+p	{
+max-height: 80px; overflow: auto
 }
 .map-overlay h2,
 .map-overlay p {
     margin: 0 0 10px;
 }
+@media (min-width:801px) {.map-overlay-container {width:33%} p{max-height:800px}}
     </style>
         <script src="https://use.fontawesome.com/acc5504c96.js"></script>
 
 </head>
-
-
+<div id="localise" >
+   <button onclick="getLocation()"> <h3> ACTIVER LOCALISATION</h3> </button>
+    </div>
 <div id='map'></div>
 
 <div class='map-overlay-container'>
   
-  <div class='map-overlay w3-third'>
+  <div class='map-overlay'>
     <h3 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h3>
     <p id='location-description'> 
 Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanck Mass, Marietta, Jessica 93, Julien Gasc, Flotation Toy Warning, John Maus, Rhys Chatham + Will Guthrie, Orson Hentschel, Cotillon, Accident Du Travail, Loscil, Puce Mary, Carl Stone, Doppeltgänger, Big | Brave, Larsen, Jessica Moss, Trupa Trupa, Seabuckthorn, Tonstartssbandht, Mary Ocher, Charlotte Bendiks.</p>
@@ -52,12 +63,7 @@ Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanc
   </center>
     <small><a href="https://festival.soy/programmation">Plus d'info festival Soy</a></small>
   </div>
-  
-</div>
-<div id="localise" class="map-overlay-container" style="position:fixed; top:60%; text-align:center">
-<div>
-   <button onclick="getLocation()" class="w3-xlarge w3-red"> ACTIVER LOCALISATION </button>
-    </div>
+
     </div>
 <script>
 var geovelostart="47.213991,-1.555275";
@@ -144,7 +150,7 @@ function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     geovelostart = latlon;
     destineostart = position.coords.longitude + "%3B" + position.coords.latitude
-	x.innerHTML = "";
+	x.innerHTML = "<br>";
     // add a function to put on image as a link
 }
 function showError(error) {
