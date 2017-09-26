@@ -27,8 +27,8 @@
     padding: 10px;
     box-shadow:0 1px 2px rgba(0,0,0,0.20);
 }
-button {
-    background-color: yellow;
+#button-center {
+    background-color: red;
     z-index: 1;
     position:fixed; bottom:10%;padding:20px;width:60%; left:20%
 }
@@ -45,7 +45,7 @@ max-height: 80px; overflow: auto
 
 </head>
 <div id="localise" >
-   <button onclick="getLocation()"> <h3> ACTIVER LOCALISATION</h3> </button>
+   <button id=button-center onclick="getLocation()"> <h3> ACTIVER LOCALISATION</h3> </button>
     </div>
 <div id='map'></div>
 
