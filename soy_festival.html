@@ -55,13 +55,13 @@ max-height: 80px; overflow: auto
     <h3 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h3>
     <p id='location-description'> 
 Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanck Mass, Marietta, Jessica 93, Julien Gasc, Flotation Toy Warning, John Maus, Rhys Chatham + Will Guthrie, Orson Hentschel, Cotillon, Accident Du Travail, Loscil, Puce Mary, Carl Stone, Doppeltgänger, Big | Brave, Larsen, Jessica Moss, Trupa Trupa, Seabuckthorn, Tonstartssbandht, Mary Ocher, Charlotte Bendiks.</p>
-<p id='location-price'></p>
+<p id='location-price'> <a href="https://festival.soy/programmation">Plus d'info festival Soy</a></p>
 <center>
 <div id='itinerary' class='w3-row-padding'>
     
   </div>
   </center>
-    <small><a href="https://festival.soy/programmation">Plus d'info festival Soy</a></small>
+   
   </div>
 
     </div>
@@ -126,7 +126,7 @@ map.on('load', function () {
         destineoend = e.features[0].properties.destineodest
         var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+geovelostart+"%7C"+e.features[0].properties.latlondest;
    	var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Votre+Position&search%5Bfrom%5D%5Bautocomplete-hidden%5D="+destineostart+"&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
-         document.getElementById("itinerary").innerHTML = "<div class='w3-row-padding'><a href="+geovelo_url+" target=_blank class='w3-center w3-jumbo'><button><i class='fa fa-bicycle' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-jumbo w3-center'><button><i class='fa fa-bus fa-fw' title='Venir en bus'></i></button></a></div>";
+         document.getElementById("itinerary").innerHTML = "<div class='w3-row-padding'><a href="+geovelo_url+" target=_blank class='w3-center w3-xxxlarge'><button><i class='fa fa-bicycle' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-xxxlarge w3-center'><button><i class='fa fa-bus fa-fw' title='Venir en bus'></i></button></a></div>";
         
         });
     // Change the cursor to a pointer when the mouse is over the states layer.
