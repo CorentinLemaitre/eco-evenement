@@ -3,7 +3,8 @@
 <head>
     <meta charset='utf-8' />
     <title>Carte interactive Festival Soy</title>
-    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
     <style>
@@ -12,7 +13,7 @@
           /* STYLE la zone dessus la carte et sa police et son texte */
 .map-overlay-container {
     position: absolute;
-    width: 30%;
+    width: 100%;
     top: 0px;
     left: 0;
     padding: 20px;
@@ -37,25 +38,27 @@
 
 <div id='map'></div>
 
-
-
 <div class='map-overlay-container'>
-    <center> <button onclick="getLocation()" id="localise"> ACTIVER LOCALISATION </button></center>
-    <br>
-  <div class='map-overlay'>
-    <h2 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h2>
+  
+  <div class='map-overlay w3-third'>
+    <h3 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h3>
     <p id='location-description'> 
 Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanck Mass, Marietta, Jessica 93, Julien Gasc, Flotation Toy Warning, John Maus, Rhys Chatham + Will Guthrie, Orson Hentschel, Cotillon, Accident Du Travail, Loscil, Puce Mary, Carl Stone, Doppeltgänger, Big | Brave, Larsen, Jessica Moss, Trupa Trupa, Seabuckthorn, Tonstartssbandht, Mary Ocher, Charlotte Bendiks.</p>
 <p id='location-price'></p>
 <center>
-<div id='itinerary'>
+<div id='itinerary' class='w3-row-padding'>
     
   </div>
   </center>
     <small><a href="https://festival.soy/programmation">Plus d'info festival Soy</a></small>
   </div>
+  
 </div>
-
+<div id="localise" class="map-overlay-container" style="position:fixed; top:60%; text-align:center">
+<div>
+   <button onclick="getLocation()" class="w3-xlarge w3-red"> ACTIVER LOCALISATION </button>
+    </div>
+    </div>
 <script>
 var geovelostart="47.213991,-1.555275";
 var destineostart="-1.555275%3B47.213991";
@@ -117,7 +120,7 @@ map.on('load', function () {
         destineoend = e.features[0].properties.destineodest
         var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+geovelostart+"%7C"+e.features[0].properties.latlondest;
    	var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Votre+Position&search%5Bfrom%5D%5Bautocomplete-hidden%5D="+destineostart+"&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
-         document.getElementById("itinerary").innerHTML = "<a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button><i class='fa fa-bicycle fa-4x' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button><i class='fa fa-bus fa-fw fa-4x' title='Venir en bus'></i></button></a>";
+         document.getElementById("itinerary").innerHTML = "<div class='w3-row-padding'><a href="+geovelo_url+" target=_blank class='w3-center w3-jumbo'><button><i class='fa fa-bicycle' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-jumbo w3-center'><button><i class='fa fa-bus fa-fw' title='Venir en bus'></i></button></a></div>";
         
         });
     // Change the cursor to a pointer when the mouse is over the states layer.
@@ -137,15 +140,13 @@ function getLocation() {
         x.innerHTML = "Geolocation is not supported by this browser.";
     }
 }
-
 function showPosition(position) {
     var latlon = position.coords.latitude + "," + position.coords.longitude;
     geovelostart = latlon;
-    destineostart = position.coords.longitude + "%3B" + position.coords.latitude;
-    x.innerHTML = "LOCALISATION ACTIVE";
+    destineostart = position.coords.longitude + "%3B" + position.coords.latitude
+	x.innerHTML = "";
     // add a function to put on image as a link
 }
-
 function showError(error) {
     switch(error.code) {
         case error.PERMISSION_DENIED:
