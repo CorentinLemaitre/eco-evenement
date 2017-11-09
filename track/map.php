@@ -1,6 +1,6 @@
 <?php
     require "settings.php";
-	if ($secretKey == 'CHANGEME') {
+	if ($secretKey == '12345') {
 		die('This application is not functional yet. See the README how to set it up (hint: edit settings.php).');
 	}
 
