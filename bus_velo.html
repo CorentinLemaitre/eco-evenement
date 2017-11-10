@@ -17,9 +17,8 @@
     /* STYLE la zone dessus la carte et sa police et son texte */
 .map-overlay-container {
     position: absolute;
-    width: 30%;
     top: 0px;
-    left: 0;
+    center: 0;
     padding: 20px;
     z-index: 1;
 }
@@ -55,7 +54,7 @@ TODO :
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
+    style: 'mapbox://styles/mapbox/basic-v9',
     center: [-1.58, 47.24],
     zoom: 11,
     // hash: 1,
