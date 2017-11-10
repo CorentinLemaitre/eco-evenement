@@ -1,3 +1,6 @@
+### version du code à 10h39
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,29 +44,25 @@
 <br>
 <div class='map-overlay-container'>
   <div class='map-overlay'>
-    <h2 id='location-title'>Tous à vélo pour les eco-evenement !</h2>
-    <p> Venez à la rencontre annuelle du réseau éco-événement à vélo </br> Un bus cycliste partira de place viarme à 9h</p> <br> <button> inscrivez vous </button>
-    <small><a mailto:san@antonio.net&?subject=Notre affaire&bcc=avocat@antonio.net&body=Telephone>Inscrivez vous ici</a></small>
+    <center><h2 id='location-title'>Tous à vélo pour les eco-evenement !</h2>
+    <p>Un départ groupé à vélo est organisé par le réseau éco-evenement pour se rendre à la rencontre annuelle du réseau éco-événement<br> Rendez-vous à la place Viarme à 9h le 14 novembre! </p>
+    <center><button href="mailto:corentinlemaitre@gmail.com&?subject=Participation bus cycliste&body=Bonjour, merci d'indiquer votre nom prénom et téléphone portable.">Inscrivez vous ici</button></center>
   </div>
 </div>
 
 <script>
 /* 
 TODO :
-! link with my own dataset !OK!
-! add my own style !OK!
-! start in saint aignan !OK!
-! put zones beside the label !OK?
-! add interaction via the popup !OK!
-! add color for zones -via Mapbox
-! add the first zone of all the festival !
+
 */
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/corentinlemaitre/ciox45c1h001iqmmaemajxeqt',
-    center: [-1.6330552,47.122913],
-    zoom: 16
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-1.58, 47.24],
+    zoom: 11,
+    // hash: 1,
+    pitch: 0//pour avoir une vision avec un angle
 });
 map.on('load', function () {
     map.addLayer({
@@ -71,7 +70,7 @@ map.on('load', function () {
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'https://corentinlemaitre.github.io/features.geojson'
+            'data': 'https://corentinlemaitre.github.io/velobus_surf.geojson'
         },
         'layout': {},
         'paint': {
@@ -85,31 +84,7 @@ map.on('load', function () {
     // right before that layer in the stack, making it possible to put
     // 'overlays' anywhere in the layer stack.
     }, 'water');
-    
-     // When a click event occurs on a feature in the states layer, open a popup at the
-    // location of the click, with description HTML from its properties.
-    map.on('click', 'urban-areas-fill', function (e) {
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-           // .setHTML(e.features[0].properties.name)
-           // .addTo(map);
-        map.flyTo({center : e.lngLat});
-        document.getElementById("location-title").innerHTML = e.features[0].properties.short;
-        document.getElementById("location-description").innerHTML = e.features[0].properties.description;
-//        document.getElementById("location-price").innerHTML = e.features[0].properties.prix;
-//        var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints=47.2175841,-1.5419186%7C"+e.features[0].properties.latlondest;
-//   		var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Gare+de+Nantes&search%5Bfrom%5D%5Bautocomplete-hidden%5D=-1.541918600000031%3B47.2175841&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
-//         document.getElementById("itinerary").innerHTML = "<a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button><i class='fa fa-bicycle fa-4x' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button><i class='fa fa-bus fa-fw fa-4x' title='Venir en bus'></i></button></a>";
-        
-        });
-    // Change the cursor to a pointer when the mouse is over the states layer.
-    map.on('mouseenter', 'points', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'points', function () {
-        map.getCanvas().style.cursor = '';
-    });
+   
     
 });
 </script>
