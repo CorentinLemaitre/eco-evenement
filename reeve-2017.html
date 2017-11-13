@@ -52,7 +52,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v9',
+    style: 'mapbox://styles/corentinlemaitre/cj9ypk7x67u282spgw8bsl3rt',
     center: [-1.54, 47.21],
     zoom: 10,
     // hash: 1,
@@ -70,15 +70,12 @@ map.on('load', function() {
         'minzoom': 15,
         'paint': {
             'fill-extrusion-color': '#aaa',
-            'fill-extrusion-height': {
-                'type': 'identity',
-                'property': 'height'
-            },
+            'fill-extrusion-height': 10,
             'fill-extrusion-base': {
                 'type': 'identity',
                 'property': 'min_height'
             },
-            'fill-extrusion-opacity': .6
+            'fill-extrusion-opacity': .9
         }
     });
 });
@@ -86,7 +83,7 @@ document.getElementById('fly').addEventListener('click', function () {
     map.flyTo({
         center: [
             -1.6427939,47.2524711],
-            zoom:16,
+            zoom:17,
             pitch: 45//le centre du grand blotereau
     });
 });
