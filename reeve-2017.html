@@ -69,15 +69,48 @@ map.on('load', function() {
         'type': 'fill-extrusion',
         'minzoom': 15,
         'paint': {
-            'fill-extrusion-color': '#aaa',
-            'fill-extrusion-height': 10,
+            'fill-extrusion-color': '#bbb',
+            'fill-extrusion-height': 14,
             'fill-extrusion-base': {
                 'type': 'identity',
                 'property': 'min_height'
             },
-            'fill-extrusion-opacity': .9
+            'fill-extrusion-opacity': .75
         }
-    });
+    }, 'building1');
+
+ map.addLayer({
+        "id": "symbols",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "FeatureCollection",
+                "features": [
+                    {
+                        "type": "Feature",
+                        "properties": {},
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                -1.6417939,47.2524711
+
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "layout": {
+            "icon-image": "rocket-15", 
+            "text-field": "Accueil",
+            "text-font": ["Open Sans Bold", "Arial Unicode MS Bold"],
+                    "text-size": 15,
+                    "text-transform": "uppercase",
+                    "text-letter-spacing": 0.05,
+                    "text-offset": [0, 1.5]
+        }
+    },);
 });
 document.getElementById('fly').addEventListener('click', function () {
     map.flyTo({
