@@ -2,7 +2,7 @@
     global $secretKey, $filePath, $name, $zoom, $accuracy, $height, $width;
 
     // This key must be entered in OsmAnd's tracking URL as &key=
-    $secretKey = 'CHANGEME';
+    $secretKey = '12345';
 
 	// API key from MapQuest. Get one from developer.mapquest.com
 	$apikey = 'gzioGldt5eorbziKTxOo2TA3w9GaFfhw';
