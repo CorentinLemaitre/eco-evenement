@@ -5,10 +5,10 @@
     $secretKey = 'CHANGEME';
 
 	// API key from MapQuest. Get one from developer.mapquest.com
-	$apikey = '';
+	$apikey = 'gzioGldt5eorbziKTxOo2TA3w9GaFfhw';
 
     // Used to round the lat/lon values so you aren't sharing your *exact* location
-    $accuracy = 2; // in number of decimal positions
+    $accuracy = 1; // in number of decimal positions
 
 	// Where to store your last location
     $filePath = '/tmp/location';
@@ -18,7 +18,7 @@
 
 	// Zoom on the map
 	// 8 gives a high overview; 12 gives a more zoomed-in map. Lower or higher values also possible.
-    $zoom = "8";
+    $zoom = "12";
 
     $height = "500";
     $width = "600";
