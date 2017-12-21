@@ -24,3 +24,16 @@ http://example.org/tracker.php?lat={0}&lon={1}&timestamp={2}&hdop={3}&altitude={
 Don't forget to replace example.org with your site AND set SECRETKEY to your
 secret key!
 
+Copy from OsmAnd-Tracker project (Available here in Github)[https://github.com/ToeBee/OsmAnd-Tracker]
+
+## Tracker on Eco-evenement project
+
+Until now i didn't acheive to make it work. 
+
+The goal is to track the leader of a cycle bus via OsmAnd and share the position on the map of the cyclebus.
+
+### TODO 
+
+- Understand the php scheme
+- Connect with OsmAnd tracking
+
