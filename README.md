@@ -7,7 +7,7 @@ La plupart des projets sont des pages web simples avec de la cartographie et des
 [Cliquez-ici pour accéder aux différents prototypes](https://corentinlemaitre.github.io/eco-evenement/)
 
 # Contexte
-Le réseau éco-événement : réseau rassemblant tous les acteurs favorables à l'éco-responsabilité événementielle sur l'agglomération nantaise  et en Pays de la Loire. [Lien vers site web.](https://www.reseau-eco-evenement.net/)
+Le réseau éco-événement : réseau rassemblant tous les acteurs favorables à l'éco-responsabilité événementielle sur l'agglomération nantaise  et en Pays de la Loire. [site web.](https://www.reseau-eco-evenement.net/)
 
-Moi : Je suis consultant urbanisme et mobilité durable avec une expertise particulière sur la cartographie et le vélo. J'accompagne les eco-événements sur le sujet de la mobilité dans le cadre d'un dispositif proposé par Nantes Métropole. [Lien vers Linkedin.](https://www.linkedin.com/in/corentinlemaitre/)
+Moi : Je suis consultant urbanisme et mobilité durable avec une expertise particulière sur la cartographie et le vélo. J'accompagne les eco-événements sur le sujet de la mobilité dans le cadre d'un dispositif proposé par Nantes Métropole. [Profil Linkedin.](https://www.linkedin.com/in/corentinlemaitre/)
 
