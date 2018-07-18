@@ -1,0 +1,191 @@
+<!doctype html>
+<head>
+	<meta charset='utf-8' />
+    <title>Carte 3d Transfert</title>
+    <script src="../dist/threebox.js" type="text/javascript"></script>
+    <script src="config.js"></script>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body, html {width: 100%; height: 100%; margin: 0;}
+        #map {position:absolute; top:0; bottom:0; width:100%;}
+    </style>
+</head>
+<body>
+    <div id='map' class='map'></div>
+
+	
+<br/>
+<button id='fly'>Aller vers le plan interne à l'événement</button>
+<style>
+    #fly {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        width: 50%;
+        height: 40px;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #000;
+        background: #fff;
+    }
+</style>
+
+    <script>
+    if(!config) console.error("Config not set! Make a copy of 'config_template.js', add in your access token, and save the file as 'config.js'.");
+    
+    mapboxgl.accessToken = config.accessToken;
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v10',
+      center: [-1.5608, 47.2202], // -1.56630, 47.19390 and GLOBAL :: [-1.5608, 47.2202]
+      zoom: 11, //16 to zoom or 11 to view nantes
+      pitch: 0,
+      //heading: 41,
+      //hash: true,
+      maxZoom: 24
+    });
+	map.addControl(new mapboxgl.GeolocateControl());
+
+    map.on("load", function() {
+
+		
+		map.addLayer({
+        'id': '3d-buildings',
+        'source': 'composite',
+        'source-layer': 'building',
+        'filter': ['==', 'extrude', 'true'],
+        'type': 'fill-extrusion',
+        'minzoom': 15, //TODO dupliquer pour la 3D perso
+        'paint': {
+            'fill-extrusion-color': '#aaa',
+            'fill-extrusion-height': {
+                'type': 'identity',
+                'property': 'height'
+            },
+            'fill-extrusion-base': {
+                'type': 'identity',
+                'property': 'min_height'
+            },
+            'fill-extrusion-opacity': .6
+			}
+		});
+		// Initialize threebox
+        window.threebox = new Threebox(map);
+        threebox.setupDefaultLights();
+
+        var source = {
+            type: "FeatureCollection",
+            features: [
+            /*
+			{
+                type: "Feature",
+                properties: { model: "boat_med", heading: 110 },
+                geometry: {
+                    type: "Point", 
+                    coordinates: [-1.5666757, 47.1939627]
+                }
+            },
+			*/
+			{
+                type: "Feature",
+                properties: { model: "all_high2", heading: 80 },
+                geometry: {
+                    type: "Point",
+                    coordinates: [-1.564123, 47.1930542] 
+                }
+            },
+			/*
+            {
+                type: "Feature",
+                properties: { model: "skull_low", heading: 80 },
+                geometry: {
+                    type: "Point",
+                    coordinates: [-1.567123, 47.1937042] 
+                }
+            },
+			*/
+            ]
+        };
+
+        var symbols = threebox.addSymbolLayer({
+            id:             "scale",
+            source:         source, // You can also specify a URL or relative path such as "data/points.geojson",
+            modelName:      {property: 'model'},			// will look for an .obj and .mtl file with this name
+            modelDirectory: "models/",          // in this directory
+            //rotation:       { generator: feature => (new THREE.Euler(Math.PI /2,Math.PI,0, "ZXY")) },
+			rotation:       { generator: feature => (new THREE.Euler(Math.PI / 2, feature.properties['heading'] * Math.PI / 180 + Math.PI / 2,0, "ZXY")) },
+            scale:          [1,1,1],
+            scaleWithMapProjection: true
+        });
+		
+        console.log(symbols);
+		
+		        map.loadImage("LOGOTYPE_TRANSFERT.png", function(error, image) {
+      if (error) throw error;
+      map.addImage("custom-marker", image);
+      /* Style layer: A style layer ties together the source and image and specifies how they are displayed on the map. */
+      map.addLayer({
+        id: "markers",
+		maxzoom: 13,
+        type: "symbol",
+        /* Source: A data source specifies the geographic coordinate where the image marker gets placed. */
+        source: {
+          type: "geojson",
+          data: {
+            type: "FeatureCollection",
+            features:[{"type":"Feature","geometry":{"type":"Point","coordinates":[-1.5671869701556602,47.19403160219568]}}]}
+        },
+        layout: {
+          "icon-image": "custom-marker",
+        }
+      });
+	  });
+    });
+	
+	/* OLD FLY TO
+	document.getElementById('fly').addEventListener('click', function () {
+    // Fly to a random location by offsetting the point -74.50, 40
+    // by up to 5 degrees.
+    map.flyTo({
+        center: [-1.5664, 47.19404], //TODO ajuster
+            zoom:18,
+            pitch: 60
+    });*/
+	var flybtn = document.getElementById('fly');
+	flybtn.addEventListener('click', flyFunction);
+	flybtn.addEventListener('click', changeFunction);
+	var arrival = [-1.5664, 47.19404];
+	var index = 0
+	var flyzoom = 18.5;
+	var flypitch = 60;
+	function flyFunction(){
+		map.flyTo({
+			center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch
+			});
+		};
+	function changeFunction(){
+		if (index < 1) {
+		arrival = [-1.5608, 47.2202];
+		flyzoom = 11;
+		flypitch = 0;
+		index = 1;
+		flybtn.innerHTML = "Revenir à le carte de localisation de l'événement";
+		}else{
+		arrival = [-1.5664, 47.19404];
+		index = 0
+		flyzoom = 18;
+		flypitch = 60;
+		flybtn.innerHTML= "Aller vers le plan interne à l'événement";
+		}
+		};
+		
+
+    </script>
+</body>
