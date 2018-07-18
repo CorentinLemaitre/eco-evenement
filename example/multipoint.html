@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Carte interactive Festival Soy</title>
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+          /* STYLE la zone dessus la carte et sa police et son texte */
+.map-overlay-container {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 10px;
+    z-index: 1;
+}
+.map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    max-height: 50%;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.20);
+}
+#button-center {
+    z-index: 1;
+    position:fixed; bottom:10%;padding:20px;width:60%; left:20%
+}
+p	{
+max-height: 60px; overflow: auto
+}
+.map-overlay h2,
+.map-overlay p {
+    margin: 0 0 10px;
+}
+@media (min-width:801px) {.map-overlay-container {width:40%} p{max-height:800px}}
+    </style>
+        <script src="https://use.fontawesome.com/acc5504c96.js"></script>
+
+</head>
+<div id="localise" >
+   <button id=button-center onclick="getLocation()"> <h3> ACTIVER LOCALISATION</h3> </button>
+    </div>
+<div id='map'></div>
+
+<div class='map-overlay-container'>
+  
+  <div class='map-overlay'>
+    <h3 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h3>
+    <p id='location-description'> 
+Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanck Mass, Marietta, Jessica 93, Julien Gasc, Flotation Toy Warning, John Maus, Rhys Chatham + Will Guthrie, Orson Hentschel, Cotillon, Accident Du Travail, Loscil, Puce Mary, Carl Stone, Doppeltgänger, Big | Brave, Larsen, Jessica Moss, Trupa Trupa, Seabuckthorn, Tonstartssbandht, Mary Ocher, Charlotte Bendiks.</p>
+<p id='location-price'> <a href="https://festival.soy/programmation">Plus d'info festival Soy</a></p>
+<center>
+<div id='itinerary' class='w3-row-padding'>
+    
+  </div>
+  </center>
+   
+  </div>
+
+    </div>
+<script>
+var geovelostart="47.213991,-1.555275";
+var destineostart="-1.555275%3B47.213991";
+var geoveloend=null;
+var destineoend=null;
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjamJmMTkwNjMxeHZtMnBteGdxejlscmtqIn0.vO1AFeimgoh60XWlYRzVMw';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/corentinlemaitre/cj7hhiw2g4gwl2smmy24crlk4',
+    center: [-1.55, 47.23],
+    zoom: 12
+});
+map.on('load', function () {
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": event.geojson;
+        },
+        "layout": {
+            "icon-image": "cicrcle-15",
+            "text-field": "{id}",
+            "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+            "text-offset": [0, 0],
+            "text-anchor": "center"
+        }
+        
+        
+    });
+    
+    // When a click event occurs on a feature in the states layer, open a popup at the
+    // location of the click, with description HTML from its properties.
+    map.on('click', 'points', function (e) {
+        new mapboxgl.Popup()
+            .setLngLat(e.features[0].geometry.coordinates)
+            .setHTML(e.features[0].properties.title)
+            .addTo(map);
+        map.flyTo({center : e.features[0].geometry.coordinates});
+        document.getElementById("location-title").innerHTML = e.features[0].properties.date;
+        document.getElementById("location-description").innerHTML = e.features[0].properties.description;
+        document.getElementById("location-price").innerHTML = e.features[0].properties.prix;
+        geoveloend = e.features[0].properties.latlondest
+        destineoend = e.features[0].properties.destineodest
+        var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+geovelostart+"%7C"+e.features[0].properties.latlondest;
+   	var destineo_url = "http://www.destineo.fr/fr/journey/result/?search%5Bfrom%5D%5Bautocomplete%5D=Votre+Position&search%5Bfrom%5D%5Bautocomplete-hidden%5D="+destineostart+"&search%5Bto%5D%5Bautocomplete%5D=Festival+Soy&search%5Bto%5D%5Bautocomplete-hidden%5D="+e.features[0].properties.destineodest+"&search%5Bdatetime_represents%5D=arrival&search%5Bdatetime%5D%5Btime%5D%5Bhour%5D=15&search%5Bdatetime%5D%5Btime%5D%5Bminute%5D=0&search%5Bdatetime%5D%5Bdate%5D=29%2F09%2F2017&search%5Bmodes%5D%5B%5D=physical_mode%3ALocalTrain&search%5Bmodes%5D%5B%5D=physical_mode%3ATramway&search%5Bmodes%5D%5B%5D=physical_mode%3ABus&search%5Bmodes%5D%5B%5D=physical_mode%3ACoach&search%5Bcount%5D=&search%5Bmin_nb_journeys%5D=2&search%5Bmax_nb_journeys%5D=3";
+         document.getElementById("itinerary").innerHTML = "<div class='w3-row-padding'><a href="+geovelo_url+" target=_blank class='w3-center w3-xxxlarge'><button><i class='fa fa-bicycle' title='Venir à vélo'></i> </button></a>      <a href="+destineo_url+" target=_blank class='w3-xxxlarge w3-center'><button><i class='fa fa-bus fa-fw' title='Venir en bus'></i></button></a></div>";
+        
+        });
+    // Change the cursor to a pointer when the mouse is over the states layer.
+    map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+    });
+});
+var x = document.getElementById("localise");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    geovelostart = latlon;
+    destineostart = position.coords.longitude + "%3B" + position.coords.latitude
+	x.innerHTML = "<br>";
+    // add a function to put on image as a link
+}
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+
+
+</html>
