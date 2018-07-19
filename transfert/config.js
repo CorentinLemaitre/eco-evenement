@@ -1,3 +1,3 @@
 var config = {
-    accessToken: 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg'
+    accessToken: 'pk.eyJ1IjoicGlja3VwIiwiYSI6ImNqanNucXAwaTA4N20zd3IxNnd1NDAzMW0ifQ.KzLrsYcPb-d8577rM9Zwsg'
 };
