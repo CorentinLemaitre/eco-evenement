@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Venir à la fete du quai Léon Sécher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('bicycle-15.svg');
+    min-height: 100%;
+	width: 50%;
+    background-position: center;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-102281058-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<script src="https://use.fontawesome.com/acc5504c96.js"></script>
+
+</head>
+
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+   <div class="w3-display-top w3-center w3-padding-large w3-xlarge">
+    Venir autrement à l'événement
+  </div>
+ 
+  <div class="w3-center w3-paddiing-128" id="itinerary">
+     <button onclick="getLocation()" class="w3-xxlarge w3-padding-large"> <i class="fa fa-location-arrow"> </i> ACTIVER <br> LOCALISATION</button>
+  </div>
+  
+<div class="w3-display-bottomleft w3-padding-large">
+Calcul d'itineraire éco-évènement - Code source sur <a href="https://github.com/CorentinLemaitre/eco-mobilite-pour-eco-evenement" target="_blank">Github</a></br><id="demo"> </div>
+  
+  
+
+</div>
+</div>
+<script>
+    // TODO : ajouter mes styles perso basé sur festival soy et commenter le code
+    // TODO : ajouter les regles de prise en compte des destinations et heures pour plus d'adaptabilité facon marque blanche
+    // TODO : PLUS TARD : prendre en compte les API plutot que lien bancale OU calcul destination destineo
+    
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
+    var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+latlon+"%7C47.182687,-1.530957";
+    var destineo_url = "http://www.destineo.fr/fr/journey/result/?search[from][autocomplete]=Votre+Position&search[from][autocomplete-hidden]="+destineo_loc+"3&search[to][autocomplete]=Fete+du+quai+leon+secher&search[to][autocomplete-hidden]=-1.5311976000000413%3B47.1825993&search[datetime_represents]=arrival&search[datetime][time][hour]=15&search[datetime][time][minute]=00&search[datetime][date]=30%2F09%2F2017&search[modes][]=physical_mode%3ALocalTrain&search[modes][]=physical_mode%3ATramway&search[modes][]=physical_mode%3ABus&search[modes][]=physical_mode%3ACoach&search[count]=&search[min_nb_journeys]=2&search[max_nb_journeys]=3";
+    document.getElementById("itinerary").innerHTML = "<div class='w3-half'><a href="+geovelo_url+" target=_blank class='w3-animate-top w3-center w3-xlarge'><button style='width:80%'><i class='fa fa-bicycle fa-5x' title='Venir à vélo'></i><br> Venir à vélo </button></a></div> <div class='w3-half'><a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button style='width:80%'><i class='fa fa-bus fa-fw fa-5x' title='Venir en bus'></i><br>Venir en bus</button></a></div>";
+    // add a function to put on image as a link
+}
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+</script>
+</body>
+</html>

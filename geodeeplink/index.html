@@ -12,21 +12,28 @@ body{
 height: 100%;
 font-family: "Raleway", sans-serif;
 text-align: center;
+font-size:3vw;
 }
 
 button.big {
-max-width:40%;
-margin:2%;
+width:40%;
+margin:3%;
 padding:3%;
-font-size:3vw;
+}
+button.first {
+width:80%;
+margin:3%;
+padding:3%;
 }
 
 div.footer {
     position: fixed;
     padding-top:10%;
-	padding-bottom:5%;
+	bottom:5%;
 	width: 100%;
-	font-size:3vw;
+}
+img {
+padding: 3%;
 }
 
 
@@ -47,21 +54,26 @@ div.footer {
 
 <body>
 <div>
-   <div style="font-size:5vw;padding:3%">
+<!-- 
+   <p style="font-size:150%;padding:2%;">
     Venir autrement à l'événement
-  </div>
- 
+  </p>
+-->
+  <div style=font-size:4vw;>
+ <div style="width:50%; font-size:50%;"> <!-- change both value if you have to put it in a div smaller. If you want no text just put 0% -->
   <div id="itinerary">
-     <button onclick="getLocation()" class="big"> <p><i class="fa fa-location-arrow"> </i> ACTIVER <br> LOCALISATION</p></button>
+     <button onclick="getLocation()" class="first" id="error_message" title="Activer localisation"> <img src=geolocate.svg width=35% alt="Activer Localisation"> </img> ACTIVER LOCALISATION</button>
   </div>
-  
-<div class="footer" id="error_message">
+    </div>
+	 </div>
+<div class="footer">
 Code source sur <a href="https://github.com/CorentinLemaitre/eco-mobilite-pour-eco-evenement" target="_blank">Github</a></br> </div>
   
   
 
 </div>
 </div>
+
 <script>
 var x = document.getElementById("error_message");
 function getLocation() {
@@ -88,7 +100,7 @@ var jour_event = today.getDate();
 var an_event = today.getFullYear();
 var heure_event = today.getHours();
 var mois_event = today.getMonth()+1;
-var min_event = today.getMinutes();
+var min_event = today.getMinutes()+2;
 }else {
 mode='arrival';
 var jour_event = d.getDate();
@@ -122,7 +134,7 @@ var destineostart="-1.555275%3B47.213991";
     var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
     var bike_url = url_bike_1+latlon+url_bike_2;
     var PT_url = url_PT_1+destineo_loc+url_PT_2;
-    document.getElementById("itinerary").innerHTML = "<div> <a href="+bike_url+" target=_blank>	<button class='big'> <i class='fa fa-bicycle fa-5x' title='Venir à vélo'></i> <br>Venir à vélo </button> </a> <a href="+PT_url+" target=_blank> <button class='big'> <i class='fa fa-bus fa-5x' title='Venir en bus'></i> <br>Venir en bus</button> </a> </div>"
+    document.getElementById("itinerary").innerHTML = "<div> <a href="+bike_url+" target=_blank>	<button class='big'> <img src=bicycle-share-15.svg width=80% title='Venir à vélo'></img> <br>Venir à vélo </button> </a> <a href="+PT_url+" target=_blank> <button class='big'> <img src=bus-15.svg width=80% title='Venir en bus'></img> <br>Venir en bus</button> </a> </div>"
 }
 function showError(error) {
     switch(error.code) {
