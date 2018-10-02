@@ -1,0 +1,103 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "name": "Point de départ<br>Challenge contre la faim",
+        "minzoom": 5,
+        "maxzoom": 15,
+        "type": "circle-15",
+        "desc": "",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5091180801391602,
+          47.23011853040097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#009d00",
+        "marker-size": "medium",
+        "name": "Mairie de Doulon<br>Arret de tramway ligne 1",
+        "minzoom": 15,
+        "maxzoom": "",
+        "type": "rail-ligth-15",
+        "desc": "Ligne tramway 1",
+        "marker-symbol": "rail-light"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5186774730682373,
+          47.22681082141992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#3dd6f5",
+        "marker-size": "medium",
+        "name": "Grand Blotereau<br>Ligne de bus n°12",
+        "desc": "Ligne de bus 12",
+        "minzoom": 15,
+        "maxzoom": "",
+        "type": "bus-15",
+        "marker-symbol": "bus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5114462375640867,
+          47.229528403618936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2905f8",
+        "marker-size": "medium",
+        "marker-symbol": "car",
+        "name": "Parking voiture<br> Attention capacité limitée",
+        "minzoom": 15,
+        "maxzoom": "",
+        "type": "car-15",
+        "desc": "Capacité très limitée"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5124815702438354,
+          47.22852116587788
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "type": "",
+        "name": "Stationnement vélo",
+        "marker-symbol": "bicycle",
+        "desc": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5122884511947632,
+          47.22812227258439
+        ]
+      }
+    }
+  ]
+}
