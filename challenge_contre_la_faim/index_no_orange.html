@@ -61,19 +61,19 @@ var map = new mapboxgl.Map({
 });
 var zoomtrigger = 14;
 map.on('load', function (){
-    map.loadImage('bus_orange.png', function(error, image) {
+    map.loadImage('bus.png', function(error, image) {
         if (error) throw error;
         map.addImage('bus', image);
 	});
-    map.loadImage('bicycle_park_orange.png', function(error, image) {
+    map.loadImage('bicycle_park.png', function(error, image) {
         if (error) throw error;
         map.addImage('bicycle', image);
 	});
-    map.loadImage('car_park_orange.png', function(error, image) {
+    map.loadImage('car_park.png', function(error, image) {
         if (error) throw error;
         map.addImage('car', image);
 	});
-    map.loadImage('tram_orange.png', function(error, image) {
+    map.loadImage('tram.png', function(error, image) {
         if (error) throw error;
         map.addImage('rail-light', image);
 	});

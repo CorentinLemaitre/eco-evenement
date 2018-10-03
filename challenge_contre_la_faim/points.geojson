@@ -87,15 +87,15 @@
         "marker-color": "#005ffd",
         "marker-size": "medium",
         "type": "",
-        "name": "Stationnement vélo",
+        "name": "Stationnement vélo<br>pour bénéficier du forfait vélo",
         "marker-symbol": "bicycle",
         "desc": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.5122884511947632,
-          47.22812227258439
+          -1.5097832679748535,
+          47.229828403618936
         ]
       }
     }
