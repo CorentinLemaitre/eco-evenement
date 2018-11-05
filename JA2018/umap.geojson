@@ -41,8 +41,7 @@
             "type": "Feature",
             "properties": {
                 "_umap_options": "{color=DarkBlue, opacity=1, fillOpacity=0.9}",
-                "description": "Capacité de 80 vélos dimension 20m par 6 m besoin de 50 ganivelles",
-                "name": "Parking vélo"
+                "description": "Capacité de 80 vélos dimension 20m par 6 m besoin de 50 ganivelles"
             },
             "geometry": {
                 "type": "LineString",
@@ -337,8 +336,7 @@
             "type": "Feature",
             "properties": {
                 "_umap_options": "{color=DarkBlue, opacity=1, fillOpacity=0.9}",
-                "description": "Capacité de 80 vélos dimension 20m par 6 m besoin de 50 ganivelles",
-                "name": "Parking vélo"
+                "description": "Capacité de 80 vélos dimension 20m par 6 m besoin de 50 ganivelles"
             },
             "geometry": {
                 "type": "LineString",
@@ -529,7 +527,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Controle Technique Vélo",
+                "name": "Place au vélo",
                 "description": "50m2"
             },
             "geometry": {
@@ -697,8 +695,7 @@
         {
             "type": "Feature",
             "properties": {
-                "description": "Tente 9m2",
-                "name": "Barnum Bicloo mobile"
+                "description": "Tente 9m2"
             },
             "geometry": {
                 "type": "LineString",
@@ -911,7 +908,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "stand",
+                "name": "Stand accueil",
                 "description": "50m2"
             },
             "geometry": {
