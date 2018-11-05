@@ -1,1 +1,1062 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"_umap_options":{"color":"DarkBlue","opacity":"1","fillOpacity":"0.9"},"name":"Parking vélo","description":"Capacité de 80 vélo dimension 20 par 6 m\nbesoin de 50 ganivelles"},"geometry":{"type":"Polygon","coordinates":[[[-1.559636,47.206336],[-1.559709,47.206327],[-1.559751,47.206513],[-1.559676,47.206522],[-1.559636,47.206336]]]}}],"_umap_options":{"displayOnLoad":true,"browsable":true,"name":"Calque 1","remoteData":{},"fillOpacity":"0.9","opacity":"1","showLabel":true}}
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55971660237,
+                        47.20634641422
+                    ],
+                    [
+                        -1.55971224584,
+                        47.20632874802
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55989349441,
+                        47.20636609450
+                    ],
+                    [
+                        -1.55988924392,
+                        47.20634885833
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "_umap_options": "{color=DarkBlue, opacity=1, fillOpacity=0.9}",
+                "description": "Capacité de 80 vélos dimension 20m par 6 m besoin de 50 ganivelles",
+                "name": "Parking vélo"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55975993086,
+                        47.20636313394
+                    ],
+                    [
+                        -1.55976428739,
+                        47.20638080013
+                    ],
+                    [
+                        -1.55975142277,
+                        47.20638226431
+                    ],
+                    [
+                        -1.55973855815,
+                        47.20638372849
+                    ],
+                    [
+                        -1.55972569353,
+                        47.20638519267
+                    ],
+                    [
+                        -1.55971282891,
+                        47.20638665685
+                    ],
+                    [
+                        -1.55969996428,
+                        47.20638812102
+                    ],
+                    [
+                        -1.55968709966,
+                        47.20638958520
+                    ],
+                    [
+                        -1.55967423504,
+                        47.20639104938
+                    ],
+                    [
+                        -1.55966137042,
+                        47.20639251356
+                    ],
+                    [
+                        -1.55964850580,
+                        47.20639397774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55979296887,
+                        47.20633772260
+                    ],
+                    [
+                        -1.55978871838,
+                        47.20632048642
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55969996428,
+                        47.20638812102
+                    ],
+                    [
+                        -1.55969560775,
+                        47.20637045484
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55987134119,
+                        47.20632880269
+                    ],
+                    [
+                        -1.55986709071,
+                        47.20631156651
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Parking vélo",
+                "description": "Emplacement des vélos",
+                "_umap_options": "{color=DarkBlue, opacity=1, fillOpacity=0.9}"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55964850580,
+                        47.20639397774
+                    ],
+                    [
+                        -1.55964414927,
+                        47.20637631156
+                    ],
+                    [
+                        -1.55963890271,
+                        47.20635527585
+                    ],
+                    [
+                        -1.55963455963,
+                        47.20633766419
+                    ],
+                    [
+                        -1.55989261029,
+                        47.20630829427
+                    ],
+                    [
+                        -1.55989695337,
+                        47.20632590594
+                    ],
+                    [
+                        -1.55990230598,
+                        47.20634737168
+                    ],
+                    [
+                        -1.55990655646,
+                        47.20636460785
+                    ],
+                    [
+                        -1.55980206003,
+                        47.20637650106
+                    ],
+                    [
+                        -1.55976428739,
+                        47.20638080013
+                    ],
+                    [
+                        -1.55964850580,
+                        47.20639397774
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55968709966,
+                        47.20638958520
+                    ],
+                    [
+                        -1.55968274313,
+                        47.20637191902
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Food Truck",
+                "description": "Camion 2,4 par 5,50 m"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55971525946,
+                        47.20661480019
+                    ],
+                    [
+                        -1.55970351665,
+                        47.20656169395
+                    ],
+                    [
+                        -1.55971911492,
+                        47.20656010211
+                    ],
+                    [
+                        -1.55973406068,
+                        47.20655857686
+                    ],
+                    [
+                        -1.55974288659,
+                        47.20659849157
+                    ],
+                    [
+                        -1.55974580349,
+                        47.20661168310
+                    ],
+                    [
+                        -1.55971525946,
+                        47.20661480019
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Food Truck",
+                "description": "Camion 2,4 par 5,50 m"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55973135271,
+                        47.20668495393
+                    ],
+                    [
+                        -1.55971960990,
+                        47.20663184776
+                    ],
+                    [
+                        -1.55973520817,
+                        47.20663025592
+                    ],
+                    [
+                        -1.55975015393,
+                        47.20662873068
+                    ],
+                    [
+                        -1.55975897984,
+                        47.20666864534
+                    ],
+                    [
+                        -1.55976189674,
+                        47.20668183685
+                    ],
+                    [
+                        -1.55973135271,
+                        47.20668495393
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55986737030,
+                        47.20636906780
+                    ],
+                    [
+                        -1.55986311981,
+                        47.20635183164
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55988043235,
+                        47.20636758115
+                    ],
+                    [
+                        -1.55987618187,
+                        47.20635034499
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "_umap_options": "{color=DarkBlue, opacity=1, fillOpacity=0.9}",
+                "description": "Capacité de 80 vélos dimension 20m par 6 m besoin de 50 ganivelles",
+                "name": "Parking vélo"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55990230598,
+                        47.20634737168
+                    ],
+                    [
+                        -1.55990655646,
+                        47.20636460785
+                    ],
+                    [
+                        -1.55989349441,
+                        47.20636609450
+                    ],
+                    [
+                        -1.55988043235,
+                        47.20636758115
+                    ],
+                    [
+                        -1.55986737030,
+                        47.20636906780
+                    ],
+                    [
+                        -1.55985430824,
+                        47.20637055445
+                    ],
+                    [
+                        -1.55984124619,
+                        47.20637204110
+                    ],
+                    [
+                        -1.55982818414,
+                        47.20637352776
+                    ],
+                    [
+                        -1.55981512208,
+                        47.20637501441
+                    ],
+                    [
+                        -1.55980206003,
+                        47.20637650106
+                    ],
+                    [
+                        -1.55979780954,
+                        47.20635926489
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55985827914,
+                        47.20633028934
+                    ],
+                    [
+                        -1.55985402865,
+                        47.20631305316
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55969087312,
+                        47.20634934258
+                    ],
+                    [
+                        -1.55968651659,
+                        47.20633167638
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55967423504,
+                        47.20639104938
+                    ],
+                    [
+                        -1.55966987851,
+                        47.20637338320
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55980603092,
+                        47.20633623595
+                    ],
+                    [
+                        -1.55980178044,
+                        47.20631899977
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55984124619,
+                        47.20637204110
+                    ],
+                    [
+                        -1.55983699571,
+                        47.20635480494
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55983215503,
+                        47.20633326264
+                    ],
+                    [
+                        -1.55982790454,
+                        47.20631602647
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55985430824,
+                        47.20637055445
+                    ],
+                    [
+                        -1.55985005776,
+                        47.20635331829
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55975142277,
+                        47.20638226431
+                    ],
+                    [
+                        -1.55974706624,
+                        47.20636459812
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Controle Technique Vélo",
+                "description": "50m2"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55991497613,
+                        47.20641426456
+                    ],
+                    [
+                        -1.55990559046,
+                        47.20637004119
+                    ],
+                    [
+                        -1.55984011583,
+                        47.20637645456
+                    ],
+                    [
+                        -1.55984950151,
+                        47.20642067792
+                    ],
+                    [
+                        -1.55991497613,
+                        47.20641426456
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55975519623,
+                        47.20634202167
+                    ],
+                    [
+                        -1.55975083970,
+                        47.20632435547
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55966137042,
+                        47.20639251356
+                    ],
+                    [
+                        -1.55965701389,
+                        47.20637484738
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55966514388,
+                        47.20635227094
+                    ],
+                    [
+                        -1.55966078735,
+                        47.20633460474
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55974233161,
+                        47.20634348585
+                    ],
+                    [
+                        -1.55973797508,
+                        47.20632581965
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55972569353,
+                        47.20638519267
+                    ],
+                    [
+                        -1.55972133700,
+                        47.20636752648
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55972946699,
+                        47.20634495003
+                    ],
+                    [
+                        -1.55972511046,
+                        47.20632728384
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55971282891,
+                        47.20638665685
+                    ],
+                    [
+                        -1.55970847238,
+                        47.20636899066
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55981909297,
+                        47.20633474930
+                    ],
+                    [
+                        -1.55981484249,
+                        47.20631751312
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "description": "Tente 9m2",
+                "name": "Barnum Bicloo mobile"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55970857425,
+                        47.20647072418
+                    ],
+                    [
+                        -1.55971740016,
+                        47.20651063896
+                    ],
+                    [
+                        -1.55975842928,
+                        47.20650645184
+                    ],
+                    [
+                        -1.55974960337,
+                        47.20646653706
+                    ],
+                    [
+                        -1.55970857425,
+                        47.20647072418
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55973855815,
+                        47.20638372849
+                    ],
+                    [
+                        -1.55973420162,
+                        47.20636606230
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55989261029,
+                        47.20630829427
+                    ],
+                    [
+                        -1.55989695337,
+                        47.20632590594
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55978037799,
+                        47.20633915562
+                    ],
+                    [
+                        -1.55977609215,
+                        47.20632177611
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Food Truck",
+                "description": "Camion 2,4 par 5,50 m"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55974878707,
+                        47.20675328541
+                    ],
+                    [
+                        -1.55973704426,
+                        47.20670017931
+                    ],
+                    [
+                        -1.55975264253,
+                        47.20669858747
+                    ],
+                    [
+                        -1.55976758829,
+                        47.20669706223
+                    ],
+                    [
+                        -1.55977641420,
+                        47.20673697684
+                    ],
+                    [
+                        -1.55977933110,
+                        47.20675016833
+                    ],
+                    [
+                        -1.55974878707,
+                        47.20675328541
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55984521708,
+                        47.20633177599
+                    ],
+                    [
+                        -1.55984096660,
+                        47.20631453981
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55988440325,
+                        47.20632731604
+                    ],
+                    [
+                        -1.55988015276,
+                        47.20631007986
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55967800850,
+                        47.20635080676
+                    ],
+                    [
+                        -1.55967365197,
+                        47.20633314056
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Camion Bicloo Mobile",
+                "description": "Camion 2,4 par 5,50 m"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55968977303,
+                        47.20652694760
+                    ],
+                    [
+                        -1.55967803022,
+                        47.20647384127
+                    ],
+                    [
+                        -1.55969362849,
+                        47.20647224943
+                    ],
+                    [
+                        -1.55970857425,
+                        47.20647072418
+                    ],
+                    [
+                        -1.55971740016,
+                        47.20651063896
+                    ],
+                    [
+                        -1.55972031706,
+                        47.20652383051
+                    ],
+                    [
+                        -1.55968977303,
+                        47.20652694760
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "stand",
+                "description": "50m2"
+            },
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.56015954424,
+                        47.20651497722
+                    ],
+                    [
+                        -1.56015015857,
+                        47.20647075393
+                    ],
+                    [
+                        -1.56008468394,
+                        47.20647716728
+                    ],
+                    [
+                        -1.56009406962,
+                        47.20652139057
+                    ],
+                    [
+                        -1.56015954424,
+                        47.20651497722
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55965227926,
+                        47.20635373512
+                    ],
+                    [
+                        -1.55964792273,
+                        47.20633606892
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55981512208,
+                        47.20637501441
+                    ],
+                    [
+                        -1.55981087160,
+                        47.20635777824
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55982818414,
+                        47.20637352776
+                    ],
+                    [
+                        -1.55982393365,
+                        47.20635629159
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55970373774,
+                        47.20634787840
+                    ],
+                    [
+                        -1.55969938122,
+                        47.20633021220
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55976778711,
+                        47.20634058865
+                    ],
+                    [
+                        -1.55976346593,
+                        47.20632306579
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": null,
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [
+                        -1.55969362849,
+                        47.20647224943
+                    ],
+                    [
+                        -1.55967577147,
+                        47.20646422448
+                    ],
+                    [
+                        -1.55966724587,
+                        47.20642941369
+                    ],
+                    [
+                        -1.55969708004,
+                        47.20642604141
+                    ],
+                    [
+                        -1.55970560564,
+                        47.20646085220
+                    ],
+                    [
+                        -1.55969362849,
+                        47.20647224943
+                    ]
+                ]
+            }
+        }
+    ]
+}
