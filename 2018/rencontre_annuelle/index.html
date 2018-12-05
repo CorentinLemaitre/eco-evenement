@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>Rencontre Annuelle - 1001 événements s'engagent pour le territoire et le climat</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+  </head>
+  <body>
+
+    <style>
+      /* STYLE la zone au-dessus de la carte sa police et son texte */
+      .map-overlay-container {
+        position: absolute;
+        top: 0px;
+        center: 0;
+        padding: 20px;
+        z-index: 0;
+      }
+      .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow:0 1px 2px rgba(0,0,0,0.20);
+      }
+    .map-overlay h2,
+    .map-overlay p {
+        margin: 0 0 10px;
+      }
+	.mapboxgl-popup {
+        max-width: 300px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		text-align: center;
+		top: -15px;
+    }
+	.mapboxgl-popup-close-button {
+	display: none;
+	}
+    </style>
+
+    <div id='map'></div>
+
+    <script>
+      /* 
+TODO :
+*/
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
+    center: [-1.559553, 47.207363], // 15.5/47.207363/-1.559553
+    zoom: 13,
+    //hash: 1,
+    pitch: 0//pour avoir une vision avec un angle
+});
+var zoomtrigger = 14;
+map.on('load', function (){
+    map.loadImage('bus.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bus', image);
+	});
+    map.loadImage('bicycle_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicycle', image);
+	});
+    map.loadImage('bicloo.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicloo', image);
+	});
+    map.loadImage('car_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('car', image);
+	});
+    map.loadImage('tram.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('rail-light', image);
+	});
+    map.loadImage('village_small.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('circle', image);
+	});
+    map.loadImage('logo_event.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('logo_event', image);
+        map.addLayer({
+            "id": "logo",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-1.5604109, 47.2065591]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "logo_event",
+				"icon-size": 0.7 // seems to be 0.5 for 50 percent
+            },
+			"paint": {
+				"icon-opacity": {
+					"base": 1,
+					"stops": [[13, 1], [14, 0]]
+				}
+			}
+		});
+	});
+	
+    map.addLayer({
+        'id': '1000m',
+        'type': 'line',
+        'source': {
+			'type': 'geojson',
+            'data': 'parcours_1km.geojson',
+        },
+        'minzoom' : zoomtrigger-2,
+        "layout": {
+			"line-join": "round",
+			"line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#005fb6",
+            "line-width": {
+				"base": 1.5,
+				"stops": [
+					[8.5, 0.5],
+					[10, 0.75],
+					[18, 26]
+				]
+            },
+			"line-opacity": {
+				"base": 1,
+				"stops": [[13, 0], [15, 1]]
+			}
+        }
+          // This is the important part of this example: the addLayer
+          // method takes 2 arguments: the layer as an object, and a string
+          // representing another layer's name. if the other layer
+          // exists in the stylesheet already, the new layer will be positioned
+          // right before that layer in the stack, making it possible to put
+          // 'overlays' anywhere in the layer stack.
+    }, "water");
+    map.addLayer({
+        'id': '600m',
+        'type': 'line',
+        'source': {
+			'type': 'geojson',
+            'data': 'parcours_600m.geojson',
+        },
+        'minzoom' : zoomtrigger-2,
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": ['get', 'colour'],
+            "line-width": {
+				"base": 1.5,
+				"stops": [
+					[8.5, 0.5],
+					[10, 0.75],
+					[18, 26]
+				]
+            },
+			"line-opacity": {
+				"base": 1,
+				"stops": [[9, 0], [11, 1]]
+			}
+        }
+          // This is the important part of this example: the addLayer
+          // method takes 2 arguments: the layer as an object, and a string
+          // representing another layer's name. if the other layer
+          // exists in the stylesheet already, the new layer will be positioned
+          // right before that layer in the stack, making it possible to put
+          // 'overlays' anywhere in the layer stack.
+    }, "road-label-large");
+	map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "points.geojson",
+        },
+		"minzoom": 12,
+        "layout": {
+            "icon-image": "{marker-symbol}",
+			"icon-allow-overlap": true,
+			"icon-size": {
+					"base": 1,
+					"stops": [[14, 0.26], [17, 1]]
+				}
+		},
+		"paint": {
+			"icon-opacity": {
+				"base": 1,
+				"stops": [[13.5, 0], [14.5, 1]]
+			}
+		}
+    });
+		
+    map.on('click', 'points', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+
+    // Change the cursor to a pointer when the mouse is over the points layer.
+    map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+    });	
+});
+</script>
+</body>
+</html>
