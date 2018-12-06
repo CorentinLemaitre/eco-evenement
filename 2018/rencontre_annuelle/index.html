@@ -62,7 +62,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
     center: [-1.559553, 47.207363], // 15.5/47.207363/-1.559553
-    zoom: 13,
+    zoom: 12.3,
     //hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
@@ -113,12 +113,12 @@ map.on('load', function (){
             },
             "layout": {
                 "icon-image": "logo_event",
-				"icon-size": 0.7 // seems to be 0.5 for 50 percent
+				"icon-size": 0.55 // seems to be 0.5 for 50 percent
             },
 			"paint": {
 				"icon-opacity": {
 					"base": 1,
-					"stops": [[13, 1], [14, 0]]
+					"stops": [[12, 1], [13.7, 0]]
 				}
 			}
 		});
