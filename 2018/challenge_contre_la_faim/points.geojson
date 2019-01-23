@@ -65,7 +65,7 @@
       "type": "Feature",
       "properties": {
         "marker-color": "#2905f8",
-        "marker-size": "medium",
+        "marker-size": "large",
         "marker-symbol": "car",
         "name": "Parking voiture<br> Attention capacité limitée",
         "minzoom": 15,
@@ -95,7 +95,7 @@
         "type": "Point",
         "coordinates": [
           -1.5097832679748535,
-          47.229828403618936
+          47.22982840361894
         ]
       }
     }
