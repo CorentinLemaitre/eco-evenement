@@ -49,6 +49,11 @@
 	.mapboxgl-popup-close-button {
 	display: none;
 	}
+
+
+
+
+
     </style>
 
     <div id='map'></div>
@@ -66,6 +71,10 @@ var map = new mapboxgl.Map({
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
+
+
+
+
 var zoomtrigger = 14;
 map.on('load', function (){
     map.loadImage('bus.png', function(error, image) {
@@ -113,16 +122,22 @@ map.on('load', function (){
             },
             "layout": {
                 "icon-image": "logo_event",
-				"icon-size": 0.30 // seems to be 0.5 for 50 percent
+				"icon-size": 0.3 // seems to be 0.5 for 50 percent
             },
 			"paint": {
 				"icon-opacity": {
 					"base": 1,
-					"stops": [[14, 1], [15.3, 0]]
+					"stops": [[14, 1], [16, 0]]
 				}
 			}
+
 		});
 	});
+
+
+
+
+
 	
     map.addLayer({
         'id': '1000m',
