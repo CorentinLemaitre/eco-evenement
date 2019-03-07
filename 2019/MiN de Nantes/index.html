@@ -57,6 +57,26 @@
     </style>
 
     <div id='map'></div>
+<br/>
+<button id='fly'><img src="LOGOTYPE_TRANSFERT.png"> </img></button>
+<style>
+    #fly {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        max-width: 500px;
+		width: 80%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #000;
+        background: #fff;
+		z-index:1;
+    }
+</style>
+
 
     <script>
       /* 
@@ -259,6 +279,40 @@ map.on('load', function (){
         map.getCanvas().style.cursor = '';
     });	
 });
+
+
+	var flybtn = document.getElementById('fly');
+	flybtn.addEventListener('click', flyFunction);
+	flybtn.addEventListener('click', changeFunction);
+	var arrival = [-1.555181, 47.157465];
+	var index = 0
+	var flyzoom = 18;
+	var flypitch = 60;
+	function flyFunction(){
+		map.flyTo({
+			center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+			bearing:0
+			});
+		};
+	function changeFunction(){
+		if (index < 1) {
+		arrival = [-1.55294, 47.15864];
+		flyzoom = 11;
+		flypitch = 0;
+		index = 1;
+		flybtn.innerHTML = "Revenir à la carte globale";
+		}else{
+		arrival = [-1.555181, 47.157465];
+		index = 0
+		flyzoom = 18;
+		flypitch = 60;
+		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+		}
+		};
+
+
 </script>
 </body>
 </html>
