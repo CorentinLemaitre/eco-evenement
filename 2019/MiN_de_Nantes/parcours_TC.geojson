@@ -6,15 +6,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -145,15 +138,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -204,15 +190,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -387,15 +366,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -450,15 +422,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -525,15 +490,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -592,15 +550,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -679,15 +630,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -730,15 +674,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -789,15 +726,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -880,15 +810,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -1063,15 +986,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -1102,15 +1018,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -1197,15 +1106,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#FFCB06\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"4 Foch-Cathédrale → Porte de Vertou\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#FFCB06"
             },
             "geometry": {
                 "type": "LineString",
@@ -2020,15 +1922,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2047,15 +1942,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2106,15 +1994,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2201,15 +2082,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2288,15 +2162,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2395,15 +2262,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2470,15 +2330,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2557,15 +2410,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2616,15 +2462,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2655,15 +2494,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2806,15 +2638,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2893,15 +2718,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -2980,15 +2798,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3071,15 +2882,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3178,15 +2982,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3493,15 +3290,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3584,15 +3374,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3735,15 +3518,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3774,15 +3550,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3861,15 +3630,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -3928,15 +3690,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#006DB1\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"3 Neustrie → Marcel Paul\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#006DB1"
             },
             "geometry": {
                 "type": "LineString",
@@ -7427,15 +7182,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7482,15 +7230,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7537,15 +7278,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7636,15 +7370,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7675,15 +7402,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#FFCB06\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"4 Porte de Vertou → Foch-Cathédrale\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#FFCB06"
             },
             "geometry": {
                 "type": "LineString",
@@ -7702,15 +7422,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7777,15 +7490,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7864,15 +7570,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7903,15 +7602,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -7970,15 +7662,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8045,15 +7730,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8132,15 +7810,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8227,15 +7898,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8370,15 +8034,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8461,15 +8118,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8520,15 +8170,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8579,15 +8222,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8674,15 +8310,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8797,15 +8426,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8872,15 +8494,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -8915,15 +8530,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9054,15 +8662,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9141,15 +8742,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9196,15 +8790,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9239,15 +8826,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9338,15 +8918,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9413,15 +8986,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9504,15 +9070,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9591,15 +9150,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9738,15 +9290,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9853,15 +9398,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -9968,15 +9506,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#EE1C25\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"2 Orvault Grand Val → Gare de Pont-Rousseau\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#EE1C25"
             },
             "geometry": {
                 "type": "LineString",
@@ -12799,15 +12330,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -12862,15 +12386,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -13237,15 +12754,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -13292,15 +12802,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#FFCB06\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"4 Porte de Vertou → Foch-Cathédrale\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#FFCB06"
             },
             "geometry": {
                 "type": "LineString",
@@ -14079,15 +13582,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -14206,15 +13702,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -14905,15 +14394,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -14948,15 +14430,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15027,15 +14502,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15102,15 +14570,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15145,15 +14606,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15220,15 +14674,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15283,15 +14730,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15358,15 +14798,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15669,15 +15102,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15756,15 +15182,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15831,15 +15250,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15894,15 +15306,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -15997,15 +15402,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -16056,15 +15454,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#FFCB06\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"4 Foch-Cathédrale → Porte de Vertou\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#FFCB06"
             },
             "geometry": {
                 "type": "LineString",
@@ -16083,15 +15474,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#00A651\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"1 François Mitterrand → Beaujoire\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#00A651"
             },
             "geometry": {
                 "type": "LineString",
@@ -18554,15 +17938,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "null",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",
@@ -18601,15 +17978,8 @@
         {
             "type": "Feature",
             "properties": {
-                "colour": "\"#71bf44\"",
-                "cost": "null",
-                "creator": "null",
-                "filtered ascend": "null",
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "plain-ascend": "null",
-                "total-energy": "null",
-                "total-time": "null",
-                "track-length": "null"
+                "stroke": "#71bf44"
             },
             "geometry": {
                 "type": "LineString",

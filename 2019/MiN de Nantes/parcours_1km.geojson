@@ -1,7 +1,0 @@
-{
-"type": "FeatureCollection",
-"name": "parcours_1km",
-"features": [
-{ "type": "Feature", "properties": { "creator": "openrouteservice", "name": "Parcours vers l'autre marché", "track-length": "1 km", "filtered ascend": null, "plain-ascend": null, "total-time": null, "total-energy": null, "cost": null }, "geometry": null }
-]
-}
