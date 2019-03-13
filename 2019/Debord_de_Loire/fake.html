@@ -18,8 +18,11 @@ NANTES • SAINT-NAZAIRE!">
       body { margin:0; padding:0; }
       #map { position:absolute; top:0; bottom:0; width:100%; }
     </style>
+
   </head>
   <body>
+
+
 
     <style>
       /* STYLE la zone au-dessus de la carte sa police et son texte */
@@ -51,21 +54,24 @@ NANTES • SAINT-NAZAIRE!">
 	display: none;
 	}
 
+</style>
 
 
 
-
-    </style>
 
     <div id='map'></div>
+
 <br/>
-<button id='vendredi'>Vendredi</button>
+
+<a href="vendredi.html" target=_blank class="button">Vendredi</a>
 <style>
-    #vendredi {
+a.button {
+        text-decoration: none;
         display: inline-block;
         position: relative;
         margin: 5px auto;
-        max-width: 200px;
+        max-width: 150px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         width: 80%;
         padding: 10px;
         border: none;
@@ -75,21 +81,19 @@ NANTES • SAINT-NAZAIRE!">
         color: #F1F1F1;
         background: #1CB5DF;
         z-index:1;
-
-    }
-
-
+}
 </style>
 
 
-<br/>
-<button id='samedi'>Samedi</button>
+<a href="samedi.html" target=_blank class="button">Samedi</a>
 <style>
-    #samedi {
+a.button {
+        text-decoration: none;
         display: inline-block;
         position: relative;
         margin: 5px auto;
-        max-width: 200px;
+        max-width: 150px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         width: 80%;
         padding: 10px;
         border: none;
@@ -99,16 +103,17 @@ NANTES • SAINT-NAZAIRE!">
         color: #F1F1F1;
         background: #1CB5DF;
         z-index:1;
-    }
+}
 </style>
-<br/>
-<button id='samedi_soir'>Samedi Soir</button>
+<a href="samedi_soir.html" target=_blank class="button">Samedi Soir</a>
 <style>
-    #samedi_soir {
+a.button {
+        text-decoration: none;
         display: inline-block;
         position: relative;
         margin: 5px auto;
-        max-width: 200px;
+        max-width: 150px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         width: 80%;
         padding: 10px;
         border: none;
@@ -118,16 +123,17 @@ NANTES • SAINT-NAZAIRE!">
         color: #F1F1F1;
         background: #1CB5DF;
         z-index:1;
-    }
+}
 </style>
-<br/>
-<button id='dimanche'>Dimanche</button>
+<a href="dimanche.html" target=_blank class="button">Dimanche</a>
 <style>
-    #dimanche {
+a.button {
+        text-decoration: none;
         display: inline-block;
         position: relative;
         margin: 5px auto;
-        max-width: 200px;
+        max-width: 150px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
         width: 80%;
         padding: 10px;
         border: none;
@@ -137,8 +143,9 @@ NANTES • SAINT-NAZAIRE!">
         color: #F1F1F1;
         background: #1CB5DF;
         z-index:1;
-    }
+}
 </style>
+
     <script>
       /* 
 TODO :
@@ -148,10 +155,11 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
     center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
-    zoom: 12,
+    zoom: 11,
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
+
 
 
 
@@ -203,7 +211,7 @@ map.on('load', function (){
             },
             "layout": {
                 "icon-image": "logo_event",
-				"icon-size": 0.5 // seems to be 0.5 for 50 percent
+				"icon-size": 0.3 // seems to be 0.5 for 50 percent
             },
 			"paint": {
 				"icon-opacity": {
@@ -304,12 +312,13 @@ map.on('load', function (){
 });
 
 
+
 	var flybtn = document.getElementById('vendredi');
 	flybtn.addEventListener('click', flyFunction);
 	flybtn.addEventListener('click', changeFunction);
-	var arrival = [-1.555181, 47.157465];
+	var arrival = [-1.55294, 47.15864];
 	var index = 0
-	var flyzoom = 16;
+	var flyzoom = 11;
 	var flypitch = 60;
 	function flyFunction(){
 		map.flyTo({
