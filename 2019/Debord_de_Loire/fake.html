@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Inauguration du MiN Nantes Métropole</title>
-	<meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
+    <title>Débord de Loire 2019</title>
+	<meta property="og:title" content="Débord de Loire, l’événement nautique et artistique
+NANTES • SAINT-NAZAIRE!">
 	<meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
 	<meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
 	<meta property="og:type" content="website">
@@ -58,26 +59,86 @@
 
     <div id='map'></div>
 <br/>
-<button id='fly'>Zoom sur le site du MiN de Nantes</button>
+<button id='vendredi'>Vendredi</button>
 <style>
-    #fly {
-        display: block;
+    #vendredi {
+        display: inline-block;
         position: relative;
-        margin: 0px auto;
-        max-width: 500px;
-		width: 80%;
+        margin: 5px auto;
+        max-width: 200px;
+        width: 80%;
         padding: 10px;
         border: none;
         border-radius: 10px;
         font-size: 16px;
         text-align: center;
-        color: #000;
-        background: #fff;
-		z-index:1;
+        color: #F1F1F1;
+        background: #1CB5DF;
+        z-index:1;
+
     }
+
+
 </style>
 
 
+<br/>
+<button id='samedi'>Samedi</button>
+<style>
+    #samedi {
+        display: inline-block;
+        position: relative;
+        margin: 5px auto;
+        max-width: 200px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #F1F1F1;
+        background: #1CB5DF;
+        z-index:1;
+    }
+</style>
+<br/>
+<button id='samedi_soir'>Samedi Soir</button>
+<style>
+    #samedi_soir {
+        display: inline-block;
+        position: relative;
+        margin: 5px auto;
+        max-width: 200px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #F1F1F1;
+        background: #1CB5DF;
+        z-index:1;
+    }
+</style>
+<br/>
+<button id='dimanche'>Dimanche</button>
+<style>
+    #dimanche {
+        display: inline-block;
+        position: relative;
+        margin: 5px auto;
+        max-width: 200px;
+        width: 80%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #F1F1F1;
+        background: #1CB5DF;
+        z-index:1;
+    }
+</style>
     <script>
       /* 
 TODO :
@@ -142,7 +203,7 @@ map.on('load', function (){
             },
             "layout": {
                 "icon-image": "logo_event",
-				"icon-size": 0.3 // seems to be 0.5 for 50 percent
+				"icon-size": 0.5 // seems to be 0.5 for 50 percent
             },
 			"paint": {
 				"icon-opacity": {
@@ -243,7 +304,7 @@ map.on('load', function (){
 });
 
 
-	var flybtn = document.getElementById('fly');
+	var flybtn = document.getElementById('vendredi');
 	flybtn.addEventListener('click', flyFunction);
 	flybtn.addEventListener('click', changeFunction);
 	var arrival = [-1.555181, 47.157465];
@@ -261,19 +322,116 @@ map.on('load', function (){
 	function changeFunction(){
 		if (index < 1) {
 		arrival = [-1.55294, 47.15864];
-		flyzoom = 12;
+		flyzoom = 11;
 		flypitch = 0;
 		index = 1;
-		flybtn.innerHTML = "Revenir à la carte globale";
+		flybtn.innerHTML = "Vendredi";
 		}else{
 		arrival = [-1.553008, 47.158074];
 		index = 0
 		flyzoom = 16;
 		flypitch = 60;
-		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+		flybtn.innerHTML= "Vendredi";
 		}
 		};
 
+
+
+
+    var flybtn = document.getElementById('samedi');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.555181, 47.157465];
+    var index = 0
+    var flyzoom = 16;
+    var flypitch = 60;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing:0
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.55294, 47.15864];
+        flyzoom = 11;
+        flypitch = 0;
+        index = 1;
+        flybtn.innerHTML = "Samedi";
+        }else{
+        arrival = [-1.553008, 47.158074];
+        index = 0
+        flyzoom = 16;
+        flypitch = 60;
+        flybtn.innerHTML= "Samedi";
+        }
+        };
+
+
+            var flybtn = document.getElementById('samedi_soir');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.555181, 47.157465];
+    var index = 0
+    var flyzoom = 16;
+    var flypitch = 60;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing:0
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.55294, 47.15864];
+        flyzoom = 11;
+        flypitch = 0;
+        index = 1;
+        flybtn.innerHTML = "Samedi Soir";
+        }else{
+        arrival = [-1.553008, 47.158074];
+        index = 0
+        flyzoom = 16;
+        flypitch = 60;
+        flybtn.innerHTML= "Samedi Soir";
+        }
+        };
+
+
+            var flybtn = document.getElementById('dimanche');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.555181, 47.157465];
+    var index = 0
+    var flyzoom = 16;
+    var flypitch = 60;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing:0
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.55294, 47.15864];
+        flyzoom = 11;
+        flypitch = 0;
+        index = 1;
+        flybtn.innerHTML = "Dimanche";
+        }else{
+        arrival = [-1.553008, 47.158074];
+        index = 0
+        flyzoom = 16;
+        flypitch = 60;
+        flybtn.innerHTML= "Dimanche";
+        }
+        };
 
 </script>
 </body>
