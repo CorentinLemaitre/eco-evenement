@@ -41,7 +41,7 @@
         margin: 0 0 10px;
       }
 	.mapboxgl-popup {
-        max-width: 300px;
+        max-width: 150px;
         font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 		text-align: center;
 		top: -15px;
@@ -246,7 +246,7 @@ map.on('load', function (){
         'type': 'line',
         'source': {
 			'type': 'geojson',
-            'data': 'parcours_TC.geojson',
+            'data': 'geo/tan.geojson',
         },
         'minzoom' : 7,
         "layout": {
@@ -280,7 +280,7 @@ map.on('load', function (){
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "points.geojson",
+            "data": "geo/points.geojson",
         },
 		'minzoom': 13,
         "layout": {
