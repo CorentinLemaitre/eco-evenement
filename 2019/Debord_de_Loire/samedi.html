@@ -57,6 +57,9 @@
     </style>
 
     <div id='map'></div>
+
+
+
 <br/>
 <button id='fly'>SAMEDI</button>
 <style>
@@ -177,7 +180,41 @@ var map = new mapboxgl.Map({
     pitch: 0//pour avoir une vision avec un angle
 });
 
+// Create a GeoJSON source with an empty lineString.
+var geojson = {
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+"geometry": {
+"type": "LineString",
+"coordinates": [
+[0, 0]
+]
+}
 
+
+}]
+};
+map.on('load', function() {
+ 
+// add the line which will be modified in the animation
+map.addLayer({
+'id': 'samedi',
+'type': 'line',
+'source': {
+'type': 'geojson',
+'data': 'samedi.geojson'
+},
+'layout': {
+'line-cap': 'round',
+'line-join': 'round'
+},
+'paint': {
+'line-color': '#ed6498',
+'line-width': 5,
+'line-opacity': .8
+}
+});
 
 
 var zoomtrigger = 14;
@@ -242,11 +279,11 @@ map.on('load', function (){
 
 
     map.addLayer({
-        'id': 'TC',
+        'id': 'voiture',
         'type': 'line',
         'source': {
             'type': 'geojson',
-            'data': 'parcours_TC.geojson',
+            'data': 'voiture.geojson',
         },
         'minzoom' : 7,
         "layout": {
@@ -276,11 +313,11 @@ map.on('load', function (){
           // 'overlays' anywhere in the layer stack.
     }, "road-label-large");
     map.addLayer({
-        "id": "points",
+        "id": "voiture",
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "points.geojson",
+            "data": "voiture.geojson",
         },
         'minzoom': 13,
         "layout": {
