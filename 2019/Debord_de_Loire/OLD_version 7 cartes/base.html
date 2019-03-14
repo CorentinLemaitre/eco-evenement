@@ -58,111 +58,7 @@
 
     <div id='map'></div>
 
-    <br/>
-<button id='fly'>SAMEDI</button>
-<style>
-    #fly {
-        display: block;
-        position: relative;
-        margin: 0px auto;
-        max-width: 500px;
-        width: 80%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        text-align: center;
-        color: #000;
-        background: #fff;
-        z-index:1;
-    }
-</style>
-
-<br/>
-
-<a href="vendredi.html" target=_blank class="button">Vendredi</a>
-<style>
-a.button {
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-        margin: 5px auto;
-        max-width: 150px;
-        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        width: 80%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        text-align: center;
-        color: #F1F1F1;
-        background: #1CB5DF;
-        z-index:1;
-}
-</style>
-
-
-<a href="samedi.html" target=_blank class="button">Samedi</a>
-<style>
-a.button {
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-        margin: 5px auto;
-        max-width: 150px;
-        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        width: 80%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        text-align: center;
-        color: #F1F1F1;
-        background: #1CB5DF;
-        z-index:1;
-}
-</style>
-<a href="samedi_soir.html" target=_blank class="button">Samedi Soir</a>
-<style>
-a.button {
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-        margin: 5px auto;
-        max-width: 150px;
-        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        width: 80%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        text-align: center;
-        color: #F1F1F1;
-        background: #1CB5DF;
-        z-index:1;
-}
-</style>
-<a href="dimanche.html" target=_blank class="button">Dimanche</a>
-<style>
-a.button {
-        text-decoration: none;
-        display: inline-block;
-        position: relative;
-        margin: 5px auto;
-        max-width: 150px;
-        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-        width: 80%;
-        padding: 10px;
-        border: none;
-        border-radius: 10px;
-        font-size: 16px;
-        text-align: center;
-        color: #F1F1F1;
-        background: #1CB5DF;
-        z-index:1;
-}
-</style>
-
+   
 
     <script>
       /* 
@@ -171,17 +67,14 @@ TODO :
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
+    style: 'mapbox://styles/mapbox/streets-v10',
     center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
     zoom: 12,
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
 
-
-
-
-var zoomtrigger = 14;
+var zoomtrigger = 14; 
 map.on('load', function (){
     map.loadImage('img/bus.png', function(error, image) {
         if (error) throw error;
@@ -249,23 +142,23 @@ map.on('load', function (){
 			'type': 'geojson',
             'data': 'geo/tan.geojson',
         },
-        'minzoom' : 8,
+        'minzoom' : 8, // ne peut pas varier à partir d'une propriété car la couche n'est pas encore lue
         "layout": {
             "line-join": "round",
             "line-cap": "round"
         },
         "paint": { // Au niveau de zoom 14 ca correspond à 6 pixel et 3 au zoom 12
             "line-color": ['get', 'stroke'],// peut aussi récupérer des couleurs nommées comme 'red' et aussi sur geojson.io
-            "line-width": [
-			'interpolate',
-			['linear'],
-			['get', 'stroke-width'],// la mesure à prendre en compte soit zoom-level soit ['get', 'stroke-width'] OU ['stroke-width']
-			0.1, 1,
-			1, 20,
-			5, 1,
-			6, 10,
-			20, 1
-			],
+            "line-width": {
+				"property": 'stroke-width',// identifie la clé qui est analysé dans le fichier pour chercher la valeure.
+				"base": 1.5,
+				"stops": [
+					[{zoom: 10, value: 1}, 0.25],
+					[{zoom: 10, value: 10}, 2.5],
+					[{zoom: 18, value: 1}, 5],
+					[{zoom: 18, value: 10}, 50]
+					]
+			},
 			"line-opacity": {
 				"base": 1,
 				"stops": [[9, 0], [11, 1]]
@@ -287,7 +180,7 @@ map.on('load', function (){
         },
 		'minzoom': 13,
         "layout": {
-            "icon-image": "{marker-symbol}",
+            "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
 			"icon-allow-overlap": true,
 			"icon-size": {
 					"base": 1,
