@@ -9,6 +9,7 @@
                 "name": "Loire à vélo",
                 "description": "Itinéraire Sud de la Loire à vélo",
                 "stroke": "#40b207",
+				"stroke-width": 6,
                 "TODO": "Lien vers trace GPS"
             },
             "geometry": {
@@ -8867,8 +8868,6 @@
                 "marker-symbol": "circle",
                 "name": "Plage",
                 "desc": "Evenement tout au long de l'après-midi",
-                "max-zoom": "17",
-                "min-zoom": "13",
                 "TODO": "Vérifier les informations + changer le logo"
             },
             "geometry": {
@@ -8882,43 +8881,9 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Parade Nautique",
-                "description": "Trajet de la flotille de Saint-Nazaire à Nantes"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -1.56756800000,
-                    47.20776740000
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "marker-symbol": "circle",
                 "name": "Saint-Nazaire",
-                "desc": "Village de départ de la parade fluviale",
-                "max-zoom": "15",
-                "min-zoom": "7",
-                "TODO": "Vérifier les informations"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -1.57422070026,
-                    47.20499228764
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "marker-symbol": "circle",
-                "name": "Saint-Nazaire",
-                "desc": "Village de départ de la parade fluviale",
-                "max-zoom": "15",
-                "min-zoom": "7",
+                "desc": "Village de départ de la parade fluviale, Départ prévu à 16h",
                 "TODO": "Vérifier les informations"
             },
             "geometry": {
@@ -8935,6 +8900,7 @@
                 "description": "Trajet de Couéron à Nantes entre 19h et 22h",
                 "name": "Vélo parade",
                 "stroke": "#f4e324",
+				"stroke-width": 8,
                 "TODO": "Vérifier tracé et info + lien vers la trace GPS"
             },
             "geometry": {
@@ -11913,6 +11879,7 @@
                 "name": "Parade Nautique",
                 "description": "Trajet de la flotille de Saint-Nazaire à Nantes",
                 "stroke": "#354dff",
+				"stroke-width": 10,
                 "TODO": "Vérifier le parcours"
             },
             "geometry": {
@@ -12391,6 +12358,7 @@
                 "name": "Loire à vélo Nord",
                 "description": "Itinéraire Nord de la Loire à vélo",
                 "stroke": "#40b207",
+				"stroke-width": 6,
                 "TODO": "Lien vers trace GPS"
             },
             "geometry": {
@@ -16705,8 +16673,6 @@
                 "marker-symbol": "circle",
                 "name": "Village associatif",
                 "desc": "Village associatif Eco-mobilité",
-                "max-zoom": "17",
-                "min-zoom": "13",
                 "TODO": "Vérifier les informations + changer le logo"
             },
             "geometry": {
