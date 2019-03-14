@@ -136,11 +136,11 @@ map.on('load', function (){
 
 
     map.addLayer({
-        'id': 'TC',
+        'id': 'itineraires',
         'type': 'line',
         'source': {
 			'type': 'geojson',
-            'data': 'geo/tan.geojson',
+            'data': 'event.geojson',
         },
         'minzoom' : 8, // ne peut pas varier à partir d'une propriété car la couche n'est pas encore lue
         "layout": {
@@ -164,6 +164,8 @@ map.on('load', function (){
 				"stops": [[9, 0], [11, 1]]
 			}
         }
+
+
           // This is the important part of this example: the addLayer
           // method takes 2 arguments: the layer as an object, and a string
           // representing another layer's name. if the other layer
@@ -176,7 +178,7 @@ map.on('load', function (){
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "geo/event.geojson",
+            "data": "event.geojson",
         },
 		'minzoom': 13,
         "layout": {
@@ -194,6 +196,10 @@ map.on('load', function (){
 			}
 		}
     });
+
+  
+
+
 		
     map.on('click', 'points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
@@ -254,6 +260,10 @@ map.on('load', function (){
 		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
 		}
 		};
+
+
+
+
 
 
 </script>
