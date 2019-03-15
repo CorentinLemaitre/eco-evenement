@@ -88,29 +88,22 @@ function getLocation() {
 function showPosition(position) {
 
 // !!! Définir toutes les variables ci-dessous en fonction de l'événement !!!
-var dest_x = -1.530957; // la longitude de la destination (Est ou Ouest)
-var dest_y =  47.182687; // la latitude de la destination (Nord ou Sud)
-var d = new Date('2017-07-30 8:00');//spécifier dans la parenthèse la date et heure de l'événement sur ce format : '2018-07-30 8:00' (il faut qu'il y est les guillemets dans la parenthèse.
-var titre_event = "NO+NAME"; // TODO : le modifier en remplacant les espace par des +.
+var dest_x = -1.568126678466797; // la longitude de la destination (Est ou Ouest)
+var dest_y =  47.194757615837034; // la latitude de la destination (Nord ou Sud)
+var d = new Date('2019-05-17T10:00:00');//spécifier dans la parenthèse la date et heure de l'événement sur ce format : 
+var titre_event = "Transfert,%20Rezé"; // Modifier le titre et remplacer les espace par des %20 TODO TEST AVEC ESPACE
 
-// Calcul lié aux dates 
+// Calcul lié aux dates : vérifie si la date de l'événement est dépassée.
 var mode="arrival"
 var today = new Date();
 if (d < today){
-mode='departure';
-var jour_event = today.getDate();
-var an_event = today.getFullYear();
-var heure_event = today.getHours();
-var mois_event = today.getMonth()+1;
-var min_event = today.getMinutes()+2;
+var arrival_time = "";
+var departure_time = today.toJSON();
 }else {
-mode='arrival';
-var jour_event = d.getDate();
-var an_event = d.getFullYear();
-var heure_event = d.getHours();
-var mois_event = d.getMonth()+1;
-var min_event = today.getMinutes();
+var arrival_time = d.toJSON();
+var departure_time = "";
 }
+//document.getElementById("debug").innerHTML = arrival_time;
 
 // Calcul de l'url de Géovélo pour les itinéraires vélos
 var url_bike_1 = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints=";
@@ -118,25 +111,23 @@ var url_bike_2 = "|" + dest_y + "," + dest_x;
 
 // Calcul de l'url d'itinéraire pour un déplacement en transport public. Le service est destineo.
 // TODO Faire une activation du temps de départ live ou pas.
-var date_event = jour_event + "%2F" + mois_event + "%2F" + an_event; // transfromation de format 30/09/2017 vers 30%2F09%2F2017
-var url_PT_1 = "http://www.destineo.fr/fr/journey/result/?search[from][autocomplete]=Votre+Position&search[from][autocomplete-hidden]=";
-var url_PT_2 = "&search[to][autocomplete]="+ titre_event + "&search[to][autocomplete-hidden]="+ dest_x + "%3B" + dest_y+ 
-"&search[datetime_represents]="+ mode + "&search[datetime][time][hour]="+ heure_event +"&search[datetime][time][minute]="+min_event+"&search[datetime][date]=" + date_event + 
-"&search[modes][]=physical_mode%3ALocalTrain&search[modes][]=physical_mode%3ATramway&search[modes][]=physical_mode%3ABus&search[modes][]=physical_mode%3ACoach&search[count]=&search[min_nb_journeys]=2&search[max_nb_journeys]=3";
+// var date_event = an_event + "-" + mois_event + "-" + jour_event + "T" + heure_event + ":" + min_event + ":00+02:00"; // transfromation de format 30/09/2017 vers 2017-09-30
+var url_PT_1 = "https://www.destineo.fr/fr/itineraire?fi=ADDRESS|";
+var url_PT_2 = "&fv=Ma%20position&ti=ADDRESS|"+ dest_y + "," + dest_x+ "&tv=" + titre_event
++ "&at=" + arrival_time + "&dt=" + departure_time
++ "&ws=2&bs=2&a=false&ad=false&df=true&v=[]&c=FASTEST&m=flight-train-metro-tram-bus-coach-ferry-bike-car-ridesharing-bikesharing";
 
 /*
 var geovelostart="47.213991,-1.555275";
 var destineostart="-1.555275%3B47.213991";
-
-
 */
 
 // Ajout de la localisation dans les URL d'itinéraire
     var latlon = position.coords.latitude + "," + position.coords.longitude;
-    var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
     var bike_url = url_bike_1+latlon+url_bike_2;
-    var PT_url = url_PT_1+destineo_loc+url_PT_2;
+    var PT_url = url_PT_1+latlon+url_PT_2;
     document.getElementById("itinerary").innerHTML = "<div> <a href="+bike_url+" target=_blank>	<button class='big'> <img src=bicycle-share-15.svg width=80% title='Venir à vélo'></img> <br>Venir à vélo </button> </a> <a href="+PT_url+" target=_blank> <button class='big'> <img src=bus-15.svg width=80% title='Venir en bus'></img> <br>Venir en bus</button> </a> </div>"
+
 }
 function showError(error) {
     switch(error.code) {
