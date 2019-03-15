@@ -91,10 +91,7 @@ map.on('load', function (){
     map.loadImage('img/car_park.png', function(error, image) {
         if (error) throw error;
         map.addImage('car', image);
-	});
-    map.loadImage('img/tram.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('rail-light', image);
+
 	});
     map.loadImage('img/logo_event_small.png', function(error, image) {
         if (error) throw error;
@@ -140,7 +137,7 @@ map.on('load', function (){
         'type': 'line',
         'source': {
 			'type': 'geojson',
-            'data': 'event.geojson',
+            'data': 'geo/event.geojson',
         },
         'minzoom' : 8, // ne peut pas varier à partir d'une propriété car la couche n'est pas encore lue
         "layout": {
@@ -173,31 +170,32 @@ map.on('load', function (){
           // right before that layer in the stack, making it possible to put
           // 'overlays' anywhere in the layer stack.
     }, "road-label-large");
-	map.addLayer({
+	
+
+
+map.addLayer({
         "id": "points",
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "event.geojson",
+            "data": "geo/event.geojson",
         },
-		'minzoom': 13,
+        "minzoom": 14,
         "layout": {
-            "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
-			"icon-allow-overlap": true,
-			"icon-size": {
-					"base": 1,
-					"stops": [[14, 0.26], [17, 1]]
-				}
-		},
-		"paint": {
-			"icon-opacity": {
-				"base": 1,
-				"stops": [[13, 0], [14.5, 1]]
-			}
-		}
+            "icon-image": "{marker-symbol}",
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 1,
+                    "stops": [[15, 0.26], [18, 1]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[14, 0], [16, 1]]
+            }
+        }
     });
-
-  
 
 
 		
