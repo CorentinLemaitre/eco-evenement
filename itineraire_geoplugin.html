@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102281058-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102281058-2');
+</script>
+<script src="https://use.fontawesome.com/acc5504c96.js"></script>
+
+    <script>
+/**
+* Fonction de suivi des clics sur des liens sortants dans Analytics
+* Cette fonction utilise une chaîne d'URL valide comme argument et se sert de cette chaîne d'URL
+* comme libellé d'événement. Configurer la méthode de transport sur 'beacon' permet d'envoyer le clic
+* au moyen de 'navigator.sendBeacon' dans les navigateurs compatibles.
+*/
+var trackOutboundLink = function(url) {
+   ga('send', 'event', 'outbound', 'click', url, {
+     'transport': 'beacon',
+     'hitCallback': function(){document.location = url;}
+   });
+}
+</script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
+<title>Venir à la fete du quai Léon Sécher</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('smiley.gif');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+
+
+
+</head>
+
+<body>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-black">
+   <div class="w3-display-top w3-center w3-padding-large w3-xlarge">
+    Venir autrement à l'événement
+  </div>
+ 
+  <div class="w3-center w3-paddiing-128" id="itinerary">
+     <button onclick="getLocation()" class="w3-xxlarge w3-padding-large"> <i class="fa fa-location-arrow"> </i> ACTIVER <br> LOCALISATION</button>
+  </div>
+  
+<div class="w3-display-bottomleft w3-padding-large">
+    <a href="http://www.example.com" onclick="trackOutboundLink('http://www.example.com'); return false;">Check out example.com</a></br><id="demo"> 
+   </div>
+  
+  
+
+</div>
+</div>
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var destineo_loc = position.coords.longitude + "%3B" + position.coords.latitude;
+    var geovelo_url = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints="+latlon+"%7C47.182687,-1.530957";
+    var destineo_url = "http://www.destineo.fr/fr/journey/result/?search[from][autocomplete]=Votre+Position&search[from][autocomplete-hidden]="+destineo_loc+"3&search[to][autocomplete]=Fete+du+quai+leon+secher&search[to][autocomplete-hidden]=-1.5311976000000413%3B47.1825993&search[datetime_represents]=arrival&search[datetime][time][hour]=15&search[datetime][time][minute]=00&search[datetime][date]=30%2F09%2F2017&search[modes][]=physical_mode%3ALocalTrain&search[modes][]=physical_mode%3ATramway&search[modes][]=physical_mode%3ABus&search[modes][]=physical_mode%3ACoach&search[count]=&search[min_nb_journeys]=2&search[max_nb_journeys]=3";
+    document.getElementById("itinerary").innerHTML = "<div class='w3-half'><a href="+geovelo_url+" onclick="trackOutboundLink('geovelo'+latlon+); return false;" target=_blank class='w3-animate-top w3-center w3-xlarge'><button style='width:80%'><i class='fa fa-bicycle fa-5x' title='Venir à vélo'></i><br> Venir à vélo </button></a></div> <div class='w3-half'><a href="+destineo_url+" target=_blank class='w3-xlarge w3-animate-top w3-center'><button style='width:80%'><i class='fa fa-bus fa-fw fa-5x' title='Venir en bus'></i><br>Venir en bus</button></a></div>";
+    // add a function to put on image as a link
+}
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
+
+
+<script>
+  (function() {
+var latitude = geoplugin_latitude()
+var longitude = geoplugin_longitude()
+var city = geoplugin_city() 
+var areaCode = geoplugin_areaCode()
+var region = geoplugin_region()
+var countryName = geoplugin_countryName()
+var continent = geoplugin_continentCode()
+
+dataLayer.push({
+            'event' : 'geo',
+            'latitude' : latitude,
+            'longitude' : longitude,
+            'city' : city,
+            'areaCode' : areaCode,
+            'region' : region,
+            'countryName' : countryName,
+            'continent' : continent,
+  
+   });
+})();
+</script>
+  
+
+</script>
+</body>
+</html>

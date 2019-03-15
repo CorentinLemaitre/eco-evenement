@@ -198,6 +198,30 @@ map.addLayer({
     });
 
 
+map.addLayer({
+        "id": "surfaces",
+        "type": "feature",
+        "source": {
+            "type": "geojson",
+            "data": "geo/surfaces.geojson",
+        },
+        "minzoom": 14,
+        "layout": {
+            "icon-image": "{marker-symbol}",
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 1,
+                    "stops": [[15, 0.26], [18, 1]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[14, 0], [16, 1]]
+            }
+        }
+    });
+
 		
     map.on('click', 'points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
