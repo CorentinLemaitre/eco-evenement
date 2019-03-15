@@ -8,7 +8,7 @@
             "properties": {
                 "name": "Loire à vélo",
                 "description": "Itinéraire Sud de la Loire à vélo",
-                "stroke": "#40b207",
+                "stroke": "green",
 				"stroke-width": 6,
                 "TODO": "Lien vers trace GPS"
             },
@@ -8899,7 +8899,7 @@
             "properties": {
                 "description": "Trajet de Couéron à Nantes entre 19h et 22h",
                 "name": "Vélo parade",
-                "stroke": "#f4e324",
+                "stroke": "limegreen",
 				"stroke-width": 8,
                 "TODO": "Vérifier tracé et info + lien vers la trace GPS"
             },
@@ -11878,7 +11878,7 @@
             "properties": {
                 "name": "Parade Nautique",
                 "description": "Trajet de la flotille de Saint-Nazaire à Nantes",
-                "stroke": "#354dff",
+                "stroke": "blue",
 				"stroke-width": 10,
                 "TODO": "Vérifier le parcours"
             },
@@ -12357,7 +12357,7 @@
             "properties": {
                 "name": "Loire à vélo Nord",
                 "description": "Itinéraire Nord de la Loire à vélo",
-                "stroke": "#40b207",
+                "stroke": "green",
 				"stroke-width": 6,
                 "TODO": "Lien vers trace GPS"
             },
