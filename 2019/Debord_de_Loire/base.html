@@ -97,7 +97,7 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('circle', image);
 	});
-    map.loadImage('img/logo_event.png', function(error, image) {
+    map.loadImage('', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
         map.addLayer({
@@ -198,7 +198,7 @@ map.addLayer({
     });
 
 map.addLayer({
-'id': 'surfaces',
+'id': 'polygones',
 'type': 'fill',
 'source': {
             'type': 'geojson',
@@ -207,11 +207,15 @@ map.addLayer({
         "minzoom": 14,
 'layout': {},
 'paint': {
-'fill-color': '#088',
-'fill-opacity': 0.8
+'fill-color': ['get', 'fill'],
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'fill-stroke'],
+
      }
         });
     });
+
+
 
 
     map.on('click', 'points', function (e) {
