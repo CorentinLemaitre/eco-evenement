@@ -90,17 +90,21 @@ function showPosition(position) {
 // !!! Définir toutes les variables ci-dessous en fonction de l'événement !!!
 var dest_x = -1.568126678466797; // la longitude de la destination (Est ou Ouest)
 var dest_y =  47.194757615837034; // la latitude de la destination (Nord ou Sud)
-var d = new Date('2019-05-17T10:00:00');//spécifier dans la parenthèse la date et heure de l'événement sur ce format : 
+var d = new Date('2019-05-17T08:00:00');//spécifier dans la parenthèse la date et heure de l'événement sur ce format : 
 var titre_event = "Transfert,%20Rezé"; // Modifier le titre et remplacer les espace par des %20 TODO TEST AVEC ESPACE
 
 // Calcul lié aux dates : vérifie si la date de l'événement est dépassée.
 var mode="arrival"
 var today = new Date();
 if (d < today){
+today.setMinutes(today.getMinutes() - today.getTimezoneOffset())
 var arrival_time = "";
-var departure_time = today.toJSON();
+var TZ = "+0" + today.getTimezoneOffset()/60*(-1);
+var departure_time = today.toJSON().substr(0, 16)+ TZ;
 }else {
-var arrival_time = d.toJSON();
+d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+var TZ = "+0" + d.getTimezoneOffset()/60 *(-1);
+var arrival_time = d.toJSON().substr(0, 16) + TZ;
 var departure_time = "";
 }
 //document.getElementById("debug").innerHTML = arrival_time;
