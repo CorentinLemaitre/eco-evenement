@@ -275,6 +275,26 @@ map.on('load', function (){
 		};
 
 
+        map.addLayer({
+'id': 'polygones',
+'type': 'MultiPolygon',
+'source': {
+            'type': 'geojson',
+            'data': 'surfaces.geojson',
+  },
+"minzoom": 14,
+'layout': {},
+'paint': {
+'fill-color': ['get', 'fill'],
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'fill-stroke'],
+     
+ }
+        });
+
+
+
+
 </script>
 </body>
 </html>
