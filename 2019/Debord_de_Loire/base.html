@@ -51,13 +51,34 @@
 	}
 
 
-
-
-
-    </style>
+.overlay {
+position: absolute;
+top: 10px;
+left: 10px;
+}
+ 
+.overlay button {
+font:600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+background-color: #3386c0;
+color: #fff;
+display: inline-block;
+margin: 0;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+}
+ 
+.overlay button:hover {
+background-color:#4ea0da;
+}
+</style>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js' charset='utf-8'></script>
 
     <div id='map'></div>
-
+<div class='overlay'>
+<button id='replay'>Replay</button>
+</div>
    
 
     <script>
@@ -204,23 +225,23 @@ map.addLayer({
             'type': 'geojson',
             'data': 'geo/surfaces.geojson',
   },
-        "minzoom": 14,
+"minzoom": 14,
 'layout': {},
 'paint': {
 'fill-color': ['get', 'fill'],
 'fill-opacity': ['get', 'fill-opacity'],
 'fill-outline-color' : ['get', 'fill-stroke'],
-
-     }
+     
+ }
         });
     });
-
-
 
 
     map.on('click', 'points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.name;
+
+
 
         // Ensure that if the map is zoomed out such that multiple
         // copies of the feature are visible, the popup appears
@@ -230,10 +251,12 @@ map.addLayer({
         }
 
         new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(description)
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
             .addTo(map);
+
     });
+
 
     // Change the cursor to a pointer when the mouse is over the points layer.
     map.on('mouseenter', 'points', function () {
@@ -243,43 +266,304 @@ map.addLayer({
     // Change it back to a pointer when it leaves.
     map.on('mouseleave', 'points', function () {
         map.getCanvas().style.cursor = '';
-    });	
+    }); 
+
+map.on('click', 'points', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
 
 
 
-	var flybtn = document.getElementById('fly');
-	flybtn.addEventListener('click', flyFunction);
-	flybtn.addEventListener('click', changeFunction);
-	var arrival = [-1.555181, 47.157465];
-	var index = 0
-	var flyzoom = 16;
-	var flypitch = 60;
-	function flyFunction(){
-		map.flyTo({
-			center: arrival, //first
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+
+    });
+
+
+    map.on('click', 'polygones', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+
+    });
+
+
+    // Change the cursor to a pointer when the mouse is over the points layer.
+    map.on('mouseenter', 'polygones', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'polygones', function () {
+        map.getCanvas().style.cursor = '';
+    }); 
+
+map.on('click', 'polygones', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+
+
+
+    });
+
+    map.on('click', 'itineraires', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+
+    });
+
+
+    // Change the cursor to a pointer when the mouse is over the points layer.
+    map.on('mouseenter', 'itineraires', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'itineraires', function () {
+        map.getCanvas().style.cursor = '';
+    }); 
+
+map.on('click', 'itineraires', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+
+    });
+
+// Coueron
+var origin = [-1.7285304, 47.2092232];
+ 
+// Chantiers Navals
+var destination = [-1.5678022, 47.20869027];
+
+
+
+// A simple line from origin to destination.
+var route = {
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+'source': {
+            'type': 'geojson',
+            'data': 'geo/event.geojson',
+"geometry": {
+"type": "LineString",
+"coordinates": [
+origin,
+destination
+]
+}
+}]
+};
+ 
+// A single point that animates along the route.
+// Coordinates are initially set to origin.
+var point = {
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+"properties": {},
+"geometry": {
+"type": "Point",
+"coordinates": origin
+}
+}]
+};
+ 
+// Calculate the distance in kilometers between route start/end point.
+var lineDistance = turf.lineDistance(route.features[0], 'kilometers');
+ 
+var arc = [];
+ 
+// Number of steps to use in the arc and animation, more steps means
+// a smoother arc and animation, but too many steps will result in a
+// low frame rate
+var steps = 500;
+ 
+// Draw an arc between the `origin` & `destination` of the two points
+for (var i = 0; i < lineDistance; i += lineDistance / steps) {
+var segment = turf.along(route.features[0], i, 'kilometers');
+arc.push(segment.geometry.coordinates);
+}
+ 
+// Update the route with calculated arc coordinates
+route.features[0].geometry.coordinates = arc;
+ 
+// Used to increment the value of the point measurement against the route.
+var counter = 0;
+ 
+map.on('load', function () {
+// Add a source and layer displaying a point which will be animated in a circle.
+map.addSource('route', {
+"type": "geojson",
+"data": route
+});
+ 
+map.addSource('point', {
+"type": "geojson",
+"data": point
+});
+ 
+map.addLayer({
+"id": "route",
+"source": "route",
+"type": "line",
+"paint": {
+"line-width": 2,
+"line-color": "#007cbf"
+}
+});
+ 
+map.addLayer({
+"id": "point",
+"source": "point",
+"type": "symbol",
+"layout": {
+"icon-image": 'circle',
+"icon-rotate": ["get", "bearing"],
+"icon-rotation-alignment": "map",
+"icon-allow-overlap": true,
+"icon-ignore-placement": true
+}
+});
+ 
+function animate() {
+// Update point geometry to a new position based on counter denoting
+// the index to access the arc.
+point.features[0].geometry.coordinates = route.features[0].geometry.coordinates[counter];
+ 
+// Calculate the bearing to ensure the icon is rotated to match the route arc
+// The bearing is calculate between the current point and the next point, except
+// at the end of the arc use the previous point and the current point
+point.features[0].properties.bearing = turf.bearing(
+turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter - 1 : counter]),
+turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter : counter + 1])
+);
+ 
+// Update the source with this new data.
+map.getSource('point').setData(point);
+ 
+// Request the next frame of animation so long the end has not been reached.
+if (counter < steps) {
+requestAnimationFrame(animate);
+}
+ 
+counter = counter + 1;
+}
+ 
+document.getElementById('replay').addEventListener('click', function() {
+// Set the coordinates of the original point back to origin
+point.features[0].geometry.coordinates = origin;
+ 
+// Update the source layer
+map.getSource('point').setData(point);
+ 
+// Reset the counter
+counter = 0;
+ 
+// Restart the animation.
+animate(counter);
+});
+ 
+// Start the animation.
+animate(counter);
+});
+
+
+
+var flybtn = document.getElementById('fly');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.555181, 47.157465];
+    var index = 0
+    var flyzoom = 16;
+    var flypitch = 60;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
             zoom:flyzoom,
             pitch: flypitch,
-			bearing:0
-			});
-		};
-	function changeFunction(){
-		if (index < 1) {
-		arrival = [-1.55294, 47.15864];
-		flyzoom = 11;
-		flypitch = 0;
-		index = 1;
-		flybtn.innerHTML = "Revenir à la carte globale";
-		}else{
-		arrival = [-1.553008, 47.158074];
-		index = 0
-		flyzoom = 16;
-		flypitch = 60;
-		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
-		}
-		};
-
-
-
+            bearing:0
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.55294, 47.15864];
+        flyzoom = 11;
+        flypitch = 0;
+        index = 1;
+        flybtn.innerHTML = "Revenir à la carte globale";
+        }else{
+        arrival = [-1.553008, 47.158074];
+        index = 0
+        flyzoom = 16;
+        flypitch = 60;
+        flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+        }
+        };
 
 
 
