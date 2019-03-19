@@ -114,6 +114,11 @@ map.on('load', function (){
         map.addImage('car', image);
 
 	});
+	    map.loadImage('img/bicycle-share-50.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicycle-share-50', image);
+
+	});
     map.loadImage('img/logo_event_small.png', function(error, image) {
         if (error) throw error;
         map.addImage('circle', image);
@@ -3437,7 +3442,7 @@ map.addLayer({
 "source": "point",
 "type": "symbol",
 "layout": {
-"icon-image": 'bicycle-share-15',
+"icon-image": 'bicycle-share-50',
 "icon-size": 2,
 "icon-rotation-alignment": "map",
 "icon-allow-overlap": true,
