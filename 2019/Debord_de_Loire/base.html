@@ -238,161 +238,130 @@ map.addLayer({
     });
 
 
-    map.on('click', 'points', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
+
+///Afficher popups on Hover 
 
 
+//Popup Polygones
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'polygones', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.desc;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.desc)
             .addTo(map);
-
-    });
-
-
-    // Change the cursor to a pointer when the mouse is over the points layer.
-    map.on('mouseenter', 'points', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'points', function () {
-        map.getCanvas().style.cursor = '';
-    }); 
-
-map.on('click', 'points', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
+});
+ 
+map.on('mouseleave', 'polygones', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
 
 
+//Popup Points 
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
 
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'points', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+
+            
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.description)
             .addTo(map);
-
-    });
-
-
-    map.on('click', 'polygones', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
-
+});
+ 
+map.on('mouseleave', 'points', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
 
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
 
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
+
+//Popup Itineraires
+
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'itineraires', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+
+            
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.description)
             .addTo(map);
-
-    });
-
-
-    // Change the cursor to a pointer when the mouse is over the points layer.
-    map.on('mouseenter', 'polygones', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'polygones', function () {
-        map.getCanvas().style.cursor = '';
-    }); 
-
-map.on('click', 'polygones', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
+});
+ 
+map.on('mouseleave', 'itineraires', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
 
 
 
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
-            .addTo(map);
 
 
 
-    });
-
-    map.on('click', 'itineraires', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
-
-
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
-            .addTo(map);
-
-    });
-
-
-    // Change the cursor to a pointer when the mouse is over the points layer.
-    map.on('mouseenter', 'itineraires', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'itineraires', function () {
-        map.getCanvas().style.cursor = '';
-    }); 
-
-map.on('click', 'itineraires', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
-
-
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(e.lngLat)
-            .setHTML(e.features[0].properties.name)
-            .addTo(map);
-
-    });
+///Animation de routes
 
 // Coueron
 var origin = [-1.72859100000, 47.20927100000];
@@ -3373,6 +3342,8 @@ destination
 }
 }]
 };
+
+
  
 // A single point that animates along the route.
 // Coordinates are initially set to origin.
@@ -3438,6 +3409,7 @@ map.addLayer({
 "type": "symbol",
 "layout": {
 "icon-image": 'bicycle-share-15',
+
 "icon-size": 2,
 "icon-rotation-alignment": "map",
 "icon-allow-overlap": true,
@@ -3451,7 +3423,7 @@ function animate() {
 point.features[0].geometry.coordinates = route.features[0].geometry.coordinates[counter];
  
 // Calculate the bearing to ensure the icon is rotated to match the route arc
-// The bearing is calculate between the current point and the next point, except
+// The bearing is calculated between the current point and the next point, except
 // at the end of the arc use the previous point and the current point
 point.features[0].properties.bearing = turf.bearing(
 turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter - 1 : counter]),
