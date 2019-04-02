@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inauguration du MiN Nantes Métropole</title>
+	<meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
+	<meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
+	<meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
+	<meta property="og:site_name" content="Reeve">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+  </head>
+  <body>
+
+    <style>
+      /* STYLE la zone au-dessus de la carte sa police et son texte */
+      .map-overlay-container {
+        position: absolute;
+        top: 0px;
+        center: 0;
+        padding: 20px;
+        z-index: 0;
+      }
+      .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow:0 1px 2px rgba(0,0,0,0.20);
+      }
+    .map-overlay h2,
+    .map-overlay p {
+        margin: 0 0 10px;
+      }
+	.mapboxgl-popup {
+        max-width: 300px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		text-align: center;
+		top: -15px;
+    }
+	.mapboxgl-popup-close-button {
+	display: none;
+	}
+
+
+
+
+
+    </style>
+
+    <div id='map'></div>
+<br/>
+<button id='fly'>Zoom sur le site du MiN de Nantes</button>
+<style>
+    #fly {
+        display: block;
+        position: relative;
+        margin: 0px auto;
+        max-width: 500px;
+		width: 80%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        text-align: center;
+        color: #000;
+        background: #fff;
+		z-index:1;
+    }
+</style>
+
+
+    <script>
+      /* 
+TODO :
+*/
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
+    center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
+    zoom: 12,
+    hash: 0,
+    pitch: 0//pour avoir une vision avec un angle
+});
+
+
+
+
+var zoomtrigger = 14;
+map.on('load', function (){
+    map.loadImage('img/bus.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bus', image);
+	});
+    map.loadImage('img/bicycle_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicycle', image);
+	});
+    map.loadImage('img/bicloo.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicloo', image);
+	});
+    map.loadImage('img/car_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('car', image);
+	});
+    map.loadImage('img/tram.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('rail-light', image);
+	});
+    map.loadImage('img/logo_event_small.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('circle', image);
+	});
+    map.loadImage('img/logo_event.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('logo_event', image);
+        map.addLayer({
+            "id": "logo",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-1.555181, 47.157465]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "logo_event",
+				"icon-size": 0.3 // seems to be 0.5 for 50 percent
+            },
+			"paint": {
+				"icon-opacity": {
+					"base": 1,
+					"stops": [[13, 1], [15, 0]]
+				}
+			}
+
+		});
+	});
+
+
+
+    map.addLayer({
+        'id': 'TC',
+        'type': 'line',
+        'source': {
+			'type': 'geojson',
+            'data': 'parcours_TC.geojson',
+        },
+        'minzoom' : 7,
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+			"line-color": ['get', 'stroke'],// peut aussi récupérer des couleurs nommées comme 'red' et aussi sur geojson.io
+            "line-width": {
+				"property": 'stroke-width',// identifie la clé qui est analysé dans le fichier pour chercher la valeure.
+				"base": 1.5,
+				"stops": [
+					[{zoom: 10, value: 1}, 0.25],
+					[{zoom: 10, value: 10}, 2.5],
+					[{zoom: 18, value: 1}, 5],
+					[{zoom: 18, value: 10}, 50]
+					]
+			},
+			"line-opacity": {
+				"base": 1,
+				"stops": [[9, 0], [11, 1]]
+			}
+        }
+          // This is the important part of this example: the addLayer
+          // method takes 2 arguments: the layer as an object, and a string
+          // representing another layer's name. if the other layer
+          // exists in the stylesheet already, the new layer will be positioned
+          // right before that layer in the stack, making it possible to put
+          // 'overlays' anywhere in the layer stack.
+    }, "road-label-large");
+	map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "points.geojson",
+        },
+		'minzoom': 13,
+        "layout": {
+            "icon-image": "{marker-symbol}",
+			"icon-allow-overlap": true,
+			"icon-size": {
+					"base": 1,
+					"stops": [[14, 0.26], [17, 1]]
+				}
+		},
+		"paint": {
+			"icon-opacity": {
+				"base": 1,
+				"stops": [[13, 0], [14.5, 1]]
+			}
+		}
+    });
+		
+    map.on('click', 'points', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+
+    // Change the cursor to a pointer when the mouse is over the points layer.
+    map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+    });	
+});
+
+
+	var flybtn = document.getElementById('fly');
+	flybtn.addEventListener('click', flyFunction);
+	flybtn.addEventListener('click', changeFunction);
+	var arrival = [-1.551238, 47.156543];
+	var index = 0
+	var flyzoom = 15.5;
+	var flypitch = 60;
+	var flybearing = 55;
+	function flyFunction(){
+		map.flyTo({
+			center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+			bearing: flybearing
+			});
+		};
+	function changeFunction(){
+		if (index < 1) {
+		arrival = [-1.551238, 47.156543];
+		flyzoom = 12;
+		flypitch = 0;
+		flybearing = 0;
+		index = 1;
+		flybtn.innerHTML = "Revenir à la carte globale";
+		}else{
+		arrival = [-1.551238, 47.156543];
+		index = 0
+		flyzoom = 15.5;
+		flypitch = 60;
+		flybearing = 55;
+		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+		}
+		};
+
+
+        map.addLayer({
+'id': 'polygones',
+'type': 'MultiPolygon',
+'source': {
+            'type': 'geojson',
+            'data': 'surfaces.geojson',
+  },
+"minzoom": 14,
+'layout': {},
+'paint': {
+'fill-color': ['get', 'fill'],
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'fill-stroke'],
+     
+ }
+        });
+
+
+
+
+</script>
+</body>
+</html>
