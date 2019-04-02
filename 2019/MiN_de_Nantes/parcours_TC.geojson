@@ -1,4 +1,3 @@
-
 {
     "type": "FeatureCollection",
     "generator": "JOSM",
@@ -7,7 +6,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -139,7 +139,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -191,7 +192,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -367,7 +369,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -423,7 +426,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -491,7 +495,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -551,7 +556,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -631,7 +637,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -675,7 +682,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -727,7 +735,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -811,7 +820,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -987,7 +997,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -1019,7 +1030,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -1107,7 +1119,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"4 Foch-Cathédrale → Porte de Vertou\"",
-                "stroke": "#FFCB06"
+                "stroke": "#FFCB06", 
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -1923,7 +1936,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -1943,7 +1957,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -1995,7 +2010,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2083,7 +2099,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2163,7 +2180,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2263,7 +2281,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2331,7 +2350,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2411,7 +2431,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2463,7 +2484,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2495,7 +2517,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2639,7 +2662,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2719,7 +2743,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2799,7 +2824,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2883,7 +2909,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -2983,7 +3010,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -3291,7 +3319,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -3375,7 +3404,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -3519,7 +3549,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -3551,7 +3582,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -3631,7 +3663,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -3691,7 +3724,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"3 Neustrie → Marcel Paul\"",
-                "stroke": "#006DB1"
+                "stroke": "#006DB1", 
+                "stroke-width": 6
             },
             "geometry": {
                 "type": "LineString",
@@ -7183,7 +7217,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7231,7 +7266,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7279,7 +7315,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7371,7 +7408,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7403,7 +7441,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"4 Porte de Vertou → Foch-Cathédrale\"",
-                "stroke": "#FFCB06"
+                "stroke": "#FFCB06", 
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7423,7 +7462,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7491,7 +7531,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7571,7 +7612,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7603,7 +7645,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7663,7 +7706,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7731,7 +7775,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7811,7 +7856,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -7899,7 +7945,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8035,7 +8082,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8119,7 +8167,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8171,7 +8220,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8223,7 +8273,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8311,7 +8362,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8427,7 +8479,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8495,7 +8548,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8531,7 +8585,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8663,7 +8718,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8743,7 +8799,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8791,7 +8848,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8827,7 +8885,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8919,7 +8978,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -8987,7 +9047,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -9071,7 +9132,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -9151,7 +9213,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -9291,7 +9354,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -9399,7 +9463,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -9507,7 +9572,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"2 Orvault Grand Val → Gare de Pont-Rousseau\"",
-                "stroke": "#EE1C25"
+                "stroke": "#EE1C25", 
+                "stroke-width": 6
             },
             "geometry": {
                 "type": "LineString",
@@ -12331,7 +12397,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -12387,7 +12454,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -12755,7 +12823,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -12803,7 +12872,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"4 Porte de Vertou → Foch-Cathédrale\"",
-                "stroke": "#FFCB06"
+                "stroke": "#FFCB06", 
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -13583,7 +13653,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -13703,7 +13774,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14395,7 +14467,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14431,7 +14504,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14503,7 +14577,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14571,7 +14646,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14607,7 +14683,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14675,7 +14752,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14731,7 +14809,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -14799,7 +14878,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15103,7 +15183,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15183,7 +15264,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15251,7 +15333,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15307,7 +15390,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15403,7 +15487,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15454,8 +15539,9 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "\"4 Foch-Cathédrale → Porte de Vertou\"",
-                "stroke": "#FFCB06"
+                "name": "4 Foch-Cathédrale → Porte de Vertou",
+                "stroke": "#FFCB06", 
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -15474,8 +15560,9 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "\"1 François Mitterrand → Beaujoire\"",
-                "stroke": "#00A651"
+                "name": "1 François Mitterrand → Beaujoire",
+                "stroke": "#00A651", 
+                "stroke-width": 6
             },
             "geometry": {
                 "type": "LineString",
@@ -17939,7 +18026,8 @@
             "type": "Feature",
             "properties": {
                 "name": "null",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -17979,7 +18067,8 @@
             "type": "Feature",
             "properties": {
                 "name": "\"C4 Gréneraie → Les Sorinières\"",
-                "stroke": "#71bf44"
+                "stroke": "#71bf44",
+                "stroke-width": 4
             },
             "geometry": {
                 "type": "LineString",
@@ -18042,6 +18131,252 @@
                     ]
                 ]
             }
-        }
+        },
+		    {
+      "type": "Feature",
+      "properties": {
+	            "name": "Navette Tan",
+                "stroke": "cornflowerblue",
+                "stroke-width": 2.5
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-1.549624, 47.158569, 27.25],
+          [-1.549373, 47.158507, 27.25],
+          [-1.547095, 47.157940, 28.75],
+          [-1.546602, 47.157814, 30.25],
+          [-1.546405, 47.157738, 30.5],
+          [-1.546371, 47.157725, 30.75],
+          [-1.546284, 47.157677, 30.75],
+          [-1.546146, 47.157601, 31.0],
+          [-1.546086, 47.157535, 31.25],
+          [-1.546049, 47.157462, 31.25],
+          [-1.546038, 47.157409, 31.0],
+          [-1.546112, 47.156778, 28.5],
+          [-1.546110, 47.156196, 27.0],
+          [-1.546071, 47.155708, 26.0],
+          [-1.545991, 47.154994, 25.75],
+          [-1.545995, 47.154929, 25.5],
+          [-1.546072, 47.154832, 25.5],
+          [-1.546114, 47.154790, 25.25],
+          [-1.546131, 47.154736, 25.25],
+          [-1.546124, 47.154715, 25.25],
+          [-1.546115, 47.154684, 25.25],
+          [-1.546073, 47.154641, 25.25],
+          [-1.546010, 47.154611, 25.25],
+          [-1.545950, 47.154510, 25.25],
+          [-1.545927, 47.154342, 25.0],
+          [-1.545908, 47.154207, 24.75],
+          [-1.545911, 47.154143, 24.75],
+          [-1.545952, 47.154069, 24.75],
+          [-1.545987, 47.154049, 24.5],
+          [-1.546031, 47.154002, 24.5],
+          [-1.546045, 47.153952, 24.5],
+          [-1.546029, 47.153899, 24.5],
+          [-1.545985, 47.153855, 24.5],
+          [-1.545919, 47.153826, 24.5],
+          [-1.545869, 47.153740, 24.25],
+          [-1.545864, 47.153700, 24.25],
+          [-1.545716, 47.152554, 24.25],
+          [-1.545712, 47.152525, 24.25],
+          [-1.545772, 47.152389, 24.25],
+          [-1.545812, 47.152353, 24.0],
+          [-1.545831, 47.152309, 24.0],
+          [-1.545830, 47.152264, 24.25],
+          [-1.545793, 47.152208, 24.25],
+          [-1.545726, 47.152169, 24.5],
+          [-1.545640, 47.152153, 24.5],
+          [-1.545552, 47.152164, 24.75],
+          [-1.545496, 47.152187, 24.75],
+          [-1.545455, 47.152222, 24.75],
+          [-1.545432, 47.152263, 24.75],
+          [-1.545292, 47.152317, 25.0],
+          [-1.545168, 47.152362, 25.25],
+          [-1.544730, 47.152398, 26.25],
+          [-1.544346, 47.152414, 27.25],
+          [-1.544055, 47.152401, 27.75],
+          [-1.543890, 47.152393, 28.0],
+          [-1.543446, 47.152337, 28.25],
+          [-1.542328, 47.152181, 26.75],
+          [-1.540817, 47.151950, 26.25],
+          [-1.539944, 47.151819, 25.5],
+          [-1.539528, 47.151757, 25.75],
+          [-1.539230, 47.151723, 26.0],
+          [-1.538890, 47.151680, 26.75],
+          [-1.538563, 47.151703, 28.0],
+          [-1.538342, 47.151746, 28.75],
+          [-1.537308, 47.151945, 29.75],
+          [-1.536429, 47.152127, 30.5],
+          [-1.536245, 47.152148, 30.75],
+          [-1.536160, 47.152157, 31.0],
+          [-1.535719, 47.152167, 31.5],
+          [-1.535484, 47.152158, 31.0],
+          [-1.535280, 47.152163, 30.5],
+          [-1.535229, 47.152150, 30.25],
+          [-1.535174, 47.152146, 30.25],
+          [-1.535120, 47.152154, 30.25],
+          [-1.535089, 47.152164, 30.0],
+          [-1.535060, 47.152177, 30.0],
+          [-1.535036, 47.152194, 30.0],
+          [-1.535009, 47.152223, 30.0],
+          [-1.534994, 47.152255, 30.0],
+          [-1.534992, 47.152289, 30.0],
+          [-1.535007, 47.152330, 30.0],
+          [-1.535040, 47.152365, 30.0],
+          [-1.535088, 47.152392, 30.25],
+          [-1.535130, 47.152404, 30.25],
+          [-1.535176, 47.152409, 30.5],
+          [-1.535238, 47.152491, 30.75],
+          [-1.535265, 47.152524, 30.75],
+          [-1.535272, 47.152534, 30.75],
+          [-1.535407, 47.152703, 30.5],
+          [-1.535801, 47.153229, 29.25],
+          [-1.536071, 47.153590, 28.75],
+          [-1.536357, 47.153974, 28.5],
+          [-1.537058, 47.154915, 28.0],
+          [-1.537204, 47.155130, 27.5],
+          [-1.537231, 47.155169, 27.5],
+          [-1.537236, 47.155288, 27.25],
+          [-1.537205, 47.155328, 27.0],
+          [-1.537197, 47.155374, 27.0],
+          [-1.537208, 47.155412, 27.0],
+          [-1.537235, 47.155447, 26.75],
+          [-1.537275, 47.155474, 26.75],
+          [-1.537321, 47.155492, 26.75],
+          [-1.537373, 47.155500, 26.75],
+          [-1.537426, 47.155499, 26.75],
+          [-1.537476, 47.155488, 26.75],
+          [-1.537534, 47.155570, 26.5],
+          [-1.537792, 47.155931, 26.0],
+          [-1.537804, 47.155949, 26.0],
+          [-1.537978, 47.156153, 26.0],
+          [-1.538074, 47.156243, 26.25],
+          [-1.538375, 47.156445, 26.75],
+          [-1.538542, 47.156552, 27.0],
+          [-1.538592, 47.156585, 27.0],
+          [-1.538616, 47.156613, 27.25],
+          [-1.538583, 47.156656, 27.25],
+          [-1.538575, 47.156691, 27.25],
+          [-1.538580, 47.156725, 27.25],
+          [-1.538592, 47.156747, 27.25],
+          [-1.538598, 47.156758, 27.25],
+          [-1.538621, 47.156780, 27.5],
+          [-1.538680, 47.156812, 27.5],
+          [-1.538718, 47.156822, 27.5],
+          [-1.538747, 47.156826, 27.5],
+          [-1.538788, 47.156826, 27.5],
+          [-1.538825, 47.156821, 27.5],
+          [-1.538851, 47.156815, 27.75],
+          [-1.538878, 47.156804, 27.75],
+          [-1.538907, 47.156788, 27.75],
+          [-1.538934, 47.156765, 27.75],
+          [-1.538948, 47.156746, 27.75],
+          [-1.539088, 47.156765, 27.75],
+          [-1.539174, 47.156776, 28.0],
+          [-1.539434, 47.156824, 28.0],
+          [-1.540123, 47.157006, 28.75],
+          [-1.540402, 47.157108, 29.0],
+          [-1.540743, 47.157231, 29.5],
+          [-1.540882, 47.157283, 29.75],
+          [-1.541005, 47.157330, 30.0],
+          [-1.541132, 47.157375, 30.25],
+          [-1.541198, 47.157406, 30.5],
+          [-1.541294, 47.157449, 30.75],
+          [-1.541313, 47.157488, 30.75],
+          [-1.541341, 47.157525, 31.0],
+          [-1.541377, 47.157558, 31.25],
+          [-1.541420, 47.157588, 31.25],
+          [-1.541470, 47.157612, 31.5],
+          [-1.541524, 47.157630, 31.5],
+          [-1.541601, 47.157646, 31.75],
+          [-1.541681, 47.157650, 31.75],
+          [-1.541760, 47.157643, 31.5],
+          [-1.541836, 47.157626, 31.5],
+          [-1.541895, 47.157603, 31.25],
+          [-1.541946, 47.157573, 31.0],
+          [-1.541990, 47.157538, 30.75],
+          [-1.542024, 47.157499, 30.5],
+          [-1.542047, 47.157456, 30.25],
+          [-1.542203, 47.157407, 30.0],
+          [-1.542268, 47.157387, 29.75],
+          [-1.542437, 47.157350, 29.5],
+          [-1.542733, 47.157325, 29.0],
+          [-1.543297, 47.157301, 28.75],
+          [-1.543463, 47.157308, 28.75],
+          [-1.544120, 47.157337, 28.75],
+          [-1.544776, 47.157416, 30.25],
+          [-1.545365, 47.157518, 31.25],
+          [-1.545491, 47.157564, 31.5],
+          [-1.545611, 47.157609, 31.5],
+          [-1.545722, 47.157650, 31.5],
+          [-1.545739, 47.157700, 31.5],
+          [-1.545783, 47.157745, 31.5],
+          [-1.545819, 47.157765, 31.5],
+          [-1.545920, 47.157788, 31.5],
+          [-1.546019, 47.157778, 31.25],
+          [-1.546056, 47.157760, 31.25],
+          [-1.546226, 47.157772, 31.0],
+          [-1.546355, 47.157780, 30.75],
+          [-1.546602, 47.157814, 30.25],
+          [-1.547095, 47.157940, 28.75],
+          [-1.549373, 47.158507, 27.25],
+          [-1.549729, 47.158596, 27.25],
+          [-1.549977, 47.158676, 27.25],
+          [-1.550129, 47.158732, 27.25],
+          [-1.550251, 47.158776, 27.5],
+          [-1.550251, 47.158797, 27.5],
+          [-1.550278, 47.158845, 27.75],
+          [-1.550325, 47.158881, 27.75],
+          [-1.550387, 47.158903, 27.75],
+          [-1.550469, 47.158909, 27.75],
+          [-1.550537, 47.158896, 27.75],
+          [-1.550566, 47.158881, 27.75],
+          [-1.550728, 47.158886, 27.5],
+          [-1.550854, 47.158892, 27.5],
+          [-1.550978, 47.158899, 27.75],
+          [-1.551183, 47.158956, 28.25],
+          [-1.552472, 47.159279, 29.25],
+          [-1.552607, 47.159337, 29.5],
+          [-1.552723, 47.159428, 29.75],
+          [-1.552746, 47.159464, 29.75],
+          [-1.552787, 47.159493, 29.75],
+          [-1.552839, 47.159511, 30.0],
+          [-1.552898, 47.159515, 30.0],
+          [-1.552925, 47.159510, 30.0],
+          [-1.552954, 47.159506, 30.0],
+          [-1.553003, 47.159484, 30.0],
+          [-1.553024, 47.159466, 30.0],
+          [-1.553036, 47.159455, 30.0],
+          [-1.553054, 47.159421, 30.0],
+          [-1.553052, 47.159388, 30.0],
+          [-1.553040, 47.159350, 29.75],
+          [-1.553010, 47.159320, 29.75],
+          [-1.552967, 47.159298, 29.75],
+          [-1.552965, 47.159297, 29.5],
+          [-1.552916, 47.159286, 29.5],
+          [-1.552863, 47.159286, 29.5],
+          [-1.552811, 47.159296, 29.5],
+          [-1.552795, 47.159305, 29.5],
+          [-1.552655, 47.159300, 29.25],
+          [-1.552472, 47.159279, 29.25],
+          [-1.551183, 47.158956, 28.25],
+          [-1.550978, 47.158899, 27.75],
+          [-1.550918, 47.158880, 27.75],
+          [-1.550745, 47.158796, 27.5],
+          [-1.550640, 47.158732, 27.25],
+          [-1.550604, 47.158686, 27.25],
+          [-1.550551, 47.158655, 27.25],
+          [-1.550437, 47.158637, 27.0],
+          [-1.550369, 47.158648, 27.0],
+          [-1.550328, 47.158666, 27.25],
+          [-1.550167, 47.158654, 27.0],
+          [-1.550010, 47.158642, 27.0],
+          [-1.549958, 47.158637, 27.0],
+          [-1.549729, 47.158596, 27.25],
+          [-1.549645, 47.158574, 27.25]
+        ]
+      }
+    }
     ]
 }
