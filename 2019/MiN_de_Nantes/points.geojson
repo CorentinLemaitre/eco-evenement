@@ -55,40 +55,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#2905f8",
-        "marker-size": "medium",
-        "name": "Parking voiture",
-        "desc": "Navette pour aller au MiN",
-        "marker-symbol": "car"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.5468406677246094,
-          47.15208472361824
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#2905f8",
-        "marker-size": "medium",
-        "name": "Parking voiture <br>Covoiturage et PMR<br><a href='https://www.ouestgo.fr/evenements'>Cliquez pour covoiturer</a>",
-        "desc": "Capacité limitée",
-        "marker-symbol": "car"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.550022451648916,
-          47.15793111102883
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "marker-color": "#3dd6f5",
         "marker-size": "medium",
         "name": "La Tournelle<br>Bus Aléhop 12",
@@ -100,23 +66,6 @@
         "coordinates": [
           -1.55879248909274,
           47.15384933324001
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#2905f8",
-        "marker-size": "medium",
-        "name": "Parking voiture<br>",
-        "desc": "Capacité limitée",
-        "marker-symbol": "car"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.548970187460335,
-          47.15805615976509
         ]
       }
     },
@@ -186,13 +135,100 @@
         "marker-symbol": "bus",
         "name": "Arrêt de la Navette",
         "marker-size": "medium",
-        "type": "bus-15"
+        "type": "bus-15",
+        "fill-opacity": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -1.5458106994628904,
           47.15247324458519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#2905f8",
+        "fill-opacity": 0.5,
+        "type": "",
+        "marker-symbol": "car",
+        "desc": "Capacité limitée",
+        "name": "Parking voiture <br>Covoiturage et PMR<br><a href='https://www.ouestgo.fr/evenements'>Cliquez pour covoiturer</a>",
+        "marker-size": "medium",
+        "marker-color": "#2905f8"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5501827001571653,
+              47.15852322570893
+            ],
+            [
+              -1.5508103370666504,
+              47.15721005348515
+            ],
+            [
+              -1.5493029356002808,
+              47.156976597247755
+            ],
+            [
+              -1.549469232559204,
+              47.158391909946964
+            ],
+            [
+              -1.5501827001571653,
+              47.15852322570893
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#2905f8",
+        "marker-size": "medium",
+        "name": "Parking voiture<br>",
+        "desc": "Capacité limitée",
+        "marker-symbol": "car",
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#2905f8",
+        "fill-opacity": 0.5,
+        "type": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.549297571182251,
+              47.15833354728193
+            ],
+            [
+              -1.5492010116577148,
+              47.15758941768332
+            ],
+            [
+              -1.547870635986328,
+              47.15732313348141
+            ],
+            [
+              -1.5475863218307495,
+              47.15793230222438
+            ],
+            [
+              -1.549297571182251,
+              47.15833354728193
+            ]
+          ]
         ]
       }
     }
