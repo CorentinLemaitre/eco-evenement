@@ -10,7 +10,10 @@
                 "indoor": "room",
                 "name": "Salle des chauffeurs",
                 "ref": "2",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "purple",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -47,7 +50,10 @@
                 "indoor": "room",
                 "name": "Sautejeau",
                 "ref": "23",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -84,7 +90,9 @@
                 "amenity": "restaurant",
                 "indoor": "room",
                 "name": "La Palette",
-                "ref": "19"
+                "ref": "19",
+                "fill": "yellow",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -121,7 +129,10 @@
                 "indoor": "room",
                 "name": "Min Fruits",
                 "ref": "18",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -163,7 +174,9 @@
                 "indoor": "room",
                 "name": "Mariamin",
                 "ref": "3",
-                "shop": "bakery"
+                "shop": "bakery",
+                "fill": "yellow",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -212,7 +225,10 @@
                 "indoor": "room",
                 "name": "Charpentier Primeurs",
                 "ref": "5",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -249,7 +265,10 @@
                 "indoor": "room",
                 "name": "GM Distribution",
                 "ref": "24",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -294,7 +313,10 @@
                 "indoor": "room",
                 "name": "Marais Min",
                 "ref": "16",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -331,7 +353,10 @@
                 "indoor": "room",
                 "name": "Local libre",
                 "ref": "14",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -365,9 +390,12 @@
             "type": "Feature",
             "properties": {
                 "indoor": "area",
-                "level": "0",
+                "level": 0",
                 "name": "Carreau des producteurs",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.4,
+                "fill": "white",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -421,7 +449,10 @@
                 "name": "Kerbio / Coteaux Nantais",
                 "organic": "yes",
                 "ref": "10",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -458,7 +489,10 @@
                 "indoor": "room",
                 "name": "Local libre",
                 "ref": "11",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -495,7 +529,10 @@
                 "indoor": "room",
                 "name": "Guilbaud / Vitamines & Co",
                 "ref": "6",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -533,7 +570,9 @@
                 "indoor": "room",
                 "name": "Label Réserve",
                 "ref": "25",
-                "website": "http://www.label-reserve.com/"
+                "website": "http://www.label-reserve.com/",
+                "fill": "yellow",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -570,7 +609,10 @@
                 "indoor": "room",
                 "name": "Bouyer Guindon",
                 "ref": "17",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -605,7 +647,10 @@
             "properties": {
                 "description": "Plateforme réfrigérée groupage dégroupage",
                 "indoor": "area",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.4,
+                "fill": "purple",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -642,7 +687,10 @@
                 "indoor": "room",
                 "name": "Nantes Frais (Ame Hasle)",
                 "ref": "4",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -685,7 +733,10 @@
             "properties": {
                 "description": "Plateforme réfrigérée groupage dégroupage",
                 "indoor": "area",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.4,
+                "fill": "purple",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -722,7 +773,10 @@
                 "indoor": "room",
                 "name": "Atlantic Primeurs",
                 "ref": "20",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -760,7 +814,10 @@
                 "name": "Clos du Bio",
                 "organic": "yes",
                 "ref": "12",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -796,7 +853,9 @@
                 "area": "yes",
                 "indoor": "area",
                 "shop": "greengrocer",
-                "amenity": "parking"
+                "fill-opacity": 0.2,
+                "fill": "grey",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1005,7 +1064,10 @@
                 "indoor": "room",
                 "name": "Accueil / PC Sécurité",
                 "ref": "1",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "purple",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1042,7 +1104,10 @@
                 "indoor": "room",
                 "name": "Min Pom",
                 "ref": "21",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1079,7 +1144,10 @@
                 "indoor": "room",
                 "name": "SB Fruits & Légumes",
                 "ref": "22",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1117,7 +1185,10 @@
                 "name": "Pronatura",
                 "organic": "yes",
                 "ref": "13",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1155,7 +1226,10 @@
                 "name": "Provinces Bio",
                 "organic": "yes",
                 "ref": "9",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1192,7 +1266,10 @@
                 "indoor": "room",
                 "name": "Boulet",
                 "ref": "7",
-                "shop": "greengrocer"
+                "shop": "greengrocer",
+                "fill-opacity": 0.6,
+                "fill": "green",
+                "stroke": "black"
             },
             "geometry": {
                 "type": "Polygon",
