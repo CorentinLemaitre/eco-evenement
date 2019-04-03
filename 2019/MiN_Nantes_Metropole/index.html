@@ -58,7 +58,7 @@
 
     <div id='map'></div>
 <br/>
-<button id='fly'>Zoom sur le site du MiN de Nantes</button>
+<button id='fly'></button>
 <style>
     #fly {
         display: block;
@@ -124,34 +124,42 @@ map.on('load', function (){
     map.loadImage('img/logo_event.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
-        map.addLayer({
-            "id": "logo",
-            "type": "symbol",
-            "source": {
-                "type": "geojson",
-                "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [-1.555181, 47.157465]
+       
+
+map.addLayer({
+"id": "symbols",
+"type": "symbol",
+"source": {
+"type": "geojson",
+"data": {
+"type": "FeatureCollection",
+"features": [
+{
+"type": "Feature",
+"properties": {},
+"geometry": {
+"type": "Point",
+     "coordinates": [-1.555181, 47.157465]
                         }
                     }]
                 }
             },
             "layout": {
                 "icon-image": "logo_event",
-				"icon-size": 0.3 // seems to be 0.5 for 50 percent
+                "icon-size": 0.3 // seems to be 0.5 for 50 percent
             },
-			"paint": {
-				"icon-opacity": {
-					"base": 1,
-					"stops": [[13, 1], [15, 0]]
-				}
-			}
-		});
-	});
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                    "stops": [[13, 1], [15, 0]]
+                }
+            }
+        });
+    });
+
+
+
+
 
 
 
@@ -194,31 +202,31 @@ map.on('load', function (){
 
 
 
-	map.addLayer({
+
+
+    map.addLayer({
         "id": "points",
         "type": "symbol",
         "source": {
             "type": "geojson",
             "data": "points.geojson",
         },
-		'minzoom': 13,
+        'minzoom': 13,
         "layout": {
             "icon-image": "{marker-symbol}",
-			"icon-allow-overlap": true,
-			"icon-size": {
-					"base": 1,
-					"stops": [[14, 0.26], [17, 1]]
-				}
-		},
-		"paint": {
-			"icon-opacity": {
-				"base": 1,
-				"stops": [[13, 0], [14.5, 1]]
-			}
-		}
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 1,
+                    "stops": [[14, 0.26], [17, 1]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[13, 0], [14.5, 1]]
+            }
+        }
     });
-
-
 
 
 
@@ -239,6 +247,12 @@ map.addLayer({
      
  }
         });
+
+
+
+
+
+
 
 
 
@@ -274,11 +288,11 @@ popup.setLngLat(e.lngLat)
             .setHTML(e.features[0].properties.name)
             .addTo(map);
 });
- 
-map.on('mouseleave', 'polygones', function() {
-map.getCanvas().style.cursor = '';
-popup.remove();
-});
+
+
+
+
+
 
 
 
@@ -308,13 +322,19 @@ coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 
 
             
- 
 // Populate the popup and set its coordinates
 // based on the feature found.
 popup.setLngLat(e.lngLat)
             .setHTML(e.features[0].properties.name)
             .addTo(map);
 });
+
+map.on('mouseleave', 'points', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+
 
 
 
@@ -359,50 +379,37 @@ popup.remove();
 
 
 
-map.on('load', function() {
-map.addLayer({
-'id': 'room-extrusion',
-'type': 'fill-extrusion',
-'source': {
-// GeoJSON Data source used in vector tiles, documented at
-// https://gist.github.com/ryanbaumann/a7d970386ce59d11c16278b90dde094d
-'type': 'geojson',
-'data': 'indoor.geojson'
-},
-'paint': {
-// See the Mapbox Style Specification for details on data expressions.
-// https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions
- 
-// Get the fill-extrusion-color from the source 'color' property.
-'fill-extrusion-color': ['get', 'color'],
- 
-// Get fill-extrusion-height from the source 'height' property.
-'fill-extrusion-height': ['get', 'height'],
- 
-// Get fill-extrusion-base from the source 'base_height' property.
-'fill-extrusion-base': ['get', 'base_height'],
- 
-// Make extrusions slightly opaque for see through indoor walls.
-'fill-extrusion-opacity': 0.5
-}
+})
+
+
+
+    
+
+
+
+
+// Change the cursor to a pointer when  it enters a feature in the 'symbols' layer.
+map.on('mouseenter', 'symbols', function () {
+map.getCanvas().style.cursor = 'pointer';
 });
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'symbols', function () {
+map.getCanvas().style.cursor = '';
 });
 
 
 
 
-
-
-
-
-    var flybtn = document.getElementById('fly');
-    flybtn.addEventListener('click', flyFunction);
-    flybtn.addEventListener('click', changeFunction);
+document.getElementById('symbols');
+addEventListener('click', flyFunction);
+addEventListener('click', changeFunction);
     var arrival = [-1.551238, 47.156543];
     var index = 0
     var flyzoom = 15.5;
     var flypitch = 60;
     var flybearing = 55;
+
     function flyFunction(){
         map.flyTo({
             center: arrival, //first
@@ -428,7 +435,10 @@ map.addLayer({
         flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
         }
         };
-})
+
+
+
+
 </script>
 </body>
 </html>
