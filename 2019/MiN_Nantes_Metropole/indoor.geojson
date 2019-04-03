@@ -390,7 +390,7 @@
             "type": "Feature",
             "properties": {
                 "indoor": "area",
-                "level": 0",
+                "level": 0,
                 "name": "Carreau des producteurs",
                 "shop": "greengrocer",
                 "fill-opacity": 0.4,

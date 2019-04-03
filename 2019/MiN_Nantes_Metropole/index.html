@@ -88,7 +88,7 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
     center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
     zoom: 12,
-    hash: 0,
+    hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
 
@@ -156,8 +156,6 @@ map.addLayer({
             }
         });
     });
-
-
 
 
 
@@ -250,6 +248,25 @@ map.addLayer({
 
 
 
+map.addLayer({
+'id': 'indoor',
+'type': 'fill',
+'name': ['get','name'],
+'source': {
+            'type': 'geojson',
+            'data': 'indoor.geojson',
+  },
+"minzoom": 15.5,
+'layout': {},
+'paint': {
+
+'fill-color': ['get', 'fill'],
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'stroke'],
+'fill-opacity' : ['get', 'fill-opacity'],
+     
+ }
+        });
 
 
 
@@ -382,7 +399,35 @@ popup.remove();
 
 })
 
+//Popup Indoor
 
+
+map.on('click', 'indoor', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'indoor', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'indoor', function () {
+map.getCanvas().style.cursor = '';
+});
 
     
 
@@ -410,7 +455,36 @@ map.flyTo({
 
  
 
-})
+
+map.addLayer({
+'id': 'room-extrusion',
+'type': 'fill-extrusion',
+'source': {
+// GeoJSON Data source used in vector tiles, documented at
+// https://gist.github.com/ryanbaumann/a7d970386ce59d11c16278b90dde094d
+'type': 'geojson',
+'data': 'indoor.geojson'
+},
+'paint': {
+// See the Mapbox Style Specification for details on data expressions.
+// https://docs.mapbox.com/mapbox-gl-js/style-spec/#expressions
+ 
+// Get the fill-extrusion-color from the source 'color' property.
+'fill-extrusion-color': ['get', 'color'],
+ 
+// Get fill-extrusion-height from the source 'height' property.
+'fill-extrusion-height': ['get', 'height'],
+ 
+// Get fill-extrusion-base from the source 'base_height' property.
+'fill-extrusion-base': ['get', 'base_height'],
+ 
+// Make extrusions slightly opaque for see through indoor walls.
+'fill-extrusion-opacity': 0.5
+}
+});
+});
+
+
 
 </script>
 </body>
