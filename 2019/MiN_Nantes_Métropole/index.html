@@ -150,7 +150,6 @@ map.on('load', function (){
 					"stops": [[13, 1], [15, 0]]
 				}
 			}
-
 		});
 	});
 
@@ -192,6 +191,9 @@ map.on('load', function (){
           // right before that layer in the stack, making it possible to put
           // 'overlays' anywhere in the layer stack.
     }, "road-label-large");
+
+
+
 	map.addLayer({
         "id": "points",
         "type": "symbol",
@@ -215,77 +217,17 @@ map.on('load', function (){
 			}
 		}
     });
-		
-    map.on('click', 'points', function (e) {
-        var coordinates = e.features[0].geometry.coordinates.slice();
-        var description = e.features[0].properties.name;
-
-        // Ensure that if the map is zoomed out such that multiple
-        // copies of the feature are visible, the popup appears
-        // over the copy being pointed to.
-        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-        }
-
-        new mapboxgl.Popup()
-            .setLngLat(coordinates)
-            .setHTML(description)
-            .addTo(map);
-    });
-
-    // Change the cursor to a pointer when the mouse is over the points layer.
-    map.on('mouseenter', 'points', function () {
-        map.getCanvas().style.cursor = 'pointer';
-    });
-
-    // Change it back to a pointer when it leaves.
-    map.on('mouseleave', 'points', function () {
-        map.getCanvas().style.cursor = '';
-    });	
-});
 
 
-	var flybtn = document.getElementById('fly');
-	flybtn.addEventListener('click', flyFunction);
-	flybtn.addEventListener('click', changeFunction);
-	var arrival = [-1.551238, 47.156543];
-	var index = 0
-	var flyzoom = 15.5;
-	var flypitch = 60;
-	var flybearing = 55;
-	function flyFunction(){
-		map.flyTo({
-			center: arrival, //first
-            zoom:flyzoom,
-            pitch: flypitch,
-			bearing: flybearing
-			});
-		};
-	function changeFunction(){
-		if (index < 1) {
-		arrival = [-1.551238, 47.156543];
-		flyzoom = 12;
-		flypitch = 0;
-		flybearing = 0;
-		index = 1;
-		flybtn.innerHTML = "Revenir à la carte globale";
-		}else{
-		arrival = [-1.551238, 47.156543];
-		index = 0
-		flyzoom = 15.5;
-		flypitch = 60;
-		flybearing = 55;
-		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
-		}
-		};
 
 
-        map.addLayer({
+
+map.addLayer({
 'id': 'polygones',
-'type': 'MultiPolygon',
+'type': 'Feature',
 'source': {
             'type': 'geojson',
-            'data': 'surfaces.geojson',
+            'data': 'points.geojson',
   },
 "minzoom": 14,
 'layout': {},
@@ -293,6 +235,7 @@ map.on('load', function (){
 'fill-color': ['get', 'fill'],
 'fill-opacity': ['get', 'fill-opacity'],
 'fill-outline-color' : ['get', 'fill-stroke'],
+'fill-opacity' : ['get', 'fill-opacity'],
      
  }
         });
@@ -300,6 +243,164 @@ map.on('load', function (){
 
 
 
+///Afficher popups on Hover 
+
+
+//Popup Polygones
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'polygones', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+});
+ 
+map.on('mouseleave', 'polygones', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+
+
+
+//Popup Points 
+
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'points', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+
+            
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+});
+
+
+
+
+//Popup TC
+
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'TC', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+
+            
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.name)
+            .addTo(map);
+});
+ 
+map.on('mouseleave', 'TC', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+
+
+
+
+
+
+
+
+
+
+    var flybtn = document.getElementById('fly');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.551238, 47.156543];
+    var index = 0
+    var flyzoom = 15.5;
+    var flypitch = 60;
+    var flybearing = 55;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing: flybearing
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.551238, 47.156543];
+        flyzoom = 12;
+        flypitch = 0;
+        flybearing = 0;
+        index = 1;
+        flybtn.innerHTML = "Revenir à la carte globale";
+        }else{
+        arrival = [-1.551238, 47.156543];
+        index = 0
+        flyzoom = 15.5;
+        flypitch = 60;
+        flybearing = 55;
+        flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+        }
+        };
+})
 </script>
 </body>
 </html>
