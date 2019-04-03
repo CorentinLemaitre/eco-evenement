@@ -388,56 +388,28 @@ popup.remove();
 
 
 
-// Change the cursor to a pointer when  it enters a feature in the 'symbols' layer.
-map.on('mouseenter', 'symbols', function () {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'symbols', function () {
-map.getCanvas().style.cursor = '';
-});
-
-
-
-
-document.getElementById('symbols');
-addEventListener('click', flyFunction);
-addEventListener('click', changeFunction);
-    var arrival = [-1.551238, 47.156543];
-    var index = 0
-    var flyzoom = 15.5;
-    var flypitch = 60;
-    var flybearing = 55;
-
-    function flyFunction(){
-        map.flyTo({
-            center: arrival, //first
-            zoom:flyzoom,
-            pitch: flypitch,
-            bearing: flybearing
+// Center the map on the coordinates of any clicked symbol from the 'symbols' layer.
+map.on('click', 'symbols', function (e) {
+map.flyTo({
+            center: [-1.551238, 47.156543], //first
+            zoom:15.5,
+            pitch: 60,
+            bearing: 55,
             });
-        };
-    function changeFunction(){
-        if (index < 1) {
-        arrival = [-1.551238, 47.156543];
-        flyzoom = 12;
-        flypitch = 0;
-        flybearing = 0;
-        index = 1;
-        flybtn.innerHTML = "Revenir à la carte globale";
-        }else{
-        arrival = [-1.551238, 47.156543];
-        index = 0
-        flyzoom = 15.5;
-        flypitch = 60;
-        flybearing = 55;
-        flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
-        }
-        };
+})
 
+// Center the map on the coordinates of any clicked symbol from the 'symbols' layer.
+map.on('click', 'points', function (e) {
+map.flyTo({
+            center: [-1.551238, 47.156543], //first
+            zoom:12,
+            pitch: 0,
+            bearing: 0,
+            });
 
+ 
 
+})
 
 </script>
 </body>
