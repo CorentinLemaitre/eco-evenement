@@ -45,6 +45,7 @@
         font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 		text-align: center;
 		top: -15px;
+
     }
 	.mapboxgl-popup-close-button {
 	display: none;
@@ -222,6 +223,25 @@ map.addLayer({
             }
         }
     });
+
+map.addLayer({
+        "id": "symbol",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/surfaces.geojson",
+        },
+        "layout": {
+            "symbol-placement":'point',
+            "icon-image": 'bus',
+            "icon-allow-overlap": true,
+            
+        },
+      
+        
+    });
+
+
 
 map.addLayer({
 'id': 'polygones',
@@ -3413,9 +3433,9 @@ map.addLayer({
 "source": "point",
 "type": "symbol",
 "layout": {
-
 "icon-image": 'bicycle-share-50',
 "icon-size": 1,
+"icon-rotate": ['get','bearing'],
 "icon-rotation-alignment": "map",
 "icon-allow-overlap": true,
 "icon-ignore-placement": true
@@ -3426,13 +3446,16 @@ function animate() {
 // Update point geometry to a new position based on counter denoting
 // the index to access the arc.
 point.features[0].geometry.coordinates = route.features[0].geometry.coordinates[counter];
- 
+
+
 // Calculate the bearing to ensure the icon is rotated to match the route arc
 // The bearing is calculated between the current point and the next point, except
 // at the end of the arc use the previous point and the current point
 point.features[0].properties.bearing = turf.bearing(
 turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter - 1 : counter]),
 turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter : counter + 1])
+
+
 );
  
 // Update the source with this new data.
@@ -3463,6 +3486,7 @@ animate(counter);
 // Start the animation.
 animate(counter);
 });
+
 
 
 
