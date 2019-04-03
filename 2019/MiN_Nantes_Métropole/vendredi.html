@@ -58,7 +58,7 @@
 
     <div id='map'></div>
 <br/>
-<button id='fly'>Zoom sur le site du MiN de Nantes</button>
+<button id='fly'>Plan d'accès Inauguration MiN Nantes Métropole</button>
 <style>
     #fly {
         display: block;
@@ -86,10 +86,11 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxN
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
-    center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
-    zoom: 12,
-    hash: 0,
-    pitch: 0//pour avoir une vision avec un angle
+    center : [-1.551365,47.157158], // 
+	zoom : 16,
+	pitch : 60,
+	bearing : 30,
+    hash: 0
 });
 
 
@@ -161,7 +162,7 @@ map.on('load', function (){
         'type': 'line',
         'source': {
 			'type': 'geojson',
-            'data': 'parcours_TC.geojson',
+            'data': 'parcours_TC_vendredi.geojson',
         },
         'minzoom' : 7,
         "layout": {
@@ -197,7 +198,7 @@ map.on('load', function (){
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "points.geojson",
+            "data": "vendredi.geojson",
         },
 		'minzoom': 13,
         "layout": {
@@ -250,9 +251,9 @@ map.on('load', function (){
 	flybtn.addEventListener('click', changeFunction);
 	var arrival = [-1.551238, 47.156543];
 	var index = 0
-	var flyzoom = 15.5;
-	var flypitch = 60;
-	var flybearing = 55;
+	var flyzoom = 12;
+	var flypitch = 0;
+	var flybearing = 0;
 	function flyFunction(){
 		map.flyTo({
 			center: arrival, //first
@@ -263,19 +264,19 @@ map.on('load', function (){
 		};
 	function changeFunction(){
 		if (index < 1) {
+		arrival = [-1.551365,47.157158];
+		index = 1
+		flyzoom = 16;
+		flypitch = 60;
+		flybearing = 30;
+		flybtn.innerHTML= "Zoom sur le site du MiN Nantes Métropole";
+		}else{
 		arrival = [-1.551238, 47.156543];
 		flyzoom = 12;
 		flypitch = 0;
 		flybearing = 0;
-		index = 1;
-		flybtn.innerHTML = "Revenir à la carte globale";
-		}else{
-		arrival = [-1.551238, 47.156543];
-		index = 0
-		flyzoom = 15.5;
-		flypitch = 60;
-		flybearing = 55;
-		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+		index = 0;
+		flybtn.innerHTML = "Plan d'accès Inauguration MiN Nantes Métropole";
 		}
 		};
 
