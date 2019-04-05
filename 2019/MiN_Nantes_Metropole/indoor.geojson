@@ -645,7 +645,7 @@
         {
             "type": "Feature",
             "properties": {
-                "description": "Plateforme réfrigérée groupage dégroupage",
+                "name": "Plateforme réfrigérée groupage dégroupage",
                 "indoor": "area",
                 "shop": "greengrocer",
                 "fill-opacity": 0.4,
