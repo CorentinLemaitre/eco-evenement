@@ -96,7 +96,7 @@ el.id = 'marker';
 // create the marker
 new mapboxgl.Marker(el)
 .setLngLat(monument)
-//.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
+.setPopup(popup) // sets a popup on this marker
 .addTo(map);
 
 
@@ -204,14 +204,41 @@ map.addLayer({
 'type': 'fill',
 'source': {
             'type': 'geojson',
-            'data': 'points.geojson'
+            'data': 'points.geojson',
   },
+"minzoom": 14,
 'layout': {},
 'paint': {
 'fill-color': ['get', 'fill'],
-'fill-opacity': ['get', 'fill-opacity']
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'stroke'],
+'fill-opacity' : ['get', 'fill-opacity'],
+     
  }
-        }, "road-label-large");
+        });
+
+
+
+map.addLayer({
+'id': 'indoor',
+'type': 'fill',
+
+'source': {
+            'type': 'geojson',
+            'data': 'indoor.geojson',
+  },
+"minzoom": 15.5,
+'layout': {},
+'paint': {
+
+'fill-color': ['get', 'fill'],
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'stroke'],
+'fill-opacity' : ['get', 'fill-opacity'],
+     
+ }
+        });
+
 
 
 
