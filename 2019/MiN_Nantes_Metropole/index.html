@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Inauguration du MiN Nantes Métropole</title>
-	<meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
-	<meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
-	<meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
-	<meta property="og:type" content="website">
-	<meta property="og:locale" content="fr_FR">
-	<meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
-	<meta property="og:site_name" content="Reeve">
+    <meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
+    <meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
+    <meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
+    <meta property="og:site_name" content="Reeve">
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
@@ -40,23 +40,23 @@
     .map-overlay p {
         margin: 0 0 10px;
       }
-	.mapboxgl-popup {
+    .mapboxgl-popup {
         max-width: 300px;
         font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-		text-align: center;
-		top: -15px;
+        text-align: center;
+        top: -15px;
     }
-	.mapboxgl-popup-close-button {
-	display: none;
-	}
+    .mapboxgl-popup-close-button {
+    display: none;
+    }
 
 
 
 #marker {
 background-image: url('img/logo_event.png');
 background-size: cover;
-width: 130px;
-height: 130px;
+width: 480px; 
+height: 250px;
 
 cursor: pointer;
 }
@@ -70,21 +70,21 @@ cursor: pointer;
     <script>
       /* 
 TODO :
+Le logo fait 1040 par 544. Il faut le mettre dans un cadre qui fait 
 */
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
-    center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
+    center: [-1.5536912, 47.1605331], // 47.1605331/-1.5536912
     zoom: 12,
-    hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
 
 
 //// MARKER
 
-var monument = [-1.554063785610283, 47.157381657690436];
+var monument = [-1.555265, 47.157256]; // -1.555265, 47.157256
           
 var popup = new mapboxgl.Popup({ offset: 25 })
 .setHTML('<strong>Innauguration MiN</strong><br>27 avril 2019');
@@ -94,9 +94,10 @@ var el = document.createElement('div');
 el.id = 'marker';
  
 // create the marker
-new mapboxgl.Marker(el)
+var logo = new mapboxgl.Marker(el)
 .setLngLat(monument)
-.setPopup(popup) // sets a popup on this marker
+.setOffset([-240,120])
+//.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
 .addTo(map);
 
 
@@ -110,27 +111,27 @@ map.on('load', function (){
     map.loadImage('img/bus.png', function(error, image) {
         if (error) throw error;
         map.addImage('bus', image);
-	});
+    });
     map.loadImage('img/bicycle_park.png', function(error, image) {
         if (error) throw error;
         map.addImage('bicycle', image);
-	});
+    });
     map.loadImage('img/bicloo.png', function(error, image) {
         if (error) throw error;
         map.addImage('bicloo', image);
-	});
+    });
     map.loadImage('img/car_park.png', function(error, image) {
         if (error) throw error;
         map.addImage('car', image);
-	});
+    });
     map.loadImage('img/tram.png', function(error, image) {
         if (error) throw error;
         map.addImage('rail-light', image);
-	});
+    });
     map.loadImage('img/logo_event_small.png', function(error, image) {
         if (error) throw error;
         map.addImage('circle', image);
-	});
+    });
     map.loadImage('img/logo_event.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
@@ -198,47 +199,20 @@ map.on('load', function (){
         }
     });
 
-
-map.addLayer({
-'id': 'polygones',
-'type': 'fill',
-'source': {
+    map.addLayer({
+        'id': 'polygones',
+        'type': 'fill',
+        'source': {
             'type': 'geojson',
-            'data': 'points.geojson',
-  },
-"minzoom": 14,
-'layout': {},
-'paint': {
-'fill-color': ['get', 'fill'],
-'fill-opacity': ['get', 'fill-opacity'],
-'fill-outline-color' : ['get', 'stroke'],
-'fill-opacity' : ['get', 'fill-opacity'],
-     
- }
-        });
-
-
-
-map.addLayer({
-'id': 'indoor',
-'type': 'fill',
-
-'source': {
-            'type': 'geojson',
-            'data': 'indoor.geojson',
-  },
-"minzoom": 15.5,
-'layout': {},
-'paint': {
-
-'fill-color': ['get', 'fill'],
-'fill-opacity': ['get', 'fill-opacity'],
-'fill-outline-color' : ['get', 'stroke'],
-'fill-opacity' : ['get', 'fill-opacity'],
-     
- }
-        });
-
+            'data': 'points.geojson'
+        },
+        'minzoom' : 14,
+        'layout': {},
+        'paint': {
+            'fill-color': ['get', 'fill'],
+            'fill-opacity': 0.3
+        }
+        }, "road-label-large");
 
 
 
@@ -397,7 +371,7 @@ map.getCanvas().style.cursor = '';
     var flybtn = document.getElementById('marker');
     flybtn.addEventListener('click', flyFunction);
     flybtn.addEventListener('click', changeFunction);
-    var arrival = [-1.554063785610283, 47.157381657690436];
+    var arrival = [-1.555265, 47.157256];
     var index = 0
     var flyzoom = 17;
     var flypitch = 60;
@@ -418,7 +392,7 @@ map.getCanvas().style.cursor = '';
         flybearing = 0;
         index = 1;
         }else{
-        arrival = [-1.554063785610283, 47.157381657690436];
+        arrival = [-1.555265, 47.157256];
         index = 0
         flyzoom = 17;
         flypitch = 60;
