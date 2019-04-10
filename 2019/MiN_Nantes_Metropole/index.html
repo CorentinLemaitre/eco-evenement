@@ -55,8 +55,8 @@
 #marker {
 background-image: url('img/logo_event.png');
 background-size: cover;
-width: 130px;
-height: 130px;
+width: 480px; 
+height: 250px;
 
 cursor: pointer;
 }
@@ -70,21 +70,21 @@ cursor: pointer;
     <script>
       /* 
 TODO :
+Le logo fait 1040 par 544. Il faut le mettre dans un cadre qui fait 
 */
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
-    center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
+    center: [-1.5536912, 47.1605331], // 47.1605331/-1.5536912
     zoom: 12,
-    hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
 
 
 //// MARKER
 
-var monument = [-1.554063785610283, 47.157381657690436];
+var monument = [-1.555265, 47.157256]; // -1.555265, 47.157256
           
 var popup = new mapboxgl.Popup({ offset: 25 })
 .setHTML('<strong>Innauguration MiN</strong><br>27 avril 2019');
@@ -94,8 +94,9 @@ var el = document.createElement('div');
 el.id = 'marker';
  
 // create the marker
-new mapboxgl.Marker(el)
+var logo = new mapboxgl.Marker(el)
 .setLngLat(monument)
+.setOffset([-240,120])
 //.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
 .addTo(map);
 
@@ -198,19 +199,19 @@ map.on('load', function (){
         }
     });
 
-
-map.addLayer({
-'id': 'polygones',
-'type': 'fill',
-'source': {
+	map.addLayer({
+		'id': 'polygones',
+		'type': 'fill',
+		'source': {
             'type': 'geojson',
             'data': 'points.geojson'
-  },
-'layout': {},
-'paint': {
-'fill-color': ['get', 'fill'],
-'fill-opacity': ['get', 'fill-opacity']
- }
+		},
+		'minzoom' : 14,
+		'layout': {},
+		'paint': {
+			'fill-color': ['get', 'fill'],
+			'fill-opacity': 0.3
+		}
         }, "road-label-large");
 
 
@@ -370,7 +371,7 @@ map.getCanvas().style.cursor = '';
     var flybtn = document.getElementById('marker');
     flybtn.addEventListener('click', flyFunction);
     flybtn.addEventListener('click', changeFunction);
-    var arrival = [-1.554063785610283, 47.157381657690436];
+    var arrival = [-1.555265, 47.157256];
     var index = 0
     var flyzoom = 17;
     var flypitch = 60;
@@ -391,7 +392,7 @@ map.getCanvas().style.cursor = '';
         flybearing = 0;
         index = 1;
         }else{
-        arrival = [-1.554063785610283, 47.157381657690436];
+        arrival = [-1.555265, 47.157256];
         index = 0
         flyzoom = 17;
         flypitch = 60;
