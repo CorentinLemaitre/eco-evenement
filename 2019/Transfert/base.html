@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Inauguration du MiN Nantes Métropole</title>
-	<meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
+    <title>Transfert</title>
+	<meta property="og:title" content="Transfert">
 	<meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
 	<meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
 	<meta property="og:type" content="website">
@@ -55,7 +55,8 @@
 
 
     </style>
-
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
     <div id='map'></div>
 
    
@@ -73,6 +74,13 @@ var map = new mapboxgl.Map({
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
+
+
+map.addControl(new MapboxGeocoder({
+accessToken: mapboxgl.accessToken,
+mapboxgl: mapboxgl
+}));
+
 
 var zoomtrigger = 14; 
 map.on('load', function (){
