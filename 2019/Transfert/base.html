@@ -17,9 +17,10 @@
       body { margin:0; padding:0; }
       #map { position:absolute; top:0; bottom:0; width:100%; }
 
-
-<script src="https://use.fontawesome.com/acc5504c96.js"></script>
     </style>
+
+    <script src="https://use.fontawesome.com/acc5504c96.js"></script>
+
   </head>
 
 
@@ -29,6 +30,13 @@
 
 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
+
+<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
+
+
 <style>
 
 
@@ -57,18 +65,43 @@
 	}
 
 
-    #geocoder-container > div {
+#geocoder-container > div {
 min-width:50%;
 margin-left:25%;
 }
 
 
 
-#menu {
+
+#itinerary {
 background: #fff;
 position: absolute;
 z-index: 1;
 top: 10px;
+left: 10px;
+border-radius: 3px;
+width: 200px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: 'Open Sans', sans-serif;
+}
+
+
+
+button.big {
+width:40%;
+padding:1%;
+}
+button.first {
+width:50%;
+padding:1%;
+}
+
+
+#menu {
+background: #fff;
+position: absolute;
+z-index: 1;
+top: 150px;
 left: 10px;
 border-radius: 3px;
 width: 120px;
@@ -115,11 +148,26 @@ background: #3074a4;
     </style>
 
 
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
+
+<div id='map'>
 
 <nav id="menu"></nav>
-    <div id='map'></div>
+
+     <button id='itinerary' onclick="getLocation()" class="first" id="error_message" title="Activer localisation"> <img src=geolocate.svg width=35% alt="Activer Localisation"> </img> ACTIVER LOCALISATION</button>
+
+
+    </div>
+
+
+
+
+
+
+<!-- 
+   <p style="font-size:150%;padding:2%;">
+    Venir autrement à l'événement
+  </p>
+-->
 
 
 
@@ -152,6 +200,84 @@ mapboxgl: mapboxgl
  
 map.addControl(geocoder);
  
+
+
+
+
+
+
+var x = document.getElementById("error_message");
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+function showPosition(position) {
+
+// !!! Définir toutes les variables ci-dessous en fonction de l'événement !!!
+var dest_x = -1.568126678466797; // la longitude de la destination (Est ou Ouest)
+var dest_y =  47.194757615837034; // la latitude de la destination (Nord ou Sud)
+var d = new Date('2019-05-17T08:00:00');//spécifier dans la parenthèse la date et heure de l'événement sur ce format : 
+var titre_event = "Transfert,%20Rezé"; // Modifier le titre et remplacer les espace par des %20 TODO TEST AVEC ESPACE
+
+// Calcul lié aux dates : vérifie si la date de l'événement est dépassée.
+var mode="arrival"
+var today = new Date();
+if (d < today){
+today.setMinutes(today.getMinutes() - today.getTimezoneOffset())
+var arrival_time = "";
+var TZ = "+0" + today.getTimezoneOffset()/60*(-1);
+var departure_time = today.toJSON().substr(0, 16)+ TZ;
+}else {
+d.setMinutes(d.getMinutes() - d.getTimezoneOffset());
+var TZ = "+0" + d.getTimezoneOffset()/60 *(-1);
+var arrival_time = d.toJSON().substr(0, 16) + TZ;
+var departure_time = "";
+}
+//document.getElementById("debug").innerHTML = arrival_time;
+
+// Calcul de l'url de Géovélo pour les itinéraires vélos
+var url_bike_1 = "https://www.geovelo.fr/nantes/itinerary/search?profile=MEDIAN&bikeType=TRADITIONAL&wayPoints=";
+var url_bike_2 = "|" + dest_y + "," + dest_x;
+
+// Calcul de l'url d'itinéraire pour un déplacement en transport public. Le service est destineo.
+// TODO Faire une activation du temps de départ live ou pas.
+// var date_event = an_event + "-" + mois_event + "-" + jour_event + "T" + heure_event + ":" + min_event + ":00+02:00"; // transfromation de format 30/09/2017 vers 2017-09-30
+var url_PT_1 = "https://www.destineo.fr/fr/itineraire?fi=ADDRESS|";
+var url_PT_2 = "&fv=Ma%20position&ti=ADDRESS|"+ dest_y + "," + dest_x+ "&tv=" + titre_event
++ "&at=" + arrival_time + "&dt=" + departure_time
++ "&ws=2&bs=2&a=false&ad=false&df=true&v=[]&c=FASTEST&m=flight-train-metro-tram-bus-coach-ferry-bike-car-ridesharing-bikesharing";
+
+/*
+var geovelostart="47.213991,-1.555275";
+var destineostart="-1.555275%3B47.213991";
+*/
+
+// Ajout de la localisation dans les URL d'itinéraire
+    var latlon = position.coords.latitude + "," + position.coords.longitude;
+    var bike_url = url_bike_1+latlon+url_bike_2;
+    var PT_url = url_PT_1+latlon+url_PT_2;
+    document.getElementById("itinerary").innerHTML = "<div> <a href="+bike_url+" target=_blank> <button class='big'> <img src=bicycle-share-15.svg width=80% title='Venir à vélo'></img> <br>Venir à vélo </button> </a> <a href="+PT_url+" target=_blank> <button class='big'> <img src=bus-15.svg width=80% title='Venir en bus'></img> <br>Venir en bus</button> </a> </div>"
+
+}
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            x.innerHTML = "User denied the request for Geolocation."
+            break;
+        case error.POSITION_UNAVAILABLE:
+            x.innerHTML = "Location information is unavailable."
+            break;
+        case error.TIMEOUT:
+            x.innerHTML = "The request to get user location timed out."
+            break;
+        case error.UNKNOWN_ERROR:
+            x.innerHTML = "An unknown error occurred."
+            break;
+    }
+}
 
 
 
