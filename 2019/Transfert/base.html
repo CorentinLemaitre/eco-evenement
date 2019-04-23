@@ -12,6 +12,8 @@
 	<meta property="og:site_name" content="Reeve">
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+
+
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
     <style>
       body { margin:0; padding:0; }
@@ -31,10 +33,6 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
 
-
-<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
-
-<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
 
 
 <style>
@@ -192,6 +190,7 @@ var geocoder = new MapboxGeocoder({
 accessToken: mapboxgl.accessToken,
 
 placeholder: "Dis-nous d'où tu viens !",
+bbox: [-1.80802994959663,47.02827825435034,-1.285844355190818,47.353171787024365], // Limite résultats autour de Nantes
 marker: {
 color: 'orange'
 },
