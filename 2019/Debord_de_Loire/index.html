@@ -193,47 +193,42 @@ map.on('load', function (){
  
 
 
-
-map.addLayer({
-        "id": "points",
-        "type": "symbol",
-        "source": {
-            "type": "geojson",
-            "data": "geo/event.geojson",
+     map.addLayer({
+        'id': 'lines',
+        'type': 'line',
+        'source': {
+            'type': 'geojson',
+            'data': 'geo/lines.geojson',
         },
-        "minzoom": 14,
+        'minzoom' : 7,
         "layout": {
-            "icon-image": "circle",
-            "icon-allow-overlap": true,
-            "icon-size": {
-                    "base": 1,
-                    "stops": [[15, 0.26], [18, 1]]
-                }
+            "line-join": "round",
+            "line-cap": "round"
         },
         "paint": {
-            "icon-opacity": {
+            "line-color": ['get', 'stroke'],// peut aussi récupérer des couleurs nommées comme 'red' et aussi sur geojson.io
+            "line-width": {
+                "property": 'stroke-width',// identifie la clé qui est analysé dans le fichier pour chercher la valeure.
+                "base": 1.5,
+                "stops": [
+                    [{zoom: 10, value: 1}, 0.25],
+                    [{zoom: 10, value: 10}, 2.5],
+                    [{zoom: 18, value: 1}, 5],
+                    [{zoom: 18, value: 10}, 50]
+                    ]
+            },
+            "line-opacity": {
                 "base": 1,
-                "stops": [[14, 0], [16, 1]]
+                "stops": [[9, 0], [11, 1]]
             }
         }
-    });
-
-map.addLayer({
-        "id": "symbol",
-        "type": "symbol",
-        "source": {
-            "type": "geojson",
-            "data": "geo/event.geojson",
-        },
-        "layout": {
-            "symbol-placement":'point',
-            "icon-image": 'circle',
-            "icon-allow-overlap": true,
-            
-        },
-      
-        
-    });
+          // This is the important part of this example: the addLayer
+          // method takes 2 arguments: the layer as an object, and a string
+          // representing another layer's name. if the other layer
+          // exists in the stylesheet already, the new layer will be positioned
+          // right before that layer in the stack, making it possible to put
+          // 'overlays' anywhere in the layer stack.
+    }, "road-label-large");
 
 
 
