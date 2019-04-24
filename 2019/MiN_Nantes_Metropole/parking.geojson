@@ -4,6 +4,23 @@
     {
       "type": "Feature",
       "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "small",
+        "name": "Innauguration MiN<br>27 avril 2019",
+        "desc": "",
+        "marker-symbol": "circle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.554063785610283,
+          47.157381657690436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "marker-color": "#009d00",
         "marker-size": "medium",
         "name": "Pirmil<br>Arret de tramway ligne 2 et 3",
@@ -23,7 +40,7 @@
       "properties": {
         "marker-color": "#3dd6f5",
         "marker-size": "medium",
-        "name": "Porte de Rezé<br>Ligne de bus C4<br>Un passage tous le 15 min.",
+        "name": "Porte de Rezé<br>Ligne de bus C4",
         "desc": "Ligne de bus C4",
         "marker-symbol": "bus"
       },
@@ -59,7 +76,7 @@
         "marker-size": "medium",
         "name": "Stationnement vélo 80 places",
         "desc": "",
-        "marker-symbol": "bicycle_no"
+        "marker-symbol": "bicycle"
       },
       "geometry": {
         "type": "Point",
@@ -69,70 +86,18 @@
         ]
       }
     },
-	{
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#005ffd",
-        "marker-size": "medium",
-        "name": "Accès Parking voiture",
-        "desc": "",
-        "marker-symbol": "car"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.54687328,
-          47.15216406
-        ]
-      }
-    },
-	{
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#005ffd",
-        "marker-size": "medium",
-        "name": "Accès Parking voiture",
-        "desc": "",
-        "marker-symbol": "car"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.5504929,
-          47.1582632
-        ]
-      }
-    },	
-	{
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#005ffd",
-        "marker-size": "medium",
-        "name": "Accès Parking voiture",
-        "desc": "",
-        "marker-symbol": "car"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.547722,
-          47.1579689
-        ]
-      }
-    },
-	
     {
       "type": "Feature",
       "properties": {
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "BLUE",
+        "fill": "#2905f8",
         "fill-opacity": 0.5,
         "marker-color": "#2905f8",
         "name": "Parking voiture",
         "desc": "Navette pour aller au MiN",
-        "marker-symbol": "no",
+        "marker-symbol": "car",
         "marker-size": "medium"
       },
       "geometry": {
@@ -163,30 +128,12 @@
         ]
       }
     },
-	    {
-      "type": "Feature",
-      "properties": {
-        "marker-color": "#3dd6f5",
-        "marker-symbol": "walk",
-        "name": "<b>Entrée de l'événement</b>",
-        "marker-size": "medium",
-        "type": "bus-15",
-        "fill-opacity": ""
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-           -1.553038,
-          47.1591489
-        ]
-      }
-    },
     {
       "type": "Feature",
       "properties": {
         "marker-color": "#3dd6f5",
         "marker-symbol": "bus",
-        "name": "<b>Navette Gratuite</b></br>Pour rejoindre le MiN depuis </br>le Chronobus C4 ou les parkings</br>toutes les 15 minutes de 10h30 à 18h30",
+        "name": "Arrêt de la Navette",
         "marker-size": "medium",
         "type": "bus-15",
         "fill-opacity": ""
@@ -205,12 +152,12 @@
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "BLUE",
+        "fill": "#2905f8",
         "fill-opacity": 0.5,
         "type": "",
-        "marker-symbol": "no",
+        "marker-symbol": "car",
         "desc": "Capacité limitée",
-        "name": "Parking voiture <br>Covoiturage et PMR<br><a href='https://www.ouestgo.fr/evenements/covoiturages/jour-de-fete-au-min-nantes-metropole'>Cliquez pour covoiturer</a>",
+        "name": "Parking voiture <br>Covoiturage et PMR<br><a href='https://www.ouestgo.fr/evenements'>Cliquez pour covoiturer</a>",
         "marker-size": "medium",
         "marker-color": "#2905f8"
       },
@@ -249,11 +196,11 @@
         "marker-size": "medium",
         "name": "Parking voiture<br>",
         "desc": "Capacité limitée",
-        "marker-symbol": "no",
+        "marker-symbol": "car",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
-        "fill": "BLUE",
+        "fill": "#2905f8",
         "fill-opacity": 0.5,
         "type": ""
       },

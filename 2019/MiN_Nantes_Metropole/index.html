@@ -77,7 +77,8 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
     center: [-1.5536912, 47.1605331], // 47.1605331/-1.5536912
-    zoom: 12,
+    zoom: 11,
+	hash: 0,
     pitch: 0//pour avoir une vision avec un angle
 });
 
@@ -135,6 +136,10 @@ map.on('load', function (){
     map.loadImage('img/logo_event.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
+	});
+	map.loadImage('img/walk.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('walk', image);
        
 
     map.addLayer({
@@ -370,9 +375,9 @@ map.getCanvas().style.cursor = '';
     var flybtn = document.getElementById('marker');
     flybtn.addEventListener('click', flyFunction);
     flybtn.addEventListener('click', changeFunction);
-    var arrival = [-1.555265, 47.157256];
+    var arrival = [-1.553209,47.15631];
     var index = 0
-    var flyzoom = 17;
+    var flyzoom = 15.5;
     var flypitch = 60;
     var flybearing = 55;
     function flyFunction(){
@@ -386,14 +391,14 @@ map.getCanvas().style.cursor = '';
     function changeFunction(){
         if (index < 1) {
         arrival = [-1.551238, 47.156543];
-        flyzoom = 12;
+        flyzoom = 11;
         flypitch = 0;
         flybearing = 0;
         index = 1;
         }else{
-        arrival = [-1.555265, 47.157256];
+        arrival = [-1.553209,47.15631];
         index = 0
-        flyzoom = 17;
+        flyzoom = 15.5;
         flypitch = 60;
         flybearing = 55;
         }
