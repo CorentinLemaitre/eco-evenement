@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inauguration du MiN Nantes Métropole</title>
+	<meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
+	<meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
+	<meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
+	<meta property="og:site_name" content="Reeve">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+  </head>
+  <body>
+
+    <style>
+      /* STYLE la zone au-dessus de la carte sa police et son texte */
+      .map-overlay-container {
+        position: absolute;
+        top: 0px;
+        center: 0;
+        padding: 20px;
+        z-index: 0;
+      }
+      .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow:0 1px 2px rgba(0,0,0,0.20);
+      }
+    .map-overlay h2,
+    .map-overlay p {
+        margin: 0 0 10px;
+      }
+	.mapboxgl-popup {
+        max-width: 150px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		text-align: center;
+		top: -15px;
+
+    }
+	.mapboxgl-popup-close-button {
+	display: none;
+	}
+
+
+.overlay {
+position: absolute;
+top: 10px;
+left: 10px;
+}
+ 
+.overlay button {
+font:600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+background-color: #3386c0;
+color: #fff;
+display: inline-block;
+margin: 0;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+border-radius: 3px;
+}
+ 
+.overlay button:hover {
+background-color:#4ea0da;
+}
+</style>
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js' charset='utf-8'></script>
+
+    <div id='map'></div>
+<div class='overlay'>
+<button id='replay'>Replay</button>
+</div>
+   
+
+    <script>
+      /* 
+TODO :
+*/
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v10',
+    center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
+    zoom: 12,
+    hash: 1,
+    pitch: 0//pour avoir une vision avec un angle
+});
+
+var zoomtrigger = 14; 
+map.on('load', function (){
+    map.loadImage('img/bus.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bus', image);
+	});
+    map.loadImage('img/bicycle_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicycle', image);
+	});
+    map.loadImage('img/bicloo.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicloo', image);
+	});
+    map.loadImage('img/car_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('car', image);
+
+	});
+	    map.loadImage('img/bicycle-share-50.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicycle-share-50', image);
+
+	});
+    map.loadImage('img/logo_event_small.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('circle', image);
+	});
+    map.loadImage('', function(error, image) {
+        if (error) throw error;
+        map.addImage('logo_event', image);
+        map.addLayer({
+            "id": "logo",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-1.555181, 47.157465]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "logo_event",
+				"icon-size": 0.5 // seems to be 0.5 for 50 percent
+            },
+			"paint": {
+				"icon-opacity": {
+					"base": 1,
+					"stops": [[13, 1], [15, 0]]
+				}
+			}
+
+		});
+	});
+
+
+
+    map.addLayer({
+        'id': 'itineraires',
+        'type': 'line',
+        'source': {
+			'type': 'geojson',
+            'data': 'geo/event.geojson',
+        },
+        'minzoom' : 8, // ne peut pas varier à partir d'une propriété car la couche n'est pas encore lue
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": { // Au niveau de zoom 14 ca correspond à 6 pixel et 3 au zoom 12
+            "line-color": ['get', 'stroke'],// peut aussi récupérer des couleurs nommées comme 'red' et aussi sur geojson.io
+            "line-width": {
+				"property": 'stroke-width',// identifie la clé qui est analysé dans le fichier pour chercher la valeure.
+				"base": 1.5,
+				"stops": [
+					[{zoom: 10, value: 1}, 0.25],
+					[{zoom: 10, value: 10}, 2.5],
+					[{zoom: 18, value: 1}, 5],
+					[{zoom: 18, value: 10}, 50]
+					]
+			},
+			"line-opacity": {
+				"base": 1,
+				"stops": [[9, 0], [11, 1]]
+			}
+        }
+
+
+          // This is the important part of this example: the addLayer
+          // method takes 2 arguments: the layer as an object, and a string
+          // representing another layer's name. if the other layer
+          // exists in the stylesheet already, the new layer will be positioned
+          // right before that layer in the stack, making it possible to put
+          // 'overlays' anywhere in the layer stack.
+    }, "road-label-large");
+	
+
+
+map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/event.geojson",
+        },
+        "minzoom": 14,
+        "layout": {
+            "icon-image": "{marker-symbol}",
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 1,
+                    "stops": [[15, 0.26], [18, 1]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[14, 0], [16, 1]]
+            }
+        }
+    });
+
+map.addLayer({
+        "id": "symbol",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/surfaces.geojson",
+        },
+        "layout": {
+            "symbol-placement":'point',
+            "icon-image": 'bus',
+            "icon-allow-overlap": true,
+            
+        },
+      
+        
+    });
+
+
+
+map.addLayer({
+'id': 'polygones',
+'type': 'fill',
+'source': {
+            'type': 'geojson',
+            'data': 'geo/surfaces.geojson',
+  },
+"minzoom": 14,
+'layout': {},
+'paint': {
+'fill-color': ['get', 'fill'],
+'fill-opacity': ['get', 'fill-opacity'],
+'fill-outline-color' : ['get', 'fill-stroke'],
+'fill-opacity' : ['get', 'fill-opacity'],
+     
+ }
+        });
+    });
+
+
+
+///Afficher popups on Hover 
+
+
+//Popup Polygones
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'polygones', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.desc;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.desc)
+            .addTo(map);
+});
+ 
+map.on('mouseleave', 'polygones', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+
+//Popup Points 
+
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'points', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+
+            
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.description)
+            .addTo(map);
+});
+ 
+map.on('mouseleave', 'points', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+
+
+
+//Popup Itineraires
+
+
+// Create a popup, but don't add it to the map yet.
+var popup = new mapboxgl.Popup({
+closeButton: false,
+closeOnClick: false
+});
+ 
+map.on('mouseenter', 'itineraires', function(e) {
+// Change the cursor style as a UI indicator.
+map.getCanvas().style.cursor = 'pointer';
+ 
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+
+
+            
+ 
+// Populate the popup and set its coordinates
+// based on the feature found.
+popup.setLngLat(e.lngLat)
+            .setHTML(e.features[0].properties.description)
+            .addTo(map);
+});
+ 
+map.on('mouseleave', 'itineraires', function() {
+map.getCanvas().style.cursor = '';
+popup.remove();
+});
+
+
+
+
+
+
+///Animation de routes
+
+// Coueron
+var origin = [-1.549624, 47.158569];
+ 
+// Chantiers Navals
+var destination = [-1.549645, 47.158574]; 
+                        
+
+
+
+// A simple line from origin to destination.
+var route = {
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+"geometry": {
+"type": "LineString",
+"coordinates": [
+origin,
+[-1.549624, 47.158569],
+[-1.549373, 47.158507],
+[-1.547095, 47.157940],
+[-1.546602, 47.157814],
+[-1.546405, 47.157738],
+[-1.546371, 47.157725],
+[-1.546284, 47.157677],
+[-1.546146, 47.157601],
+[-1.546086, 47.157535],
+[-1.546049, 47.157462],
+[-1.546038, 47.157409],
+[-1.546112, 47.156778],
+[-1.546110, 47.156196],
+[-1.546071, 47.155708],
+[-1.545991, 47.154994],
+[-1.545995, 47.154929],
+[-1.546072, 47.154832],
+[-1.546114, 47.154790],
+[-1.546131, 47.154736],
+[-1.546124, 47.154715],
+[-1.546115, 47.154684],
+[-1.546073, 47.154641],
+[-1.546010, 47.154611],
+[-1.545950, 47.154510],
+[-1.545927, 47.154342],
+[-1.545908, 47.154207],
+[-1.545911, 47.154143],
+[-1.545952, 47.154069],
+[-1.545987, 47.154049],
+[-1.546031, 47.154002],
+[-1.546045, 47.153952],
+[-1.546029, 47.153899],
+[-1.545985, 47.153855],
+[-1.545919, 47.153826],
+[-1.545869, 47.153740],
+[-1.545864, 47.153700],
+[-1.545716, 47.152554],
+[-1.545712, 47.152525],
+[-1.545772, 47.152389],
+[-1.545812, 47.152353],
+[-1.545831, 47.152309],
+[-1.545830, 47.152264],
+[-1.545793, 47.152208],
+[-1.545726, 47.152169],
+[-1.545640, 47.152153],
+[-1.545552, 47.152164],
+[-1.545496, 47.152187],
+[-1.545455, 47.152222],
+[-1.545432, 47.152263],
+[-1.545292, 47.152317],
+[-1.545168, 47.152362],
+[-1.544730, 47.152398],
+[-1.544346, 47.152414],
+[-1.544055, 47.152401],
+[-1.543890, 47.152393],
+[-1.543446, 47.152337],
+[-1.542328, 47.152181],
+[-1.540817, 47.151950],
+[-1.539944, 47.151819],
+[-1.539528, 47.151757],
+[-1.539230, 47.151723],
+[-1.538890, 47.151680],
+[-1.538563, 47.151703],
+[-1.538342, 47.151746],
+[-1.537308, 47.151945],
+[-1.536429, 47.152127],
+[-1.536245, 47.152148],
+[-1.536160, 47.152157],
+[-1.535719, 47.152167],
+[-1.535484, 47.152158],
+[-1.535280, 47.152163],
+[-1.535229, 47.152150],
+[-1.535174, 47.152146],
+[-1.535120, 47.152154],
+[-1.535089, 47.152164],
+[-1.535060, 47.152177],
+[-1.535036, 47.152194],
+[-1.535009, 47.152223],
+[-1.534994, 47.152255],
+[-1.534992, 47.152289],
+[-1.535007, 47.152330],
+[-1.535040, 47.152365],
+[-1.535088, 47.152392],
+[-1.535130, 47.152404],
+[-1.535176, 47.152409],
+[-1.535238, 47.152491],
+[-1.535265, 47.152524],
+[-1.535272, 47.152534],
+[-1.535407, 47.152703],
+[-1.535801, 47.153229],
+[-1.536071, 47.153590],
+[-1.536357, 47.153974],
+[-1.537058, 47.154915],
+[-1.537204, 47.155130],
+[-1.537231, 47.155169],
+[-1.537236, 47.155288],
+[-1.537205, 47.155328],
+[-1.537197, 47.155374],
+[-1.537208, 47.155412],
+[-1.537235, 47.155447],
+[-1.537275, 47.155474],
+[-1.537321, 47.155492],
+[-1.537373, 47.155500],
+[-1.537426, 47.155499],
+[-1.537476, 47.155488],
+[-1.537534, 47.155570],
+[-1.537792, 47.155931],
+[-1.537804, 47.155949],
+[-1.537978, 47.156153],
+[-1.538074, 47.156243],
+[-1.538375, 47.156445],
+[-1.538542, 47.156552],
+[-1.538592, 47.156585],
+[-1.538616, 47.156613],
+[-1.538583, 47.156656],
+[-1.538575, 47.156691],
+[-1.538580, 47.156725],
+[-1.538592, 47.156747],
+[-1.538598, 47.156758],
+[-1.538621, 47.156780],
+[-1.538680, 47.156812],
+[-1.538718, 47.156822],
+[-1.538747, 47.156826],
+[-1.538788, 47.156826],
+[-1.538825, 47.156821],
+[-1.538851, 47.156815],
+[-1.538878, 47.156804],
+[-1.538907, 47.156788],
+[-1.538934, 47.156765],
+[-1.538948, 47.156746],
+[-1.539088, 47.156765],
+[-1.539174, 47.156776],
+[-1.539434, 47.156824],
+[-1.540123, 47.157006],
+[-1.540402, 47.157108],
+[-1.540743, 47.157231],
+[-1.540882, 47.157283],
+[-1.541005, 47.157330],
+[-1.541132, 47.157375],
+[-1.541198, 47.157406],
+[-1.541294, 47.157449],
+[-1.541313, 47.157488],
+[-1.541341, 47.157525],
+[-1.541377, 47.157558],
+[-1.541420, 47.157588],
+[-1.541470, 47.157612],
+[-1.541524, 47.157630],
+[-1.541601, 47.157646],
+[-1.541681, 47.157650],
+[-1.541760, 47.157643],
+[-1.541836, 47.157626],
+[-1.541895, 47.157603],
+[-1.541946, 47.157573],
+[-1.541990, 47.157538],
+[-1.542024, 47.157499],
+[-1.542047, 47.157456],
+[-1.542203, 47.157407],
+[-1.542268, 47.157387],
+[-1.542437, 47.157350],
+[-1.542733, 47.157325],
+[-1.543297, 47.157301],
+[-1.543463, 47.157308],
+[-1.544120, 47.157337],
+[-1.544776, 47.157416],
+[-1.545365, 47.157518],
+[-1.545491, 47.157564],
+[-1.545611, 47.157609],
+[-1.545722, 47.157650],
+[-1.545739, 47.157700],
+[-1.545783, 47.157745],
+[-1.545819, 47.157765],
+[-1.545920, 47.157788],
+[-1.546019, 47.157778],
+[-1.546056, 47.157760],
+[-1.546226, 47.157772],
+[-1.546355, 47.157780],
+[-1.546602, 47.157814],
+[-1.547095, 47.157940],
+[-1.549373, 47.158507],
+[-1.549729, 47.158596],
+[-1.549977, 47.158676],
+[-1.550129, 47.158732],
+[-1.550251, 47.158776],
+[-1.550251, 47.158797],
+[-1.550278, 47.158845],
+[-1.550325, 47.158881],
+[-1.550387, 47.158903],
+[-1.550469, 47.158909],
+[-1.550537, 47.158896],
+[-1.550566, 47.158881],
+[-1.550728, 47.158886],
+[-1.550854, 47.158892],
+[-1.550978, 47.158899],
+[-1.551183, 47.158956],
+[-1.552472, 47.159279],
+[-1.552607, 47.159337],
+[-1.552723, 47.159428],
+[-1.552746, 47.159464],
+[-1.552787, 47.159493],
+[-1.552839, 47.159511],
+[-1.552898, 47.159515],
+[-1.552925, 47.159510],
+[-1.552954, 47.159506],
+[-1.553003, 47.159484],
+[-1.553024, 47.159466],
+[-1.553036, 47.159455],
+[-1.553054, 47.159421],
+[-1.553052, 47.159388],
+[-1.553040, 47.159350],
+[-1.553010, 47.159320],
+[-1.552967, 47.159298],
+[-1.552965, 47.159297],
+[-1.552916, 47.159286],
+[-1.552863, 47.159286],
+[-1.552811, 47.159296],
+[-1.552795, 47.159305],
+[-1.552655, 47.159300],
+[-1.552472, 47.159279],
+[-1.551183, 47.158956],
+[-1.550978, 47.158899],
+[-1.550918, 47.158880],
+[-1.550745, 47.158796],
+[-1.550640, 47.158732],
+[-1.550604, 47.158686],
+[-1.550551, 47.158655],
+[-1.550437, 47.158637],
+[-1.550369, 47.158648],
+[-1.550328, 47.158666],
+[-1.550167, 47.158654],
+[-1.550010, 47.158642],
+[-1.549958, 47.158637],
+[-1.549729, 47.158596],
+[-1.549645, 47.158574], 
+destination
+]
+}
+}]
+};
+
+
+ 
+// A single point that animates along the route.
+// Coordinates are initially set to origin.
+var point = {
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+"properties": {},
+"geometry": {
+"type": "Point",
+"coordinates": origin
+}
+}]
+};
+ 
+// Calculate the distance in kilometers between route start/end point.
+var lineDistance = turf.lineDistance(route.features[0], 'kilometers');
+ 
+var arc = [];
+ 
+// Number of steps to use in the arc and animation, more steps means
+// a smoother arc and animation, but too many steps will result in a
+// low frame rate
+var steps = 750;
+ 
+// Draw an arc between the `origin` & `destination` of the two points
+for (var i = 0; i < lineDistance; i += lineDistance / steps) {
+var segment = turf.along(route.features[0], i, 'kilometers');
+arc.push(segment.geometry.coordinates);
+}
+ 
+// Update the route with calculated arc coordinates
+route.features[0].geometry.coordinates = arc;
+ 
+// Used to increment the value of the point measurement against the route.
+var counter = 0;
+ 
+map.on('load', function () {
+// Add a source and layer displaying a point which will be animated in a circle.
+map.addSource('route', {
+"type": "geojson",
+"data": route
+});
+ 
+map.addSource('point', {
+"type": "geojson",
+"data": point
+});
+ 
+map.addLayer({
+"id": "route",
+"source": "route",
+"type": "line",
+"paint": {
+"line-width": 2,
+"line-color": "#007cbf"
+}
+});
+ 
+map.addLayer({
+"id": "point",
+"source": "point",
+"type": "symbol",
+"layout": {
+"icon-image": 'bicycle-share-50',
+"icon-size": 1,
+"icon-rotate": ['get','bearing'],
+"icon-rotation-alignment": "map",
+"icon-allow-overlap": true,
+"icon-ignore-placement": true
+}
+});
+ 
+function animate() {
+// Update point geometry to a new position based on counter denoting
+// the index to access the arc.
+point.features[0].geometry.coordinates = route.features[0].geometry.coordinates[counter];
+
+
+// Calculate the bearing to ensure the icon is rotated to match the route arc
+// The bearing is calculated between the current point and the next point, except
+// at the end of the arc use the previous point and the current point
+point.features[0].properties.bearing = turf.bearing(
+turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter - 1 : counter]),
+turf.point(route.features[0].geometry.coordinates[counter >= steps ? counter : counter + 1])
+
+
+);
+ 
+// Update the source with this new data.
+map.getSource('point').setData(point);
+ 
+// Request the next frame of animation so long the end has not been reached.
+if (counter < steps) {
+requestAnimationFrame(animate);
+}
+ 
+counter = counter + 1;
+}
+ 
+document.getElementById('replay').addEventListener('click', function() {
+// Set the coordinates of the original point back to origin
+point.features[0].geometry.coordinates = origin;
+ 
+// Update the source layer
+map.getSource('point').setData(point);
+ 
+// Reset the counter
+counter = 0;
+ 
+// Restart the animation.
+animate(counter);
+});
+ 
+// Start the animation.
+animate(counter);
+});
+
+
+
+
+var flybtn = document.getElementById('fly');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.555181, 47.157465];
+    var index = 0
+    var flyzoom = 16;
+    var flypitch = 60;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing:0
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.55294, 47.15864];
+        flyzoom = 11;
+        flypitch = 0;
+        index = 1;
+        flybtn.innerHTML = "Revenir à la carte globale";
+        }else{
+        arrival = [-1.553008, 47.158074];
+        index = 0
+        flyzoom = 16;
+        flypitch = 60;
+        flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+        }
+        };
+
+
+
+</script>
+</body>
+</html>
