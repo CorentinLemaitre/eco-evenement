@@ -126,7 +126,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "<strong> Arrivée au pont Anne de Bretagne</strong> </br>21h30 horraire estimé",
+                "name": "<strong> Arrivée au pont Anne de Bretagne</strong> </br>21h30 horaire estimé",
                 "marker-symbol": "bicycle-share-50"
             },
             "geometry": {
@@ -140,7 +140,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "<strong> Arrivé à Basse indre</strong> </br>20h30 horraire estimé",
+                "name": "<strong> Arrivé à Basse indre</strong> </br>20h30 horaire estimé",
                 "marker-symbol": "bicycle-share-50"
             },
             "geometry": {
@@ -154,7 +154,7 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "<strong> Arrivé à Haute indre</strong> </br>20h45 horraire estimé",
+                "name": "<strong> Arrivé à Haute indre</strong> </br>20h45 horaire estimé",
                 "marker-symbol": "bicycle-share-50"
             },
             "geometry": {

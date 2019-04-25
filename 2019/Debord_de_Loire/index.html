@@ -160,8 +160,8 @@ map.on('load', function (){
                 "icon-image": "CycloVillage",
                 "icon-allow-overlap":true,
             "icon-size": {
-                    "base": 0.5,
-                    "stops": [[14, 0.08], [17, 0.3]]
+                    "base": 0.125,
+                    "stops": [[14, 0.02], [17, 0.075]]
                 }
             },
             "paint": {
@@ -194,8 +194,8 @@ map.on('load', function (){
                                 "icon-allow-overlap":true,
 
             "icon-size": {
-                    "base": 0.5,
-                    "stops": [[14, 0.08], [17, 0.3]]
+                    "base": 0.125,
+                    "stops": [[14, 0.02], [17, 0.075]]
                 }
             },
             "paint": {
@@ -319,8 +319,8 @@ map.on('load', function (){
             "icon-image": "{marker-symbol}", // autre possibilité qui était la et marchais :: "{marker-symbol}",
             "icon-allow-overlap": true,
             "icon-size": {
-                    "base": 1,
-                    "stops": [[14, 0.26], [17, 1]]
+                    "base": 1.2,
+                    "stops": [[14, 1], [17, 1.2]]
                 }
         },
         "paint": {
@@ -460,6 +460,39 @@ map.getCanvas().style.cursor = 'pointer';
  
 // Change it back to a pointer when it leaves.
 map.on('mouseleave','points', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+
+//Popup Points
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','lines', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','lines', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','lines', function () {
 map.getCanvas().style.cursor = '';
 });
 
