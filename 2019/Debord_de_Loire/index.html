@@ -140,6 +140,89 @@ map.on('load', function (){
        
 
 
+        map.addLayer({
+            "id": "CycloVillage",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-1.5668615, 47.2064591]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "CycloVillage",
+                "icon-allow-overlap":true,
+            "icon-size": {
+                    "base": 0.5,
+                    "stops": [[14, 0.08], [17, 0.3]]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                     "stops": [[13, 0], [14.5, 1]]
+                }
+            }
+        });
+
+
+    map.addLayer({
+            "id": "Village_DDL",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [-1.57204322, 47.20707577]
+                        }
+                    }]
+                }
+            },
+            "layout": {
+                "icon-image": "Village_DDL",
+                                "icon-allow-overlap":true,
+
+            "icon-size": {
+                    "base": 0.5,
+                    "stops": [[14, 0.08], [17, 0.3]]
+                }
+            },
+            "paint": {
+                "icon-opacity": {
+                    "base": 1,
+                     "stops": [[13, 0], [14.5, 1]]
+                }
+            }
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
      map.addLayer({
         'id': 'TC',
@@ -268,11 +351,6 @@ map.on('load', function (){
         )
     });
 
-var polygon = turf.polygon();
-
-var centroid = turf.centroid(polygon);
-
-
 
 
 
@@ -283,9 +361,10 @@ var centroid = turf.centroid(polygon);
 ///Afficher popups on click
 
 
+
+
+
 //Popup Polygones
-
-
 
 
 // When a click event occurs on a feature in the polygones layer, open a popup at the
@@ -386,7 +465,7 @@ map.getCanvas().style.cursor = '';
 
 
 
-});
+
 
 </script>
 </body>

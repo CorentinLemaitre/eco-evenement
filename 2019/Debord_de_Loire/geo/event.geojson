@@ -21,9 +21,7 @@
             "type": "Feature",
             "properties": {
                 "amenity": "parking",
-                "marker-symbol": "CycloVillage",
-                "marker-size": "small",
-                "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
+                "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Animation toute l'après-midi",
                 "fill-color": "yellow",
                 "fill-opacity": 0.5
             },
@@ -171,7 +169,7 @@
             "type": "Feature",
             "properties": {
                 "amenity": "parking",
-                "marker-symbol": "Village_DDL",
+                "marker-symbol": "",
                 "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
                 "fill-color": "red",
                 "fill-opacity": 0.5
