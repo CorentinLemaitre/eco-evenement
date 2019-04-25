@@ -6,14 +6,42 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "<strong> Arrivé à la roche Maurice</strong> </br>21h00 horraire estimé",
-                "marker-symbol": "bicycle-share-50"
+                "marker-symbol": "bicycle-share-50",
+                "name": "<strong> Départ Véloparade</strong> </br> 19h30 RDV des cycliste</br>19h45 Départ de Couéron"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1.61730768442,
-                    47.19437853166
+                    -1.72800629502,
+                    47.20888160680
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "bicycle-share-50",
+                "name": "<strong> Arrivé à Haute indre</strong> </br>20h45 horraire estimé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.65101375590,
+                    47.19483820367
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "bicycle-share-50",
+                "name": "<strong> Arrivé à Basse indre</strong> </br>20h30 horraire estimé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.66927818775,
+                    47.20029801005
                 ]
             }
         },
@@ -21,9 +49,117 @@
             "type": "Feature",
             "properties": {
                 "amenity": "parking",
-                "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Animation toute l'après-midi",
+                "fill-color": "red",
+                "fill-opacity": "0.5",
+                "marker-symbol": "Village_DDL",
+                "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.57157886665,
+                            47.20823958999
+                        ],
+                        [
+                            -1.57197985507,
+                            47.20818719495
+                        ],
+                        [
+                            -1.57233028199,
+                            47.20804479114
+                        ],
+                        [
+                            -1.57378818036,
+                            47.20695571955
+                        ],
+                        [
+                            -1.57392188077,
+                            47.20669360472
+                        ],
+                        [
+                            -1.57391555658,
+                            47.20641623029
+                        ],
+                        [
+                            -1.57376997057,
+                            47.20615705173
+                        ],
+                        [
+                            -1.57350268257,
+                            47.20594733026
+                        ],
+                        [
+                            -1.57314593145,
+                            47.20581236211
+                        ],
+                        [
+                            -1.57274274666,
+                            47.20576842702
+                        ],
+                        [
+                            -1.57234175825,
+                            47.20582082445
+                        ],
+                        [
+                            -1.57199133132,
+                            47.20596323423
+                        ],
+                        [
+                            -1.57053343296,
+                            47.20705232620
+                        ],
+                        [
+                            -1.57039973254,
+                            47.20731443925
+                        ],
+                        [
+                            -1.57040605673,
+                            47.20759180899
+                        ],
+                        [
+                            -1.57055164274,
+                            47.20785098054
+                        ],
+                        [
+                            -1.57081893074,
+                            47.20806069448
+                        ],
+                        [
+                            -1.57117568186,
+                            47.20819565691
+                        ],
+                        [
+                            -1.57157886665,
+                            47.20823958999
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "bicycle-share-50",
+                "name": "<strong> Arrivée au pont Anne de Bretagne</strong> </br>21h30 horraire estimé"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.56649593830,
+                    47.20891358619
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
                 "fill-color": "yellow",
-                "fill-opacity": 0.5
+                "fill-opacity": "0.5",
+                "marker-symbol": "CycloVillage",
+                "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi"
             },
             "geometry": {
                 "type": "Polygon",
@@ -112,149 +248,14 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "<strong> Départ Véloparade</strong> </br> 19h30 RDV des cycliste</br>19h45 Départ de Couéron",
-                "marker-symbol": "bicycle-share-50"
+                "marker-symbol": "bicycle-share-50",
+                "name": "<strong> Arrivé à la roche Maurice</strong> </br>21h00 horraire estimé"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1.72800629502,
-                    47.20888160680
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "<strong> Arrivée au pont Anne de Bretagne</strong> </br>21h30 horaire estimé",
-                "marker-symbol": "bicycle-share-50"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -1.56649593830,
-                    47.20891358619
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "<strong> Arrivé à Basse indre</strong> </br>20h30 horaire estimé",
-                "marker-symbol": "bicycle-share-50"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -1.66927818775,
-                    47.20029801005
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "<strong> Arrivé à Haute indre</strong> </br>20h45 horaire estimé",
-                "marker-symbol": "bicycle-share-50"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -1.65101375590,
-                    47.19483820367
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "amenity": "parking",
-                "marker-symbol": "",
-                "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
-                "fill-color": "red",
-                "fill-opacity": 0.5
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            -1.57157886665,
-                            47.20823958999
-                        ],
-                        [
-                            -1.57197985507,
-                            47.20818719495
-                        ],
-                        [
-                            -1.57233028199,
-                            47.20804479114
-                        ],
-                        [
-                            -1.57378818036,
-                            47.20695571955
-                        ],
-                        [
-                            -1.57392188077,
-                            47.20669360472
-                        ],
-                        [
-                            -1.57391555658,
-                            47.20641623029
-                        ],
-                        [
-                            -1.57376997057,
-                            47.20615705173
-                        ],
-                        [
-                            -1.57350268257,
-                            47.20594733026
-                        ],
-                        [
-                            -1.57314593145,
-                            47.20581236211
-                        ],
-                        [
-                            -1.57274274666,
-                            47.20576842702
-                        ],
-                        [
-                            -1.57234175825,
-                            47.20582082445
-                        ],
-                        [
-                            -1.57199133132,
-                            47.20596323423
-                        ],
-                        [
-                            -1.57053343296,
-                            47.20705232620
-                        ],
-                        [
-                            -1.57039973254,
-                            47.20731443925
-                        ],
-                        [
-                            -1.57040605673,
-                            47.20759180899
-                        ],
-                        [
-                            -1.57055164274,
-                            47.20785098054
-                        ],
-                        [
-                            -1.57081893074,
-                            47.20806069448
-                        ],
-                        [
-                            -1.57117568186,
-                            47.20819565691
-                        ],
-                        [
-                            -1.57157886665,
-                            47.20823958999
-                        ]
-                    ]
+                    -1.61730768442,
+                    47.19437853166
                 ]
             }
         }
