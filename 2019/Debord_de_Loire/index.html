@@ -90,7 +90,7 @@ var map = new mapboxgl.Map({
     center: [-1.55294, 47.15864], // 15.5/47.207363/-1.559553
     zoom: 12,
     hash: 1,
-    pitch: 0//pour avoir une vision avec un angle
+    pitch: 0//pour avoir une vision avec un angle  logo_large
 });
 var zoomtrigger = 14; 
 map.on('load', function (){
@@ -98,6 +98,18 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('bus', image);
 	});
+    map.loadImage('img/CycloVillage.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('CycloVillage', image);
+    });
+    map.loadImage('img/Village_DDL.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('Village_DDL', image);
+    });
+    map.loadImage('img/location_velo.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('location_velo', image);
+    });
     map.loadImage('img/bicycle_park.png', function(error, image) {
         if (error) throw error;
         map.addImage('bicycle', image);
@@ -113,43 +125,19 @@ map.on('load', function (){
 	    map.loadImage('img/bicycle-share-50.png', function(error, image) {
         if (error) throw error;
         map.addImage('bicycle-share-50', image);
-	});
-    map.loadImage('img/logo_event_small.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('circle', image);
-	});
-    map.loadImage('', function(error, image) {
+	});                                            
+    map.loadImage('img/logo_event.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
-        map.addLayer({
-            "id": "logo",
-            "type": "symbol",
-            "source": {
-                "type": "geojson",
-                "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [-1.555181, 47.157465]
-                        }
-                    }]
-                }
-            },
-            "layout": {
-                "icon-image": "logo_event",
-				"icon-size": 0.5 // seems to be 0.5 for 50 percent
-            },
-			"paint": {
-				"icon-opacity": {
-					"base": 1,
-					"stops": [[13, 1], [15, 0]]
-				}
-			}
-		});
+    });
+    map.loadImage('img/logo_event_small.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('logo_small', image);
 	});
-
+    map.loadImage('img/logo_large.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('logo_large', image);
+       
 
 
 
@@ -275,8 +263,14 @@ map.on('load', function (){
         'paint': {
             'fill-color': ['get', 'fill-color'],
             'fill-opacity': 0.3
+            }
         }
-    },"road-label-large");
+        )
+    });
+
+var polygon = turf.polygon();
+
+var centroid = turf.centroid(polygon);
 
 
 
@@ -393,6 +387,7 @@ map.getCanvas().style.cursor = '';
 
 
 });
+
 </script>
 </body>
 </html>
