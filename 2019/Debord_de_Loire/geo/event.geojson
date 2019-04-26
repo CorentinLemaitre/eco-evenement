@@ -20,6 +20,105 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 20 h 20</strong><br>Passage devant Indre"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.67438515663,
+                    47.19665312730
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
+                "fill-color": "red",
+                "fill-opacity": "0.5",
+                "marker-symbol": "Village_DDL_LD",
+                "name": "<strong>Quai des plantes</strong> </br> Village de la solitaire Urgo le Figaro et guinguette 40 pieds"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.56942700598,
+                            47.20829856840
+                        ],
+                        [
+                            -1.57118192752,
+                            47.20768682445
+                        ],
+                        [
+                            -1.57163501322,
+                            47.20751052713
+                        ],
+                        [
+                            -1.57176912367,
+                            47.20739755398
+                        ],
+                        [
+                            -1.57177448809,
+                            47.20725907044
+                        ],
+                        [
+                            -1.57167183667,
+                            47.20714390181
+                        ],
+                        [
+                            -1.57152365510,
+                            47.20702977927
+                        ],
+                        [
+                            -1.57122463256,
+                            47.20705134263
+                        ],
+                        [
+                            -1.56872213423,
+                            47.20811547602
+                        ],
+                        [
+                            -1.56691968977,
+                            47.20864388958
+                        ],
+                        [
+                            -1.56681776583,
+                            47.20871312959
+                        ],
+                        [
+                            -1.56688213885,
+                            47.20878236951
+                        ],
+                        [
+                            -1.56701624930,
+                            47.20884067674
+                        ],
+                        [
+                            -1.56722009718,
+                            47.20885525354
+                        ],
+                        [
+                            -1.56789601386,
+                            47.20867668749
+                        ],
+                        [
+                            -1.56847000659,
+                            47.20852363041
+                        ],
+                        [
+                            -1.56942700598,
+                            47.20829856840
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "station",
                 "name": "<strong>Gare de Saint-Etienne de Montluc</strong>"
             },
@@ -28,6 +127,20 @@
                 "coordinates": [
                     -1.78575043201,
                     47.27468691431
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 20 h 45</strong><br>Passage au pont de Cheviré"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.61524781227,
+                    47.19286215331
                 ]
             }
         },
@@ -105,6 +218,20 @@
             "type": "Feature",
             "properties": {
                 "marker-symbol": "bus",
+                "name": "<strong>Arrêt proxitan</strong>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.56692907348,
+                    47.20916136262
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "bus",
                 "name": "<strong>Mairie de Couëron ligne 91</strong>"
             },
             "geometry": {
@@ -112,6 +239,20 @@
                 "coordinates": [
                     -1.72705293775,
                     47.21212764676
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "tram",
+                "name": "<strong>Chantiers Navals</strong>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.56752587438,
+                    47.20887712237
                 ]
             }
         },
@@ -160,6 +301,20 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "boat_reverse",
+                "name": "<strong>Jeudi à 11h</strong><br>Arrivée des bateaux<br><strong>Vendredi à 10h30</strong><br>Départ des bateaux"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.37947091103,
+                    47.29331878977
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "station",
                 "name": "<strong>Gare de Thouaré</strong>"
             },
@@ -202,6 +357,34 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "bus",
+                "name": "<strong>Arrêt proxitan</strong>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.56425893575,
+                    47.20657940073
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 21 h 30</strong><br>Arrivée à Nantes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.56847004414,
+                    47.20758708270
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "station",
                 "name": "<strong>Gare de Basse-Indre Saint-Herblain</strong>"
             },
@@ -230,14 +413,70 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 21 h 15</strong><br>Passage devant Trentemoult"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.58288964272,
+                    47.19641984442
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "location_velo",
+                "name": "<strong> Location de vélo</strong> </br>Possibilité de les déposer à Nantes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.72334076047,
+                    47.20911035048
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 16 h</strong><br>Départ de Saint-Nazaire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.17246064186,
+                    47.27748213872
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 18 h</strong><br>Passage devant Paimboeuf"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.02835091591,
+                    47.29477412641
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "bicycle-share-50",
                 "name": "<strong> Départ Véloparade</strong> </br> 19h30 RDV des cycliste</br>19h45 Départ de Couéron"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1.72184794312,
-                    47.20899822098
+                    -1.72167628174,
+                    47.20888160680
                 ]
             }
         },
@@ -292,8 +531,22 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -1.57441646397,
-                    47.20527835180
+                    -1.57449693024,
+                    47.20533666288
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 20 h</strong><br>Regroupement des deux flotes"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.75334939003,
+                    47.20417595053
                 ]
             }
         },
@@ -397,6 +650,20 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "boat",
+                "name": "<strong>Samedi à 18h45<br></strong>Passage devant Cordemais"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.88595780373,
+                    47.27404635704
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "station",
                 "name": "<strong>Gare de Clisson</strong>"
             },
@@ -414,7 +681,7 @@
                 "amenity": "parking",
                 "fill-color": "red",
                 "fill-opacity": "0.5",
-                "marker-symbol": "Village_DDL",
+                "marker-symbol": "Village_DDL_LD",
                 "name": "<strong> Village du Port</strong> </br> Guinguette du port"
             },
             "geometry": {
@@ -480,6 +747,20 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "tram",
+                "name": "<strong>Gare Maritime</strong>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.57314779520,
+                    47.20704771106
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "station",
                 "name": "<strong>Gare de Cordemais</strong>"
             },
@@ -494,14 +775,42 @@
         {
             "type": "Feature",
             "properties": {
+                "marker-symbol": "boat_reverse",
+                "name": "<strong>Vendredi à 17h30</strong><br>Arrivée à Saint-sébastien sur Loire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.51885994911,
+                    47.21070652889
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-symbol": "boat_reverse",
+                "name": "<strong>Vendredi à 12h30</strong><br>Arrêt pique-nique à Sainte-Luce-sur-Loire"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.46508695841,
+                    47.23925374355
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "marker-symbol": "station",
                 "name": "<strong>Gare de Montoir de Bretagne</strong>"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -2.16162445307,
-                    47.32090510972
+                    -2.16160835981,
+                    47.32088692725
                 ]
             }
         },
@@ -511,7 +820,7 @@
                 "amenity": "parking",
                 "fill-color": "yellow",
                 "fill-opacity": "0.5",
-                "marker-symbol": "CycloVillage",
+                "marker-symbol": "CycloVillage_LD",
                 "name": "<strong>Village des Chantiers & Cyclovillage</strong> </br> Annimation toute l'après-midi"
             },
             "geometry": {

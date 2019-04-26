@@ -96,7 +96,15 @@ var zoomtrigger = 14;
 map.on('load', function (){
     map.loadImage('img/bus.png', function(error, image) {
         if (error) throw error;
-        map.addImage('bus', image);
+		map.addImage('bus', image);
+	});
+    map.loadImage('img/CycloVillage_LD.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('CycloVillage_LD', image);
+    });
+    map.loadImage('img/Village_DDL_LD.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('Village_DDL_LD', image);
 	});
     map.loadImage('img/CycloVillage.png', function(error, image) {
         if (error) throw error;
@@ -122,10 +130,22 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('car', image);
 	});
-	    map.loadImage('img/bicycle-share-50.png', function(error, image) {
+	map.loadImage('img/bicycle-share-50.png', function(error, image) {
         if (error) throw error;
         map.addImage('bicycle-share-50', image);
-	});                                            
+	});
+	    map.loadImage('img/tram.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('tram', image);
+	});
+	    map.loadImage('img/boat.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('boat', image);
+	}); 
+	    map.loadImage('img/boat_reverse.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('boat_reverse', image);
+	}); 	
     map.loadImage('img/logo_event.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
@@ -137,9 +157,14 @@ map.on('load', function (){
     map.loadImage('img/logo_large.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_large', image);
-       
+	});   
+	    map.loadImage('img/rail.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('station', image);
+	});
+	
 
-
+/*
 map.addLayer({
             "id": "CycloVillage",
             "type": "symbol",
@@ -175,9 +200,6 @@ map.addLayer({
                 }
 }
 });
-
-
-
 
 map.addLayer({
             "id": "Village_DDL",
@@ -217,7 +239,7 @@ map.addLayer({
         });
     });
 
-
+*/
 
 
 
@@ -302,15 +324,62 @@ map.addLayer({
           // 'overlays' anywhere in the layer stack.
     }, "road-label-large");
 
-
-
-
-
+map.addLayer({
+        "id": "points_bike",
+        "type": "symbol",
+		"filter": ["in","marker-symbol","bicycle-share-50"],
+        "source": {
+            "type": "geojson",
+            "data": "geo/event.geojson",
+        },
+        'minzoom': 10,
+        "layout": {
+            "icon-image": "{marker-symbol}", // autre possibilité qui était la et marchais :: "{marker-symbol}",
+            "icon-allow-overlap": true,
+			"icon-anchor": "bottom",
+            "icon-size": {
+                    "base": 1.5,
+                    "stops": [[14, 0.5], [17, 1.2]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[10, 0], [12, 1]]
+            }
+        }
+    },);
 
 
     map.addLayer({
         "id": "points",
         "type": "symbol",
+		"filter": ["in","marker-symbol","boat","boat_reverse"],
+        "source": {
+            "type": "geojson",
+            "data": "geo/event.geojson",
+        },
+        'minzoom': 8,
+        "layout": {
+            "icon-image": "{marker-symbol}", // autre possibilité qui était la et marchais :: "{marker-symbol}",
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 1.5,
+                    "stops": [[10, 0.25], [14, 0.5], [17, 1.2]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[8, 0], [11, 1]]
+            }
+        }
+    },);
+	
+	map.addLayer({
+        "id": "points_other",
+        "type": "symbol",
+		"filter": ["!in","marker-symbol","bicycle-share-50","boat","boat_reverse"],
         "source": {
             "type": "geojson",
             "data": "geo/event.geojson",
@@ -318,10 +387,11 @@ map.addLayer({
         'minzoom': 13,
         "layout": {
             "icon-image": "{marker-symbol}", // autre possibilité qui était la et marchais :: "{marker-symbol}",
-            "icon-allow-overlap": true,
+            "icon-allow-overlap": false,
+			"icon-anchor": "bottom",
             "icon-size": {
-                    "base": 1.2,
-                    "stops": [[14, 1], [17, 1.2]]
+                    "base": 1.5,
+                    "stops": [[14, 0.3], [17, 1]]
                 }
         },
         "paint": {
@@ -330,10 +400,7 @@ map.addLayer({
                 "stops": [[13, 0], [14.5, 1]]
             }
         }
-    });
-
-
-
+    },);
 
     map.addLayer({
         'id': 'polygones',
@@ -346,10 +413,12 @@ map.addLayer({
         'layout': {},
         'paint': {
             'fill-color': ['get', 'fill-color'],
-            'fill-opacity': 0.3
+            'fill-opacity': {
+                "base": 1,
+                "stops": [[13, 0], [18, 0.6]]
             }
-        }
-        )
+            }
+        }, "road-label-large")
     });
 
 
@@ -357,6 +426,8 @@ map.addLayer({
 
 
 
+
+/*
 
 
 ///Afficher popups on click
@@ -390,7 +461,8 @@ map.getCanvas().style.cursor = 'pointer';
 // Change it back to a pointer when it leaves.
 map.on('mouseleave','lines', function () {
 map.getCanvas().style.cursor = '';
-
+});
+*/
 
 
 //Popup Polygones
@@ -494,6 +566,40 @@ map.getCanvas().style.cursor = '';
 
 
 
+//Popup Points
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','points_bike', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','points_bike', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','points_bike', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+
+
 //Popup CycloVillage
 
 // When a click event occurs on a feature in the polygones layer, open a popup at the
@@ -561,7 +667,7 @@ map.getCanvas().style.cursor = '';
 
 
 })
-})
+
 </script>
 </body>
 </html>
