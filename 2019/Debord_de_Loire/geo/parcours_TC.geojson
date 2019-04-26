@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "name": "4 Foch-Cathédrale → Porte de Vertou",
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 4
       },
       "geometry": {
@@ -822,7 +822,7 @@
       "type": "Feature",
       "properties": {
         "name": "3 Neustrie → Marcel Paul",
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 6
       },
       "geometry": {
@@ -4315,7 +4315,7 @@
       "type": "Feature",
       "properties": {
         "name": "2 Orvault Grand Val → Gare de Pont-Rousseau",
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 6
       },
       "geometry": {
@@ -7140,7 +7140,7 @@
       "type": "Feature",
       "properties": {
         "name": "4 Porte de Vertou → Foch-Cathédrale",
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 4
       },
       "geometry": {
@@ -7921,7 +7921,7 @@
       "type": "Feature",
       "properties": {
         "name": "1 François Mitterrand → Beaujoire",
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 6
       },
       "geometry": {
@@ -10385,7 +10385,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
         "name": "Navette fluviale<br>coupé pour le passage de la parade nautique"
@@ -10479,7 +10479,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 5,
         "stroke-opacity": 1,
         "name": "Navibus<br>coupé pour le passage de la parade nautique"
@@ -10625,7 +10625,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
         "name": "Bac d'Indre<br>coupé pour le passage de la parade nautique"
@@ -10703,7 +10703,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
         "name": "Bac d'Indre<br>coupé pour le passage de la parade nautique"
@@ -10757,7 +10757,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
         "name": "Bac le Pellerin - Couéron<br>coupé à partir de 19h40"
@@ -10835,7 +10835,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
         "name": "Bac le Pellerin - Couéron<br>coupé à partir de 19h40"
@@ -10905,7 +10905,7 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "SLATEBLUE",
+        "stroke": "STEELBLUE",
         "stroke-width": 3.5,
         "stroke-opacity": 1,
         "name": "91 Liaison en bus Gare à Mairie de Couéron"
@@ -10996,6 +10996,232 @@
           [
             -1.7268598079681396,
             47.212091199718515
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "GREEN",
+        "stroke-width": 7,
+        "stroke-opacity": 1,
+        "name": "<strong>Piste cyclable événement</strong>"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -1.5881788730621338,
+            47.198216766856504
+          ],
+          [
+            -1.5875190496444702,
+            47.19831153494363
+          ],
+          [
+            -1.5865695476531982,
+            47.1984063028615
+          ],
+          [
+            -1.5853464603424072,
+            47.19854480951392
+          ],
+          [
+            -1.5848207473754883,
+            47.19859583818947
+          ],
+          [
+            -1.5842360258102417,
+            47.19871611987335
+          ],
+          [
+            -1.583356261253357,
+            47.19894210290568
+          ],
+          [
+            -1.5827769041061401,
+            47.19905509406093
+          ],
+          [
+            -1.581977605819702,
+            47.199237337352656
+          ],
+          [
+            -1.5810978412628174,
+            47.19946696300897
+          ],
+          [
+            -1.5806525945663452,
+            47.19957630821032
+          ],
+          [
+            -1.580110788345337,
+            47.19975490488787
+          ],
+          [
+            -1.57903254032135,
+            47.20017405799448
+          ],
+          [
+            -1.5782815217971802,
+            47.200476575135745
+          ],
+          [
+            -1.5776002407073972,
+            47.200866564567875
+          ],
+          [
+            -1.5771764516830444,
+            47.20114720939484
+          ],
+          [
+            -1.576715111732483,
+            47.201537193897366
+          ],
+          [
+            -1.5762698650360107,
+            47.20200371364861
+          ],
+          [
+            -1.575883626937866,
+            47.20247022929752
+          ],
+          [
+            -1.5755832195281982,
+            47.20303150050078
+          ],
+          [
+            -1.5752559900283813,
+            47.203614633123614
+          ],
+          [
+            -1.5751004219055176,
+            47.20399002135823
+          ],
+          [
+            -1.5749609470367432,
+            47.20436540693655
+          ],
+          [
+            -1.5748804807662964,
+            47.20467154466496
+          ],
+          [
+            -1.5746712684631345,
+            47.20505056988096
+          ],
+          [
+            -1.5743708610534668,
+            47.205400436907446
+          ],
+          [
+            -1.5739792585372925,
+            47.20576852368395
+          ],
+          [
+            -1.5737271308898926,
+            47.20600176546784
+          ],
+          [
+            -1.5733730792999268,
+            47.20632975999128
+          ],
+          [
+            -1.5731477737426758,
+            47.20647553468404
+          ],
+          [
+            -1.5729546546936035,
+            47.20656299930739
+          ],
+          [
+            -1.57279372215271,
+            47.206639530734535
+          ],
+          [
+            -1.5727293491363523,
+            47.206723350742315
+          ],
+          [
+            -1.5723860263824463,
+            47.2069565883278
+          ],
+          [
+            -1.5722304582595823,
+            47.20708778401894
+          ],
+          [
+            -1.5719944238662718,
+            47.207222623696694
+          ],
+          [
+            -1.5718120336532593,
+            47.20733195291351
+          ],
+          [
+            -1.571243405342102,
+            47.207539677804654
+          ],
+          [
+            -1.5704548358917236,
+            47.20785673001748
+          ],
+          [
+            -1.5695053339004517,
+            47.20816284759714
+          ],
+          [
+            -1.5685826539993284,
+            47.208447098053476
+          ],
+          [
+            -1.5672576427459717,
+            47.20882609629234
+          ],
+          [
+            -1.56680166721344,
+            47.20896093155113
+          ],
+          [
+            -1.5666621923446655,
+            47.208949998975335
+          ],
+          [
+            -1.5665441751480103,
+            47.208895336062646
+          ],
+          [
+            -1.5663671493530273,
+            47.20877507745639
+          ],
+          [
+            -1.5661150217056274,
+            47.208468963410105
+          ],
+          [
+            -1.5650099515914917,
+            47.20725906679401
+          ],
+          [
+            -1.5645807981491089,
+            47.20682539231216
+          ],
+          [
+            -1.5642642974853516,
+            47.20645002414171
+          ],
+          [
+            -1.5636152029037476,
+            47.20575030162638
+          ],
+          [
+            -1.5629714727401731,
+            47.20504692542062
+          ],
+          [
+            -1.562622785568237,
+            47.20464967774295
           ]
         ]
       }

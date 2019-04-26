@@ -140,40 +140,46 @@ map.on('load', function (){
        
 
 
-        map.addLayer({
+map.addLayer({
             "id": "CycloVillage",
             "type": "symbol",
             "source": {
                 "type": "geojson",
                 "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [-1.5668615, 47.2064591]
-                        }
-                    }]
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+"properties": {
+"name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-1.5668615, 47.2064591]
+}
+}]
+}
+},
+        'minzoom' : 12,
+"layout": {
+    "icon-image": "CycloVillage",
+    "icon-allow-overlap": true,
+    "icon-size": {
+            "base": 0.1,
+            "stops": [[14, 0.12], [17, 0.125]]
                 }
             },
-            "layout": {
-                "icon-image": "CycloVillage",
-                "icon-allow-overlap":true,
-            "icon-size": {
-                    "base": 0.125,
-                    "stops": [[14, 0.02], [17, 0.075]]
+"paint": {
+    "icon-opacity": {
+        "base": 1,
+        "stops": [[12.5, 0], [15, 1]]
                 }
-            },
-            "paint": {
-                "icon-opacity": {
-                    "base": 1,
-                     "stops": [[13, 0], [14.5, 1]]
-                }
-            }
-        });
+}
+});
 
 
-    map.addLayer({
+
+
+map.addLayer({
             "id": "Village_DDL",
             "type": "symbol",
             "source": {
@@ -182,6 +188,9 @@ map.on('load', function (){
                     "type": "FeatureCollection",
                     "features": [{
                         "type": "Feature",
+                        "properties": {
+                        "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
+                        },
                         "geometry": {
                             "type": "Point",
                             "coordinates": [-1.57204322, 47.20707577]
@@ -189,33 +198,24 @@ map.on('load', function (){
                     }]
                 }
             },
+                    'minzoom' : 12,
             "layout": {
                 "icon-image": "Village_DDL",
                                 "icon-allow-overlap":true,
 
             "icon-size": {
-                    "base": 0.125,
-                    "stops": [[14, 0.02], [17, 0.075]]
+            "base": 0.1,
+            "stops": [[14, 0.12], [17, 0.125]]
                 }
             },
             "paint": {
                 "icon-opacity": {
-                    "base": 1,
-                     "stops": [[13, 0], [14.5, 1]]
+        "base": 1,
+        "stops": [[12.5, 0], [15, 1]]
                 }
             }
         });
     });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -361,7 +361,35 @@ map.on('load', function (){
 
 ///Afficher popups on click
 
+//Popup Lines
 
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','lines', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','lines', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','lines', function () {
+map.getCanvas().style.cursor = '';
 
 
 
@@ -466,11 +494,11 @@ map.getCanvas().style.cursor = '';
 
 
 
-//Popup Points
+//Popup CycloVillage
 
 // When a click event occurs on a feature in the polygones layer, open a popup at the
 // location of the feature, with description HTML from its properties.
-map.on('click','lines', function (e) {
+map.on('click','CycloVillage', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.name;
  
@@ -488,19 +516,52 @@ new mapboxgl.Popup()
 });
  
 // Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter','lines', function () {
+map.on('mouseenter','CycloVillage', function () {
 map.getCanvas().style.cursor = 'pointer';
 });
  
 // Change it back to a pointer when it leaves.
-map.on('mouseleave','lines', function () {
+map.on('mouseleave','CycloVillage', function () {
 map.getCanvas().style.cursor = '';
 });
 
 
+//Popup Village_DDL
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','Village_DDL', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','Village_DDL', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','Village_DDL', function () {
+map.getCanvas().style.cursor = '';
 
 
 
+
+
+})
+})
 </script>
 </body>
 </html>
