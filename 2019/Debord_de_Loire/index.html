@@ -237,7 +237,7 @@ map.on('load', function (){
             "line-cap": "round"
         },
         "paint": {
-            "line-color": "DEEPSKYBLUE",// peut aussi récupérer des couleurs nommées comme 'red' et aussi sur geojson.io
+            "line-color": ['get', 'stroke'],// peut aussi récupérer des couleurs nommées comme 'red' et aussi sur geojson.io
             "line-width": {
                 "property": 'stroke-width',// identifie la clé qui est analysé dans le fichier pour chercher la valeure.
                 "base": 1.5,
