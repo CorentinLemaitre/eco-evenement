@@ -11003,8 +11003,8 @@
     {
       "type": "Feature",
       "properties": {
-        "stroke": "GREEN",
-        "stroke-width": 7,
+        "stroke": "LIMEGREEN",
+        "stroke-width": 8,
         "stroke-opacity": 1,
         "name": "<strong>Piste cyclable événement</strong>"
       },
