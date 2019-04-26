@@ -5,8 +5,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Loire à vélo",
-                "description": "Itinéraire Sud de la Loire à vélo",
+                "name": "<strong>Loire à vélo</strong> </br>Itinéraire Sud de la Loire à vélo",
+                "description": "",
                 "stroke": "MEDIUMORCHID",
 				"stroke-width": 6,
                 "TODO": "Lien vers trace GPS"
@@ -8864,9 +8864,9 @@
         {
             "type": "Feature",
             "properties": {
-                "description": "Trajet de Couéron à Nantes entre 19h et 22h",
-                "name": "Vélo parade",
-                "stroke": "MEDIUMORCHID",
+                "description": "",
+                "name": "<strong>Vélo parade</strong></br>Trajet de Couéron à Nantes entre 19h et 22h",
+                "stroke": "BLUE",
 				"stroke-width": 8,
                 "TODO": "Vérifier tracé et info + lien vers la trace GPS"
             },
@@ -11843,8 +11843,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Loire à vélo Nord",
-                "description": "Itinéraire Nord de la Loire à vélo",
+                "name": "<strong>Loire à vélo Nord</strong></br>Itinéraire Nord de la Loire à vélo",
+                "description": "",
                 "stroke": "MEDIUMORCHID",
 				"stroke-width": 6,
                 "TODO": "Lien vers trace GPS"
