@@ -70,6 +70,19 @@ border-radius: 3px;
 .overlay button:hover {
 background-color:#4ea0da;
 }
+
+
+
+#marker {
+background-image: url('img/logo_large.png');
+background-size: cover;
+width: 25%; 
+height: 12%;
+
+cursor: pointer;
+}
+
+
 </style>
 <script src='https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js' charset='utf-8'></script>
 
@@ -92,6 +105,57 @@ var map = new mapboxgl.Map({
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle  logo_large
 });
+
+
+//// MARKER  47.206386/-1.570756
+
+var monument = [-1.5666004, 47.2052967]; // -1.555265, 47.157256
+          
+var popup = new mapboxgl.Popup({ offset: 25 })
+.setHTML('');
+ 
+// create DOM element for the marker
+var el = document.createElement('div');
+el.id = 'marker';
+ 
+// create the marker
+var logo = new mapboxgl.Marker(el)
+.setLngLat(monument)
+.setOffset([220,-120])
+//.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
+.addTo(map);
+
+
+////
+
+//// MARKER1 
+
+
+
+var monument1 = [-1.721514, 47.209005]; // 
+          
+var popup = new mapboxgl.Popup({ offset: 25 })
+.setHTML('');
+ 
+// create DOM element for the marker
+var el = document.createElement('div');
+el.id = 'marker';
+ 
+// create the marker
+var logo = new mapboxgl.Marker(el)
+.setLngLat(monument1)
+.setOffset([-180,-100])
+//.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
+.addTo(map);
+
+
+////
+
+
+
+   
+
+
 var zoomtrigger = 14; 
 map.on('load', function (){
     map.loadImage('img/bus.png', function(error, image) {
@@ -662,11 +726,48 @@ map.getCanvas().style.cursor = 'pointer';
 map.on('mouseleave','Village_DDL', function () {
 map.getCanvas().style.cursor = '';
 
-
-
-
-
 })
+
+//FlyTo Logo
+
+
+
+ 
+
+    var flybtn = document.getElementById('marker');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.570756, 47.206386];
+    var index = 0
+    var flyzoom = 15.19;
+    var flypitch = -51.2;
+    var flybearing = 54;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing: flybearing
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.63926, 47.2072];
+        flyzoom = 11.5;
+        flypitch = 0;
+        flybearing = 0;
+        index = 1;
+        }else{
+        arrival = [-1.570756, 47.206386];
+        index = 0
+        flyzoom = 15.19;
+        flypitch = -51.2;
+        flybearing = 54;
+        }
+        };
+
+
+
 
 </script>
 </body>
