@@ -107,9 +107,9 @@ var map = new mapboxgl.Map({
 });
 
 
-//// MARKER  47.206386/-1.570756
+/*//// MARKER  47.206386/-1.570756
 
-var monument = [-1.5666004, 47.2052967]; // -1.555265, 47.157256
+var monument = [-1.566805, 47.2121]; // -1.555265, 47.157256
           
 var popup = new mapboxgl.Popup({ offset: 25 })
 .setHTML('');
@@ -121,7 +121,7 @@ el.id = 'marker';
 // create the marker
 var logo = new mapboxgl.Marker(el)
 .setLngLat(monument)
-.setOffset([220,-120])
+.setOffset([240,-120])
 //.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
 .addTo(map);
 
@@ -150,10 +150,8 @@ var logo = new mapboxgl.Marker(el)
 
 
 ////
+*/
 
-
-
-   
 
 
 var zoomtrigger = 14; 
@@ -162,6 +160,10 @@ map.on('load', function (){
         if (error) throw error;
 		map.addImage('bus', image);
 	});
+    map.loadImage('img/logo_event.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('Debord-de-Loire_bateau', image);
+    });
     map.loadImage('img/CycloVillage_LD.png', function(error, image) {
         if (error) throw error;
         map.addImage('CycloVillage_LD', image);
@@ -228,9 +230,9 @@ map.on('load', function (){
 	});
 	
 
-/*
+
 map.addLayer({
-            "id": "CycloVillage",
+            "id": "Debord-de-Loire_bateau",
             "type": "symbol",
             "source": {
                 "type": "geojson",
@@ -239,72 +241,28 @@ map.addLayer({
 "features": [{
 "type": "Feature",
 "properties": {
-"name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
 },
 "geometry": {
 "type": "Point",
-"coordinates": [-1.5668615, 47.2064591]
+"coordinates": [-1.5666367, 47.212546]
 }
 }]
 }
 },
-        'minzoom' : 12,
 "layout": {
-    "icon-image": "CycloVillage",
+    "icon-image": "Debord-de-Loire_bateau",
     "icon-allow-overlap": true,
-    "icon-size": {
-            "base": 0.1,
-            "stops": [[14, 0.12], [17, 0.125]]
-                }
+    "icon-anchor": "bottom",
             },
-"paint": {
-    "icon-opacity": {
-        "base": 1,
-        "stops": [[12.5, 0], [15, 1]]
+
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[8, 0], [11, 1]]
                 }
 }
 });
-
-map.addLayer({
-            "id": "Village_DDL",
-            "type": "symbol",
-            "source": {
-                "type": "geojson",
-                "data": {
-                    "type": "FeatureCollection",
-                    "features": [{
-                        "type": "Feature",
-                        "properties": {
-                        "name": "<strong> Cyclovillage et Village des métiers</strong> </br> Annimation toute l'après-midi",
-                        },
-                        "geometry": {
-                            "type": "Point",
-                            "coordinates": [-1.57204322, 47.20707577]
-                        }
-                    }]
-                }
-            },
-                    'minzoom' : 12,
-            "layout": {
-                "icon-image": "Village_DDL",
-                                "icon-allow-overlap":true,
-
-            "icon-size": {
-            "base": 0.1,
-            "stops": [[14, 0.12], [17, 0.125]]
-                }
-            },
-            "paint": {
-                "icon-opacity": {
-        "base": 1,
-        "stops": [[12.5, 0], [15, 1]]
-                }
-            }
-        });
-    });
-
-*/
-
+    
 
 
 
@@ -732,16 +690,28 @@ map.getCanvas().style.cursor = '';
 
 
 
- 
+// Center the map on the coordinates of any clicked symbol from the 'symbols' layer.
 
-    var flybtn = document.getElementById('marker');
-    flybtn.addEventListener('click', flyFunction);
-    flybtn.addEventListener('click', changeFunction);
+
+
+    //var flybtn = document.getElementById('points');
+    //flybtn.addEventListener('click', flyFunction);
+    //flybtn.addEventListener('click', changeFunction);
+
+
+    map.on('click', 'Debord-de-Loire_bateau', function (e) {
+flyFunction();
+changeFunction();
+});
+
+
     var arrival = [-1.570756, 47.206386];
     var index = 0
     var flyzoom = 15.19;
-    var flypitch = -51.2;
-    var flybearing = 54;
+    var flypitch = 54;
+    var flybearing = -51.2;
+
+
     function flyFunction(){
         map.flyTo({
             center: arrival, //first
@@ -761,11 +731,10 @@ map.getCanvas().style.cursor = '';
         arrival = [-1.570756, 47.206386];
         index = 0
         flyzoom = 15.19;
-        flypitch = -51.2;
-        flybearing = 54;
+        flypitch = 54;
+        flybearing = -51.2;
         }
         };
-
 
 
 
