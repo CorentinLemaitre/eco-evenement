@@ -23,6 +23,9 @@
 
     <script src="https://use.fontawesome.com/acc5504c96.js"></script>
 
+
+
+
   </head>
 
 
@@ -32,6 +35,9 @@
 
 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
+
+<link rel='stylesheet' href='widget-theme-journey.css' type='text/css' />
+
 
 
 
@@ -176,13 +182,10 @@ background: #3074a4;
 
 
 <div id='map'>
-      <div id='instructions'></div>
-<nav id="menu"></nav>
-
-     <button id='itinerary' onclick="getLocation()" class="first" id="error_message" title="Activer localisation"> <img src=geolocate.svg width=35% alt="Activer Localisation"> </img> ACTIVER LOCALISATION</button>
-
+            <div id="is-WidgetWrapper"></div> 
 
     </div>
+
 
 
 
@@ -221,22 +224,25 @@ placeholder: "Dis-nous d'où tu viens !",
 bbox: [-1.80802994959663,47.02827825435034,-1.285844355190818,47.353171787024365], // Limite résultats autour de Nantes
 marker: {
 color: 'orange'
+
 },
 mapboxgl: mapboxgl
 });
  
 map.addControl(geocoder);
+
+
+
+
  
 ///Instructions
-
-
 
   // initialize the map canvas to interact with later
   var canvas = map.getCanvasContainer();
 
   // an arbitrary start will always be the same
   // only the end or destination will change
-  var start = [-1.55294, 47.15864];
+  var start = ['marker'];
 
   // create a function to make a directions request
   function getRoute(end) {
@@ -746,5 +752,14 @@ layers.appendChild(link);
 
 });
 </script>
+<script type="text/javascript">
+(function(){
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src= 'https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=&istid=STOPAREA|1350&istv=Seil,REZE';
+script.async = true;
+document.getElementsByTagName('body')[0].appendChild(script);
+})();
+</script> 
 </body>
 </html>

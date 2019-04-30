@@ -50,7 +50,9 @@ max-height: 60px; overflow: auto
 
 <div class='map-overlay-container'>
   
-  <div class='map-overlay'>
+
+                <div id="is-WidgetWrapper">
+
     <h3 id='location-title'>DU 25 AU 29 OCTOBRE 2017 À NANTES</h3>
     <p id='location-description'> 
 Ride, Kevin Morby, Fennesz, Zombie Zombie, Chad Vangaalen, Petit Fantôme, Blanck Mass, Marietta, Jessica 93, Julien Gasc, Flotation Toy Warning, John Maus, Rhys Chatham + Will Guthrie, Orson Hentschel, Cotillon, Accident Du Travail, Loscil, Puce Mary, Carl Stone, Doppeltgänger, Big | Brave, Larsen, Jessica Moss, Trupa Trupa, Seabuckthorn, Tonstartssbandht, Mary Ocher, Charlotte Bendiks.</p>
@@ -170,5 +172,14 @@ function showError(error) {
 }
 </script>
 
+<script type="text/javascript">
+(function(){
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src= 'https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=&istid=STOPAREA|1350&istv=Seil,REZE';
+script.async = true;
+document.getElementsByTagName('body')[0].appendChild(script);
+})();
+</script> 
 
 </html>
