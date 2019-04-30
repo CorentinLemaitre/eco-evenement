@@ -77,7 +77,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
     center: [-1.63926, 47.2072], // 
-    zoom: 12,
+    zoom: 11.5,
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle  logo_large
 });
@@ -136,7 +136,7 @@ map.on('load', function (){
         if (error) throw error;
 		map.addImage('bus', image);
 	});
-    map.loadImage('img/logo_event.png', function(error, image) {
+    map.loadImage('img/Debord-de-Loire_bateau.png', function(error, image) {
         if (error) throw error;
         map.addImage('Debord-de-Loire_bateau', image);
     });
@@ -207,8 +207,9 @@ map.on('load', function (){
 	
 
 
+
 map.addLayer({
-            "id": "Debord-de-Loire_bateau",
+            "id": "logo_event",
             "type": "symbol",
             "source": {
                 "type": "geojson",
@@ -220,13 +221,13 @@ map.addLayer({
 },
 "geometry": {
 "type": "Point",
-"coordinates": [-1.5712854, 47.2116776]
+"coordinates": [-1.5712854, 47.2116776] 
 }
 }]
 }
 },
 "layout": {
-    "icon-image": "Debord-de-Loire_bateau",
+    "icon-image": "logo_event",
     "icon-allow-overlap": true,
     "icon-anchor": "bottom-left",
                 "icon-size": {
@@ -244,8 +245,60 @@ map.addLayer({
 });
     
 
+map.addLayer({
+            "id": "icon-coueron",
+            "type": "symbol",
+            "source": {
+                "type": "geojson",
+                "data": {
+"type": "FeatureCollection",
+"features": [{
+"type": "Feature",
+"properties": {
+},
+"geometry": {
+"type": "Point",
+"coordinates": [-1.7290172, 47.2119669]
 
+}
+}]
+}
+},
+"layout": {
+    "icon-image": "logo_event",
+    "icon-allow-overlap": true,
+    "icon-anchor": "bottom",
+                "icon-size": {
+                    "base": 0.6,
+                    "stops": [[11.5, 0.6], [15.19, 0.4]]              
+                }
+            },
 
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[8, 0], [11, 1]]
+                }
+}
+});
+    
+    map.addLayer({
+        'id': 'polygones',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'geo/event.geojson'
+        },
+        'minzoom' : 14,
+        'layout': {},
+        'paint': {
+            'fill-color': ['get', 'fill-color'],
+            'fill-opacity': {
+                "base": 1,
+                "stops": [[13, 0], [18, 0.6]]
+            }
+            }
+        }, "road-label-large");
 
 
      map.addLayer({
@@ -404,23 +457,7 @@ map.addLayer({
         }
     },);
 
-    map.addLayer({
-        'id': 'polygones',
-        'type': 'fill',
-        'source': {
-            'type': 'geojson',
-            'data': 'geo/event.geojson'
-        },
-        'minzoom' : 14,
-        'layout': {},
-        'paint': {
-            'fill-color': ['get', 'fill-color'],
-            'fill-opacity': {
-                "base": 1,
-                "stops": [[13, 0], [18, 0.6]]
-            }
-            }
-        }, "road-label-large")
+
     });
 
 
@@ -679,7 +716,7 @@ map.getCanvas().style.cursor = '';
     //flybtn.addEventListener('click', changeFunction);
 
 
-    map.on('click', 'Debord-de-Loire_bateau', function (e) {
+    map.on('click', 'logo_event', function (e) {
 flyFunction();
 changeFunction();
 });
