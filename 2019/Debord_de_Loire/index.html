@@ -55,32 +55,8 @@ top: 10px;
 left: 10px;
 }
  
-.overlay button {
-font:600 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-background-color: #3386c0;
-color: #fff;
-display: inline-block;
-margin: 0;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-border-radius: 3px;
-}
- 
-.overlay button:hover {
-background-color:#4ea0da;
-}
 
 
-
-#marker {
-background-image: url('img/logo_large.png');
-background-size: cover;
-width: 25%; 
-height: 12%;
-
-cursor: pointer;
-}
 
 
 </style>
@@ -88,7 +64,7 @@ cursor: pointer;
 
     <div id='map'></div>
 <div class='overlay'>
-<button id='replay'>Replay</button>
+
 </div>
    
 
@@ -244,7 +220,7 @@ map.addLayer({
 },
 "geometry": {
 "type": "Point",
-"coordinates": [-1.5666367, 47.212546]
+"coordinates": [-1.5712854, 47.2116776]
 }
 }]
 }
@@ -252,7 +228,11 @@ map.addLayer({
 "layout": {
     "icon-image": "Debord-de-Loire_bateau",
     "icon-allow-overlap": true,
-    "icon-anchor": "bottom",
+    "icon-anchor": "bottom-left",
+                "icon-size": {
+                    "base": 0.8,
+                    "stops": [[11.5, 0.8], [15.19, 0.6]]
+                }
             },
 
         "paint": {
@@ -705,7 +685,7 @@ changeFunction();
 });
 
 
-    var arrival = [-1.570756, 47.206386];
+    var arrival = [-1.570678, 47.207498];
     var index = 0
     var flyzoom = 15.19;
     var flypitch = 54;
