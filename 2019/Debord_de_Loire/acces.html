@@ -136,10 +136,6 @@ map.on('load', function (){
         if (error) throw error;
 		map.addImage('bus', image);
 	});
-    map.loadImage('img/Debord-de-Loire_bateau.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('Debord-de-Loire_bateau', image);
-    });
     map.loadImage('img/CycloVillage_LD.png', function(error, image) {
         if (error) throw error;
         map.addImage('CycloVillage_LD', image);
@@ -148,14 +144,6 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('Village_DDL_LD', image);
 	});
-    map.loadImage('img/CycloVillage.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('CycloVillage', image);
-    });
-    map.loadImage('img/Village_DDL.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('Village_DDL', image);
-    });
     map.loadImage('img/location_velo.png', function(error, image) {
         if (error) throw error;
         map.addImage('location_velo', image);
@@ -195,15 +183,7 @@ map.on('load', function (){
 	map.loadImage('img/parade.png', function(error, image) {
         if (error) throw error;
         map.addImage('parade', image);
-    });
-    map.loadImage('img/logo_event_small.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_small', image);
-	});
-    map.loadImage('img/logo_large.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_large', image);
-	});   
+	}); 
 	    map.loadImage('img/rail.png', function(error, image) {
         if (error) throw error;
         map.addImage('station', image);
