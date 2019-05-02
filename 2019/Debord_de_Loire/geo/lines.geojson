@@ -11839,7 +11839,7 @@
         "stroke-opacity": 1,
         "description": "Trajet de Couéron à Nantes entre 19h et 22h",
         "name": "<strong>Vélo parade</strong><br>Trajet de Couéron à Nantes entre 19h et 22h",
-        "stroke": "MEDIUMORCHID",
+        "stroke": "GREEN",
         "stroke-width": 8,
         "TODO": "Vérifier tracé et info + lien vers la trace GPS"
       },
