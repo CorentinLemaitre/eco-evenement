@@ -6,7 +6,8 @@
       "properties": {
         "name": "4 Foch-Cathédrale → Porte de Vertou",
         "stroke": "STEELBLUE",
-        "stroke-width": 4
+        "stroke-width": 4,
+        "type": "busway"
       },
       "geometry": {
         "type": "LineString",
@@ -823,7 +824,8 @@
       "properties": {
         "name": "3 Neustrie → Marcel Paul",
         "stroke": "STEELBLUE",
-        "stroke-width": 6
+        "stroke-width": 6,
+        "type": "tram"
       },
       "geometry": {
         "type": "LineString",
@@ -4316,7 +4318,8 @@
       "properties": {
         "name": "2 Orvault Grand Val → Gare de Pont-Rousseau",
         "stroke": "STEELBLUE",
-        "stroke-width": 6
+        "stroke-width": 6,
+        "type": "tram"
       },
       "geometry": {
         "type": "LineString",
@@ -7141,7 +7144,8 @@
       "properties": {
         "name": "4 Porte de Vertou → Foch-Cathédrale",
         "stroke": "STEELBLUE",
-        "stroke-width": 4
+        "stroke-width": 4,
+        "type": "bus"
       },
       "geometry": {
         "type": "LineString",
@@ -7922,7 +7926,8 @@
       "properties": {
         "name": "1 François Mitterrand → Beaujoire",
         "stroke": "STEELBLUE",
-        "stroke-width": 6
+        "stroke-width": 6,
+        "type": "tram"
       },
       "geometry": {
         "type": "LineString",
@@ -10388,7 +10393,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
-        "name": "Navette fluviale<br>coupé pour le passage de la parade nautique"
+        "name": "Navette fluviale<br>coupé pour le passage de la parade nautique",
+        "type": "navibus"
       },
       "geometry": {
         "type": "LineString",
@@ -10482,7 +10488,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 5,
         "stroke-opacity": 1,
-        "name": "Navibus<br>coupé pour le passage de la parade nautique"
+        "name": "Navibus<br>coupé pour le passage de la parade nautique",
+        "type": "navibus"
       },
       "geometry": {
         "type": "LineString",
@@ -10628,7 +10635,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
-        "name": "Bac d'Indre<br>coupé pour le passage de la parade nautique"
+        "name": "Bac d'Indre<br>coupé pour le passage de la parade nautique",
+        "type": "navibus"
       },
       "geometry": {
         "type": "LineString",
@@ -10706,7 +10714,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
-        "name": "Bac d'Indre<br>coupé pour le passage de la parade nautique"
+        "name": "Bac d'Indre<br>coupé pour le passage de la parade nautique",
+        "type": "navibus"
       },
       "geometry": {
         "type": "LineString",
@@ -10760,7 +10769,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
-        "name": "Bac le Pellerin - Couéron<br>coupé à partir de 19h40"
+        "name": "Bac le Pellerin - Couéron<br>coupé à partir de 19h40",
+        "type": "navibus"
       },
       "geometry": {
         "type": "LineString",
@@ -10838,7 +10848,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 3,
         "stroke-opacity": 1,
-        "name": "Bac le Pellerin - Couéron<br>coupé à partir de 19h40"
+        "name": "Bac le Pellerin - Couéron<br>coupé à partir de 19h40",
+        "type": "navibus"
       },
       "geometry": {
         "type": "LineString",
@@ -10908,7 +10919,8 @@
         "stroke": "STEELBLUE",
         "stroke-width": 3.5,
         "stroke-opacity": 1,
-        "name": "91 Liaison en bus Gare à Mairie de Couéron"
+        "name": "91 Liaison en bus Gare à Mairie de Couéron",
+        "type": "bus"
       },
       "geometry": {
         "type": "LineString",
@@ -11006,7 +11018,8 @@
         "stroke": "LIMEGREEN",
         "stroke-width": 8,
         "stroke-opacity": 1,
-        "name": "<strong>Piste cyclable événement</strong>"
+        "name": "<strong>Piste cyclable événement</strong>",
+        "type": "vélo"
       },
       "geometry": {
         "type": "LineString",
@@ -11192,7 +11205,8 @@
         "stroke": "LIGHTGREEN",
         "stroke-width": 8,
         "stroke-opacity": 1,
-        "name": "<strong>Zone piétonne</strong>"
+        "name": "<strong>Zone piétonne</strong>",
+        "type": "vélo"
       },
       "geometry": {
         "type": "LineString",
