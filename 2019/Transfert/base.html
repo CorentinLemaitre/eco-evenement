@@ -36,46 +36,45 @@
 
 
 <style>
-    body {
-        margin: 0;
-        padding: 0;
-      }
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
 
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
 
-      #instructions {
-  position: absolute;
-  margin: 20px;
-  width: 25%;
-  top: 0;
-  bottom: 20%;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  overflow-y: scroll;
-  font-family: sans-serif;
-  font-size: 0.8em;
-  line-height: 2em;
+          /* STYLE la zone dessus la carte et sa police et son texte */
+.map-overlay-container {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 10px;
+    z-index: 1;
+
+
 }
-
-.duration {
-  font-size: 2em;
+.map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    max-height: 50%;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.20);
 }
+#button-center {
+    z-index: 1;
+    position:fixed; bottom:10%;padding:20px;width:60%; left:20%
+}
+p {
+max-height: 60px; overflow: auto
+}
+.map-overlay h2,
+.map-overlay p {
+    margin: 0 0 10px;
+}
+@media (min-width:801px) {.map-overlay-container {width:30%} p{max-height:800px}}
 
       
 
-/* STYLE la zone au-dessus de la carte sa police et son texte */
-      .map-overlay-container {
-        position: absolute;
-        top: 0px;
-        center: 0;
-        padding: 20px;
-        z-index: 0;
-      }
+
 
       }
     .map-overlay h2,
@@ -94,11 +93,11 @@
 
 
 
-#geocoder-container > div {
+/*#geocoder-container > div {
 min-width:50%;
 margin-left:25%;
 }
-
+*/
 
 
 
@@ -116,26 +115,26 @@ font-family: 'Open Sans', sans-serif;
 
 
 
-button.big {
-width:40%;
-padding:1%;
-}
-button.first {
-width:50%;
-padding:1%;
-}
 
 
 #menu {
 background: #fff;
-position: relative;
+position: absolute;
+float-right;
 z-index: 1;
-top: 150px;
-left: 10px;
+top: 50px;
+right: 10px;
+border: 4px solid white;
 border-radius: 3px;
-width: 120px;
+width: 180px;
 border: 1px solid rgba(0,0,0,0.4);
 font-family: 'arial', sans-serif;
+font-size: 15px;
+font-weight: 900;
+letter-spacing: 0.04em;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+
+
 }
 
 
@@ -143,15 +142,18 @@ font-family: 'arial', sans-serif;
 
  
 #menu a {
-font-size: 13px;
+font-size: 15px;
+font-weight: 900;
 color: #404040;
 display: block;
+  letter-spacing: 0.04em;
 margin: 0;
-padding: 0;
 padding: 10px;
 text-decoration: none;
 border-bottom: 1px solid rgba(0,0,0,0.25);
 text-align: center;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+line-height: 20px;
 }
  
 #menu a:last-child {
@@ -176,10 +178,24 @@ background: #000000;
     </style>
 
 
-
 <div id='map'>
 
 <nav id="menu"></nav>
+
+
+<div class='map-overlay-container'>
+  
+                <div id="is-WidgetWrapper">
+<center>
+<div id='itinerary' class='w3-row-padding'>
+    
+  </div>
+  </center>
+   
+  </div>
+
+    </div>
+
 
 
 
@@ -214,8 +230,9 @@ var map = new mapboxgl.Map({
     pitch: 0//pour avoir une vision avec un angle
 });
 
+
 ///Geocoder
- 
+/* 
 var geocoder = new MapboxGeocoder({
 accessToken: mapboxgl.accessToken,
 
@@ -228,11 +245,14 @@ mapboxgl: mapboxgl
 });
  
 map.addControl(geocoder);
+
+*/
+
  
 ///Instructions
 
 
-
+/*
   // initialize the map canvas to interact with later
   var canvas = map.getCanvasContainer();
 
@@ -387,9 +407,13 @@ getRoute(coords);
 //////
 
 
+*/
+
 
 
 ///Bouton Localisation Deeplink
+
+/*
 
 var x = document.getElementById("error_message");
 function getLocation() {
@@ -438,7 +462,7 @@ var url_PT_2 = "&fv=Ma%20position&ti=ADDRESS|"+ dest_y + "," + dest_x+ "&tv=" + 
 /*
 var geovelostart="47.213991,-1.555275";
 var destineostart="-1.555275%3B47.213991";
-*/
+/////
 
 // Ajout de la localisation dans les URL d'itinéraire
     var latlon = position.coords.latitude + "," + position.coords.longitude;
@@ -466,7 +490,7 @@ function showError(error) {
 
 /////
 
-
+*/
 
 
 
@@ -533,7 +557,7 @@ map.on('load', function (){
 
 
 map.addLayer({
-        'id': 'itineraires',
+        'id': 'Pistes Cyclables',
         'type': 'line',
         'source': {
 			'type': 'geojson',
@@ -576,7 +600,7 @@ map.addLayer({
 
 
     map.addLayer({
-        'id': 'TC',
+        'id': 'Transports en Commun',
         'type': 'line',
         'source': {
             'type': 'geojson',
@@ -646,7 +670,7 @@ map.addLayer({
 
 
 
-var toggleableLayerIds = [ 'itineraires', 'TC' ];
+var toggleableLayerIds = [ 'Pistes Cyclables', 'Transports en Commun' ];
  
 for (var i = 0; i < toggleableLayerIds.length; i++) {
 var id = toggleableLayerIds[i];
@@ -680,9 +704,9 @@ layers.appendChild(link);
 
   
 
-
+///POPUP ONCLICK POINTS
 		
-    map.on('click', 'points', function (e) {
+  /*  map.on('click', 'points', function (e) {
         var coordinates = e.features[0].geometry.coordinates.slice();
         var description = e.features[0].properties.name;
 
@@ -708,10 +732,13 @@ layers.appendChild(link);
     map.on('mouseleave', 'points', function () {
         map.getCanvas().style.cursor = '';
     });	
+*/
 
 
+///FLYBUTTON
 
-	var flybtn = document.getElementById('fly');
+
+	/* var flybtn = document.getElementById('fly');
 	flybtn.addEventListener('click', flyFunction);
 	flybtn.addEventListener('click', changeFunction);
 	var arrival = [-1.555181, 47.157465];
@@ -742,12 +769,24 @@ layers.appendChild(link);
 		}
 		};
 
-
+*/
 
 
 
 
 });
 </script>
+
+
+<script>
+(function(){
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src= "https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=Dis-nous d'où tu viens !&istid=STOPAREA|1350&istv=Seil,REZE"
+script.async = true;
+document.getElementsByTagName('body')[0].appendChild(script);
+})();
+</script> 
+
 </body>
 </html>
