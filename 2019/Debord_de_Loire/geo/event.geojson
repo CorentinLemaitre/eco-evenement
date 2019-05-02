@@ -34,7 +34,7 @@
       "type": "Feature",
       "properties": {
         "amenity": "parking",
-        "fill-color": "red",
+        "fill-color": "#FFCC00",
         "fill-opacity": "0.5",
         "marker-symbol": "Village_DDL_LD",
         "name": "<strong>Quai des plantes</strong> </br> Village de la solitaire Urgo le Figaro et guinguette 40 pieds"
@@ -160,34 +160,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-symbol": "bicycle",
-        "name": "<strong> Arrivée de la vélo parade</strong></br>21h30 horraire estimé d'arrivée</br>Stationnement vélo pour tous"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.57397658169,
-          47.20509430703
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "station",
-        "name": "<strong>Gare de Saint-Nazaire</strong>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -2.21108440876,
-          47.28644903107
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "marker-symbol": "station",
         "name": "<strong>Gare le Pallet</strong>"
       },
@@ -203,27 +175,13 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Arrivé à Basse indre</strong> </br>20h30 horraire estimé"
+        "name": "<strong> Arrivée à Basse indre</strong> </br>20h30 horraire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -1.66927818775,
-          47.20029801005
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "bus",
-        "name": "<strong>Arrêt proxitan</strong>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.56692907348,
-          47.20916136262
+          -1.672448, 
+		  47.1979431
         ]
       }
     },
@@ -350,20 +308,6 @@
         "coordinates": [
           -1.39225968361,
           47.16147415546
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "marker-symbol": "bus",
-        "name": "<strong>Arrêt proxitan</strong>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.56425893575,
-          47.20657940073
         ]
       }
     },
@@ -497,7 +441,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Arrivé à Haute indre</strong> </br>20h45 horraire estimé"
+        "name": "<strong> Arrivée à Haute indre</strong> </br>20h45 horraire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
       },
       "geometry": {
         "type": "Point",
@@ -524,20 +468,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-symbol": "bus",
-        "name": "<strong>Arrêt proxitan</strong>"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -1.57449693024,
-          47.20533666288
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "marker-symbol": "boat",
         "name": "<strong>Samedi à 20 h</strong><br>Regroupement des deux flotes"
       },
@@ -553,7 +483,7 @@
       "type": "Feature",
       "properties": {
         "fill-opacity": "0.5",
-        "fill-color": "yellow",
+        "fill-color": "#FFCC00",
         "marker-symbol": "station",
         "name": "<strong> Gare de Nantes</strong>",
         "amenity": "parking"
@@ -678,7 +608,7 @@
       "type": "Feature",
       "properties": {
         "amenity": "parking",
-        "fill-color": "red",
+        "fill-color": "#FFCC00",
         "fill-opacity": "0.5",
         "marker-symbol": "Village_DDL_LD",
         "name": "<strong> Village du Port</strong> </br> Guinguette du port"
@@ -817,7 +747,7 @@
       "type": "Feature",
       "properties": {
         "amenity": "parking",
-        "fill-color": "yellow",
+        "fill-color": "#FFCC00",
         "fill-opacity": "0.5",
         "marker-symbol": "CycloVillage_LD",
         "name": "<strong>Village des Chantiers & Cyclovillage</strong> </br> Annimation toute l'après-midi"
@@ -910,13 +840,135 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Arrivé à la roche Maurice</strong> </br>21h00 horraire estimé"
+        "name": "<strong> Arrivée à la roche Maurice</strong> </br>21h00 horraire estimé<br>accès possible via la gare Chantenay"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -1.61730768442,
           47.19437853166
+        ]
+      }
+    },
+	    {
+      "type": "Feature",
+      "properties": {
+        "name": "<strong> Parking vélo</strong></br>Place du commandant l'Herminier",
+        "amenity": "",
+        "fill-color": "DARKGREEN",
+        "marker-symbol": "bicycle",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5681320428848267,
+              47.20922331269384
+            ],
+            [
+              -1.567946970462799,
+              47.20892995591391
+            ],
+            [
+              -1.5671342611312866,
+              47.20913949663656
+            ],
+            [
+              -1.5673381090164185,
+              47.20946382760109
+            ],
+            [
+              -1.5681320428848267,
+              47.20922331269384
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "<strong> Parking vélo</strong></br>Cale des sous-marins",
+        "amenity": "",
+        "fill-color": "DARKGREEN",
+        "marker-symbol": "bicycle",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5663832426071165,
+              47.205626391469
+            ],
+            [
+              -1.5672200918197632,
+              47.20533119257493
+            ],
+            [
+              -1.5670162439346313,
+              47.20508701447056
+            ],
+            [
+              -1.5661203861236572,
+              47.20529110370954
+            ],
+            [
+              -1.5663832426071165,
+              47.205626391469
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "<strong> Parking vélo</strong></br>Gare Maritime</br><strong>Arrivée de la vélo parade</strong></br>21h30 horraire estimé d'arrivée",
+        "fill-color": "DARKGREEN",
+        "marker-symbol": "bicycle",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5742313861846924,
+              47.20543323682285
+            ],
+            [
+              -1.5745452046394348,
+              47.205147147988626
+            ],
+            [
+              -1.5747302770614624,
+              47.204846479716544
+            ],
+            [
+              -1.574767827987671,
+              47.20474261209924
+            ],
+            [
+              -1.5741965174674988,
+              47.204602299381
+            ],
+            [
+              -1.5739846229553223,
+              47.20503599203811
+            ],
+            [
+              -1.5738236904144285,
+              47.205225503682655
+            ],
+            [
+              -1.5742313861846924,
+              47.20543323682285
+            ]
+          ]
         ]
       }
     }

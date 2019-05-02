@@ -76,7 +76,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxN
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
-    center: [-1.63926, 47.2072], // 
+    center: [-1.5374,47.2145], // -1.5374,47.2145
     zoom: 11.5,
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle  logo_large
@@ -267,7 +267,7 @@ map.on('load', function (){
     }, "road-label-large");
 
  
-
+/*
 
     map.addLayer({
         'id': 'lines',
@@ -332,7 +332,7 @@ map.on('load', function (){
             }
         }
     });
-
+	*/
 
     map.addLayer({
         "id": "points",
@@ -359,6 +359,8 @@ map.on('load', function (){
         }
     });
 	
+
+	
 	map.addLayer({
         "id": "points_other",
         "type": "symbol",
@@ -370,7 +372,7 @@ map.on('load', function (){
         'minzoom': 13,
         "layout": {
             "icon-image": "{marker-symbol}", // autre possibilité qui était la et marchais :: "{marker-symbol}",
-            "icon-allow-overlap": true,
+            "icon-allow-overlap": false,
 			"icon-anchor": "bottom",
             "icon-size": {
                     "base": 1.5,
@@ -383,8 +385,33 @@ map.on('load', function (){
                 "stops": [[13, 0], [14.5, 1]]
             }
         }
-    });
+    }); 
 	
+
+	map.addLayer({
+        "id": "car_park",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/parcs-relais-nantes-metropole.geojson.geojson",
+        },
+        'minzoom': 13,
+        "layout": {
+            "icon-image": "car", // autre possibilité qui était la et marchais :: "{marker-symbol}",
+            "icon-allow-overlap": false,
+			"icon-anchor": "bottom",
+            "icon-size": {
+                    "base": 1.5,
+                    "stops": [[14, 0.3], [17, 1]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[13, 0], [14.5, 1]]
+            }
+        }
+    }); 
 	map.addLayer({
 	"id": "logo_event",
 		"type": "symbol",
@@ -765,7 +792,7 @@ changeFunction();
         };
     function changeFunction(){
         if (index < 1) {
-        arrival = [-1.63926, 47.2072];
+        arrival = [-1.5374,47.2145];
         flyzoom = 11.5;
         flypitch = 0;
         flybearing = 0;
