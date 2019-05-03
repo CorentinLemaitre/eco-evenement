@@ -78,7 +78,7 @@ var map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v10',
     center: [-1.63926, 47.2072], // 
     zoom: 11.5,
-    hash: 1,
+    // hash: 1,
     pitch: 0//pour avoir une vision avec un angle  logo_large
 });
 
@@ -136,10 +136,6 @@ map.on('load', function (){
         if (error) throw error;
 		map.addImage('bus', image);
 	});
-    map.loadImage('img/Debord-de-Loire_bateau.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('Debord-de-Loire_bateau', image);
-    });
     map.loadImage('img/CycloVillage_LD.png', function(error, image) {
         if (error) throw error;
         map.addImage('CycloVillage_LD', image);
@@ -148,14 +144,6 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('Village_DDL_LD', image);
 	});
-    map.loadImage('img/CycloVillage.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('CycloVillage', image);
-    });
-    map.loadImage('img/Village_DDL.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('Village_DDL', image);
-    });
     map.loadImage('img/location_velo.png', function(error, image) {
         if (error) throw error;
         map.addImage('location_velo', image);
@@ -195,15 +183,7 @@ map.on('load', function (){
 	map.loadImage('img/parade.png', function(error, image) {
         if (error) throw error;
         map.addImage('parade', image);
-    });
-    map.loadImage('img/logo_event_small.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_small', image);
-	});
-    map.loadImage('img/logo_large.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_large', image);
-	});   
+    });   
 	    map.loadImage('img/rail.png', function(error, image) {
         if (error) throw error;
         map.addImage('station', image);
@@ -408,22 +388,17 @@ map.on('load', function (){
 			"icon-image": "logo_event",
 			"icon-allow-overlap": true,
 			"icon-anchor": "bottom-left",
-            "icon-size": {
-                "base": 1,
-                "stops": [[11.5, 0.6], [15.19, 0.6]]
-            }
+            "icon-size": 0.5
         },
 		"paint": {
-			"icon-opacity": {
-				"base": 1,
-				"stops": [[8, 0], [11, 1]]
-            }
+			"icon-opacity": 1
 		}
 	});
     
 	map.addLayer({
 	"id": "parade",
 	"type": "symbol",
+	"minzoom": 8,
     "source": {
 		"type": "geojson",
         "data": {
@@ -444,16 +419,10 @@ map.on('load', function (){
 		"icon-image": "parade",
 		"icon-allow-overlap": true,
 		"icon-anchor": "bottom",
-			"icon-size": {
-                "base": 1,
-                "stops": [[11.5, 0.8], [15.19, 0.8]]              
-            }
+			"icon-size": 0.8
         },
     "paint": {
-        "icon-opacity": {
-            "base": 1,
-            "stops": [[8, 0], [11, 1]]
-        }
+        "icon-opacity": 1
 	}
 });
 
@@ -503,39 +472,6 @@ map.on('mouseleave','lines', function () {
 map.getCanvas().style.cursor = '';
 });
 */
-
-
-//Popup Polygones
-
-
-// When a click event occurs on a feature in the polygones layer, open a popup at the
-// location of the feature, with description HTML from its properties.
-map.on('click','polygones', function (e) {
-var coordinates = e.features[0].geometry.coordinates.slice();
-var description = e.features[0].properties.name;
- 
-// Ensure that if the map is zoomed out such that multiple
-// copies of the feature are visible, the popup appears
-// over the copy being pointed to.
-while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-}
- 
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.name)
-.addTo(map);
-});
- 
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter','polygones', function () {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave','polygones', function () {
-map.getCanvas().style.cursor = '';
-});
 
 
 //Popup TC
@@ -694,6 +630,38 @@ map.getCanvas().style.cursor = '';
 });
 
 
+
+//Popup Polygones
+
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','polygones', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','polygones', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','polygones', function () {
+map.getCanvas().style.cursor = '';
+});
 
 
 //Popup CycloVillage

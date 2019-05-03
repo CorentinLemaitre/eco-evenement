@@ -853,7 +853,7 @@
 	    {
       "type": "Feature",
       "properties": {
-        "name": "<strong> Parking vélo</strong></br>Place du commandant l'Herminier",
+        "name": "<strong> Parking vélo</strong></br>Place du commandant l'Herminier</br>Gardiennage vélo samedi de 19h à 2h du matin",
         "amenity": "",
         "fill-color": "DARKGREEN",
         "marker-symbol": "bicycle",

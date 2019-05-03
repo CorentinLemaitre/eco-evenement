@@ -1,1 +1,1901 @@
-{"type":"FeatureCollection","features":[{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.62161314661, 47.2186842268]}, "properties": {"stationnement_velo": "OUI", "commune": "St-Herblain", "exploitant": "Nantes M\u00e9tropole", "code_postal": "44800", "conditions_d_acces": "Libre", "adresse": "Boulevard Salvador Allende", "capacite_velo": 10, "lat_wgs84": 47.218684226795006, "capacite_pmr": 0, "stationnement_velo_securise": "NON", "autres_service_mob_prox": "Station Tramway Ligne 1 \"Frachon\"", "idobj": "3188", "nom_complet": "P+R tramway Frachon", "location": [47.2186842268, -1.62161314661], "site_web": "http://www.nantesmetropole.fr/", "capacite_voiture": 156, "long_wgs84": -1.62161314661187, "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.49616846761, 47.1906122974]}, "properties": {"stationnement_velo": "OUI", "commune": "St-S\u00e9bastien-sur-Loire", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.49616846761443, "conditions_d_acces": "Libre", "adresse": "Rue de l'Ouche Quinet", "capacite_velo": 30, "lat_wgs84": 47.190612297376894, "capacite_pmr": 6, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Halte Ferroviaire de St S\u00e9bastien \"Fr\u00eane Rond\" :Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet", "idobj": "3200", "nom_complet": "P+R TER Fr\u00eane Rond", "location": [47.1906122974, -1.49616846761], "site_web": "http://www.nantesmetropole.fr/", "services": "Box v\u00e9lo s\u00e9curis\u00e9, Distributeur de titre de transport TER & TAN.", "capacite_voiture": 62, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44230"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.5934215849, 47.2405205813]}, "properties": {"stationnement_velo": "OUI", "commune": "Orvault", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.59342158490416, "conditions_d_acces": "Libre", "adresse": "Route de Vannes", "capacite_velo": 10, "lat_wgs84": 47.2405205813348, "capacite_pmr": 2, "autres_service_mob_prox": "Station Tramway Ligne 3 \"Plaisance\"", "idobj": "3227", "nom_complet": "P+R tramway Plaisance", "location": [47.2405205813, -1.5934215849], "site_web": "http://www.nantesmetropole.fr/", "services": "Abri v\u00e9los", "capacite_voiture": 83, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44800"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.51297893333, 47.2082180574]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.208218057408594, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER Gare des Pas Enchant\u00e9s", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 44, "location": [47.2082180574, -1.51297893333], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "commune": "St-S\u00e9bastien-sur-Loire", "conditions_d_acces": "Libre", "adresse": "Rue de la Loire", "capacite_pmr": 6, "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.51297893332939, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44230", "autres_service_mob_prox": "Halte Ferroviaire de St S\u00e9bastien \"Pas Enchant\u00e9s\" :Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet", "idobj": "3552", "capacite_voiture": 81, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.4413746309, 47.2647003479]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.264700347887796, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER de Thouar\u00e9-sur_Loire", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 36, "location": [47.2647003479, -1.4413746309], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Thouar\u00e9-sur-Loire", "conditions_d_acces": "Libre", "adresse": "Rue des Ponts", "capacite_pmr": 3, "services": "Abri v\u00e9los, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.44137463089923, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44470", "autres_service_mob_prox": "Gare TER de Thouar\u00e9 :Ligne Nantes-Angers", "idobj": "3564", "capacite_voiture": 117, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.50514253321, 47.1801648647]}, "properties": {"capacite_moto": 0, "twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.1801648646645, "stationnement_velo_securise": "OUI", "nom_complet": "P+R busway Porte de Vertou", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 30, "location": [47.1801648647, -1.50514253321], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Vertou", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Boulevard Auguste Priou", "capacite_pmr": 10, "services": "Stationnement v\u00e9lo en consignes individuelles, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.50514253320576, "exploitant": "NMGS", "code_postal": "44120", "autres_service_mob_prox": "Station Busway Ligne 4 \"Porte de Vertou\"", "idobj": "3627", "capacite_voiture": 507, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.53331535036, 47.2001280459]}, "properties": {"capacite_moto": 0, "twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.2001280458774, "stationnement_velo_securise": "OUI", "nom_complet": "P+R busway Gr\u00e9neraie", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 49, "location": [47.2001280459, -1.53331535036], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Route de Saint S\u00e9bastien", "capacite_pmr": 6, "services": "Box v\u00e9lo abrit\u00e9 et s\u00e9curis\u00e9, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.53331535035711, "exploitant": "NMGS", "code_postal": "44200", "autres_service_mob_prox": "Station Busway Ligne 4 \"Gr\u00e9neraie\"", "idobj": "3628", "capacite_voiture": 225, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.6179889856, 47.245892274]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.2458922739929, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Marcel Paul", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 36, "location": [47.245892274, -1.6179889856], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "St-Herblain", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Boulevard Marcel Paul", "capacite_pmr": 4, "services": "Box v\u00e9lo abrit\u00e9 et s\u00e9curis\u00e9, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.6179889855974199, "exploitant": "TAN", "code_postal": "44800", "autres_service_mob_prox": "Station Tramway Ligne 3 \"Marcel Paul\"", "idobj": "3776", "capacite_voiture": 144, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.56820930889, 47.2593114206]}, "properties": {"stationnement_velo": "OUI", "commune": "Nantes", "exploitant": "Nantes M\u00e9tropole", "code_postal": "44300", "conditions_d_acces": "Libre", "capacite_moto": 0, "adresse": "Rue des Renards", "capacite_velo": 22, "lat_wgs84": 47.25931142056589, "capacite_pmr": 1, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Tramway Ligne 2 Orvault Grand Val  Pont-Rousseau", "idobj": "4076", "nom_complet": "P+R tramway Santos Dumont", "location": [47.2593114206, -1.56820930889], "site_web": "http://www.nantesmetropole.fr/", "capacite_voiture": 34, "long_wgs84": -1.56820930888833, "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "libtype": "Libre", "capacite_vehicule_electrique": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.59162976006, 47.1773341601]}, "properties": {"commune": "Bouguenais", "exploitant": "Nantes M\u00e9tropole", "code_postal": "44340", "conditions_d_acces": "Libre", "adresse": "Rue de la Neustrie", "capacite_velo": 0, "lat_wgs84": 47.177334160120004, "capacite_pmr": 3, "autres_service_mob_prox": "Station Tramway Ligne 3 \"Neustrie\"", "idobj": "4310", "nom_complet": "P+R tramway Neustrie 3", "location": [47.1773341601, -1.59162976006], "site_web": "http://www.nantesmetropole.fr/", "capacite_voiture": 37, "long_wgs84": -1.59162976006345, "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "libtype": "Libre", "capacite_vehicule_electrique": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.51845855018, 47.2810817328]}, "properties": {"lat_wgs84": 47.2810817328441, "stationnement_velo_securise": "OUI", "nom_complet": "P+R chronobus Chantrerie - Grandes Ecoles", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 24, "location": [47.2810817328, -1.51845855018], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Nantes", "conditions_d_acces": "Libre", "adresse": "Route de Gachet", "capacite_pmr": 6, "services": "Abri v\u00e9los.", "long_wgs84": -1.51845855018352, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44300", "autres_service_mob_prox": "Station Chronobus C6 \"Chantrerie - Grandes Ecoles\"", "idobj": "4311", "capacite_voiture": 268, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54103329739, 47.3083758078]}, "properties": {"capacite_moto": 13, "lat_wgs84": 47.3083758077511, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tram-train La Chapelle-Aulnay Est", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 50, "location": [47.3083758078, -1.54103329739], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "La Chapelle-sur-Erdre", "conditions_d_acces": "Libre", "adresse": "Avenue du Manoir", "capacite_pmr": 2, "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.54103329738512, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44240", "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant", "idobj": "4344", "capacite_voiture": 46, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54432747199, 47.2831021933]}, "properties": {"capacite_moto": 7, "lat_wgs84": 47.2831021932936, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tram-train La Chapelle Erdre Active", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 36, "location": [47.2831021933, -1.54432747199], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "La Chapelle-sur-Erdre", "conditions_d_acces": "Libre", "adresse": "Rue de la B\u00e9rangerais", "capacite_pmr": 2, "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.54432747199006, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44240", "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant", "idobj": "4346", "capacite_voiture": 49, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54875132571, 47.2968633786]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.296863378596896, "stationnement_velo_securise": "NON", "nom_complet": "P+R tram-train La Chapelle-sur-Erdre Centre Ouest", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "NON", "capacite_velo": 0, "location": [47.2968633786, -1.54875132571], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "La Chapelle-sur-Erdre", "conditions_d_acces": "Libre", "adresse": "Avenue de la Gare", "capacite_pmr": 1, "services": "Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.54875132570876, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44240", "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant", "idobj": "4553", "capacite_voiture": 44, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.5524528114, 47.2520156559]}, "properties": {"stationnement_velo": "OUI", "commune": "Nantes", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.55245281139535, "conditions_d_acces": "Libre", "adresse": "Rue Recteur Schmitt", "capacite_velo": 18, "lat_wgs84": 47.2520156559295, "capacite_pmr": 2, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Station Tramway Ligne 2 \"Recteur Schmitt\"", "idobj": "3191", "nom_complet": "P+R tramway Recteur Schmitt 2", "location": [47.2520156559, -1.5524528114], "site_web": "http://www.nantesmetropole.fr/", "services": "Stationnement v\u00e9lo en consignes individuelles", "capacite_voiture": 47, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "code_postal": "44300"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54102921717, 47.1960879623]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.196087962307004, "nom_complet": "P+R tramway Goudy", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 6, "location": [47.1960879623, -1.54102921717], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Rue Gabriel Goudy", "capacite_pmr": 4, "services": "Stationnement v\u00e9lo abrit\u00e9, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.5410292171706599, "exploitant": "NMGS", "code_postal": "44200", "autres_service_mob_prox": "Station Tramway Lignes 2 et 3 \"Pirmil\"", "idobj": "3198", "capacite_voiture": 202, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.47914484959, 47.1863920498]}, "properties": {"stationnement_velo": "OUI", "commune": "Vertou", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.47914484959455, "conditions_d_acces": "Libre", "capacite_moto": 3, "adresse": "All\u00e9e du 30 D\u00e9cembre 1866", "capacite_velo": 14, "lat_wgs84": 47.186392049791095, "capacite_pmr": 5, "autres_service_mob_prox": "Gare TER de Vertou : Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet", "idobj": "3201", "nom_complet": "P+R TER Gare de Vertou Nord", "location": [47.1863920498, -1.47914484959], "site_web": "http://www.nantesmetropole.fr/", "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN. Guichet SNCF (voir horaires sur http://www.ter-sncf.com)", "capacite_voiture": 155, "libtype": "Libre", "presentation": "Parc-Relais en acc\u00e8s libre (24h/24 et 7j/7).", "capacite_vehicule_electrique": 0, "code_postal": "44120"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.38889179744, 47.2932464054]}, "properties": {"lat_wgs84": 47.2932464054083, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER Gare de Mauves-sur-Loire", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 12, "location": [47.2932464054, -1.38889179744], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Mauves-sur-Loire", "conditions_d_acces": "Libre", "adresse": "2 Place de la Gare", "capacite_pmr": 3, "services": "Stationnement v\u00e9lo en consignes individuelles, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.3888917974423398, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44470", "autres_service_mob_prox": "Gare TER de Mauves :Ligne Nantes-Angers", "idobj": "3565", "capacite_voiture": 91, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.58732491692, 47.2384015095]}, "properties": {"twitter": "https://twitter.com/taninfos?lang=fr", "telephone": "02 40 44 44 44", "lat_wgs84": 47.2384015094654, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Beaus\u00e9jour", "site_web": "https://www.tan.fr", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 36, "location": [47.2384015095, -1.58732491692], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Nantes", "conditions_d_acces": "Libre", "adresse": "Route de Vannes", "capacite_pmr": 2, "services": "Stationnement v\u00e9lo en consignes individuelles.", "long_wgs84": -1.58732491692106, "exploitant": "TAN", "code_postal": "44100", "autres_service_mob_prox": "Station Tramway Ligne 3 \"Beaus\u00e9jour\"", "idobj": "3586", "capacite_voiture": 61, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.52131942606, 47.1859635498]}, "properties": {"capacite_moto": 0, "twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.1859635498368, "stationnement_velo_securise": "OUI", "nom_complet": "P+R busway Bourdonni\u00e8res 1", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 26, "location": [47.1859635498, -1.52131942606], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Rue des Bourdonni\u00e8res", "capacite_pmr": 6, "services": "Consignes v\u00e9los individuelles, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.52131942605851, "exploitant": "NMGS", "code_postal": "44200", "autres_service_mob_prox": "Station Busway Ligne 4 \"Bourdonni\u00e8res\"", "idobj": "3629", "capacite_voiture": 241, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.5981813854, 47.248963006]}, "properties": {"stationnement_velo": "OUI", "commune": "Orvault", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.5981813854021498, "conditions_d_acces": "Libre", "adresse": "Rue des Verts Pr\u00e9s", "capacite_velo": 12, "lat_wgs84": 47.2489630060312, "capacite_pmr": 5, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Station Tramway Ligne 3 \"Bignon\"", "idobj": "3649", "nom_complet": "P+R tramway Bignon", "location": [47.248963006, -1.5981813854], "site_web": "http://www.nantesmetropole.fr/", "services": "Stationnement v\u00e9lo en consignes individuelles", "capacite_voiture": 114, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44700"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.47495838592, 47.2531861217]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.2531861216727, "stationnement_velo_securise": "OUI", "nom_complet": "P+R chronobus Planchonnais", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 10, "location": [47.2531861217, -1.47495838592], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Ste-Luce-sur-Loire", "conditions_d_acces": "Libre", "adresse": "Rue de la Planchonnais", "capacite_pmr": 2, "services": "Consignes v\u00e9los individuelles", "long_wgs84": -1.47495838591643, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44980", "autres_service_mob_prox": "Station Chronobus C7 \"La Planchonnais\"", "idobj": "4312", "capacite_voiture": 87, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.44603005564, 47.2732823446]}, "properties": {"stationnement_velo": "OUI", "commune": "Thouar\u00e9-sur-Loire", "exploitant": "Nantes M\u00e9tropole", "code_postal": "44470", "conditions_d_acces": "Libre", "capacite_moto": 0, "adresse": "Rue de Beaulieu", "capacite_velo": 8, "lat_wgs84": 47.273282344556, "capacite_pmr": 2, "autres_service_mob_prox": "Station Chronobus C7 \" Pr\u00e9 Poulain\"", "idobj": "4314", "nom_complet": "P+R chronobus Pr\u00e9 Poulain", "location": [47.2732823446, -1.44603005564], "site_web": "http://www.nantesmetropole.fr/", "capacite_voiture": 81, "long_wgs84": -1.44603005563597, "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "libtype": "Libre", "capacite_vehicule_electrique": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54620753718, 47.2595844111]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.259584411084894, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tram-train Babini\u00e8re", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 48, "location": [47.2595844111, -1.54620753718], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "La Chapelle-sur-Erdre", "conditions_d_acces": "Libre", "adresse": "Avenue de la Babini\u00e8re", "capacite_pmr": 3, "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.5462075371775899, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44240", "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant", "idobj": "4340", "capacite_voiture": 103, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.66056670192, 47.2043616791]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.2043616791008, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER Gare de Basse-Indre Nord", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 10, "location": [47.2043616791, -1.66056670192], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "St-Herblain", "conditions_d_acces": "Libre", "adresse": "Rue de la Gare", "capacite_pmr": 1, "services": "Distributeur de titre de transport TER & TAN, Consignes v\u00e9los individuelles.", "long_wgs84": -1.66056670192079, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44800", "autres_service_mob_prox": "Gare TER de Basse-Indre - St-Herblain :Ligne Nantes-St Nazaire-Le Croisic,Ligne Nantes-Redon-Rennes", "idobj": "4555", "capacite_voiture": 43, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.5844938479, 47.2624897079]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.262489707874394, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Le Cardo", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 11, "location": [47.2624897079, -1.5844938479], "presentation": "Parc-relais en ouvrage avec contr\u00f4le d'acc\u00e8s. Ouverture du lundi au samedi de 6h \u00e0 22h et fermeture les dimanches et jours f\u00e9ri\u00e9s.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Orvault", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Esplanade du Cardo", "capacite_pmr": 3, "services": "Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.5844938479034398, "exploitant": "NMGS", "code_postal": "44700", "autres_service_mob_prox": "Station Tramway Ligne 2 \"Le Cardo\"", "idobj": "3189", "capacite_voiture": 206, "libtype": "Ouvrage"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.5266642183, 47.259483129]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.259483129049194, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway La Beaujoire", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 14, "location": [47.259483129, -1.5266642183], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Rue Colette", "capacite_pmr": 8, "services": "Stationnement v\u00e9lo en consignes individuelles, Vid\u00e9osurveillance, Interphonie", "long_wgs84": -1.5266642183038701, "exploitant": "NMGS", "code_postal": "44300", "autres_service_mob_prox": "Station Tramway Ligne 1 \"Beaujoire\"", "idobj": "3192", "capacite_voiture": 381, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.55142057451, 47.1900227865]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.1900227865145, "nom_complet": "P+R tramway 8 Mai", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 30, "location": [47.1900227865, -1.55142057451], "presentation": "Parc-relais en ouvrage avec contr\u00f4le d'acc\u00e8s. Ouverture du lundi au samedi de 6h \u00e0 22h et fermeture les dimanches et jours f\u00e9ri\u00e9s.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Rez\u00e9", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Avenue Andr\u00e9 Malraux", "capacite_pmr": 6, "services": "Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.55142057451144, "exploitant": "NMGS", "code_postal": "44400", "autres_service_mob_prox": "Station Tramway Ligne 3 \" 8 Mai\"", "idobj": "3194", "capacite_voiture": 200, "libtype": "Ouvrage"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.57776434021, 47.1952412617]}, "properties": {"stationnement_velo": "OUI", "commune": "Rez\u00e9", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.5777643402105, "conditions_d_acces": "Libre", "adresse": "Quai Surcouf", "capacite_velo": 12, "lat_wgs84": 47.19524126172259, "capacite_pmr": 2, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Navibus Loire", "idobj": "3560", "nom_complet": "P+R navibus Trentemoult-Roquios", "location": [47.1952412617, -1.57776434021], "site_web": "http://www.nantesmetropole.fr/", "services": "Consignes v\u00e9los individuelles", "capacite_voiture": 48, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44400"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.60303045354, 47.246764416]}, "properties": {"commune": "Orvault", "exploitant": "NMGS", "long_wgs84": -1.60303045354354, "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "twitter": "https://twitter.com/ngenantes", "adresse": "Avenue de la Morli\u00e8re", "telephone": "02 51 84 95 70", "lat_wgs84": 47.2467644160001, "capacite_pmr": 7, "autres_service_mob_prox": "Station Tramway Ligne 3 \"Orvault Morli\u00e8re\"", "idobj": "3584", "nom_complet": "P+R tramway Orvault Morli\u00e8re", "location": [47.246764416, -1.60303045354], "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "services": "Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "capacite_voiture": 283, "libtype": "Ouvrage", "presentation": "Parc-relais en ouvrage avec contr\u00f4le d'acc\u00e8s. Ouverture du lundi au samedi de 6h \u00e0 22h et fermeture les dimanches et jours f\u00e9ri\u00e9s.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "capacite_velo": 0, "capacite_vehicule_electrique": 0, "code_postal": "44700"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.52296477189, 47.1863908195]}, "properties": {"commune": "Nantes", "exploitant": "NMGS", "code_postal": "44200", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "capacite_moto": 0, "adresse": "Rue des Bourdonni\u00e8res", "telephone": "02 51 84 95 70", "lat_wgs84": 47.186390819492296, "capacite_pmr": 2, "autres_service_mob_prox": "Station Busway Ligne 4 \"Bourdonni\u00e8res\"", "idobj": "3778", "nom_complet": "P+R busway Bourdonni\u00e8res 2", "location": [47.1863908195, -1.52296477189], "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_voiture": 96, "long_wgs84": -1.52296477188575, "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "libtype": "Enclos", "capacite_vehicule_electrique": 0, "capacite_velo": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.59461479057, 47.1975231959]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.197523195934004, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER / chronobus Gare de Chantenay", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 18, "location": [47.1975231959, -1.59461479057], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Nantes", "conditions_d_acces": "Libre", "adresse": "Rue de la Gare de Chantenay", "capacite_pmr": 1, "services": "Stationnement v\u00e9lo en consignes individuelles.", "long_wgs84": -1.59461479057371, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44100", "autres_service_mob_prox": "Station Chrnonobus C1 \"Gare de Chantenay", "idobj": "4309", "capacite_voiture": 29, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.43900541652, 47.2661089864]}, "properties": {"stationnement_velo": "OUI", "commune": "Thouar\u00e9-sur-Loire", "exploitant": "Nantes M\u00e9tropole", "code_postal": "44470", "conditions_d_acces": "Libre", "capacite_moto": 0, "adresse": "Rue des Ponts", "capacite_velo": 4, "lat_wgs84": 47.266108986379194, "capacite_pmr": 4, "autres_service_mob_prox": "Station Chronobus C7 \"Centre de Thouar\u00e9\"Gare TER de Thouar\u00e9", "idobj": "4313", "nom_complet": "P+R TER/chronobus La No\u00eb", "location": [47.2661089864, -1.43900541652], "site_web": "http://www.nantesmetropole.fr/", "capacite_voiture": 118, "long_wgs84": -1.4390054165158699, "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "libtype": "Libre", "capacite_vehicule_electrique": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.51855405763, 47.1470065382]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.147006538240596, "stationnement_velo_securise": "OUI", "nom_complet": "P+R chronobus Papillons", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 8, "location": [47.1470065382, -1.51855405763], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Les Sorini\u00e8res", "conditions_d_acces": "Libre", "adresse": "Rue des Papillons", "capacite_pmr": 3, "services": "Consignes v\u00e9los individuelles", "long_wgs84": -1.5185540576341598, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44840", "autres_service_mob_prox": "Chronobus C4 arr\u00eat \"Calvaire\"", "idobj": "4556", "capacite_voiture": 54, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.49493705933, 47.2468922324]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.2468922323681, "stationnement_velo_securise": "OUI", "nom_complet": "P+R chronobus Bois des Anses", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 20, "location": [47.2468922324, -1.49493705933], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "commune": "Nantes", "conditions_d_acces": "Libre", "adresse": "Rue du Bois Briand", "capacite_pmr": 2, "services": "Consignes v\u00e9lo individuelles.", "long_wgs84": -1.49493705932649, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44300", "autres_service_mob_prox": "Ligne Chronobus C7 arr\u00eat \" Bois des Anses \"", "idobj": "4765", "capacite_voiture": 89, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.55288551233, 47.2517232116]}, "properties": {"commune": "Nantes", "exploitant": "NMGS", "code_postal": "44300", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "twitter": "https://twitter.com/ngenantes", "adresse": "Rue Recteur Schmitt", "telephone": "02 51 84 95 70", "lat_wgs84": 47.251723211598296, "capacite_pmr": 3, "libtype": "Ouvrage", "capacite_velo": 0, "idobj": "1341", "nom_complet": "P+R tramway Recteur Schmitt 1", "location": [47.2517232116, -1.55288551233], "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "autres_service_mob_prox": "Station Tramway Ligne 2 \"Recteur Schmitt\"", "capacite_voiture": 95, "long_wgs84": -1.5528855123319298, "presentation": "Parc-relais en ouvrage avec contr\u00f4le d'acc\u00e8s. Ouverture du lundi au samedi de 6h \u00e0 22h et fermeture les dimanches et jours f\u00e9ri\u00e9s.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "moyen_paiement": "Titre de transport", "capacite_vehicule_electrique": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.57107610058, 47.1832817306]}, "properties": {"stationnement_velo": "OUI", "commune": "Rez\u00e9", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.57107610057848, "conditions_d_acces": "Libre", "adresse": "Avenue L\u00e9on Blum", "capacite_velo": 16, "lat_wgs84": 47.1832817306167, "capacite_pmr": 7, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Station Tramway Ligne 3 \"Trocardi\u00e8re\"", "idobj": "3195", "nom_complet": "P+R tramway Trocardi\u00e8re", "location": [47.1832817306, -1.57107610058], "site_web": "http://www.nantesmetropole.fr/", "services": "Stationnement v\u00e9lo en consignes individuelles", "capacite_voiture": 287, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "code_postal": "44400"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.57498005268, 47.2639385629]}, "properties": {"stationnement_velo": "OUI", "commune": "Nantes", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.5749800526751399, "conditions_d_acces": "Libre", "adresse": "Route de la Chapelle Sur Erdre", "capacite_velo": 10, "lat_wgs84": 47.2639385628598, "capacite_pmr": 2, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Station Tramway Ligne 2 \"Ren\u00e9 Cassin\"", "idobj": "3196", "nom_complet": "P+R tramway Ren\u00e9 Cassin", "location": [47.2639385629, -1.57498005268], "site_web": "http://www.nantesmetropole.fr/", "services": "Stationnement v\u00e9lo en consignes individuelles.", "capacite_voiture": 65, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44300"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54142986639, 47.1972022869]}, "properties": {"lat_wgs84": 47.197202286864005, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Pirmil", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 72, "location": [47.1972022869, -1.54142986639], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "commune": "Nantes", "conditions_d_acces": "Libre", "adresse": "Rue Esnoult des Ch\u00e2telets", "capacite_pmr": 6, "services": "Stationnement en consignes individuelles", "long_wgs84": -1.5414298663933799, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44200", "autres_service_mob_prox": "Station Tramway Lignes 2 et 3 \"Pirmil\"", "idobj": "3197", "capacite_voiture": 214, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.59307631265, 47.1754421574]}, "properties": {"capacite_moto": 0, "twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.175442157359896, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Neustrie 1", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 22, "location": [47.1754421574, -1.59307631265], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Bouguenais", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Chemin de la Neustrie", "capacite_pmr": 3, "services": "Stationnement v\u00e9lo abrit\u00e9 et consignes individuelles, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.59307631264945, "exploitant": "NMGS", "code_postal": "44340", "autres_service_mob_prox": "Station Tramway Ligne 3 \"Neustrie\"", "idobj": "3562", "capacite_voiture": 127, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.68255274707, 47.1383110997]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.138311099705895, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER Gare de Bouaye", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 32, "location": [47.1383110997, -1.68255274707], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Bouaye", "conditions_d_acces": "Libre", "adresse": "All\u00e9e Louis Armand", "capacite_pmr": 3, "services": "Abri v\u00e9los, Distributeur de titre de transport TER & TAN. Guichet SNCF (voir horaires sur http://www.ter-sncf.com)", "long_wgs84": -1.6825527470731099, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44830", "autres_service_mob_prox": "Gare TER de Bouaye :Ligne Nantes-Ste Pazanne-PornicLigne Nantes-Challans-St Gilles Croix de VieLigne Nantes-St Jean de Monts", "idobj": "3566", "capacite_voiture": 142, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.58066798794, 47.191953767]}, "properties": {"commune": "Rez\u00e9", "exploitant": "Nantes M\u00e9tropole", "code_postal": "44400", "conditions_d_acces": "Libre", "capacite_moto": 0, "adresse": "Rue Ordronneau", "capacite_velo": 0, "lat_wgs84": 47.1919537669584, "capacite_pmr": 0, "autres_service_mob_prox": "Navibus Loire", "idobj": "3582", "nom_complet": "P+R navibus Trentemoult-D\u00e9p\u00f4t", "location": [47.191953767, -1.58066798794], "site_web": "http://www.nantesmetropole.fr/", "capacite_voiture": 20, "long_wgs84": -1.5806679879382999, "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "libtype": "Libre", "capacite_vehicule_electrique": 0}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.60281976728, 47.2478112747]}, "properties": {"stationnement_velo": "OUI", "commune": "Orvault", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.60281976728052, "conditions_d_acces": "Libre", "adresse": "Avenue de la Paquelais", "capacite_velo": 10, "lat_wgs84": 47.2478112746538, "capacite_pmr": 2, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Station Tramway 3 \" Orvault Morli\u00e8re\"", "idobj": "3583", "nom_complet": "P+R tramway Morli\u00e8re Paquelais", "location": [47.2478112747, -1.60281976728], "site_web": "http://www.nantesmetropole.fr/", "services": "Stationnement v\u00e9los en consignes individuelles", "capacite_voiture": 79, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44700"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.57945229936, 47.1819837728]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.181983772785095, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Grande Ouche", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 10, "location": [47.1819837728, -1.57945229936], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "Bouguenais", "conditions_d_acces": "Libre", "adresse": "Rue de la Grande Ouche", "capacite_pmr": 2, "services": "Stationnement v\u00e9los en consignes individuelles", "long_wgs84": -1.57945229936449, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44340", "autres_service_mob_prox": "Station Tramway Ligne 3 \"Grande Ouche\"", "idobj": "3777", "capacite_voiture": 29, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54769926882, 47.2977887105]}, "properties": {"capacite_moto": 14, "lat_wgs84": 47.2977887104613, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tram-train La Chapelle-sur-Erdre Centre Est", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 52, "location": [47.2977887105, -1.54769926882], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "commune": "La Chapelle-sur-Erdre", "conditions_d_acces": "Libre", "adresse": "Rue de l'Erdre", "capacite_pmr": 3, "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN.", "long_wgs84": -1.54769926882382, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44240", "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant", "idobj": "4342", "capacite_voiture": 65, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.54366145405, 47.3079177924]}, "properties": {"stationnement_velo": "NON", "commune": "La Chapelle-sur-Erdre", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.54366145405095, "conditions_d_acces": "Libre", "adresse": "Avenue Olympe de Gouges", "capacite_velo": 0, "lat_wgs84": 47.30791779240219, "capacite_pmr": 2, "stationnement_velo_securise": "NON", "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant", "idobj": "4554", "nom_complet": "P+R tram-train La Chapelle-Aulnay Ouest", "location": [47.3079177924, -1.54366145405], "site_web": "http://www.nantesmetropole.fr/", "services": "Distributeur de titre de transport TER & TAN.", "capacite_voiture": 103, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44240"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.52495829432, 47.2502181941]}, "properties": {"capacite_moto": 0, "twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.250218194078194, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tram-train Haluch\u00e8re 2", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 48, "location": [47.2502181941, -1.52495829432], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "14 Rue du Ranzai", "capacite_pmr": 4, "long_wgs84": -1.5249582943189801, "exploitant": "NMGS", "code_postal": "44300", "autres_service_mob_prox": "Ligne 1 Tramway  Ranzay/Beaujoire  Fran\u00e7ois Mitterrand/JametLigne Tram-Train Nantes  ChateaubriandLigne Chronobus C1 Gare de Chantenay  Haluch\u00e8re", "idobj": "4764", "capacite_voiture": 159, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.63946359154, 47.221694139]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.2216941390425, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Fran\u00e7ois Mitterrand", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 36, "location": [47.221694139, -1.63946359154], "presentation": "Parc-relais en ouvrage avec contr\u00f4le d'acc\u00e8s. Ouverture du lundi au samedi de 6h \u00e0 22h et fermeture les dimanches et jours f\u00e9ri\u00e9s.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "St-Herblain", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Rue Virginia Woolf", "capacite_pmr": 11, "services": "Stationnement v\u00e9lo en consignes individuelles, Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "long_wgs84": -1.63946359153841, "exploitant": "NMGS", "code_postal": "44800", "autres_service_mob_prox": "Station Tramway Ligne 1 \"Fran\u00e7ois Mitterrand\"", "idobj": "3190", "capacite_voiture": 207, "libtype": "Ouvrage"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.47855497209, 47.1856727113]}, "properties": {"capacite_moto": 0, "lat_wgs84": 47.1856727113111, "stationnement_velo_securise": "OUI", "nom_complet": "P+R TER Gare de Vertou Sud", "site_web": "http://www.nantesmetropole.fr/", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 30, "location": [47.1856727113, -1.47855497209], "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d'acc\u00e8s.", "commune": "Vertou", "conditions_d_acces": "Libre", "adresse": "Rue du Bois Rigaud", "capacite_pmr": 5, "services": "Abris V\u00e9lo, Distributeur de titre de transport TER & TAN. Guichet SNCF (voir horaires sur http://www.ter-sncf.com)", "long_wgs84": -1.4785549720904199, "exploitant": "Nantes M\u00e9tropole", "code_postal": "44120", "autres_service_mob_prox": "Gare TER de Vertou :Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet", "idobj": "3202", "capacite_voiture": 55, "libtype": "Libre"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.72361537665, 47.22176457]}, "properties": {"stationnement_velo": "OUI", "commune": "Cou\u00ebron", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.72361537665233, "conditions_d_acces": "Libre", "capacite_moto": 0, "adresse": "Rue de la Gare", "capacite_velo": 12, "lat_wgs84": 47.2217645700259, "capacite_pmr": 0, "autres_service_mob_prox": "Gare TER de Cou\u00ebron : Ligne Nantes-St Nazaire-Le CroisicLigne Nantes-Redon-Rennes", "idobj": "3556", "nom_complet": "P+R TER Gare de Cou\u00ebron", "location": [47.22176457, -1.72361537665], "site_web": "http://www.nantesmetropole.fr/", "services": "Abri v\u00e9los, Distributeur de titre de transport TER & TAN.", "capacite_voiture": 56, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44220"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.59337952952, 47.1766613537]}, "properties": {"commune": "Bouguenais", "exploitant": "NMGS", "long_wgs84": -1.5933795295221498, "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "twitter": "https://twitter.com/ngenantes", "adresse": "Rue de la Neustrie", "telephone": "02 51 84 95 70", "lat_wgs84": 47.17666135374859, "capacite_pmr": 4, "autres_service_mob_prox": "Station Tramway Ligne 3 \"Neustrie\"", "idobj": "3558", "nom_complet": "P+R tramway Neustrie 2", "location": [47.1766613537, -1.59337952952], "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "services": "Vid\u00e9osurveillance, Interphonie sur la borne de sortie du parc.", "capacite_voiture": 150, "libtype": "Enclos", "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "capacite_velo": 0, "capacite_vehicule_electrique": 0, "code_postal": "44340"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.66101648693, 47.2041460212]}, "properties": {"stationnement_velo": "OUI", "commune": "St-Herblain", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.6610164869336799, "conditions_d_acces": "Libre", "capacite_moto": 0, "adresse": "Rue de la Gare", "capacite_velo": 24, "lat_wgs84": 47.20414602124709, "capacite_pmr": 2, "autres_service_mob_prox": "Gare TER de Basse-Indre - St-Herblain :Ligne Nantes-St Nazaire-Le Croisic,Ligne Nantes-Redon-Rennes", "idobj": "3561", "nom_complet": "P+R TER Gare de Basse-Indre Sud", "location": [47.2041460212, -1.66101648693], "site_web": "http://www.nantesmetropole.fr/", "services": "Distributeur de titre de transport TER & TAN.", "capacite_voiture": 54, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44800"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.51065644425, 47.1851584604]}, "properties": {"stationnement_velo": "OUI", "commune": "Vertou", "exploitant": "Nantes M\u00e9tropole", "long_wgs84": -1.51065644425475, "conditions_d_acces": "Libre", "adresse": "Rue de la Grand' Maison", "capacite_velo": 10, "lat_wgs84": 47.185158460367006, "capacite_pmr": 2, "stationnement_velo_securise": "OUI", "autres_service_mob_prox": "Station Busway Ligne 4 \"Mara\u00eechers\"", "idobj": "3655", "nom_complet": "P+R busway Mara\u00eechers", "location": [47.1851584604, -1.51065644425], "site_web": "http://www.nantesmetropole.fr/", "services": "Stationnement v\u00e9los en consignes individuelles", "capacite_voiture": 76, "libtype": "Libre", "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contr\u00f4le d?acc\u00e8s.", "capacite_vehicule_electrique": 0, "code_postal": "44120"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.53311963582, 47.254351289]}, "properties": {"twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.2543512890172, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tramway Ranzay", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 48, "location": [47.254351289, -1.53311963582], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Route de Saint Joseph", "capacite_pmr": 5, "services": "Vid\u00e9osurveillanceInterphonie sur la borne de sortie du parc.", "long_wgs84": -1.5331196358197599, "exploitant": "NMGS", "code_postal": "44300", "autres_service_mob_prox": "Station Tramway Ligne1 \"Ranzay\"", "idobj": "4100", "capacite_voiture": 245, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.52281428804, 47.2484385239]}, "properties": {"capacite_moto": 0, "twitter": "https://twitter.com/ngenantes", "telephone": "02 51 84 95 70", "lat_wgs84": 47.2484385238631, "stationnement_velo_securise": "OUI", "nom_complet": "P+R tram-train Haluch\u00e8re 1", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "service_velo": "Pompe \u00e0 v\u00e9lo", "capacite_velo": 46, "location": [47.2484385239, -1.52281428804], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Rue du Ranzai", "capacite_pmr": 3, "long_wgs84": -1.5228142880429898, "exploitant": "NMGS", "code_postal": "44300", "autres_service_mob_prox": "Ligne 1 Tramway  Ranzay/Beaujoire  Fran\u00e7ois Mitterrand/JametLigne Tram-Train Nantes  ChateaubriandLigne Chronobus C1 Gare de Chantenay  Haluch\u00e8re", "idobj": "4101", "capacite_voiture": 121, "libtype": "Enclos"}},{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.51583403045, 47.2202445979]}, "properties": {"capacite_moto": 0, "telephone": "02 51 84 95 70", "lat_wgs84": 47.2202445979148, "stationnement_velo_securise": "OUI", "nom_complet": "P+R Chronobus Prairie de Mauves", "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais", "capacite_vehicule_electrique": 0, "stationnement_velo": "OUI", "capacite_velo": 6, "location": [47.2202445979, -1.51583403045], "presentation": "Parc-relais en enclos avec contr\u00f4le d'acc\u00e8s. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonn\u00e9 Libertan ou prenez un ticket P+R combin\u00e9 transport en commun pour entrer dans le P+R. Stationnez votre v\u00e9hicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au pr\u00e9alable avoir valider votre titre de transport  dans le bus, busway ou tramway utilis\u00e9s pour voyager.", "commune": "Nantes", "conditions_d_acces": "Carte Libertan, ticket P+R combin\u00e9, ticket horaire", "adresse": "Boulevard de la Prairie de Mauves", "capacite_pmr": 5, "long_wgs84": -1.5158340304457398, "exploitant": "NMGS", "code_postal": "44300", "autres_service_mob_prox": "Ligne Chronobus C3 arr\u00eat \" Prairie de Mauves \"", "idobj": "4914", "capacite_voiture": 204, "libtype": "Enclos"}}]}
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Neustrie",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Neustrie\"",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "37",
+                "code_postal": "44340",
+                "commune": "Bouguenais",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4310",
+                "lat_wgs84": "47.177334160120004",
+                "libtype": "Libre",
+                "long_wgs84": "-1.59162976006345",
+                "nom_complet": "P+R tramway Neustrie 3",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.59162976006,
+                    47.17733416010
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "14 Rue du Ranzai",
+                "autres_service_mob_prox": "Ligne 1 Tramway  Ranzay/Beaujoire  François Mitterrand/JametLigne Tram-Train Nantes  ChateaubriandLigne Chronobus C1 Gare de Chantenay  Haluchère",
+                "capacite_moto": "0",
+                "capacite_pmr": "4",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "48",
+                "capacite_voiture": "159",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "4764",
+                "lat_wgs84": "47.250218194078194",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5249582943189801",
+                "nom_complet": "P+R tram-train Haluchère 2",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.52495829432,
+                    47.25021819410
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de Beaulieu",
+                "autres_service_mob_prox": "Station Chronobus C7 \" Pré Poulain\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "8",
+                "capacite_voiture": "81",
+                "code_postal": "44470",
+                "commune": "Thouaré-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4314",
+                "lat_wgs84": "47.273282344556",
+                "libtype": "Libre",
+                "long_wgs84": "-1.44603005563597",
+                "nom_complet": "P+R chronobus Pré Poulain",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.44603005564,
+                    47.27328234460
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Bérangerais",
+                "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant",
+                "capacite_moto": "7",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "36",
+                "capacite_voiture": "49",
+                "code_postal": "44240",
+                "commune": "La Chapelle-sur-Erdre",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4346",
+                "lat_wgs84": "47.2831021932936",
+                "libtype": "Libre",
+                "long_wgs84": "-1.54432747199006",
+                "nom_complet": "P+R tram-train La Chapelle Erdre Active",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54432747199,
+                    47.28310219330
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Papillons",
+                "autres_service_mob_prox": "Chronobus C4 arrêt \"Calvaire\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "8",
+                "capacite_voiture": "54",
+                "code_postal": "44840",
+                "commune": "Les Sorinières",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4556",
+                "lat_wgs84": "47.147006538240596",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5185540576341598",
+                "nom_complet": "P+R chronobus Papillons",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Consignes vélos individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.51855405763,
+                    47.14700653820
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Chemin de la Neustrie",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Neustrie\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "22",
+                "capacite_voiture": "127",
+                "code_postal": "44340",
+                "commune": "Bouguenais",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3562",
+                "lat_wgs84": "47.175442157359896",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.59307631264945",
+                "nom_complet": "P+R tramway Neustrie 1",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement vélo abrité et consignes individuelles, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.59307631265,
+                    47.17544215740
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Gabriel Goudy",
+                "autres_service_mob_prox": "Station Tramway Lignes 2 et 3 \"Pirmil\"",
+                "capacite_pmr": "4",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "6",
+                "capacite_voiture": "202",
+                "code_postal": "44200",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3198",
+                "lat_wgs84": "47.196087962307004",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5410292171706599",
+                "nom_complet": "P+R tramway Goudy",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "Stationnement vélo abrité, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54102921717,
+                    47.19608796230
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Boulevard Salvador Allende",
+                "autres_service_mob_prox": "Station Tramway Ligne 1 \"Frachon\"",
+                "capacite_pmr": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "156",
+                "code_postal": "44800",
+                "commune": "St-Herblain",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3188",
+                "lat_wgs84": "47.218684226795006",
+                "libtype": "Libre",
+                "long_wgs84": "-1.62161314661187",
+                "nom_complet": "P+R tramway Frachon",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "NON",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.62161314661,
+                    47.21868422680
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue Léon Blum",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Trocardière\"",
+                "capacite_pmr": "7",
+                "capacite_velo": "16",
+                "capacite_voiture": "287",
+                "code_postal": "44400",
+                "commune": "Rezé",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3195",
+                "lat_wgs84": "47.1832817306167",
+                "libtype": "Libre",
+                "long_wgs84": "-1.57107610057848",
+                "nom_complet": "P+R tramway Trocardière",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Stationnement vélo en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.57107610058,
+                    47.18328173060
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue de la Paquelais",
+                "autres_service_mob_prox": "Station Tramway 3 \" Orvault Morlière\"",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "79",
+                "code_postal": "44700",
+                "commune": "Orvault",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3583",
+                "lat_wgs84": "47.2478112746538",
+                "libtype": "Libre",
+                "long_wgs84": "-1.60281976728052",
+                "nom_complet": "P+R tramway Morlière Paquelais",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Stationnement vélos en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.60281976728,
+                    47.24781127470
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Route de Vannes",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Beauséjour\"",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "36",
+                "capacite_voiture": "61",
+                "code_postal": "44100",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "TAN",
+                "idobj": "3586",
+                "lat_wgs84": "47.2384015094654",
+                "libtype": "Libre",
+                "long_wgs84": "-1.58732491692106",
+                "nom_complet": "P+R tramway Beauséjour",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Stationnement vélo en consignes individuelles.",
+                "site_web": "https://www.tan.fr",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 40 44 44 44",
+                "twitter": "https://twitter.com/taninfos?lang=fr",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.58732491692,
+                    47.23840150950
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Loire",
+                "autres_service_mob_prox": "Halte Ferroviaire de St Sébastien \"Pas Enchantés\" :Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet",
+                "capacite_moto": "0",
+                "capacite_pmr": "6",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "44",
+                "capacite_voiture": "81",
+                "code_postal": "44230",
+                "commune": "St-Sébastien-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3552",
+                "lat_wgs84": "47.208218057408594",
+                "libtype": "Libre",
+                "long_wgs84": "-1.51297893332939",
+                "nom_complet": "P+R TER Gare des Pas Enchantés",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.51297893333,
+                    47.20821805740
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Renards",
+                "autres_service_mob_prox": "Tramway Ligne 2 Orvault Grand Val  Pont-Rousseau",
+                "capacite_moto": "0",
+                "capacite_pmr": "1",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "22",
+                "capacite_voiture": "34",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4076",
+                "lat_wgs84": "47.25931142056589",
+                "libtype": "Libre",
+                "long_wgs84": "-1.56820930888833",
+                "nom_complet": "P+R tramway Santos Dumont",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.56820930889,
+                    47.25931142060
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Route de Saint Joseph",
+                "autres_service_mob_prox": "Station Tramway Ligne1 \"Ranzay\"",
+                "capacite_pmr": "5",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "48",
+                "capacite_voiture": "245",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "4100",
+                "lat_wgs84": "47.2543512890172",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5331196358197599",
+                "nom_complet": "P+R tramway Ranzay",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "VidéosurveillanceInterphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.53311963582,
+                    47.25435128900
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue de la Morlière",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Orvault Morlière\"",
+                "capacite_pmr": "7",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "283",
+                "code_postal": "44700",
+                "commune": "Orvault",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3584",
+                "lat_wgs84": "47.2467644160001",
+                "libtype": "Ouvrage",
+                "long_wgs84": "-1.60303045354354",
+                "nom_complet": "P+R tramway Orvault Morlière",
+                "presentation": "Parc-relais en ouvrage avec contrôle d'accès. Ouverture du lundi au samedi de 6h à 22h et fermeture les dimanches et jours fériés.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.60303045354,
+                    47.24676441600
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue du Manoir",
+                "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant",
+                "capacite_moto": "13",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "50",
+                "capacite_voiture": "46",
+                "code_postal": "44240",
+                "commune": "La Chapelle-sur-Erdre",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4344",
+                "lat_wgs84": "47.3083758077511",
+                "libtype": "Libre",
+                "long_wgs84": "-1.54103329738512",
+                "nom_complet": "P+R tram-train La Chapelle-Aulnay Est",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54103329739,
+                    47.30837580780
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Ponts",
+                "autres_service_mob_prox": "Station Chronobus C7 \"Centre de Thouaré\"Gare TER de Thouaré",
+                "capacite_moto": "0",
+                "capacite_pmr": "4",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "4",
+                "capacite_voiture": "118",
+                "code_postal": "44470",
+                "commune": "Thouaré-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4313",
+                "lat_wgs84": "47.266108986379194",
+                "libtype": "Libre",
+                "long_wgs84": "-1.4390054165158699",
+                "nom_complet": "P+R TER/chronobus La Noë",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.43900541652,
+                    47.26610898640
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Esnoult des Châtelets",
+                "autres_service_mob_prox": "Station Tramway Lignes 2 et 3 \"Pirmil\"",
+                "capacite_pmr": "6",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "72",
+                "capacite_voiture": "214",
+                "code_postal": "44200",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3197",
+                "lat_wgs84": "47.197202286864005",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5414298663933799",
+                "nom_complet": "P+R tramway Pirmil",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54142986639,
+                    47.19720228690
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Recteur Schmitt",
+                "autres_service_mob_prox": "Station Tramway Ligne 2 \"Recteur Schmitt\"",
+                "capacite_pmr": "2",
+                "capacite_velo": "18",
+                "capacite_voiture": "47",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3191",
+                "lat_wgs84": "47.2520156559295",
+                "libtype": "Libre",
+                "long_wgs84": "-1.55245281139535",
+                "nom_complet": "P+R tramway Recteur Schmitt 2",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Stationnement vélo en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.55245281140,
+                    47.25201565590
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Recteur Schmitt",
+                "autres_service_mob_prox": "Station Tramway Ligne 2 \"Recteur Schmitt\"",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "95",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "1341",
+                "lat_wgs84": "47.251723211598296",
+                "libtype": "Ouvrage",
+                "long_wgs84": "-1.5528855123319298",
+                "moyen_paiement": "Titre de transport",
+                "nom_complet": "P+R tramway Recteur Schmitt 1",
+                "presentation": "Parc-relais en ouvrage avec contrôle d'accès. Ouverture du lundi au samedi de 6h à 22h et fermeture les dimanches et jours fériés.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.55288551233,
+                    47.25172321160
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Gare",
+                "autres_service_mob_prox": "Gare TER de Couëron : Ligne Nantes-St Nazaire-Le CroisicLigne Nantes-Redon-Rennes",
+                "capacite_moto": "0",
+                "capacite_pmr": "0",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "12",
+                "capacite_voiture": "56",
+                "code_postal": "44220",
+                "commune": "Couëron",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3556",
+                "lat_wgs84": "47.2217645700259",
+                "libtype": "Libre",
+                "long_wgs84": "-1.72361537665233",
+                "nom_complet": "P+R TER Gare de Couëron",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Abri vélos, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.72361537665,
+                    47.22176457000
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Route de Vannes",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Plaisance\"",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "83",
+                "code_postal": "44800",
+                "commune": "Orvault",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3227",
+                "lat_wgs84": "47.2405205813348",
+                "libtype": "Libre",
+                "long_wgs84": "-1.59342158490416",
+                "nom_complet": "P+R tramway Plaisance",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Abri vélos",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.59342158490,
+                    47.24052058130
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Esplanade du Cardo",
+                "autres_service_mob_prox": "Station Tramway Ligne 2 \"Le Cardo\"",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "11",
+                "capacite_voiture": "206",
+                "code_postal": "44700",
+                "commune": "Orvault",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3189",
+                "lat_wgs84": "47.262489707874394",
+                "libtype": "Ouvrage",
+                "long_wgs84": "-1.5844938479034398",
+                "nom_complet": "P+R tramway Le Cardo",
+                "presentation": "Parc-relais en ouvrage avec contrôle d'accès. Ouverture du lundi au samedi de 6h à 22h et fermeture les dimanches et jours fériés.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.58449384790,
+                    47.26248970790
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Boulevard Marcel Paul",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Marcel Paul\"",
+                "capacite_pmr": "4",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "36",
+                "capacite_voiture": "144",
+                "code_postal": "44800",
+                "commune": "St-Herblain",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "TAN",
+                "idobj": "3776",
+                "lat_wgs84": "47.2458922739929",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.6179889855974199",
+                "nom_complet": "P+R tramway Marcel Paul",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "services": "Box vélo abrité et sécurisé, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.61798898560,
+                    47.24589227400
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Grand' Maison",
+                "autres_service_mob_prox": "Station Busway Ligne 4 \"Maraîchers\"",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "76",
+                "code_postal": "44120",
+                "commune": "Vertou",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3655",
+                "lat_wgs84": "47.185158460367006",
+                "libtype": "Libre",
+                "long_wgs84": "-1.51065644425475",
+                "nom_complet": "P+R busway Maraîchers",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Stationnement vélos en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.51065644425,
+                    47.18515846040
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Quai Surcouf",
+                "autres_service_mob_prox": "Navibus Loire",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "12",
+                "capacite_voiture": "48",
+                "code_postal": "44400",
+                "commune": "Rezé",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3560",
+                "lat_wgs84": "47.19524126172259",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5777643402105",
+                "nom_complet": "P+R navibus Trentemoult-Roquios",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Consignes vélos individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.57776434021,
+                    47.19524126170
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Route de Gachet",
+                "autres_service_mob_prox": "Station Chronobus C6 \"Chantrerie - Grandes Ecoles\"",
+                "capacite_pmr": "6",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "24",
+                "capacite_voiture": "268",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4311",
+                "lat_wgs84": "47.2810817328441",
+                "libtype": "Libre",
+                "long_wgs84": "-1.51845855018352",
+                "nom_complet": "P+R chronobus Chantrerie - Grandes Ecoles",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Abri vélos.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.51845855018,
+                    47.28108173280
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Boulevard de la Prairie de Mauves",
+                "autres_service_mob_prox": "Ligne Chronobus C3 arrêt \" Prairie de Mauves \"",
+                "capacite_moto": "0",
+                "capacite_pmr": "5",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "6",
+                "capacite_voiture": "204",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "4914",
+                "lat_wgs84": "47.2202445979148",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5158340304457398",
+                "nom_complet": "P+R Chronobus Prairie de Mauves",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.51583403045,
+                    47.22024459790
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Gare de Chantenay",
+                "autres_service_mob_prox": "Station Chrnonobus C1 \"Gare de Chantenay",
+                "capacite_moto": "0",
+                "capacite_pmr": "1",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "18",
+                "capacite_voiture": "29",
+                "code_postal": "44100",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4309",
+                "lat_wgs84": "47.197523195934004",
+                "libtype": "Libre",
+                "long_wgs84": "-1.59461479057371",
+                "nom_complet": "P+R TER / chronobus Gare de Chantenay",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement vélo en consignes individuelles.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.59461479057,
+                    47.19752319590
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue Olympe de Gouges",
+                "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "103",
+                "code_postal": "44240",
+                "commune": "La Chapelle-sur-Erdre",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4554",
+                "lat_wgs84": "47.30791779240219",
+                "libtype": "Libre",
+                "long_wgs84": "-1.54366145405095",
+                "nom_complet": "P+R tram-train La Chapelle-Aulnay Ouest",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "NON",
+                "stationnement_velo_securise": "NON",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54366145405,
+                    47.30791779240
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Planchonnais",
+                "autres_service_mob_prox": "Station Chronobus C7 \"La Planchonnais\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "87",
+                "code_postal": "44980",
+                "commune": "Ste-Luce-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4312",
+                "lat_wgs84": "47.2531861216727",
+                "libtype": "Libre",
+                "long_wgs84": "-1.47495838591643",
+                "nom_complet": "P+R chronobus Planchonnais",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Consignes vélos individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.47495838592,
+                    47.25318612170
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue du Bois Briand",
+                "autres_service_mob_prox": "Ligne Chronobus C7 arrêt \" Bois des Anses \"",
+                "capacite_moto": "0",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "20",
+                "capacite_voiture": "89",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4765",
+                "lat_wgs84": "47.2468922323681",
+                "libtype": "Libre",
+                "long_wgs84": "-1.49493705932649",
+                "nom_complet": "P+R chronobus Bois des Anses",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Consignes vélo individuelles.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.49493705933,
+                    47.24689223240
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue du Bois Rigaud",
+                "autres_service_mob_prox": "Gare TER de Vertou :Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet",
+                "capacite_moto": "0",
+                "capacite_pmr": "5",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "30",
+                "capacite_voiture": "55",
+                "code_postal": "44120",
+                "commune": "Vertou",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3202",
+                "lat_wgs84": "47.1856727113111",
+                "libtype": "Libre",
+                "long_wgs84": "-1.4785549720904199",
+                "nom_complet": "P+R TER Gare de Vertou Sud",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN. Guichet SNCF (voir horaires sur http://www.ter-sncf.com)",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.47855497209,
+                    47.18567271130
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Gare",
+                "autres_service_mob_prox": "Gare TER de Basse-Indre - St-Herblain :Ligne Nantes-St Nazaire-Le Croisic,Ligne Nantes-Redon-Rennes",
+                "capacite_moto": "0",
+                "capacite_pmr": "1",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "43",
+                "code_postal": "44800",
+                "commune": "St-Herblain",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4555",
+                "lat_wgs84": "47.2043616791008",
+                "libtype": "Libre",
+                "long_wgs84": "-1.66056670192079",
+                "nom_complet": "P+R TER Gare de Basse-Indre Nord",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Distributeur de titre de transport TER & TAN, Consignes vélos individuelles.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.66056670192,
+                    47.20436167910
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Route de Saint Sébastien",
+                "autres_service_mob_prox": "Station Busway Ligne 4 \"Gréneraie\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "6",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "49",
+                "capacite_voiture": "225",
+                "code_postal": "44200",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3628",
+                "lat_wgs84": "47.2001280458774",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.53331535035711",
+                "nom_complet": "P+R busway Gréneraie",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "services": "Box vélo abrité et sécurisé, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.53331535036,
+                    47.20012804590
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Gare",
+                "autres_service_mob_prox": "Gare TER de Basse-Indre - St-Herblain :Ligne Nantes-St Nazaire-Le Croisic,Ligne Nantes-Redon-Rennes",
+                "capacite_moto": "0",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "24",
+                "capacite_voiture": "54",
+                "code_postal": "44800",
+                "commune": "St-Herblain",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3561",
+                "lat_wgs84": "47.20414602124709",
+                "libtype": "Libre",
+                "long_wgs84": "-1.6610164869336799",
+                "nom_complet": "P+R TER Gare de Basse-Indre Sud",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.66101648693,
+                    47.20414602120
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue André Malraux",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \" 8 Mai\"",
+                "capacite_pmr": "6",
+                "capacite_velo": "30",
+                "capacite_voiture": "200",
+                "code_postal": "44400",
+                "commune": "Rezé",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3194",
+                "lat_wgs84": "47.1900227865145",
+                "libtype": "Ouvrage",
+                "long_wgs84": "-1.55142057451144",
+                "nom_complet": "P+R tramway 8 Mai",
+                "presentation": "Parc-relais en ouvrage avec contrôle d'accès. Ouverture du lundi au samedi de 6h à 22h et fermeture les dimanches et jours fériés.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "services": "Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.55142057451,
+                    47.19002278650
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Ordronneau",
+                "autres_service_mob_prox": "Navibus Loire",
+                "capacite_moto": "0",
+                "capacite_pmr": "0",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "20",
+                "code_postal": "44400",
+                "commune": "Rezé",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3582",
+                "lat_wgs84": "47.1919537669584",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5806679879382999",
+                "nom_complet": "P+R navibus Trentemoult-Dépôt",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.58066798794,
+                    47.19195376700
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "2 Place de la Gare",
+                "autres_service_mob_prox": "Gare TER de Mauves :Ligne Nantes-Angers",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "12",
+                "capacite_voiture": "91",
+                "code_postal": "44470",
+                "commune": "Mauves-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3565",
+                "lat_wgs84": "47.2932464054083",
+                "libtype": "Libre",
+                "long_wgs84": "-1.3888917974423398",
+                "nom_complet": "P+R TER Gare de Mauves-sur-Loire",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement vélo en consignes individuelles, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.38889179744,
+                    47.29324640540
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue du Ranzai",
+                "autres_service_mob_prox": "Ligne 1 Tramway  Ranzay/Beaujoire  François Mitterrand/JametLigne Tram-Train Nantes  ChateaubriandLigne Chronobus C1 Gare de Chantenay  Haluchère",
+                "capacite_moto": "0",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "46",
+                "capacite_voiture": "121",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "4101",
+                "lat_wgs84": "47.2484385238631",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5228142880429898",
+                "nom_complet": "P+R tram-train Haluchère 1",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.52281428804,
+                    47.24843852390
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Bourdonnières",
+                "autres_service_mob_prox": "Station Busway Ligne 4 \"Bourdonnières\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "96",
+                "code_postal": "44200",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3778",
+                "lat_wgs84": "47.186390819492296",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.52296477188575",
+                "nom_complet": "P+R busway Bourdonnières 2",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "telephone": "02 51 84 95 70",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.52296477189,
+                    47.18639081950
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de l'Erdre",
+                "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant",
+                "capacite_moto": "14",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "52",
+                "capacite_voiture": "65",
+                "code_postal": "44240",
+                "commune": "La Chapelle-sur-Erdre",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4342",
+                "lat_wgs84": "47.2977887104613",
+                "libtype": "Libre",
+                "long_wgs84": "-1.54769926882382",
+                "nom_complet": "P+R tram-train La Chapelle-sur-Erdre Centre Est",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54769926882,
+                    47.29778871050
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Verts Prés",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Bignon\"",
+                "capacite_pmr": "5",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "12",
+                "capacite_voiture": "114",
+                "code_postal": "44700",
+                "commune": "Orvault",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3649",
+                "lat_wgs84": "47.2489630060312",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5981813854021498",
+                "nom_complet": "P+R tramway Bignon",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Stationnement vélo en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.59818138540,
+                    47.24896300600
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Boulevard Auguste Priou",
+                "autres_service_mob_prox": "Station Busway Ligne 4 \"Porte de Vertou\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "10",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "30",
+                "capacite_voiture": "507",
+                "code_postal": "44120",
+                "commune": "Vertou",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3627",
+                "lat_wgs84": "47.1801648646645",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.50514253320576",
+                "nom_complet": "P+R busway Porte de Vertou",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement vélo en consignes individuelles, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.50514253321,
+                    47.18016486470
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Virginia Woolf",
+                "autres_service_mob_prox": "Station Tramway Ligne 1 \"François Mitterrand\"",
+                "capacite_pmr": "11",
+                "capacite_velo": "36",
+                "capacite_voiture": "207",
+                "code_postal": "44800",
+                "commune": "St-Herblain",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3190",
+                "lat_wgs84": "47.2216941390425",
+                "libtype": "Ouvrage",
+                "long_wgs84": "-1.63946359153841",
+                "nom_complet": "P+R tramway François Mitterrand",
+                "presentation": "Parc-relais en ouvrage avec contrôle d'accès. Ouverture du lundi au samedi de 6h à 22h et fermeture les dimanches et jours fériés.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement vélo en consignes individuelles, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.63946359154,
+                    47.22169413900
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue de la Babinière",
+                "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant",
+                "capacite_moto": "0",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "48",
+                "capacite_voiture": "103",
+                "code_postal": "44240",
+                "commune": "La Chapelle-sur-Erdre",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4340",
+                "lat_wgs84": "47.259584411084894",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5462075371775899",
+                "nom_complet": "P+R tram-train Babinière",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54620753718,
+                    47.25958441110
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Avenue de la Gare",
+                "autres_service_mob_prox": "Ligne Tram-Train Nantes  Chateaubriant",
+                "capacite_moto": "0",
+                "capacite_pmr": "1",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "44",
+                "code_postal": "44240",
+                "commune": "La Chapelle-sur-Erdre",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "4553",
+                "lat_wgs84": "47.296863378596896",
+                "libtype": "Libre",
+                "long_wgs84": "-1.54875132570876",
+                "nom_complet": "P+R tram-train La Chapelle-sur-Erdre Centre Ouest",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "services": "Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "NON",
+                "stationnement_velo_securise": "NON",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.54875132571,
+                    47.29686337860
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Neustrie",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Neustrie\"",
+                "capacite_pmr": "4",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "0",
+                "capacite_voiture": "150",
+                "code_postal": "44340",
+                "commune": "Bouguenais",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3558",
+                "lat_wgs84": "47.17666135374859",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5933795295221498",
+                "nom_complet": "P+R tramway Neustrie 2",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.59337952952,
+                    47.17666135370
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue Colette",
+                "autres_service_mob_prox": "Station Tramway Ligne 1 \"Beaujoire\"",
+                "capacite_pmr": "8",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "14",
+                "capacite_voiture": "381",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3192",
+                "lat_wgs84": "47.259483129049194",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.5266642183038701",
+                "nom_complet": "P+R tramway La Beaujoire",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "Stationnement vélo en consignes individuelles, Vidéosurveillance, Interphonie",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.52666421830,
+                    47.25948312900
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Allée Louis Armand",
+                "autres_service_mob_prox": "Gare TER de Bouaye :Ligne Nantes-Ste Pazanne-PornicLigne Nantes-Challans-St Gilles Croix de VieLigne Nantes-St Jean de Monts",
+                "capacite_moto": "0",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "32",
+                "capacite_voiture": "142",
+                "code_postal": "44830",
+                "commune": "Bouaye",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3566",
+                "lat_wgs84": "47.138311099705895",
+                "libtype": "Libre",
+                "long_wgs84": "-1.6825527470731099",
+                "nom_complet": "P+R TER Gare de Bouaye",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Abri vélos, Distributeur de titre de transport TER & TAN. Guichet SNCF (voir horaires sur http://www.ter-sncf.com)",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68255274707,
+                    47.13831109970
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Allée du 30 Décembre 1866",
+                "autres_service_mob_prox": "Gare TER de Vertou : Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet",
+                "capacite_moto": "3",
+                "capacite_pmr": "5",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "14",
+                "capacite_voiture": "155",
+                "code_postal": "44120",
+                "commune": "Vertou",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3201",
+                "lat_wgs84": "47.186392049791095",
+                "libtype": "Libre",
+                "long_wgs84": "-1.47914484959455",
+                "nom_complet": "P+R TER Gare de Vertou Nord",
+                "presentation": "Parc-Relais en accès libre (24h/24 et 7j/7).",
+                "services": "Abris Vélo, Distributeur de titre de transport TER & TAN. Guichet SNCF (voir horaires sur http://www.ter-sncf.com)",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.47914484959,
+                    47.18639204980
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de l'Ouche Quinet",
+                "autres_service_mob_prox": "Halte Ferroviaire de St Sébastien \"Frêne Rond\" :Ligne Nantes-Vertou, Ligne Nantes-La Roche s/ Yon-Les Sables d'Olonne, Ligne Nantes- Cholet",
+                "capacite_pmr": "6",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "30",
+                "capacite_voiture": "62",
+                "code_postal": "44230",
+                "commune": "St-Sébastien-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3200",
+                "lat_wgs84": "47.190612297376894",
+                "libtype": "Libre",
+                "long_wgs84": "-1.49616846761443",
+                "nom_complet": "P+R TER Frêne Rond",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Box vélo sécurisé, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.49616846761,
+                    47.19061229740
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Route de la Chapelle Sur Erdre",
+                "autres_service_mob_prox": "Station Tramway Ligne 2 \"René Cassin\"",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "65",
+                "code_postal": "44300",
+                "commune": "Nantes",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3196",
+                "lat_wgs84": "47.2639385628598",
+                "libtype": "Libre",
+                "long_wgs84": "-1.5749800526751399",
+                "nom_complet": "P+R tramway René Cassin",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d'accès.",
+                "services": "Stationnement vélo en consignes individuelles.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.57498005268,
+                    47.26393856290
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue de la Grande Ouche",
+                "autres_service_mob_prox": "Station Tramway Ligne 3 \"Grande Ouche\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "2",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "10",
+                "capacite_voiture": "29",
+                "code_postal": "44340",
+                "commune": "Bouguenais",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3777",
+                "lat_wgs84": "47.181983772785095",
+                "libtype": "Libre",
+                "long_wgs84": "-1.57945229936449",
+                "nom_complet": "P+R tramway Grande Ouche",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Stationnement vélos en consignes individuelles",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.57945229936,
+                    47.18198377280
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Bourdonnières",
+                "autres_service_mob_prox": "Station Busway Ligne 4 \"Bourdonnières\"",
+                "capacite_moto": "0",
+                "capacite_pmr": "6",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "26",
+                "capacite_voiture": "241",
+                "code_postal": "44200",
+                "commune": "Nantes",
+                "conditions_d_acces": "Carte Libertan, ticket P+R combiné, ticket horaire",
+                "exploitant": "NMGS",
+                "idobj": "3629",
+                "lat_wgs84": "47.1859635498368",
+                "libtype": "Enclos",
+                "long_wgs84": "-1.52131942605851",
+                "nom_complet": "P+R busway Bourdonnières 1",
+                "presentation": "Parc-relais en enclos avec contrôle d'accès. Ouverture 24h/24h.Mode d'emploi :  utiliser votre carte abonné Libertan ou prenez un ticket P+R combiné transport en commun pour entrer dans le P+R. Stationnez votre véhicule . Pour sortir du P+R, vous devez valider en borne de sortie votre carte Libertan ou le ticket P+R. Attention vous devrez au préalable avoir valider votre titre de transport  dans le bus, busway ou tramway utilisés pour voyager.",
+                "services": "Consignes vélos individuelles, Vidéosurveillance, Interphonie sur la borne de sortie du parc.",
+                "site_web": "https://www.parkings-nantes.fr/fr/parcs-relais",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "telephone": "02 51 84 95 70",
+                "twitter": "https://twitter.com/ngenantes",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.52131942606,
+                    47.18596354980
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "adresse": "Rue des Ponts",
+                "autres_service_mob_prox": "Gare TER de Thouaré :Ligne Nantes-Angers",
+                "capacite_moto": "0",
+                "capacite_pmr": "3",
+                "capacite_vehicule_electrique": "0",
+                "capacite_velo": "36",
+                "capacite_voiture": "117",
+                "code_postal": "44470",
+                "commune": "Thouaré-sur-Loire",
+                "conditions_d_acces": "Libre",
+                "exploitant": "Nantes Métropole",
+                "idobj": "3564",
+                "lat_wgs84": "47.264700347887796",
+                "libtype": "Libre",
+                "long_wgs84": "-1.44137463089923",
+                "nom_complet": "P+R TER de Thouaré-sur_Loire",
+                "presentation": "Parc-relais accessible 24h/24 et 7j/7 sans contrôle d?accès.",
+                "service_velo": "Pompe à vélo",
+                "services": "Abri vélos, Distributeur de titre de transport TER & TAN.",
+                "site_web": "http://www.nantesmetropole.fr/",
+                "stationnement_velo": "OUI",
+                "stationnement_velo_securise": "OUI",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.44137463090,
+                    47.26470034790
+                ]
+            }
+        }
+    ]
+}
