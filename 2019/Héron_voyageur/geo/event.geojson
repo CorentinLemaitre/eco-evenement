@@ -1,0 +1,540 @@
+
+{
+    "type": "FeatureCollection",
+    "generator": "JOSM",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "bicycle",
+                "name": "Stationnement vélo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68367624551,
+                    47.15115810059
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "manège",
+                "name": "Manège «La Chevauchée fantastique»",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68103963405,
+                    47.14991406308
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "girafe",
+                "name": "Scène du Cèdre<br>THÉÂTRE JEUNE PUBLIC <br>A R T D E R U E",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68157071143,
+                    47.14974077109
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "lion",
+                "name": "Scène du Jardin<br> A C R O B A T I E S",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68129712611,
+                    47.15014937446
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
+                "name": "Place des échoppes<br> Parking",
+                "marker-symbol": "car",
+                "stroke-opacity": "1",
+                "stroke-width": "2",
+                "fill": "BLUE",
+                "fill-opacity": "0.5",
+                "marker-size": "medium",
+                "stroke": "#555555",
+                "zoom": "large"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.68738970000,
+                            47.14396810000
+                        ],
+                        [
+                            -1.68725290000,
+                            47.14398550000
+                        ],
+                        [
+                            -1.68700880000,
+                            47.14398640000
+                        ],
+                        [
+                            -1.68700350000,
+                            47.14389970000
+                        ],
+                        [
+                            -1.68708120000,
+                            47.14389520000
+                        ],
+                        [
+                            -1.68707860000,
+                            47.14384500000
+                        ],
+                        [
+                            -1.68721000000,
+                            47.14384230000
+                        ],
+                        [
+                            -1.68720730000,
+                            47.14376930000
+                        ],
+                        [
+                            -1.68716040000,
+                            47.14370820000
+                        ],
+                        [
+                            -1.68710140000,
+                            47.14374370000
+                        ],
+                        [
+                            -1.68705040000,
+                            47.14371640000
+                        ],
+                        [
+                            -1.68691230000,
+                            47.14368720000
+                        ],
+                        [
+                            -1.68686000000,
+                            47.14368260000
+                        ],
+                        [
+                            -1.68680100000,
+                            47.14375200000
+                        ],
+                        [
+                            -1.68667220000,
+                            47.14369900000
+                        ],
+                        [
+                            -1.68669900000,
+                            47.14366260000
+                        ],
+                        [
+                            -1.68663330000,
+                            47.14363520000
+                        ],
+                        [
+                            -1.68674870000,
+                            47.14354030000
+                        ],
+                        [
+                            -1.68684120000,
+                            47.14352570000
+                        ],
+                        [
+                            -1.68729310000,
+                            47.14363060000
+                        ],
+                        [
+                            -1.68738970000,
+                            47.14396810000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#3dd6f5",
+                "marker-size": "medium",
+                "marker-symbol": "walk",
+                "name": "<b>Accès Sud de l'événement</b>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68271475924,
+                    47.14831985868
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#3dd6f5",
+                "marker-size": "medium",
+                "marker-symbol": "walk",
+                "name": "<b>Accès Nord de l'événement</b>"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68477595389,
+                    47.15130038051
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "desc": "Bus Aléhop 12",
+                "marker-color": "#3dd6f5",
+                "marker-size": "medium",
+                "marker-symbol": "bus",
+                "name": "Bus 88 : échoppes",
+                "zoom": "large"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68689479164,
+                    47.14413023551
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "zèbre",
+                "name": "Scène du Château<br>M U S I Q U E",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68177187711,
+                    47.15041569461
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
+                "capacity": "156",
+                "name": "Parking Les Ormeaux",
+                "parking": "surface",
+                "marker-symbol": "no",
+                "stroke-opacity": "1",
+                "marker-color": "#2905f8",
+                "stroke-width": "2",
+                "fill": "BLUE",
+                "fill-opacity": "0.5",
+                "marker-size": "medium",
+                "stroke": "#555555"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.68334340000,
+                            47.15547880000
+                        ],
+                        [
+                            -1.68339500000,
+                            47.15605860000
+                        ],
+                        [
+                            -1.68167310000,
+                            47.15610890000
+                        ],
+                        [
+                            -1.68164860000,
+                            47.15552400000
+                        ],
+                        [
+                            -1.68334340000,
+                            47.15547880000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "chapiteau",
+                "name": "Scène de spectacle sous chapiteau",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68234586984,
+                    47.14923366075
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
+                "marker-symbol": "car",
+                "stroke-opacity": "1",
+                "stroke-width": "2",
+                "fill": "BLUE",
+                "fill-opacity": "0.5",
+                "marker-size": "medium",
+                "stroke": "#555555",
+                "zoom": "large"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.68673520000,
+                            47.14389700000
+                        ],
+                        [
+                            -1.68666420000,
+                            47.14387780000
+                        ],
+                        [
+                            -1.68668960000,
+                            47.14382310000
+                        ],
+                        [
+                            -1.68657830000,
+                            47.14373280000
+                        ],
+                        [
+                            -1.68647910000,
+                            47.14389970000
+                        ],
+                        [
+                            -1.68652740000,
+                            47.14394170000
+                        ],
+                        [
+                            -1.68652740000,
+                            47.14399370000
+                        ],
+                        [
+                            -1.68654610000,
+                            47.14402740000
+                        ],
+                        [
+                            -1.68659440000,
+                            47.14402200000
+                        ],
+                        [
+                            -1.68664940000,
+                            47.14400190000
+                        ],
+                        [
+                            -1.68673520000,
+                            47.14389700000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "héron",
+                "name": "Scène de la Cour<br>C I R Q U E",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68134272367,
+                    47.15069113391
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
+                "name": "Parking du Super-U",
+                "access": "customers",
+                "marker-symbol": "car",
+                "stroke-opacity": "1",
+                "stroke-width": "2",
+                "fill": "BLUE",
+                "fill-opacity": "0.5",
+                "marker-size": "medium",
+                "stroke": "#555555",
+                "zoom": "large"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.68045010000,
+                            47.14319260000
+                        ],
+                        [
+                            -1.68034730000,
+                            47.14323210000
+                        ],
+                        [
+                            -1.68014960000,
+                            47.14341850000
+                        ],
+                        [
+                            -1.68009950000,
+                            47.14339880000
+                        ],
+                        [
+                            -1.67993340000,
+                            47.14359600000
+                        ],
+                        [
+                            -1.67921380000,
+                            47.14349200000
+                        ],
+                        [
+                            -1.67913730000,
+                            47.14346510000
+                        ],
+                        [
+                            -1.67908200000,
+                            47.14341310000
+                        ],
+                        [
+                            -1.67905560000,
+                            47.14335040000
+                        ],
+                        [
+                            -1.67906880000,
+                            47.14327870000
+                        ],
+                        [
+                            -1.67927700000,
+                            47.14304020000
+                        ],
+                        [
+                            -1.67944580000,
+                            47.14290210000
+                        ],
+                        [
+                            -1.68045010000,
+                            47.14319260000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "amenity": "parking",
+                "name": "Parking PMR",
+                "zoom": "large",
+                "marker-symbol": "car",
+                "stroke-opacity": "1",
+                "stroke-width": "2",
+                "fill": "BLUE",
+                "fill-opacity": "0.5",
+                "marker-size": "medium",
+                "stroke": "#555555"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.68508330000,
+                            47.14414660000
+                        ],
+                        [
+                            -1.68488130000,
+                            47.14409090000
+                        ],
+                        [
+                            -1.68470490000,
+                            47.14438690000
+                        ],
+                        [
+                            -1.68490680000,
+                            47.14444260000
+                        ],
+                        [
+                            -1.68508330000,
+                            47.14414660000
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "buvette",
+                "name": "Buvette et restauration",
+                "zoom": "max"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68202132255,
+                    47.14993412844
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "marker-color": "#005ffd",
+                "marker-size": "medium",
+                "marker-symbol": "bicycle",
+                "name": "Stationnement vélo"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.68230295181,
+                    47.14956018017
+                ]
+            }
+        }
+    ]
+}
