@@ -311,7 +311,7 @@
                 "marker-symbol": "car",
                 "stroke-opacity": "1",
                 "stroke-width": "2",
-                "fill": "red",
+                "fill": "BLUE",
                 "fill-opacity": "0.5",
                 "marker-size": "medium",
                 "stroke": "#555555",
