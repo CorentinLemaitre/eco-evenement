@@ -21,6 +21,7 @@
 
     </style>
 
+
     <script src="https://use.fontawesome.com/acc5504c96.js"></script>
 
   </head>
@@ -33,6 +34,8 @@
 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
 
+
+<link rel='stylesheet' href='widget-theme-journey.css' type='text/css' />
 
 
 <style>
@@ -70,7 +73,7 @@ max-height: 60px; overflow: auto
 .map-overlay p {
     margin: 0 0 10px;
 }
-@media (min-width:801px) {.map-overlay-container {width:30%} p{max-height:800px}}
+@media (min-width:900px) {.map-overlay-container {width:30%} p{max-height:800px}}
 
       
 
@@ -174,28 +177,39 @@ color: ##FFFFFF;
 background: #000000;
 }
 
-
+.email-address:before {
+   content: "Email address: ";
+}
     </style>
 
 
 <div id='map'>
 
+
 <nav id="menu"></nav>
 
 
 <div class='map-overlay-container'>
+  <div>
+      <ul>
+   <li class="email-address">chriscoyier@gmail.com</li>
+</ul>
+</div>
   
                 <div id="is-WidgetWrapper">
+                  <input type="text" placeholder="A red placeholder text..">
+
 <center>
 <div id='itinerary' class='w3-row-padding'>
     
+
   </div>
   </center>
    
   </div>
 
     </div>
-
+ 
 
 
 
@@ -782,7 +796,7 @@ layers.appendChild(link);
 (function(){
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src= "https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=Dis-nous d'où tu viens !&istid=STOPAREA|1350&istv=Seil,REZE"
+script.src= "https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=&&isiro=true&istid=STOPAREA|1350&istv=TRANSFERT"
 script.async = true;
 document.getElementsByTagName('body')[0].appendChild(script);
 })();

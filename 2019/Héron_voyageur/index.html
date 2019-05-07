@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Héron Voyageur</title>
+    <meta property="og:title" content="Inauguration du MiN, allons-y autrement!">
+    <meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
+    <meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
+    <meta property="og:site_name" content="Reeve">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body { margin:0; padding:0; }
+      #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+  </head>
+  <body>
+
+    <style>
+      /* STYLE la zone au-dessus de la carte sa police et son texte */
+      .map-overlay-container {
+        position: absolute;
+        top: 0px;
+        center: 0;
+        padding: 20px;
+        z-index: 0;
+      }
+      .map-overlay {
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        background-color: #fff;
+        border-radius: 3px;
+        padding: 10px;
+        box-shadow:0 1px 2px rgba(0,0,0,0.20);
+      }
+    .map-overlay h2,
+    .map-overlay p {
+        margin: 0 0 10px;
+      }
+    .mapboxgl-popup {
+        max-width: 300px;
+        font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        text-align: center;
+        top: -15px;
+    }
+    .mapboxgl-popup-close-button {
+    display: none;
+    }
+
+
+
+#marker {
+background-image: url('img/logo_event.png');
+background-size: cover;
+width: 480px; 
+height: 250px;
+
+cursor: pointer;
+}
+
+    </style>
+
+    <div id='map'></div>
+
+
+
+    <script>
+      /* 
+TODO :
+Le logo fait 1040 par 544. Il faut le mettre dans un cadre qui fait 
+*/
+mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
+    center: [-1.68638, 47.1492],
+                    
+    zoom: 15,
+	hash: 1,
+    pitch: 42//pour avoir une vision avec un angle
+}); 
+
+
+
+
+//// MARKER
+
+var monument = [-1.555265, 47.157256]; // -1.555265, 47.157256
+          
+var popup = new mapboxgl.Popup({ offset: 25 })
+.setHTML('<strong>Innauguration MiN</strong><br>27 avril 2019');
+ 
+// create DOM element for the marker
+var el = document.createElement('div');
+el.id = 'marker';
+ 
+// create the marker
+var logo = new mapboxgl.Marker(el)
+.setLngLat(monument)
+.setOffset([-240,120])
+//.setPopup(popup) // sets a popup on this marker ::: je l'ai désactivé pour le moment.
+.addTo(map);
+
+
+
+
+////
+
+
+var zoomtrigger = 14;
+map.on('load', function (){
+    map.loadImage('img/zèbre.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('zèbre', image);
+    });
+    map.loadImage('img/parking1.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('car', image);
+    });
+        map.loadImage('img/bike_park.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bicycle', image);
+    });
+    map.loadImage('img/manège.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('manège', image);
+    });
+    map.loadImage('img/lion.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('lion', image);
+    });
+    map.loadImage('img/héron.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('héron', image);
+    });
+    map.loadImage('img/girafe.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('girafe', image);
+    });
+    map.loadImage('img/chapiteau.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('chapiteau', image);
+	});
+	map.loadImage('img/buvette.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('buvette', image);
+
+
+
+        
+       
+
+
+
+    map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/event.geojson",
+        },
+        'minzoom': 12,
+        "layout": {
+            "icon-image": "{marker-symbol}",
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 0.45,
+                    "stops": [[15, 0.15], [19, 0.45]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[15, 0.9], [17, 1]]
+            }
+        }
+    });
+
+
+    map.addLayer({
+        'id': 'polygones',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'geo/event.geojson'
+        },
+        'minzoom' : 12,
+        "layout": {},
+        'paint': {
+            'fill-color': ['get', 'fill'],
+            'fill-opacity': ['get', 'fill-opacity'],
+        }
+	},"road-label-large");
+
+
+
+
+///Afficher popups on click
+
+
+//Popup Polygones
+
+
+
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','polygones', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','polygones', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','polygones', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+//Popup TC
+
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','TC', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','TC', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','TC', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+
+
+//Popup Points
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','points', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','points', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','points', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+//Popup Indoor
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','indoor', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.description;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','indoor', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','indoor', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+
+
+
+
+    
+
+
+//FlyTo Logo
+
+
+ 
+
+    var flybtn = document.getElementById('marker');
+    flybtn.addEventListener('click', flyFunction);
+    flybtn.addEventListener('click', changeFunction);
+    var arrival = [-1.553209,47.15631];
+    var index = 0
+    var flyzoom = 15.5;
+    var flypitch = 60;
+    var flybearing = 55;
+    function flyFunction(){
+        map.flyTo({
+            center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+            bearing: flybearing
+            });
+        };
+    function changeFunction(){
+        if (index < 1) {
+        arrival = [-1.551238, 47.156543];
+        flyzoom = 11;
+        flypitch = 0;
+        flybearing = 0;
+        index = 1;
+        }else{
+        arrival = [-1.553209,47.15631];
+        index = 0
+        flyzoom = 15.5;
+        flypitch = 60;
+        flybearing = 55;
+        }
+        };
+
+}
+)
+})
+</script>
+</body>
+</html>

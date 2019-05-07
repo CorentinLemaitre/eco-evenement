@@ -1195,13 +1195,13 @@ fieldset[disabled] .is-datetimepicker-btn-link:focus {
 .is-LabelInInput-Input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
   font-size: 12px;
-  color: #585858;
+  color: #CA65B8;
 }
 
 .is-LabelInInput-Input::-moz-placeholder {
   /* Firefox 19+ */
   font-size: 12px;
-  color: #585858;
+  color: ;
 }
 
 .is-LabelInInput-Input:-ms-input-placeholder {
@@ -1213,12 +1213,12 @@ fieldset[disabled] .is-datetimepicker-btn-link:focus {
 .is-LabelInInput-Input:-moz-placeholder {
   /* Firefox 18- */
   font-size: 12px;
-  color: #585858;
+  color: #CA65B8;
 }
 
 .is-LabelInInput-Input::placeholder {
   font-size: 12px;
-  color: #585858;
+  color: #CA65B8;
 }
 
 .is-SwapGroup {
@@ -1444,7 +1444,7 @@ fieldset[disabled] .is-datetimepicker-btn-link:focus {
 }
 
 #is-JourneyForm .is-LabelInInput-Input {
-  color: #312e54;
+  color: #CA65B8
 }
 
 #is-Journey-AdvancedSearch {
