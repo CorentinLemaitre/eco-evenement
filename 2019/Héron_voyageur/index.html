@@ -157,18 +157,43 @@ map.on('load', function (){
 
 
         
-       
-
-
-
-    map.addLayer({
-        "id": "points",
+map.addLayer({
+        "id": "pointsMax",
         "type": "symbol",
         "source": {
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-        'minzoom': 12,
+        'minzoom': 16,
+        "filter": ["in","zoom","max"],
+        "layout": {
+            "icon-image": "{marker-symbol}",
+            "icon-allow-overlap": true,
+            "icon-size": {
+                    "base": 0.45,
+                    "stops": [[15, 0.15], [19, 0.45]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[15, 0.9], [17, 1]]
+            }
+        }
+    });
+
+
+
+
+    map.addLayer({
+        "id": "pointsLarge",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/event.geojson",
+        },
+        'minzoom': 8,
+        "filter": ["in","zoom","large"],
         "layout": {
             "icon-image": "{marker-symbol}",
             "icon-allow-overlap": true,
