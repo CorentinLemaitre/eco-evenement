@@ -68,12 +68,13 @@ Le logo fait 1040 par 544. Il faut le mettre dans un cadre qui fait
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29yZW50aW5sZW1haXRyZSIsImEiOiJjajQ0OGxmZ2sxNTVkMnFwbjI2M3RsMTc5In0.35Ah1wy069n6jeaniWxMWg';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
-    center: [-1.681215, 47.147813],
-                    
+    //style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
+	style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-1.68182, 47.14894],
+	bearing: 84.8,
     zoom: 15,
-	hash: 1,
-    pitch: 42//pour avoir une vision avec un angle
+	hash: 0,
+    pitch: 0//pour avoir une vision avec un angle
 }); 
 
 
@@ -148,7 +149,7 @@ map.on('load', function (){
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-1.6825448, 47.1520324]
+                        "coordinates": [-1.6816624, 47.1514625] 
                     }
                 }]
             }
@@ -156,10 +157,10 @@ map.on('load', function (){
         "layout": {
             "icon-image": "logo_event",
             "icon-allow-overlap": true,
-            "icon-anchor": "left",
+            "icon-anchor": "bottom-left",
             "icon-size": {
-                "base": 0.18,
-                "stops": [[15, 0.13], [18, 0.21]]
+                "base": 1,
+                "stops": [[15, 0.30], [18, 0.4]]
             }
         },
         "paint": {
@@ -169,35 +170,63 @@ map.on('load', function (){
             }
         }
     });
-
-        
-map.addLayer({
-        "id": "pointsMax",
+// Les appuis vélo et les piétons
+    map.addLayer({
+        "id": "pointsOther",
         "type": "symbol",
         "source": {
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-        'minzoom': 16,
-        "filter": ["in","zoom","max"],
+        'minzoom': 13,
+        "filter": ["!in","zoom","max","large"],
         "layout": {
             "icon-image": "{marker-symbol}",
             "icon-allow-overlap": true,
+			"icon-anchor": "bottom",
+
             "icon-size": {
-                    "base": 0.45,
-                    "stops": [[15, 0.15], [19, 0.45]]
+                    "base": 1,
+                    "stops": [[15, 0.5], [19, 0.8]]
                 }
         },
         "paint": {
             "icon-opacity": {
                 "base": 1,
-                "stops": [[15, 0.5], [16, 1]]
+                "stops": [[13, 0], [14, 1]]
+            }
+        }
+    });
+
+        // Points correspond à la couche clicable : les annimaux
+map.addLayer({
+        "id": "points",
+        "type": "symbol",
+        "source": {
+            "type": "geojson",
+            "data": "geo/event.geojson",
+        },
+        'minzoom': 15,
+        "filter": ["in","zoom","max"],
+        "layout": {
+            "icon-image": "{marker-symbol}",
+            "icon-allow-overlap": true,
+			"icon-anchor": "bottom",
+            "icon-size": {
+                    "base": 1,
+                    "stops": [[16, 0.15], [19, 0.8]]
+                }
+        },
+        "paint": {
+            "icon-opacity": {
+                "base": 1,
+                "stops": [[15, 0], [16, 1]]
             }
         }
     });
 
 
-
+// parking
 
     map.addLayer({
         "id": "pointsLarge",
@@ -213,42 +242,17 @@ map.addLayer({
             "icon-allow-overlap": true,
             "icon-size": {
                     "base": 1,
-                    "stops": [[15, 1], [17, 0.6]]
+                    "stops": [[10, 0.3], [17, 0.6]]
                 }
         },
         "paint": {
             "icon-opacity": {
                 "base": 1,
-                "stops": [[15, 0.9], [17, 1]]
+                "stops": [[8, 0], [10, 1]]
             }
         }
     });
 
-
-    map.addLayer({
-        "id": "pointsOther",
-        "type": "symbol",
-        "source": {
-            "type": "geojson",
-            "data": "geo/event.geojson",
-        },
-        'minzoom': 16,
-        "filter": ["!in","zoom","max","large"],
-        "layout": {
-            "icon-image": "{marker-symbol}",
-            "icon-allow-overlap": true,
-            "icon-size": {
-                    "base": 0.8,
-                    "stops": [[15, 0.8], [17, 0.6]]
-                }
-        },
-        "paint": {
-            "icon-opacity": {
-                "base": 1,
-                "stops": [[15, 0.9], [17, 1]]
-            }
-        }
-    });
 
 
 
@@ -265,7 +269,7 @@ map.addLayer({
             'fill-color': ['get', 'fill'],
             'fill-opacity': ['get', 'fill-opacity'],
         }
-	},"road-label-large");
+	},"road-label");
 
 
 
@@ -363,7 +367,7 @@ changeFunction();
 
 
 
-    var arrival = [-1.681958, 47.150233];
+    var arrival = [-1.681958, 47.150233]; // #14.85/47.14894/-1.68182/84.8/3
     var index = 0
     var flyzoom = 16.66;
     var flypitch = 42;
@@ -380,10 +384,10 @@ changeFunction();
         };
     function changeFunction(){
         if (index < 1) {
-        arrival = [-1.681215, 47.147813];
-        flyzoom = 15;
+        arrival = [-1.68182, 47.14894];
+        flyzoom = 14.85;
         flypitch = 0;
-        flybearing = 0;
+        flybearing = 84.8;
         index = 1;
         }else{
         arrival = [-1.681958, 47.150233];
