@@ -112,13 +112,18 @@ var logo = new mapboxgl.Marker(el)
 
 var zoomtrigger = 14;
 map.on('load', function (){
-    map.loadImage('img/zèbre.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('zèbre', image);
-    });
+
     map.loadImage('img/parking1.png', function(error, image) {
         if (error) throw error;
         map.addImage('car', image);
+    });
+        map.loadImage('img/bus.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('bus', image);
+    });
+        map.loadImage('img/zèbre.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('zèbre', image);
     });
         map.loadImage('img/bike_park.png', function(error, image) {
         if (error) throw error;
@@ -147,6 +152,7 @@ map.on('load', function (){
 	map.loadImage('img/buvette.png', function(error, image) {
         if (error) throw error;
         map.addImage('buvette', image);
+
 
 
 

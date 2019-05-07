@@ -211,11 +211,11 @@
         {
             "type": "Feature",
             "properties": {
-                "desc": "Bus Aléhop 12",
+                "desc": "",
                 "marker-color": "#3dd6f5",
                 "marker-size": "medium",
                 "marker-symbol": "bus",
-                "name": "Bus 88 : échoppes",
+                "name": "<strong>Bus 88 : échoppes</strong></br>Bus Aléhop 12",
                 "zoom": "large"
             },
             "geometry": {
@@ -311,10 +311,11 @@
                 "marker-symbol": "car",
                 "stroke-opacity": "1",
                 "stroke-width": "2",
-                "fill": "BLUE",
+                "fill": "red",
                 "fill-opacity": "0.5",
                 "marker-size": "medium",
                 "stroke": "#555555",
+                "name": "Place des échoppes<br> Parking",
                 "zoom": "large"
             },
             "geometry": {
