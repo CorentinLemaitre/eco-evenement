@@ -79,7 +79,7 @@
                 "stroke-opacity": "1",
                 "stroke-width": "2",
                 "fill": "BLUE",
-                "fill-opacity": "0.5",
+                "fill-opacity": 0.5,
                 "marker-size": "medium",
                 "stroke": "#555555",
                 "zoom": "large"
@@ -250,14 +250,15 @@
                 "capacity": "156",
                 "name": "Parking Les Ormeaux",
                 "parking": "surface",
-                "marker-symbol": "no",
+                "marker-symbol": "car",
                 "stroke-opacity": "1",
                 "marker-color": "#2905f8",
                 "stroke-width": "2",
                 "fill": "BLUE",
-                "fill-opacity": "0.5",
+                "fill-opacity": 0.5,
                 "marker-size": "medium",
-                "stroke": "#555555"
+                "stroke": "#555555",
+				"zoom": "large"
             },
             "geometry": {
                 "type": "Polygon",
@@ -312,7 +313,7 @@
                 "stroke-opacity": "1",
                 "stroke-width": "2",
                 "fill": "BLUE",
-                "fill-opacity": "0.5",
+                "fill-opacity": 0.5,
                 "marker-size": "medium",
                 "stroke": "#555555",
                 "name": "Place des échoppes<br> Parking",
@@ -397,7 +398,7 @@
                 "stroke-opacity": "1",
                 "stroke-width": "2",
                 "fill": "BLUE",
-                "fill-opacity": "0.5",
+                "fill-opacity": 0.5,
                 "marker-size": "medium",
                 "stroke": "#555555",
                 "zoom": "large"
@@ -472,7 +473,7 @@
                 "stroke-opacity": "1",
                 "stroke-width": "2",
                 "fill": "BLUE",
-                "fill-opacity": "0.5",
+                "fill-opacity": 0.5,
                 "marker-size": "medium",
                 "stroke": "#555555"
             },
