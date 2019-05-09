@@ -189,19 +189,7 @@ background: #000000;
 <div class='map-overlay-container'>
 
   
-<div id="is-WidgetWrapper_Journey"></div>
-
-<div id="is-MapWrapper"></div>
-
-<script type="text/javascript">
-(function(){
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src= 'https://destineo.fr/fr/widget/place-journey-map?token=WWW.TRANSFERT.CO&isfid=null&isfv=&istid=STOPAREA|1350&istv=Seil,REZE';
-script.async = true;
-document.getElementsByTagName('body')[0].appendChild(script);
-})();
-</script>
+                <div id="is-WidgetWrapper">
 
 <center>
 
@@ -721,15 +709,92 @@ layers.appendChild(link);
  
 
 
-})
+  
+
+///POPUP ONCLICK POINTS
+		
+  /*  map.on('click', 'points', function (e) {
+        var coordinates = e.features[0].geometry.coordinates.slice();
+        var description = e.features[0].properties.name;
+
+        // Ensure that if the map is zoomed out such that multiple
+        // copies of the feature are visible, the popup appears
+        // over the copy being pointed to.
+        while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+        }
+
+        new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map);
+    });
+
+    // Change the cursor to a pointer when the mouse is over the points layer.
+    map.on('mouseenter', 'points', function () {
+        map.getCanvas().style.cursor = 'pointer';
+    });
+
+    // Change it back to a pointer when it leaves.
+    map.on('mouseleave', 'points', function () {
+        map.getCanvas().style.cursor = '';
+    });	
+*/
+
+
+///FLYBUTTON
+
+
+	/* var flybtn = document.getElementById('fly');
+	flybtn.addEventListener('click', flyFunction);
+	flybtn.addEventListener('click', changeFunction);
+	var arrival = [-1.555181, 47.157465];
+	var index = 0
+	var flyzoom = 16;
+	var flypitch = 60;
+	function flyFunction(){
+		map.flyTo({
+			center: arrival, //first
+            zoom:flyzoom,
+            pitch: flypitch,
+			bearing:0
+			});
+		};
+	function changeFunction(){
+		if (index < 1) {
+		arrival = [-1.55294, 47.15864];
+		flyzoom = 11;
+		flypitch = 0;
+		index = 1;
+		flybtn.innerHTML = "Revenir à la carte globale";
+		}else{
+		arrival = [-1.553008, 47.158074];
+		index = 0
+		flyzoom = 16;
+		flypitch = 60;
+		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
+		}
+		};
+
+*/
 
 
 
 
-
+});
 </script>
 
-</script> 
+
+
+<script type="text/javascript">
+(function(){
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src= 'https://destineo.fr/fr/widget/place-journey?token=WWW.TRANSFERT.CO&isfid=null&isfv=&istid=STOPAREA|1350&istv=Seil,REZE';
+script.async = true;
+document.getElementsByTagName('body')[0].appendChild(script);
+})();
+</script>
 
 </body>
 </html>
