@@ -13,6 +13,7 @@
 </body>
 
 <script type="text/javascript">
+/*
 (function(){
 var script = document.createElement('script');
 script.type = 'text/javascript';
@@ -20,6 +21,19 @@ script.src= 'https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=n
 script.async = true;
 document.getElementsByTagName('body')[0].appendChild(script);
 })();
+
+*/
+
+// la version nouvelle
+(function(){
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src= 'https://www.destineo.fr/fr/widget/place?redirection=true&internal=false&token=TRANSFERT&isfid=null&isfv=&istid=STOPAREA|1350&istv=Transfert';
+script.async = true;
+document.getElementsByTagName('body')[0].appendChild(script);
+})();
 </script> 
 
+<script type="text/javascript"> 
+</script>
 </html>
