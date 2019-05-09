@@ -775,21 +775,36 @@ layers.appendChild(link);
 		flybtn.innerHTML= "Zoom sur le site du MiN de Nantes";
 		}
 		};
+    
+});
 
 */
 
+/*var script = document.createElement('script');
+script.onload = function() {
+  alert("Script loaded and ready");
+};
+script.src = "http://whatever.com/the/script.js";
+document.getElementsByTagName('head')[0].appendChild(script);
+//*
 
 
 
-});
+
+
 </script>
+
+
 
 
 <script>
 (function(){
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src= "https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=&&isiro=true&istid=STOPAREA1350&istv=TRANSFERT"
+script.onload = function() {
+  alert("Script loaded and ready");
+};
+script.src= "https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=&&isiro=true&istid=STOPAREA|1350&istv=TRANSFERT"
 script.async = true;
 document.getElementsByTagName('body')[0].appendChild(script);
 })();
