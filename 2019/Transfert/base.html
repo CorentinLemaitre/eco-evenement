@@ -50,7 +50,8 @@
     top: 0px;
     left: 0;
     padding: 10px;
-    z-index: 1;
+    z-index: 1;`
+    float:left;
 
 
 }
@@ -73,7 +74,13 @@ max-height: 60px; overflow: auto
 .map-overlay p {
     margin: 0 0 10px;
 }
-@media (min-width:900px) {.map-overlay-container {width:30%} p{max-height:800px}}
+@media (min-width:700px) 
+
+{
+  .map-overlay-container 
+  {width:30%} 
+  p{max-height:800px}
+{float: left}}
 
       
 
@@ -104,6 +111,17 @@ margin-left:25%;
 
 
 
+#itinerary {
+background: #fff;
+position: relative;
+z-index: 1;
+top: 10px;
+left: 10px;
+border-radius: 0px;
+width: 200px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: 'Open Sans', sans-serif;
+}
 
 
 
@@ -112,19 +130,20 @@ margin-left:25%;
 #menu {
 background: #fff;
 position: absolute;
-float-right;
+float:left;
 z-index: 1;
-top: 50px;
-right: 10px;
+top: 50%;
+left: 2%;
 border: 4px solid white;
 border-radius: 3px;
-width: 180px;
+width: 20%;
+max-width: 20%
 border: 1px solid rgba(0,0,0,0.4);
 font-family: 'arial', sans-serif;
-font-size: 15px;
 font-weight: 900;
 letter-spacing: 0.04em;
 text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+
 
 
 }
@@ -192,8 +211,22 @@ background: #000000;
 
     </div>
  
+
+
+
+
     </div>
 
+
+
+
+
+
+<!-- 
+   <p style="font-size:150%;padding:2%;">
+    Venir autrement à l'événement
+  </p>
+-->
 
 
 
@@ -459,32 +492,22 @@ layers.appendChild(link);
 
 
 
+
+
+
 });
 </script>
 
+
+
 <script type="text/javascript">
-/*
 (function(){
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src= 'https://destineo.fr/fr/widget/place-journey?token=TRANSFERT&isfid=null&isfv=&istid=STOPAREA|1350&istv=Transfert';
+script.src= 'https://destineo.fr/fr/widget/place-journey?token=WWW.TRANSFERT.CO&isfid=null&isfv=&istid=STOPAREA|1350&istv=Seil,REZE';
 script.async = true;
 document.getElementsByTagName('body')[0].appendChild(script);
 })();
-
-*/
-
-// la version nouvelle
-(function(){
-var script = document.createElement('script');
-script.type = 'text/javascript';
-script.src= 'https://www.destineo.fr/fr/widget/place?redirection=true&internal=false&token=TRANSFERT&isfid=null&isfv=&istid=STOPAREA|1350&istv=Transfert';
-script.async = true;
-document.getElementsByTagName('body')[0].appendChild(script);
-})();
-</script> 
-
-<script type="text/javascript"> 
 </script>
 
 </body>
