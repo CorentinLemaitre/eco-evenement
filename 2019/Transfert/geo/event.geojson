@@ -1099,10 +1099,9 @@
             "type": "Feature",
             "properties": {
                 "marker-symbol": "ferry",
-                "stroke": "#00A651",
+                "stroke": "blue",
                 "stroke-opacity": "1",
-                "stroke-width": "6",
-                "name": "Navibus"
+                "stroke-width": "6"
             },
             "geometry": {
                 "type": "LineString",
@@ -1238,7 +1237,7 @@
                 "fill-opacity": "0.4",
                 "marker-color": "",
                 "marker-symbol": "",
-                "name": "Transfert",
+                "name": "",
                 "stroke": "#555555",
                 "stroke-opacity": "1",
                 "stroke-width": "2"
