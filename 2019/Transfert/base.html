@@ -352,7 +352,7 @@ map.addLayer({
         'type': 'line',
         'source': {
             'type': 'geojson',
-            'data': 'parcours_TC.geojson',
+            'data': 'geo/tan.geojson',
         },
         'minzoom' : 7,
         "layout": {
@@ -415,6 +415,22 @@ map.addLayer({
 			}
 		}
     });
+
+
+     map.addLayer({
+        'id': 'polygones',
+        'type': 'fill',
+        'source': {
+            'type': 'geojson',
+            'data': 'geo/event.geojson'
+        },
+        'minzoom' : 14,
+        'layout': {},
+        'paint': {
+            'fill-color': ['get', 'fill'],
+            'fill-opacity': 0.3
+        }
+  },"road-label-large");
 
 
 

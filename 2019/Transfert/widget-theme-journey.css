@@ -1566,9 +1566,9 @@ font-color: #404040;
 }
 
 .is-Journey-Mode-Tab.is-active .is-Journey-Mode-Tab-Button {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 238, 0, 0.5);
   background: #ffffff;
-  color: #2C6E89;
+  color: #ffee00;
 }
 
 .is-Journey-Mode-Tab.is-active .is-Icon {
@@ -1576,8 +1576,7 @@ font-color: #404040;
 }
 
 .is-Journey-Mode-Tab-Link:hover .is-Journey-Mode-Tab-Button, .is-Journey-Mode-Tab-Link:active .is-Journey-Mode-Tab-Button {
-  background: rgba(255, 235, 18, 0.5);
-
+  background: rgba(255, 238, 0, 0.5);
 
 
 }
