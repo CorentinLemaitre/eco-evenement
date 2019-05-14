@@ -210,6 +210,7 @@ text-align: center;
 margin: 1%;
 cursor: pointer;
 display: inline-block;
+pointer-events:auto;
 }
 
  
@@ -217,37 +218,6 @@ display: inline-block;
 background-color: #000000;
 color: #FFFFFF;
 }
-
-
-#fly_bicloo a {
-font-size: 15px;
-font-weight: 900;
-letter-spacing: 0.04em;
-text-decoration: none;
-border-bottom: 1px solid rgba(0,0,0,0.25);
-text-align: center;
-text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
-line-height: 20px;
-}
- 
-#fly_bicloo a:last-child {
-border: none;
-}
- 
-#fly_bicloo a:hover {
-background-color: #000000;
-color: #FFFFFF;
-}
- 
-#fly_bicloo a.active {
-background-color: #FFFFFF;
-color: ##FFFFFF;
-}
- 
-#fly_bicloo a.active:hover {
-background: #000000;
-}
-
 
 
 
@@ -300,62 +270,6 @@ color: #FFFFFF;
 
 
 
-
-
- 
-
-
-
-
-#menu {
-background: #fff;
-position: absolute;
-z-index: 1;
-top: 10px;
-right: 10px;
-border-radius: 3px;
-width: 120px;
-border: 1px solid rgba(0,0,0,0.4);
-font-family: 'Open Sans', sans-serif;
-}
- 
-
-
- 
-#menu a {
-font-size: 15px;
-font-weight: 900;
-color: #404040;
-display: inline-block;
-letter-spacing: 0.04em;
-padding: 10%;
-text-decoration: none;
-border-bottom: 1px solid rgba(0,0,0,0.25);
-text-align: center;
-text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
-line-height: 20px;
-}
- 
-#menu a:last-child {
-border: none;
-}
- 
-#menu a:hover {
-background-color: #000000;
-color: #FFFFFF;
-}
- 
-#menu a.active {
-background-color: #FFFFFF;
-color: ##FFFFFF;
-}
- 
-#menu a.active:hover {
-background: #000000;
-}
-
-
-
     </style>
 
 
@@ -366,7 +280,7 @@ background: #000000;
 <div class="btn-group">
   <button id='fly_bus'>Venir en Bus</button>
   <button id='fly_bateau'>Venir en Bateau</button>
-  <button id='fly_bicloo'></button>
+  <button id='fly_bicloo'>Venir en Bicloo</button>
 </div>
 
 <nav id="menu"></nav>
@@ -641,7 +555,7 @@ map.on('load', function (){
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-        'minzoom': 8,
+        'minzoom': 13,
         "filter": ["in","zoom","large"],
 
         "layout": {
@@ -716,7 +630,7 @@ map.addLayer({
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-    'minzoom': 13,
+    'minzoom': 17.5,
         "layout": {
             "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
       "icon-allow-overlap": true,
@@ -854,11 +768,11 @@ changeFunction1();
 
 
 
-    var arrival1 = [-1.569277, 47.194929];
+    var arrival1 = [-1.569337, 47.194636];
     var index = 0
-    var flyzoom = 16;
-    var flypitch = 0;
-    var flybearing = 12.14;
+    var flyzoom = 17;
+    var flypitch = 57;
+    var flybearing = 0;
 
 
     function flyFunction1(){
@@ -877,11 +791,11 @@ changeFunction1();
         flybearing = 0;
         index = 1;
         }else{
-        arrival1 = [-1.569277, 47.194929];
+        arrival1 = [-1.569337, 47.194636];
         index = 0
-        flyzoom = 16;
-        flypitch = 0;
-        flybearing = 12.14;
+        flyzoom = 17;
+        flypitch = 57;
+        flybearing = 0;
         }
         };
 
@@ -971,36 +885,6 @@ changeFunction3();
 
 });
 
-
-var toggleableLayerIds = [  'Venir en Bicloo' ];
- 
-for (var i = 0; i < toggleableLayerIds.length; i++) {
-var id = toggleableLayerIds[i];
- 
-var link = document.createElement('a');
-link.href = '#';
-link.className = 'active';
-link.textContent = id;
- 
-link.onclick = function (e) {
-var clickedLayer = this.textContent;
-e.preventDefault();
-e.stopPropagation();
- 
-var visibility = map.getLayoutProperty(clickedLayer, 'visibility');
- 
-if (visibility === 'visible') {
-map.setLayoutProperty(clickedLayer, 'visibility', 'none');
-this.className = '';
-} else {
-this.className = 'active';
-map.setLayoutProperty(clickedLayer, 'visibility', 'visible');
-}
-};
- 
-var layers = document.getElementById('fly_bicloo');
-layers.appendChild(link);
-}
 
 
 
