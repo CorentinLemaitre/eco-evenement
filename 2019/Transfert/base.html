@@ -526,7 +526,7 @@ map.on('load', function (){
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-    'minzoom': 13,
+    'minzoom': 15,
         "layout": {
             "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
       "icon-allow-overlap": true,
@@ -555,7 +555,7 @@ map.on('load', function (){
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-        'minzoom': 13,
+        'minzoom': 14,
         "filter": ["in","zoom","large"],
 
         "layout": {
@@ -623,7 +623,7 @@ map.on('load', function (){
 
 
 map.addLayer({
-        "id": "Venir en Bicloo",
+        "id": "bicycle",
         "type": "symbol",
         "filter": ["in","marker-symbol","bicycle","bicloo"],
         "source": {
@@ -656,7 +656,7 @@ map.addLayer({
 
 // When a click event occurs on a feature in the polygones layer, open a popup at the
 // location of the feature, with description HTML from its properties.
-map.on('click','points', function (e) {
+map.on('click','pointsOther', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.name;
  
@@ -674,12 +674,112 @@ new mapboxgl.Popup()
 });
  
 // Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter','points', function () {
+map.on('mouseenter','pointsOther', function () {
 map.getCanvas().style.cursor = 'pointer';
 });
  
 // Change it back to a pointer when it leaves.
-map.on('mouseleave','points', function () {
+map.on('mouseleave','pointsOther', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+//Popup Points
+
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','pointsLarge', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','pointsLarge', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','pointsLarge', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+
+//Popup Points
+
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','pointsMax', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','pointsMax', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','pointsMax', function () {
+map.getCanvas().style.cursor = '';
+});
+
+
+//Popup Points
+
+
+// When a click event occurs on a feature in the polygones layer, open a popup at the
+// location of the feature, with description HTML from its properties.
+map.on('click','bicycle', function (e) {
+var coordinates = e.features[0].geometry.coordinates.slice();
+var description = e.features[0].properties.name;
+ 
+// Ensure that if the map is zoomed out such that multiple
+// copies of the feature are visible, the popup appears
+// over the copy being pointed to.
+while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+}
+ 
+new mapboxgl.Popup()
+.setLngLat(e.lngLat)
+.setHTML(e.features[0].properties.name)
+.addTo(map);
+});
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter','bicycle', function () {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave','bicycle', function () {
 map.getCanvas().style.cursor = '';
 });
 
@@ -769,7 +869,7 @@ changeFunction1();
 
 
     var arrival1 = [-1.569337, 47.194636];
-    var index = 0
+    var index = 0;
     var flyzoom = 17;
     var flypitch = 57;
     var flybearing = 0;
@@ -811,7 +911,7 @@ changeFunction2();
 
 
     var arrival2 = [-1.580863, 47.195401]; // navibus + chemin piéton
-    var index = 0
+    var index = 0;
     var flyzoom = 16;
     var flypitch = 0;
     var flybearing = 14.22;
@@ -852,7 +952,7 @@ changeFunction3();
 
 
     var arrival3 = [-1.569664, 47.194707]; 
-    var index = 0
+    var index = 0;
     var flyzoom = 18;
     var flypitch = 57;
     var flybearing = 32.9;
