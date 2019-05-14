@@ -118,7 +118,7 @@
             "properties": {
                 "amenity": "parking",
                 "name": "<strong>Zone de stationnement automobile toléré</strong>",
-                "marker-symbol": "car",
+                "marker-symbol": "no",
                 "zoom": "large",
                 "fill": "BLUE",
                 "fill-opacity": 0.5
