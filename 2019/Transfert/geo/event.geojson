@@ -711,23 +711,6 @@
         {
             "type": "Feature",
             "properties": {
-                "marker-color": "#005ffd",
-                "marker-size": "medium",
-                "marker-symbol": "buvette",
-                "name": "Buvette et restauration",
-                "zoom": "max"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -1.57092552101,
-                    47.19349893104
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "amenity": "toilets",
                 "building": "yes",
                 "name": "Toilettes",
