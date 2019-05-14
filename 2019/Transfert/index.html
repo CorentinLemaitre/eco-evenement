@@ -542,7 +542,7 @@ map.on('load', function (){
 			"icon-allow-overlap": true,
 			"icon-size": {
 					"base": 1.5,
-					"stops": [[14, 0.26], [17, 1]]
+					"stops": [[14, 0.26], [18, 1]]
 				}
 		},
 		"paint": {
@@ -557,6 +557,7 @@ map.on('load', function (){
      map.addLayer({
         'id': 'polygones',
         'type': 'fill',
+		//"filter": ["!in","zoom","max","large"],
         'source': {
             'type': 'geojson',
             'data': 'geo/event.geojson'
