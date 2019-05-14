@@ -114,10 +114,18 @@ font-family: 'Open Sans', sans-serif;
 
 
 
+
+
+
+
+
+
+
 #fly_bus {
 background: #fff;
 position: absolute;
 float:left;
+left:1%;
 z-index: 1;
 top: 50%;
 border-radius: 3px;
@@ -133,8 +141,8 @@ letter-spacing: 0.04em;
 text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
 text-align: center;
 margin: 1%;
-display: inline-block;
 cursor: pointer;
+display: inline-block;
 }
 
  
@@ -151,8 +159,9 @@ color: #FFFFFF;
 background: #fff;
 position: absolute;
 float:left;
+left:1%;
 z-index: 1;
-top: 60%;
+top: 57%;
 border-radius: 3px;
 line-height: 35px;
 width: 200px;
@@ -166,8 +175,9 @@ letter-spacing: 0.04em;
 text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
 text-align: center;
 margin: 1%;
-display: inline-block;
 cursor: pointer;
+display: inline-block;
+
 }
 
  
@@ -182,8 +192,9 @@ color: #FFFFFF;
 background: #fff;
 position: absolute;
 float:left;
+left:1%;
 z-index: 1;
-top: 70%;
+top: 64%;
 border-radius: 3px;
 line-height: 35px;
 width: 200px;
@@ -197,8 +208,9 @@ letter-spacing: 0.04em;
 text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
 text-align: center;
 margin: 1%;
-display: inline-block;
 cursor: pointer;
+display: inline-block;
+
 }
 
  
@@ -208,25 +220,67 @@ color: #FFFFFF;
 }
 
 
+.btn-group button {
+  background-color: #fff; /* Green background */
+  position: absolute;
+  left:1%;
+  top: 500px;
+  border: 1px solid rgba(0,0,0,0.4);; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 3px;
+line-height: 35px;
+width: 200px;
+height: 60px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: LeagueSpartan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: #000000;
+color: #FFFFFF;
+}
 
 
+.is-Widget{
+
+  position: absolute;
+  top: 10px;
+  left: 1%;
+  width:30%;
+  min-width:500px;
+
+}
     </style>
 
 
 <div id='map'>
 
 
-<button id='fly_bus'><p>Venir en Bus</p></button>
-<button id='fly_bateau'><p>Venir en Bateau</p></button>
-<button id='fly_bicloo'><p>Venir en Bicloo</p></button>
-
-
   
-
+<div class="btn-group">
+  <button id='fly_bus'>Venir en Bus</button>
+  <button id='fly_bateau'>Venir en Bateau</button>
+  <button id='fly_bicloo'>Venir en Bicloo</button>
 </div>
 
 
+
+
 <div class='map-overlay-container'>
+
 
   
                 <div id="is-WidgetWrapper">
@@ -630,7 +684,7 @@ changeFunction1();
 
 
 
-    var arrival1 = [-1.55243, 47.20267];
+    var arrival1 = [-1.569277, 47.194929];
     var index = 0
     var flyzoom = 16;
     var flypitch = 0;
@@ -653,7 +707,7 @@ changeFunction1();
         flybearing = 0;
         index = 1;
         }else{
-        arrival1 = [-1.55243, 47.20267];
+        arrival1 = [-1.569277, 47.194929];
         index = 0
         flyzoom = 16;
         flypitch = 0;
@@ -672,7 +726,7 @@ changeFunction2();
 
 
 
-    var arrival2 = [-1.57244, 47.19919]; // #14.85/47.14894/-1.68182/84.8/3
+    var arrival2 = [-1.580863, 47.195401]; // navibus + chemin piéton
     var index = 0
     var flyzoom = 16;
     var flypitch = 0;
@@ -695,7 +749,7 @@ changeFunction2();
         flybearing = 0;
         index = 1;
         }else{
-        arrival2 = [-1.57244, 47.19919];
+        arrival2 = [-1.580863, 47.195401];
         index = 0
         flyzoom = 16;
         flypitch = 42;
@@ -713,11 +767,11 @@ changeFunction3();
 
 
 
-    var arrival3 = [-1.568409, 47.194242]; 
+    var arrival3 = [-1.569664, 47.194707]; 
     var index = 0
-    var flyzoom = 16;
-    var flypitch = 0;
-    var flybearing = 16.89;
+    var flyzoom = 18;
+    var flypitch = 57;
+    var flybearing = 32.9;
 
 
     function flyFunction3(){
@@ -736,11 +790,11 @@ changeFunction3();
         flybearing = 0;
         index = 1;
         }else{
-        arrival3 = [-1.568409, 47.194242];
+        arrival3 = [-1.569664, 47.194707];
         index = 0
-        flyzoom = 16;
-        flypitch = 0;
-        flybearing = 16.89;
+        flyzoom = 18;
+        flypitch = 57;
+        flybearing = 32.9;
         }
         };
 
