@@ -11,7 +11,7 @@
                 "name": "Bar",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -121,7 +121,7 @@
                 "marker-symbol": "car",
                 "zoom": "large",
                 "fill": "BLUE",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -203,7 +203,7 @@
                 "marker-symbol": "car",
                 "zoom": "large",
                 "fill": "BLUE",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -331,7 +331,7 @@
                 "tourism": "attraction",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -457,7 +457,7 @@
                 "marker-symbol": "car",
                 "zoom": "large",
                 "fill": "BLUE",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -546,7 +546,7 @@
                 "building": "yes",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5",
+                "fill-opacity": 0.5,
                 "name": "Toilettes"
             },
             "geometry": {
@@ -590,7 +590,7 @@
                 "name": "Restauration",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -733,7 +733,7 @@
                 "name": "Toilettes",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -786,7 +786,7 @@
                 "name": "Crane tobogan",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "LineString",
@@ -886,7 +886,7 @@
                 "marker-symbol": "car",
                 "zoom": "large",
                 "fill": "BLUE",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -1025,7 +1025,7 @@
                 "name": "Accueil",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -1101,7 +1101,7 @@
                 "marker-symbol": "ferry",
                 "stroke": "blue",
                 "stroke-opacity": "1",
-                "stroke-width": "6"
+                "stroke-width": 6
             },
             "geometry": {
                 "type": "LineString",
@@ -1156,7 +1156,7 @@
                 "name": "Chapiteau 1",
                 "marker-symbol": "no",
                 "fill": "grey",
-                "fill-opacity": "0.5"
+                "fill-opacity": 0.5
             },
             "geometry": {
                 "type": "Polygon",
@@ -1226,60 +1226,6 @@
                             -1.56685300000,
                             47.19359860000
                         ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "fill": "LIGHTGREEN",
-                "fill-opacity": "0.4",
-                "marker-color": "",
-                "marker-symbol": "",
-                "name": "",
-                "stroke": "#555555",
-                "stroke-opacity": "1",
-                "stroke-width": "2"
-            },
-            "geometry": {
-                "type": "LineString",
-                "coordinates": [
-                    [
-                        -1.56832763970,
-                        47.19450697822
-                    ],
-                    [
-                        -1.56838817480,
-                        47.19339619630
-                    ],
-                    [
-                        -1.56321178399,
-                        47.19313907388
-                    ],
-                    [
-                        -1.56274257072,
-                        47.19544288732
-                    ],
-                    [
-                        -1.56445290875,
-                        47.19566915496
-                    ],
-                    [
-                        -1.56610269654,
-                        47.19566915496
-                    ],
-                    [
-                        -1.56746490664,
-                        47.19529890673
-                    ],
-                    [
-                        -1.56867576006,
-                        47.19468182060
-                    ],
-                    [
-                        -1.56832763970,
-                        47.19450697822
                     ]
                 ]
             }
