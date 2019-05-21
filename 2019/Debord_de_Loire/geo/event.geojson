@@ -175,7 +175,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Arrivée à Basse indre</strong> </br>20h30 horraire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
+        "name": "<strong> Arrivée à Basse indre</strong> </br>20h30 horaire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
       },
       "geometry": {
         "type": "Point",
@@ -413,7 +413,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Départ Véloparade</strong> </br> 19h30 RDV des cycliste</br>19h45 Départ de Couéron"
+        "name": "<strong> Départ Véloparade</strong> </br> 19h30 RDV des cyclistes</br>19h45 Départ de Couéron"
       },
       "geometry": {
         "type": "Point",
@@ -441,7 +441,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Arrivée à Haute indre</strong> </br>20h45 horraire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
+        "name": "<strong> Arrivée à Haute-Indre</strong> </br>20h45 horaire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
       },
       "geometry": {
         "type": "Point",
@@ -469,7 +469,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "boat",
-        "name": "<strong>Samedi à 20 h</strong><br>Regroupement des deux flotes"
+        "name": "<strong>Samedi à 20 h</strong><br>Regroupement des deux flottes"
       },
       "geometry": {
         "type": "Point",
@@ -566,7 +566,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "station",
-        "name": "<strong>Gare de la Chapelle-sur-Erdre</strong>"
+        "name": "<strong>Gare de La Chapelle-sur-Erdre</strong>"
       },
       "geometry": {
         "type": "Point",
@@ -705,7 +705,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "boat_reverse",
-        "name": "<strong>Vendredi à 17h30</strong><br>Arrivée à Saint-sébastien sur Loire"
+        "name": "<strong>Vendredi à 17h30</strong><br>Arrivée à Saint-Sébastien-sur-Loire"
       },
       "geometry": {
         "type": "Point",
@@ -750,7 +750,7 @@
         "fill-color": "#FFCC00",
         "fill-opacity": "0.5",
         "marker-symbol": "CycloVillage_LD",
-        "name": "<strong>Village des Chantiers & Cyclovillage</strong> </br> Annimation toute l'après-midi"
+        "name": "<strong>Village des Chantiers & Cyclovillage</strong> </br> Animation toute l'après-midi"
       },
       "geometry": {
         "type": "Polygon",
@@ -840,7 +840,7 @@
       "type": "Feature",
       "properties": {
         "marker-symbol": "bicycle-share-50",
-        "name": "<strong> Arrivée à la roche Maurice</strong> </br>21h00 horraire estimé<br>accès possible via la gare Chantenay"
+        "name": "<strong> Arrivée à Roche-Maurice</strong> </br>21h00 horaire estimé<br>accès possible via la gare Chantenay"
       },
       "geometry": {
         "type": "Point",
@@ -927,7 +927,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "<strong> Parking vélo</strong></br>Gare Maritime</br><strong>Arrivée de la vélo parade</strong></br>21h30 horraire estimé d'arrivée",
+        "name": "<strong> Parking vélo</strong></br>Gare Maritime</br><strong>Arrivée de la Vélo Parade</strong></br>21h30 horaire estimé d'arrivée",
         "fill-color": "DARKGREEN",
         "marker-symbol": "bicycle",
         "fill-opacity": 0.5
