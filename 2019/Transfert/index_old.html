@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <title>Transfert</title>
-  <meta property="og:title" content="Transfert">
-  <meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
-  <meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
-  <meta property="og:site_name" content="Reeve">
+	<meta property="og:title" content="Transfert">
+	<meta property="og:description" content="Cliquez-ici pour accéder au plan d'accès. Venez à l'innauguration s'engagent pour le territoire et le climat sans polluer.">
+	<meta property="og:url" content="https://corentinlemaitre.github.io/eco-evenement/2018/rencontre_annuelle/open_graph.gif">
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="fr_FR">
+	<meta property="og:image" content="https://corentinlemaitre.github.io/eco-evenement/2019/MiN_de_Nantes/open_graph.gif">
+	<meta property="og:site_name" content="Reeve">
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
 
@@ -33,24 +33,65 @@
 
 <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.min.js'></script>
 <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.0.0/mapbox-gl-geocoder.css' type='text/css' />
-<link rel='stylesheet' href='https://reeve.c-mobilite.fr/Transfert/widget-theme-journey.css' type='text/css' />
+
+
+<link rel='stylesheet' href='widget-theme-journey.css' type='text/css' />
 
 
 <style>
+        body { margin:0; padding:0; width:100%; height: 100%;  overflow:auto;  }
+        #map { position:absolute; top:0; bottom:0; width:100%; height: 100%;  overflow:auto; }
 
-body { margin:0; padding:0; }
 
-#map { position:absolute; top:0; bottom:0; width:100%; }
-
+          /* STYLE la zone dessus la carte et sa police et son texte */
 .map-overlay-container {
     position: absolute;
     width: 100%;
     top: 0px;
     left: 0;
     padding: 10px;
-    z-index: 1;`
+    z-index: 2;`
+    float:left;
+
+}
+.mapboxgl-canvas {
+
+  position:absolute; 
+  top:0; 
+  bottom:0; 
+  width:100%; 
+  height: 100%;  
+  overflow:auto; 
+
 }
 
+
+
+
+.map-overlay {
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    max-height: 100%;
+    border-radius: 3px;
+    padding: 10px;
+    box-shadow:0 1px 2px rgba(0,0,0,0.20);
+
+
+}
+#button-center {
+    z-index: 1;
+    position:fixed; bottom:10%;padding:20px;width:60%; left:20%
+}
+p {
+max-height: 60px; overflow: auto
+}
+.map-overlay h2,
+.map-overlay p {
+    margin: 0 0 10px;
+}
+
+
+}
 .mapboxgl-popup {
     max-width: 150px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -61,72 +102,235 @@ body { margin:0; padding:0; }
   display: none;
 }
 
-.button {
-	background: #fff;
-	position: relative;
-	top: 50%;
-	border-radius: 3px;
-	width: 180px;
-	height: 50px;
-	border: 1px solid rgba(0,0,0,0.4);
-	font-family: LeagueSpartan,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 14px;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 0.04em;
-	text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
-	text-align: center;
-	display: inline-block;
+
+
+/*#geocoder-container > div {
+min-width:50%;
+margin-left:25%;
+}
+*/
+
+
+
+#itinerary {
+background: #fff;
+position: relative;
+z-index: 1;
+top: 10px;
+left: 10px;
+border-radius: 0px;
+width: 200px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: 'Open Sans', sans-serif;
 }
 
-.button:hover {
+
+
+
+
+
+
+
+
+
+
+
+
+#fly_bus {
+background: #fff;
+position: absolute;
+float:left;
+left:1%;
+z-index: 1;
+top: 50%;
+border-radius: 3px;
+line-height: 35px;
+width: 200px;
+height: 60px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: LeagueSpartan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+text-align: center;
+margin: 1%;
+cursor: pointer;
+display: inline-block;
+}
+
+ 
+#fly_bus:hover {
+background-color: #000000;
+color: #FFFFFF;
+}
+ 
+
+
+
+
+#fly_bateau {
+background: #fff;
+position: absolute;
+float:left;
+left:1%;
+z-index: 1;
+top: 57%;
+border-radius: 3px;
+line-height: 35px;
+width: 200px;
+height: 60px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: LeagueSpartan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+text-align: center;
+margin: 1%;
+cursor: pointer;
+display: inline-block;
+
+}
+
+ 
+#fly_bateau:hover {
 background-color: #000000;
 color: #FFFFFF;
 }
 
-#myDIV {
-  z-index: 3;
-  position: relative;
-  width: 100%;
-  display: none;
-  overflow:auto; 
-  max-height: 300px;
-}
-
-#X {
-	position: absolute;
-	top: 20px;
-	right: 20px;
-	z-index: 4;
-	border-radius: 50px;
-	width: 50px;
-	background-color: #000000;
-	color: #FFFFFF;
-}
-#X:hover {
-	background: #fff;
-	color: #000;
-}
 
 
+#fly_bicloo {
+background: #fff;
+position: absolute;
+float:left;
+left:1%;
+z-index: 1;
+top: 64%;
+border-radius: 3px;
+line-height: 35px;
+width: 200px;
+height: 60px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: LeagueSpartan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+text-align: center;
+margin: 1%;
+cursor: pointer;
+display: inline-block;
+pointer-events:auto;
+
+}
+
+ 
+#fly_bicloo:hover {
+background-color: #000000;
+color: #FFFFFF;
+}
+
+
+.btn-group button {
+  background-color: #fff; /* Green background */
+  position: absolute;
+  left:1%;
+  top: 500px;
+  border: 1px solid rgba(0,0,0,0.4);; /* Green border */
+  color: black; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 3px;
+line-height: 35px;
+width: 200px;
+height: 60px;
+border: 1px solid rgba(0,0,0,0.4);
+font-family: LeagueSpartan,"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.04em;
+text-shadow: 0 -0.5px 0 rgba(0,0,0,.25);
+  display: block; /* Make the buttons appear below each other */
+}
+
+.btn-group button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: #000000;
+color: #FFFFFF;
+}
+
+
+.is-Widget{
+
+  position: absolute;
+  top: 10px;
+  left: 1%;
+  width:30%;
+  min-height: 100%;
+  min-width:500px;
+  z-index: 1;
+
+}
     </style>
 
 
-<div id='map'></div>
+<div id='map'>
 
-<div style="margin:20px;position:relative;">
-	<div id="myDIV">
-		<button class="button" id="X" onclick="myFunction()">X</button>
-		<div id="is-WidgetWrapper">  chargement en cours </div>
-	</div>
-</div>
-<div style="margin-left:20px;position:absolute;top:20px;">
-		<button class="button" id='tog' onclick="myFunction()">Itinéraire</button><br>
-		<button class="button" id='fly_bus'>Plan Bus</button><br>
-		<button class="button" id='fly_bateau'>Plan Bateau</button><br>
-		<button class="button" id='fly_bicloo'>Plan Bicloo</button><br>
+
+  
+<div class="btn-group">
+  <button id='fly_bus'>Venir en Bus</button>
+  <button id='fly_bateau'>Venir en Bateau</button>
+  <button id='fly_bicloo'>Venir en Bicloo</button>
 </div>
 
+<nav id="menu"></nav>
+
+
+<div class='map-overlay-container'>
+
+
+  
+                <div id="is-WidgetWrapper">
+
+<center>
+
+<div id='itinerary' class='w3-row-padding'>
+    
+
+  </div>
+  </center>
+
+  </div>
+
+    </div>
+ 
+
+
+
+
+    </div>
+
+
+
+
+
+
+<!-- 
+   <p style="font-size:150%;padding:2%;">
+    Venir autrement à l'événement
+  </p>
+-->
 
 
 
@@ -140,22 +344,13 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
     center: [-1.56516, 47.20972], // 15.5/47.207363/-1.559553
-    zoom: 11,
+    zoom: 12,
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
 
 
 
-
-                    function myFunction() {
-  var x = document.getElementById("myDIV");
-  if (x.style.display == "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
 
 
 
@@ -240,20 +435,21 @@ map.on('load', function (){
             },
             "layout": {
                 "icon-image": "",
-        "icon-size": 0.5 // seems to be 0.5 for 50 percent
+				"icon-size": 0.5 // seems to be 0.5 for 50 percent
             },
-      "paint": {
-        "icon-opacity": {
-          "base": 1,
-          "stops": [[13, 1], [15, 0]]
-        }
-      }
+			"paint": {
+				"icon-opacity": {
+					"base": 1,
+					"stops": [[13, 1], [15, 0]]
+				}
+			}
 
-    });
-  });
+		});
+	});
 
 
 /*
+
 
     map.addLayer({
         'id': 'lines',
@@ -293,6 +489,7 @@ map.on('load', function (){
           // 'overlays' anywhere in the layer stack.
     }, "road-label-large");
 */
+
 
     map.addLayer({
         'id': 'Transports en Commun',
@@ -341,34 +538,35 @@ map.on('load', function (){
 
 
 
-  map.addLayer({
+	map.addLayer({
         "id": "points",
         "type": "symbol",
         "source": {
             "type": "geojson",
             "data": "geo/event.geojson",
         },
-    'minzoom': 13,
+		'minzoom': 13,
         "layout": {
             "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
-      "icon-allow-overlap": true,
-      "icon-size": {
-          "base": 1.5,
-          "stops": [[14, 0.26], [17, 1]]
-        }
-    },
-    "paint": {
-      "icon-opacity": {
-        "base": 1,
-        "stops": [[13, 0], [14.5, 1]]
-      }
-    }
+			"icon-allow-overlap": true,
+			"icon-size": {
+					"base": 1.5,
+					"stops": [[14, 0.26], [18, 1]]
+				}
+		},
+		"paint": {
+			"icon-opacity": {
+				"base": 1,
+				"stops": [[13, 0], [14.5, 1]]
+			}
+		}
     });
 
 
      map.addLayer({
         'id': 'polygones',
         'type': 'fill',
+		//"filter": ["!in","zoom","max","large"],
         'source': {
             'type': 'geojson',
             'data': 'geo/event.geojson'
@@ -508,8 +706,8 @@ flyFunction1();
 
 
     var arrival1 = [-1.55243,47.20267];
-    var index = 1;
-    var flyzoom = 12;
+    var index = 0;
+    var flyzoom = 12.14;
     var flypitch = 0;
     var flybearing = 0;
 
@@ -525,14 +723,14 @@ flyFunction1();
     function changeFunction1(){
         if (index < 1) {
         arrival1 = [-1.56516, 47.20972];
-        flyzoom = 11;
+        flyzoom = 12;
         flypitch = 0;
         flybearing = 0;
         index = 1;
         }else{
         arrival1 = [-1.55243,47.20267];
         index = 0;
-        flyzoom = 12;
+        flyzoom = 12.14;
         flypitch = 0;
         flybearing = 0;
         }
@@ -550,8 +748,8 @@ flyFunction2();
 
 
     var arrival2 = [-1.57244,47.19919]; // navibus + chemin piéton
-    var index = 1;
-    var flyzoom = 13.52;
+    var index = 0;
+    var flyzoom = 14.22;
     var flypitch = 0;
     var flybearing = 0;
 
@@ -567,14 +765,14 @@ flyFunction2();
     function changeFunction2(){
         if (index < 1) {
         arrival2 = [-1.56516, 47.20972];
-        flyzoom = 11;
+        flyzoom = 12;
         flypitch = 0;
         flybearing = 0;
         index = 1;
         }else{
         arrival2 = [-1.57244,47.19919];
         index = 0;
-        flyzoom = 13.52;
+        flyzoom = 14.22;
         flypitch = 0;
         flybearing = 0;
         }
@@ -591,8 +789,8 @@ flyFunction3();
 
 
     var arrival3 = [-1.568409,47.194242]; 
-    var index = 1;
-    var flyzoom = 15.89;
+    var index = 0;
+    var flyzoom = 16.89;
     var flypitch = 0;
     var flybearing = 0;
 
@@ -608,14 +806,14 @@ flyFunction3();
     function changeFunction3(){
         if (index < 1) {
         arrival3 = [-1.56516, 47.20972];
-        flyzoom = 11;
+        flyzoom = 12;
         flypitch = 0;
         flybearing = 0;
         index = 1;
         }else{
         arrival3 = [-1.568409,47.194242];
         index = 0;
-        flyzoom = 15.89;
+        flyzoom = 16.89;
         flypitch = 57;
         flybearing = 32.9;
         }
@@ -634,17 +832,16 @@ flyFunction3();
 
 </script>
 
-
-
 <script type="text/javascript">
 (function(){
 var script = document.createElement('script');
 script.type = 'text/javascript';
-script.src= "https://destineo.fr/fr/widget/place-journey?token=WWW.TRANSFERT.CO&isfid=null&isfv=Dis-nous d'où tu viens !&istid=STOPAREA|1350&istv=Seil,REZE";
+script.src= "https://destineo.fr/fr/widget/place-journey?token=WWW.TRANSFERT.CO&isfid=null&isfv=&istid=STOPAREA|1350&istv=Seil,REZE";
 script.async = true;
 document.getElementsByTagName('body')[0].appendChild(script);
 })();
 </script>
+
 
 </body>
 </html>
