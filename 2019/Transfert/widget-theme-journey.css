@@ -5,15 +5,6 @@
   display: none;
 }
 
-.is-Widget{
-
-  position: absolute;
-  top: 10px;
-  left: 1%;
-  width:30%;
-  max-width:100%;
-
-}
 
 .is-Journey-SearchButton{
 
@@ -1311,6 +1302,7 @@ font-color: #404040;
   border-color: #d4d4d4;
   background: #ebebeb;
   color: #333;
+  display: none;
 }
 
 .is-SwapGroup-Button:hover, .is-SwapGroup-Button:active, .is-SwapGroup-Button:focus {
