@@ -1,0 +1,976 @@
+{
+  "type": "FeatureCollection",
+  "generator": "JOSM",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Sainte-Pazanne</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.81428926468,
+          47.10553663663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 20 h 20</strong><br>Passage devant Indre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.67438515663,
+          47.1966531273
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "fill-color": "#FFCC00",
+        "fill-opacity": "0.5",
+        "marker-symbol": "Village_DDL_LD",
+        "name": "<strong>Quai des plantes</strong> </br> Village de la solitaire Urgo le Figaro et guinguette 40 pieds"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.56942700598,
+              47.2082985684
+            ],
+            [
+              -1.57118192752,
+              47.20768682445
+            ],
+            [
+              -1.57163501322,
+              47.20751052713
+            ],
+            [
+              -1.57176912367,
+              47.20739755398
+            ],
+            [
+              -1.57177448809,
+              47.20725907044
+            ],
+            [
+              -1.57167183667,
+              47.20714390181
+            ],
+            [
+              -1.5715236551,
+              47.20702977927
+            ],
+            [
+              -1.57122463256,
+              47.20705134263
+            ],
+            [
+              -1.56872213423,
+              47.20811547602
+            ],
+            [
+              -1.56691968977,
+              47.20864388958
+            ],
+            [
+              -1.56681776583,
+              47.20871312959
+            ],
+            [
+              -1.56688213885,
+              47.20878236951
+            ],
+            [
+              -1.5670162493,
+              47.20884067674
+            ],
+            [
+              -1.56722009718,
+              47.20885525354
+            ],
+            [
+              -1.56789601386,
+              47.20867668749
+            ],
+            [
+              -1.56847000659,
+              47.20852363041
+            ],
+            [
+              -1.56942700598,
+              47.2082985684
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Saint-Etienne de Montluc</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.78575043201,
+          47.27468691431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 20 h 45</strong><br>Passage au pont de Cheviré"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.61524781227,
+          47.19286215331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Mauves-sur-Loire</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.38933063626,
+          47.29300583623
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare le Pallet</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.34694108009,
+          47.14378836074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "bicycle-share-50",
+        "name": "<strong> Arrivée à Basse indre</strong> </br>20h30 horaire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.672448, 
+		  47.1979431
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "bus",
+        "name": "<strong>Mairie de Couëron ligne 91</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.72705293775,
+          47.21212764676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "tram",
+        "name": "<strong>Chantiers Navals</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.56752587438,
+          47.20887712237
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Bouaye</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68125169754,
+          47.13777507587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Couéron</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.72356337577,
+          47.2219399553
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Donges</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.07195286274,
+          47.30862689652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat_reverse",
+        "name": "<strong>Jeudi à 11h</strong><br>Arrivée des bateaux<br><strong>Vendredi à 10h30</strong><br>Départ des bateaux"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.37947091103,
+          47.29331878977
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Thouaré</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.44092564106,
+          47.26501905893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Penhoët</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.20099930286,
+          47.28988400741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de la Haie Fouassière</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.39225968361,
+          47.16147415546
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 21 h 30</strong><br>Arrivée à Nantes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.56847004414,
+          47.2075870827
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Basse-Indre Saint-Herblain</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.66039475441,
+          47.20400101327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Savenay</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.9508028245,
+          47.35839132069
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 21 h 15</strong><br>Passage devant Trentemoult"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.58288964272,
+          47.19641984442
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "location_velo",
+        "name": "<strong> Location de vélo</strong> </br>Possibilité de les déposer à Nantes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.72334076047,
+          47.20911035048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 16 h</strong><br>Départ de Saint-Nazaire"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.17246064186,
+          47.27748213872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 18 h</strong><br>Passage devant Paimboeuf"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.02835091591,
+          47.29477412641
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "bicycle-share-50",
+        "name": "<strong> Départ Véloparade</strong> </br> 19h30 RDV des cyclistes</br>19h45 Départ de Couéron"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.72167628174,
+          47.2088816068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Vertou</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.47804739237,
+          47.18613975526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "bicycle-share-50",
+        "name": "<strong> Arrivée à Haute-Indre</strong> </br>20h45 horaire estimé<br>accès possible via la gare Basse-Indre Saint-Herblain"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6510137559,
+          47.19483820367
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Pont-Rousseau</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.54975908279,
+          47.19321215904
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 20 h</strong><br>Regroupement des deux flottes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.75334939003,
+          47.20417595053
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "fill-opacity": "0.5",
+        "fill-color": "#FFCC00",
+        "marker-symbol": "station",
+        "name": "<strong> Gare de Nantes</strong>",
+        "amenity": "parking"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.54298365653,
+              47.21743300383
+            ],
+            [
+              -1.54151380599,
+              47.21769898665
+            ],
+            [
+              -1.54141724646,
+              47.21749858875
+            ],
+            [
+              -1.54095590651,
+              47.21640913969
+            ],
+            [
+              -1.54252768099,
+              47.21612857561
+            ],
+            [
+              -1.54298365653,
+              47.21743300383
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Machecoul</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.82265762806,
+          46.99044050921
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Chantenay</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.59447671056,
+          47.19733833882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Méan</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.19353203297,
+          47.30030401125
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de La Chapelle-sur-Erdre</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5479779458,
+          47.29758276922
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat",
+        "name": "<strong>Samedi à 18h45<br></strong>Passage devant Cordemais"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.88595780373,
+          47.27404635704
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Clisson</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.28634461403,
+          47.08602049988
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "fill-color": "#FFCC00",
+        "fill-opacity": "0.5",
+        "marker-symbol": "Village_DDL_LD",
+        "name": "<strong> Village du Port</strong> </br> Guinguette du port"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.57522917867,
+              47.20461324014
+            ],
+            [
+              -1.57542775617,
+              47.20435157273
+            ],
+            [
+              -1.57601150096,
+              47.20215821564
+            ],
+            [
+              -1.57589436114,
+              47.20205474264
+            ],
+            [
+              -1.5756285635,
+              47.20200751699
+            ],
+            [
+              -1.5754061991,
+              47.20198913861
+            ],
+            [
+              -1.57522539742,
+              47.20205153435
+            ],
+            [
+              -1.57405973554,
+              47.20396451691
+            ],
+            [
+              -1.57398463368,
+              47.20426336792
+            ],
+            [
+              -1.57410398988,
+              47.20449554211
+            ],
+            [
+              -1.57445447738,
+              47.20463788663
+            ],
+            [
+              -1.57485548807,
+              47.20469020643
+            ],
+            [
+              -1.57522917867,
+              47.20461324014
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "tram",
+        "name": "<strong>Gare Maritime</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5731477952,
+          47.20704771106
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Cordemais</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.84664728403,
+          47.30213747208
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat_reverse",
+        "name": "<strong>Vendredi à 17h30</strong><br>Arrivée à Saint-Sébastien-sur-Loire"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.51885994911,
+          47.21070652889
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "boat_reverse",
+        "name": "<strong>Vendredi à 12h30</strong><br>Arrêt pique-nique à Sainte-Luce-sur-Loire"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.46508695841,
+          47.23925374355
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "station",
+        "name": "<strong>Gare de Montoir de Bretagne</strong>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.16160835981,
+          47.32088692725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "fill-color": "#FFCC00",
+        "fill-opacity": "0.5",
+        "marker-symbol": "CycloVillage_LD",
+        "name": "<strong>Village des Chantiers & Cyclovillage</strong> </br> Animation toute l'après-midi"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.56573630953,
+              47.20749097004
+            ],
+            [
+              -1.56614145435,
+              47.20752559627
+            ],
+            [
+              -1.56653959871,
+              47.20746399897
+            ],
+            [
+              -1.5684226189,
+              47.20673557358
+            ],
+            [
+              -1.56866933262,
+              47.20651452411
+            ],
+            [
+              -1.56878988092,
+              47.20624947951
+            ],
+            [
+              -1.56876972392,
+              47.20597240768
+            ],
+            [
+              -1.56861129283,
+              47.20571672764
+            ],
+            [
+              -1.56833369678,
+              47.20551327869
+            ],
+            [
+              -1.56797041796,
+              47.20538660049
+            ],
+            [
+              -1.56756527315,
+              47.20535197286
+            ],
+            [
+              -1.5671671288,
+              47.20541357261
+            ],
+            [
+              -1.56528410861,
+              47.20614201615
+            ],
+            [
+              -1.56503739489,
+              47.20636306718
+            ],
+            [
+              -1.56491684657,
+              47.20662811121
+            ],
+            [
+              -1.56493700358,
+              47.20690517962
+            ],
+            [
+              -1.56509543467,
+              47.20716085393
+            ],
+            [
+              -1.56537303071,
+              47.20736429656
+            ],
+            [
+              -1.56573630953,
+              47.20749097004
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-symbol": "bicycle-share-50",
+        "name": "<strong> Arrivée à Roche-Maurice</strong> </br>21h00 horaire estimé<br>accès possible via la gare Chantenay"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.61730768442,
+          47.19437853166
+        ]
+      }
+    },
+	    {
+      "type": "Feature",
+      "properties": {
+        "name": "<strong> Parking vélo</strong></br>Place du commandant l'Herminier</br>Gardiennage vélo samedi de 19h à 2h du matin",
+        "amenity": "",
+        "fill-color": "DARKGREEN",
+        "marker-symbol": "bicycle",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5681320428848267,
+              47.20922331269384
+            ],
+            [
+              -1.567946970462799,
+              47.20892995591391
+            ],
+            [
+              -1.5671342611312866,
+              47.20913949663656
+            ],
+            [
+              -1.5673381090164185,
+              47.20946382760109
+            ],
+            [
+              -1.5681320428848267,
+              47.20922331269384
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "<strong> Parking vélo</strong></br>Cale des sous-marins",
+        "amenity": "",
+        "fill-color": "DARKGREEN",
+        "marker-symbol": "bicycle",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5663832426071165,
+              47.205626391469
+            ],
+            [
+              -1.5672200918197632,
+              47.20533119257493
+            ],
+            [
+              -1.5670162439346313,
+              47.20508701447056
+            ],
+            [
+              -1.5661203861236572,
+              47.20529110370954
+            ],
+            [
+              -1.5663832426071165,
+              47.205626391469
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "<strong> Parking vélo</strong></br>Gare Maritime</br><strong>Arrivée de la Vélo Parade</strong></br>21h30 horaire estimé d'arrivée",
+        "fill-color": "DARKGREEN",
+        "marker-symbol": "bicycle",
+        "fill-opacity": 0.5
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.5742313861846924,
+              47.20543323682285
+            ],
+            [
+              -1.5745452046394348,
+              47.205147147988626
+            ],
+            [
+              -1.5747302770614624,
+              47.204846479716544
+            ],
+            [
+              -1.574767827987671,
+              47.20474261209924
+            ],
+            [
+              -1.5741965174674988,
+              47.204602299381
+            ],
+            [
+              -1.5739846229553223,
+              47.20503599203811
+            ],
+            [
+              -1.5738236904144285,
+              47.205225503682655
+            ],
+            [
+              -1.5742313861846924,
+              47.20543323682285
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
