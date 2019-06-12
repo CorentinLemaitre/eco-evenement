@@ -180,7 +180,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v10',
     center: [-1.56516, 47.20972], // 15.5/47.207363/-1.559553
-    zoom: 12,
+    zoom: 9.75,
     hash: 1,
     pitch: 0//pour avoir une vision avec un angle
 });
@@ -202,10 +202,14 @@ var map = new mapboxgl.Map({
 
 
 
-var zoomtrigger = 14; 
+var zoomtrigger = 9; 
 
 map.on('load', function (){
 
+    map.loadImage('img/parade.png', function(error, image) {
+        if (error) throw error;
+        map.addImage('circle', image);
+  });
     map.loadImage('img/bus.png', function(error, image) {
         if (error) throw error;
         map.addImage('bus', image);
@@ -230,21 +234,10 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('rail-light', image);
   });
-    map.loadImage('img/logo_event_small.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_event_small.png', image);
-  });
+
     map.loadImage('img/logo_event.png', function(error, image) {
         if (error) throw error;
         map.addImage('logo_event', image);
-  });
-    map.loadImage('img/logo_large.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_large', image);
-  });
-    map.loadImage('img/logo_long.png', function(error, image) {
-        if (error) throw error;
-        map.addImage('logo_long', image);
   });
     map.loadImage('img/parking1.png', function(error, image) {
         if (error) throw error;
@@ -386,21 +379,21 @@ map.on('load', function (){
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "geo/event.geojson",
+            "data": "geo/polygone.geojson",
         },
-    'minzoom': 13,
+    'minzoom': 9,
         "layout": {
             "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
       "icon-allow-overlap": true,
       "icon-size": {
           "base": 1.5,
-          "stops": [[14, 0.26], [17, 1]]
+          "stops": [[9, 0.7], [9.75, 1]]
         }
     },
     "paint": {
       "icon-opacity": {
         "base": 1,
-        "stops": [[13, 0], [14.5, 1]]
+        "stops": [[8, 0], [9.75, 1]]
       }
     }
     });
@@ -411,13 +404,13 @@ map.on('load', function (){
         'type': 'fill',
         'source': {
             'type': 'geojson',
-            'data': 'geo/event.geojson'
+            'data': 'geo/polygone.geojson'
         },
-        'minzoom' : 14,
+        'minzoom' : 9,
         'layout': {},
         'paint': {
             'fill-color': ['get', 'fill'],
-            'fill-opacity': 0.3
+            'fill-opacity': ['get', 'fill-opacity']
         }
   },"road-label-large");
 
@@ -437,7 +430,7 @@ map.on('load', function (){
 // location of the feature, with description HTML from its properties.
 map.on('click','points', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
-var description = e.features[0].properties.name;
+var description = e.features[0].properties.desc;
  
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears
@@ -448,7 +441,7 @@ coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
  
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.name)
+.setHTML(e.features[0].properties.desc)
 .addTo(map);
 });
  
@@ -463,72 +456,8 @@ map.getCanvas().style.cursor = '';
 });
 
 
-//Popup Polygones
 
 
-// When a click event occurs on a feature in the polygones layer, open a popup at the
-// location of the feature, with description HTML from its properties.
-map.on('click','polygones', function (e) {
-var coordinates = e.features[0].geometry.coordinates.slice();
-var description = e.features[0].properties.name;
- 
-// Ensure that if the map is zoomed out such that multiple
-// copies of the feature are visible, the popup appears
-// over the copy being pointed to.
-while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-}
- 
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.name)
-.addTo(map);
-});
- 
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter','polygones', function () {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave','polygones', function () {
-map.getCanvas().style.cursor = '';
-});
-
-
-
-
-//Popup Transports en Commun
-
-
-// When a click event occurs on a feature in the polygones layer, open a popup at the
-// location of the feature, with description HTML from its properties.
-map.on('click','Transports en Commun', function (e) {
-var coordinates = e.features[0].geometry.coordinates.slice();
-var description = e.features[0].properties.name;
- 
-// Ensure that if the map is zoomed out such that multiple
-// copies of the feature are visible, the popup appears
-// over the copy being pointed to.
-while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-}
- 
-new mapboxgl.Popup()
-.setLngLat(e.lngLat)
-.setHTML(e.features[0].properties.name)
-.addTo(map);
-});
- 
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter','Transports en Commun', function () {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave','Transports en Commun', function () {
-map.getCanvas().style.cursor = '';
-});
 
 
 
