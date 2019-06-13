@@ -67,11 +67,11 @@
     border-radius: 5px;
     padding: 12px;
     border: 1px solid teal;
-
     box-shadow:0 2px 3px rgba(0,0,0,0.20);
     text-transform: uppercase;
-    top: 100px;
+    top: 70px;
     text-align:center;
+    overflow: auto;
 
 
 }
@@ -338,13 +338,13 @@ map.on('load', function (){
       "icon-allow-overlap": true,
       "icon-size": {
           "base": 1.5,
-          "stops": [[9, 0.7], [9.75, 1]]
+          "stops": [[9.75, 0.3], [12, 1]]
         }
     },
     "paint": {
       "icon-opacity": {
         "base": 1,
-        "stops": [[8, 0], [9.75, 1]]
+        "stops": [[9.75, 0.5], [10, 1]]
       }
     }
     });
