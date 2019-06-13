@@ -156,7 +156,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "desc": "<strong>Les RDV de l'Erdre de Carquefou</strong></br><p></p>"
+        "title": "<strong>Les RDV de l'Erdre de Carquefou</strong>",
+        "desc":"<p>• 1 000 participants</p><p>• Parking vélo pour venir à Port Jean et Port Breton !</p>"
       },
       "geometry": {
         "type": "Point",
@@ -172,7 +173,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "desc": "La fête du vélo 2018"
+        "title":"<strong>La fête du vélo 2018</strong>",
+        "desc": "<p>• 15 000 participants</p> <p>• Une alerte orage bien diffusée pour tous les participants</p>"
       },
       "geometry": {
         "type": "Point",
@@ -188,7 +190,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "desc": "<strong>Transfert</strong></br><p>• 172 000 participants</p>"
+        "title":"<strong>Transfert</strong>",
+        "desc": "<p>• 172 000 participants</p><p>• Un programme intégré sur l'accessibilité !</p>"
       },
       "geometry": {
         "type": "Point",
@@ -204,7 +207,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "desc": "<strong>Pride</strong></br><p></p>"
+        "title": "<strong>Pride</strong>",
+        "desc":"<p>• 8 000 Participants</p><p>• Inscription de l'événement sur une plateforme de covoiturage !</p>"
       },
       "geometry": {
         "type": "Point",
@@ -220,7 +224,8 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "desc": "<strong>Festival Charivari Vertou</strong></br><p></p>"
+        "title": "<strong>Festival Charivari Vertou</strong>",
+        "desc": "<p>• 20 000 Festivaliers</p><p>• 3 Scènes</p><p>• 32 Spectacles gratuits</p><p>• 120 Bénévoles</p><p>• L'accès au festival à pied ou à vélo favorisé par de nombreux aménagements dont 3 parkings à vélo !</p>"
       },
       "geometry": {
         "type": "Point",
