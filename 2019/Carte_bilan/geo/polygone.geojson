@@ -157,7 +157,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "title": "<strong>Les RDV de l'Erdre de Carquefou</strong>",
-        "desc":"<p>• 1 000 participants</p><p>• Parking vélo pour venir à Port Jean et Port Breton !</p>"
+        "desc":"<p>• 1 000 participants</p><p>• Parking vélo pour venir à Port Jean et Port Breton !</p>",
+        "src":"<img src=img/rdv-erdre.png>"
       },
       "geometry": {
         "type": "Point",
@@ -174,7 +175,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "title":"<strong>La fête du vélo 2018</strong>",
-        "desc": "<p>• 15 000 participants</p> <p>• Une alerte orage bien diffusée pour tous les participants</p>"
+        "desc": "<p>• 15 000 participants</p> <p>• Une alerte orage bien diffusée pour tous les participants</p>",
+        "src": "<img src=img/fete-velo-2018.png>"
       },
       "geometry": {
         "type": "Point",
@@ -190,8 +192,9 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "title":"<strong>Transfert</strong>",
-        "desc": "<p>• 172 000 participants</p><p>• Un programme intégré sur l'accessibilité !</p>"
+        "title":"<strong>Transfert</strong></br><a  target='_blank' href='https://www.transfert.co/pratique/'>Voir la carte intéractive</a>",
+        "desc": "<p>• 172 000 participants</p><p>• Un programme intégré sur l'accessibilité !</p>",
+        "src":"<img src=img/navette-transfert.png>"
       },
       "geometry": {
         "type": "Point",
@@ -209,6 +212,8 @@
         "marker-symbol": "circle",
         "title": "<strong>Pride</strong>",
         "desc":"<p>• 8 000 Participants</p><p>• Inscription de l'événement sur une plateforme de covoiturage !</p>"
+
+
       },
       "geometry": {
         "type": "Point",
@@ -225,7 +230,8 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "title": "<strong>Festival Charivari Vertou</strong>",
-        "desc": "<p>• 20 000 Festivaliers</p><p>• 3 Scènes</p><p>• 32 Spectacles gratuits</p><p>• 120 Bénévoles</p><p>• L'accès au festival à pied ou à vélo favorisé par de nombreux aménagements dont 3 parkings à vélo !</p>"
+        "desc": "<p>• 20 000 Festivaliers</p><p>• 3 Scènes</p><p>• 32 Spectacles gratuits</p><p>• 120 Bénévoles</p><p>• L'accès au festival à pied ou à vélo favorisé par de nombreux aménagements dont 3 parkings à vélo !</p>",
+        "src": "<img src=img/charivari-vertou-2017.png>"
       },
       "geometry": {
         "type": "Point",

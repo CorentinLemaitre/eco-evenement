@@ -60,19 +60,22 @@
 #map-overlay-left {
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     background-color: #fff;
-    height: 500px;
-    width: 250px;
+    height: auto;
+    width: 25%;
     position: relative;
     left: 2px;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 12px;
-    box-shadow:0 1px 2px rgba(0,0,0,0.20);
+    border: 1px solid teal;
+
+    box-shadow:0 2px 3px rgba(0,0,0,0.20);
     text-transform: uppercase;
     top: 100px;
     text-align:center;
 
 
 }
+
 .mapboxgl-popup {
     max-width: 150px;
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -106,6 +109,13 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
 </style>
 
 
@@ -126,16 +136,12 @@ font-family: 'Open Sans', sans-serif;
 
   <div id='map-overlay-left'>
      <h2 id='location-title'>éco-événements</h2>
-   </br>
- </br>
     <p id='location-description' style="text-align: left; font-size: 14px;">ACTIONS ET CHIFFRES CLEFS 2018</p>
-  </br>
    </br>
 
-    <p><strong>Ajout d'images</strong></p>
-    <br>
+    <div id='location-image'> <img src="img/boat.png"></div>
 
-</div>
+
 </div>
 
 
@@ -192,9 +198,10 @@ map.on('load', function (){
         if (error) throw error;
         map.addImage('circle', image);
   });
-    map.loadImage('img/bus.png', function(error, image) {
+
+    map.loadImage('img/charivari-vertou-2017.jpg', function(error, image) {
         if (error) throw error;
-        map.addImage('bus', image);
+        map.addImage('vertou', image);
   });
        map.loadImage('img/boat.png', function(error, image) {
         if (error) throw error;
@@ -381,6 +388,7 @@ map.on('load', function (){
 map.on('click','points', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.title;
+
  
 // Ensure that if the map is zoomed out such that multiple
 // copies of the feature are visible, the popup appears
@@ -389,6 +397,7 @@ while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
 coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 }
  
+
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
 .setHTML(e.features[0].properties.title)
@@ -396,6 +405,7 @@ new mapboxgl.Popup()
 map.flyTo({center : e.features[0].geometry.coordinates});
         document.getElementById("location-title").innerHTML = e.features[0].properties.title;
         document.getElementById("location-description").innerHTML = e.features[0].properties.desc;
+        document.getElementById("location-image").innerHTML = e.features[0].properties.src;
         });
  
 // Change the cursor to a pointer when the mouse is over the places layer.
