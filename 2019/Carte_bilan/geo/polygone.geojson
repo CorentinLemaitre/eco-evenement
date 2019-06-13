@@ -211,7 +211,9 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "title": "<strong>Pride</strong>",
-        "desc":"<p>• 8 000 Participants</p><p>• Inscription de l'événement sur une plateforme de covoiturage !</p>"
+        "desc":"<p>• 8 000 Participants</p><p>• Inscription de l'événement sur une plateforme de covoiturage !</p>",
+        "src":"<img src=img/pride-nantes.png>"
+
 
 
       },
