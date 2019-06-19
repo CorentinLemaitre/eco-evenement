@@ -157,8 +157,10 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "title": "<strong>Les RDV de l'Erdre de Carquefou</strong>",
+        "link":" <strong>Les RDV de l'Erdre de Carquefou</strong></br>• <a  target='_blank' href='http://www.rendezvouserdre.com/pratique/a-carquefou/'>Cliquez pour voir le site de l'événement></a>",
         "desc":"<p>• 1 000 participants</p><p>• Parking vélo pour venir à Port Jean et Port Breton !</p>",
-        "src":"<img src=img/rdv-erdre.png>"
+        "src": "<a href=img/rdv-erdre.png target=_blank> <img src=img/rdv-erdre.png>"
+
       },
       "geometry": {
         "type": "Point",
@@ -174,9 +176,10 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "title":"<strong>La fête du vélo 2018</strong>",
-        "desc": "<p>• 15 000 participants</p> <p>• Une alerte orage bien diffusée pour tous les participants</p>",
-        "src": "<img src=img/fete-velo-2018.png>"
+        "title":"<strong>La fête du vélo Dimanche 3 juin 2018</strong>",
+        "link":" <strong>La fête du vélo Dimanche 3 juin 2018</strong></br>• <a  target='_blank' href='https://feteduvelo-nantes.fr/parcours-2018/'>Cliquez pour voir le site de l'événement></a>",
+        "desc": "<p>• 15 000 participants</p><p>• Une alerte orage bien diffusée pour tous les participants</p>",
+        "src": "<a href=img/fete-velo-2018.png target=_blank> <img src=img/fete-velo-2018.png>"
       },
       "geometry": {
         "type": "Point",
@@ -192,9 +195,10 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "title":"<strong>Transfert</strong></br><a  target='_blank' href='https://www.transfert.co/pratique/'>Voir la carte intéractive</a>",
-        "desc": "<p>• 172 000 participants</p><p>• Un programme intégré sur l'accessibilité !</p>",
-        "src":"<img src=img/navette-transfert.png>"
+        "title":"<strong>Transfert 2019</strong></br></br>",
+        "link":" <strong>Transfert 2019</strong></br>• <a  target='_blank' href='https://www.transfert.co/pratique/'>Cliquez pour voir le site de l'événement</a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/Transfert/base.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• 172 000 participants</p><p>• Un programme intégré sur l'accessibilité !</p><p>• Stationnements vélo à l’entrée et sur le site.</p><p>• Une navette toutes les 30 minutes en renfort pour les dates clés.</p>",
+        "src":"<a href=img/navette-transfert.png target=_blank> <img src=img/navette-transfert.png></a>"
       },
       "geometry": {
         "type": "Point",
@@ -210,12 +214,10 @@
         "marker-color": "#7e7e7e",
         "marker-size": "medium",
         "marker-symbol": "circle",
-        "title": "<strong>Pride</strong>",
+        "title": "<strong>Pride 2019</strong>",
+        "link":" <strong>Pride 2019</strong></br>• <a  target='_blank' href='https://nantes.maville.com/info/detail-galerie_-La-gay-pride-a-Nantes_2681_GaleriePhoto.Htm'>Cliquez pour voir le site de l'événement></a>",
         "desc":"<p>• 8 000 Participants</p><p>• Inscription de l'événement sur une plateforme de covoiturage !</p>",
-        "src":"<img src=img/pride-nantes.png>"
-
-
-
+        "src":"<a href=img/pride-nantes.png target=_blank> <img src=img/pride-nantes.png></a>"
       },
       "geometry": {
         "type": "Point",
@@ -232,14 +234,112 @@
         "marker-size": "medium",
         "marker-symbol": "circle",
         "title": "<strong>Festival Charivari Vertou</strong>",
+        "link":" <strong>Festival Charivari Vertou</strong></br>• <a  target='_blank' href='http://festivalcharivari.fr/'>Cliquez pour voir le site de l'événement></a>",
         "desc": "<p>• 20 000 Festivaliers</p><p>• 3 Scènes</p><p>• 32 Spectacles gratuits</p><p>• 120 Bénévoles</p><p>• L'accès au festival à pied ou à vélo favorisé par de nombreux aménagements dont 3 parkings à vélo !</p>",
-        "src": "<img src=img/charivari-vertou-2017.png>"
+        "src": "<a href=img/charivari-vertou-2017.jpg target=_blank> <img src=img/charivari-vertou-2017.jpg></a>"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -1.4795172214508057,
           47.16684287656919
+        ]
+      }
+    },
+
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Challenge contre la faim</strong>",
+         "link":" <strong>Challenge contre la faim 2018</strong></br>• <a  target='_blank' href='https://www.challengecontrelafaim.org/'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/challenge_contre_la_faim/'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Mise en place d'un forfait spécial pour les participants venant à vélo ! 1 participant à vélo = 50% de réduction sur le don forfaitaire (5€ au lieu de 10€).</p>",
+        "src": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5093541145324707,
+          47.229695971150925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Soy Festival 2017</strong>",
+        "link":" <strong>Soy Festival 2017</strong></br>• <a  target='_blank' href='https://festival.soy/carte-interactive'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://festival.soy/carte-interactive'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>Festival de musiques indés du mercredi 25 au dimanche 29 octobre 2017</p><p>Les concerts se déroulent dans des lieux culturels variés de la ville de Nantes</p>",
+        "src": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5471839904785156,
+          47.2122223827094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Le Héron Voyageur - 18 et 19 Mai 2019</strong>",
+        "desc": "<p>La quatrième édition du festival organisée par la Ville de Bouaye</p>",
+        "src": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.679427623748779,
+          47.1520774274227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Jour de fête au MiN Nantes Métropole samedi 27 avril 2019 - 11h à 18h</strong>",
+        "desc": "<p>Navette Gratuite Pour rejoindre le MiN depuis  le Chronobus C4 ou les parkings toutes les 15 minutes de 10h30 à 18h30  Navette gratuite à partir de l'arrêt de bus C4 \"Porte de Rezé\" pour rejoindre le MiN</p><p> (événement créé sur la plateforme de covoiturage Ouestgo",
+        "src": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5543293952941892,
+          47.15776086023044
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "Débord de Loire 2019",
+        "desc": "<p>Navette fluviale gratuite Gare Maritime < > Ponton des Chantiers. Toutes les 15 min., samedi 25 mai de 14h à minuit et dimanche 26 mai de 10h à 22h.  À vélo : informations (parkings, locations, cyclovillage, accès) sur www.feteduvelo-nantes.fr/services-velos En tram : ligne 1 arrêt Chantiers navals. Horaires sur www.tan.fr, à l’agence mobilité à Commerce ou Allo Tan au 02 40 444 444. En bus : accès parc des chantiers : ligne C5 arrêt Prairie au Duc. Accès Port : ligne 1 arrêt René Bouhier, ligne 81 (venant de Chantenay et Indre), Express E1 (venant de Chantenay, Couëron et Indre) En navibus : depuis Trentemoult En voiture, les parkings relais TAN : l’accès au centre-ville de Nantes sera difficile et très limité pour les voitures ! Pensez à déposer votre voiture dans un des parkings relais aux entrées de ville puis empruntez les transports en commun. Gratuit sur présentation d’un ticket de tramway ou bus. Covoiturage : www.ouestgo.fr, covoiturage.loire-atlantique.fr, covoiturage-nantesmetropole.fr En Proxi’tan : service de minibus adapté aux personnes en situation de handicap, proposé par la TAN. Samedi de 7h15 à minuit et dimanche de 9h à 22h20. Réservations du lundi au vendredi, jusqu’à 10 jours à l’avance. La navette vous dépose à l’un des 3 arrêts Proxi’tan</p>",
+        "src": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5674775838851926,
+          47.20845074228021
         ]
       }
     }

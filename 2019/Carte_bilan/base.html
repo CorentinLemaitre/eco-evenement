@@ -51,10 +51,16 @@
 #map-overlay {
     font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     background-color: #fff;
-    width: 1000px;
+    max-width: 80%;
     height:auto;
-    position: relative;
-    top: 2px;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    border-radius: 5px;
+    border: 1px solid teal;
+    box-shadow:0 2px 3px rgba(0,0,0,0.20);
+    display: block;
+
 }
 
 #map-overlay-left {
@@ -62,16 +68,17 @@
     background-color: #fff;
     height: auto;
     width: 25%;
-    position: relative;
+    position: absolute;
     left: 2px;
     border-radius: 5px;
     padding: 12px;
     border: 1px solid teal;
     box-shadow:0 2px 3px rgba(0,0,0,0.20);
     text-transform: uppercase;
-    top: 70px;
+    top: 1%;
     text-align:center;
     overflow: auto;
+    display: inline-block;
 
 
 }
@@ -108,11 +115,22 @@ border: 1px solid rgba(0,0,0,0.4);
 font-family: 'Open Sans', sans-serif;
 }
 
+h2{
+    text-transform: uppercase;
 
-img {
-    max-width: 100%;
-    max-height: 100%;
 }
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#location-image{
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+}
+
+
 
 
 
@@ -136,11 +154,21 @@ img {
 
   <div id='map-overlay-left'>
      <h2 id='location-title'>éco-événements</h2>
+     <h3 id='location-link'></h3>
     <p id='location-description' style="text-align: left; font-size: 14px;">ACTIONS ET CHIFFRES CLEFS 2018</p>
    </br>
 
-    <div id='location-image'> <img src="img/boat.png"></div>
 
+
+
+<div id="location-image">
+
+  <img src="img/parade.png"/></a> 
+
+</div>
+
+
+</div>
 
 </div>
 
@@ -194,7 +222,7 @@ var zoomtrigger = 9;
 
 map.on('load', function (){
 
-    map.loadImage('img/logo_event_small.png', function(error, image) {
+    map.loadImage('img/marker.png', function(error, image) {
         if (error) throw error;
         map.addImage('circle', image);
   });
@@ -338,13 +366,13 @@ map.on('load', function (){
       "icon-allow-overlap": true,
       "icon-size": {
           "base": 1.5,
-          "stops": [[9.75, 0.3], [10, 1]]
+          "stops": [[9.75, 0.3], [16, 1]]
         }
     },
     "paint": {
       "icon-opacity": {
         "base": 1,
-        "stops": [[9.75, 0.8], [10, 1]]
+        "stops": [[9.75, 0.8], [12, 1]]
       }
     }
     });
@@ -401,6 +429,7 @@ coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
 new mapboxgl.Popup()
 .setLngLat(e.lngLat)
 .setHTML(e.features[0].properties.title)
+.setHTML(e.features[0].properties.link)
 .addTo(map);
 map.flyTo({center : e.features[0].geometry.coordinates});
         document.getElementById("location-title").innerHTML = e.features[0].properties.title;
