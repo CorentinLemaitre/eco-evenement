@@ -74,7 +74,6 @@
     padding: 12px;
     border: 1px solid teal;
     box-shadow:0 2px 3px rgba(0,0,0,0.20);
-    text-transform: uppercase;
     top: 1%;
     text-align:center;
     overflow: auto;
@@ -119,6 +118,12 @@ h2{
     text-transform: uppercase;
 
 }
+
+h3{
+      text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
 img{
   max-width: 100%;
   max-height: 100%;
@@ -154,8 +159,9 @@ img{
 
   <div id='map-overlay-left'>
      <h2 id='location-title'>éco-événements</h2>
-     <h3 id='location-link'></h3>
-    <p id='location-description' style="text-align: left; font-size: 14px;">ACTIONS ET CHIFFRES CLEFS 2018</p>
+     <h3>ACTIONS ET CHIFFRES CLÉS</h3>
+     <h3 id='location-link'style="text-align: center;"></h3>
+    <p id='location-description' style="text-align: left; font-size: 14px;"></p>
    </br>
 
 
@@ -358,11 +364,12 @@ map.on('load', function (){
         "type": "symbol",
         "source": {
             "type": "geojson",
-            "data": "geo/polygone.geojson",
+            "data": "geo/points.geojson",
         },
     'minzoom': 9,
         "layout": {
             "icon-image": ['get', 'marker-symbol'], // autre possibilité qui était la et marchais :: "{marker-symbol}",
+            "icon-anchor": "bottom",
       "icon-allow-overlap": true,
       "icon-size": {
           "base": 1.5,
@@ -435,6 +442,7 @@ map.flyTo({center : e.features[0].geometry.coordinates});
         document.getElementById("location-title").innerHTML = e.features[0].properties.title;
         document.getElementById("location-description").innerHTML = e.features[0].properties.desc;
         document.getElementById("location-image").innerHTML = e.features[0].properties.src;
+
         });
  
 // Change the cursor to a pointer when the mouse is over the places layer.

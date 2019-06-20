@@ -346,6 +346,66 @@
           47.20845074228021
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>La Folie des Plantes 2017</strong></br></br>",
+        "link": "<strong>La Folie des Plantes 2017</strong></br></br>• <a  target='_blank' href='https://jardins.nantes.fr/N/Manifestation/Folie-des-plantes/Informations-pratiques-Folie.asp'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/2017/folie_des_plantes.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Principale manifestation florale du grand ouest</p><p>• La folie des plantes réunit en un même lieu 180 exposants, producteurs de plantes, associations horticoles, jardins familiaux</p><p>• Elle attire chaque année, le temps du weekend, 40000 visiteurs, dans le cadre prestigieux du parc du Château du Grand Blottereau, folie nantaise du XVIIIème siècle.</p>",
+        "src": "<a href=img/folie-plantes.png target=_blank> <img src=img/folie-plantes.png></a>"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5094828605651855,
+          47.22793284275448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Festi'Folies d'Automne 2017</strong></br></br>",
+        "link": "<strong>Festi'Folies d'Automne 2017</strong></br></br>• <a  target='_blank' href='http://www.saint-aignan-grandlieu.fr/mes-loisirs/culture/grands-rendez-vous-719.html'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/2017/festifolies.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Tous les 3 ans, à l'automne, la commune de Saint-Aignan de Grand Lieu organise le festival les Festifolies d'automne</p><p>• Destiné aux familles, dédié aux arts de la rue, il est 100% gratuit et attire en moyenne 20 000 spectateurs</p><p>• L'édition 2017 a rassemblé plus de 200 artistes, soit une quarantaine de compagnies qui ont donné au total une cinquantaine de représentations</p>",
+        "src": "<a href=img/festifolies.png target=_blank> <img src=img/festifolies.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6343021392822266,
+          47.11996446827065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Fête du Vélo et Véloparade 2019</strong></br></br>",
+        "link": "<strong>Fête du Vélo et Véloparade 2019</strong></br></br>• <a  target='_blank' href='https://feteduvelo-nantes.fr/la-veloparade-et-parade-nautique-coueron-nantes/'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/Debord_de_Loire/#12.01/47.20482/-1.64169'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Communication pour favoriser l'écomobilité :</p><p>• À vélo : création de pistes cyclables pour l'événement, parkings vélo et itinéraire avec Geovélo</p><p>• En transports en commun avec Destineo</p><p>• En  covoiturage avec Ouestgo</p>",
+        "src": "<a href=img/veloparade.png target=_blank> <img src=img/veloparade.png></a>"
+
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7185020446777344,
+          47.21198916827907
+        ]
+      }
     }
   ]
 }
