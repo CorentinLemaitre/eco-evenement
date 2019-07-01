@@ -38,7 +38,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Espace Food-truck",
+        "name": "Espace Food-truck ",
         "amenity": "parking"
       },
       "geometry": {
