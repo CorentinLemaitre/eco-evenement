@@ -182,7 +182,7 @@
                 "name": "Chronobus C6"
             },
             "geometry": {
-                "type": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "type": "LineString",
                 "coordinates": [
                     [
                         -1.61683559552,
@@ -4360,7 +4360,7 @@
                 "name": "Bus 59"
             },
             "geometry": {
-                "type": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+                "type": "LineString",
                 "coordinates": [
                     [
                         -1.61125928298,
