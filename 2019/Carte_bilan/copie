@@ -1,0 +1,411 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#f46d8a",
+        "fill-opacity": 0.3
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.9356536865234375,
+              47.28109232255293
+            ],
+            [
+              -1.9335937499999691,
+              47.266882850177986
+            ],
+            [
+              -1.7221069335937194,
+              47.17081075614234
+            ],
+            [
+              -1.6795349121093444,
+              47.12317663688982
+            ],
+            [
+              -1.5792846679687194,
+              47.10261540640037
+            ],
+            [
+              -1.5463256835937194,
+              47.14933398689592
+            ],
+            [
+              -1.4982604980468444,
+              47.11383160781538
+            ],
+            [
+              -1.4350891113280941,
+              47.16334156019605
+            ],
+            [
+              -1.4510536193847348,
+              47.174895028434065
+            ],
+            [
+              -1.43869400024411,
+              47.20126019585404
+            ],
+            [
+              -1.4495086669921566,
+              47.20767451633364
+            ],
+            [
+              -1.45792007446286,
+              47.220267652539874
+            ],
+            [
+              -1.4280509948730162,
+              47.23262467463881
+            ],
+            [
+              -1.4026451110839537,
+              47.2549998709802
+            ],
+            [
+              -1.3636779785155946,
+              47.27759854375506
+            ],
+            [
+              -1.366081237792938,
+              47.301584511330816
+            ],
+            [
+              -1.4053916931152037,
+              47.31857768821123
+            ],
+            [
+              -1.4944839477539062,
+              47.30810308811153
+            ],
+            [
+              -1.5035820007324219,
+              47.3049603032279
+            ],
+            [
+              -1.5265846252441406,
+              47.30728830997302
+            ],
+            [
+              -1.5277862548828125,
+              47.3049603032279
+            ],
+            [
+              -1.5262413024902344,
+              47.30205015061552
+            ],
+            [
+              -1.5308761596679688,
+              47.30007115533159
+            ],
+            [
+              -1.5312194824218444,
+              47.29203800218738
+            ],
+            [
+              -1.5640068054198983,
+              47.33626340988046
+            ],
+            [
+              -1.585979461669915,
+              47.27783146951914
+            ],
+            [
+              -1.6407394409179619,
+              47.29343515996384
+            ],
+            [
+              -1.6979026794433523,
+              47.28039358524981
+            ],
+            [
+              -1.7236518859863212,
+              47.23612142203896
+            ],
+            [
+              -1.738071441650384,
+              47.23344060300342
+            ],
+            [
+              -1.7895698547363212,
+              47.233673723086014
+            ],
+            [
+              -1.8927383422851254,
+              47.27503629267617
+            ],
+            [
+              -1.9356536865234375,
+              47.28109232255293
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Les RDV de l'Erdre de Carquefou</strong></br></br>",
+        "link": "<strong>Les RDV de l'Erdre de Carquefou</strong></br></br>• <a  target='_blank' href='http://www.rendezvouserdre.com/pratique/a-carquefou/'>Cliquez pour voir le site de l'événement></a>",
+        "desc":"<p>• 1 000 participants</p><p>• Parking vélo pour venir à Port Jean et Port Breton !</p>",
+        "src": "<a href=img/rdv-erdre.png target=_blank> <img src=img/rdv-erdre.png>"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5250611305236816,
+          47.30209380408821
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title":"<strong>La fête du vélo Dimanche 3 juin 2018</strong></br></br>",
+        "link": "<strong>La fête du vélo Dimanche 3 juin 2018</strong></br></br>• <a  target='_blank' href='https://feteduvelo-nantes.fr/parcours-2018/'>Cliquez pour voir le site de l'événement></a>",
+        "desc": "<p>• 15 000 participants</p><p>• Une alerte orage bien diffusée pour tous les participants</p>",
+        "src": "<a href=img/fete-velo-2018.png target=_blank> <img src=img/fete-velo-2018.png>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4019584655761719,
+          47.28994219631331
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title":"<strong>Transfert 2019</strong></br></br>",
+        "link": "<strong>Transfert 2019</strong></br></br>• <a  target='_blank' href='https://www.transfert.co/pratique/'>Cliquez pour voir le site de l'événement</a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/Transfert/base.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• 172 000 participants</p><p>• Un programme intégré sur l'accessibilité !</p><p>• Stationnements vélo à l’entrée et sur le site</p><p>• Une navette toutes les 30 minutes en renfort pour les dates clés</p>",
+        "src":"<a href=img/navette-transfert.png target=_blank> <img src=img/navette-transfert.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5658199787139893,
+          47.1943712266963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Festival Pride 2019 - La Marche des Fiertés</strong</br></br>",
+        "link": "<strong>Festival Pride 2019 - La Marche des Fiertés</strong></br></br>• <a  target='_blank' href='https://nantes.maville.com/info/detail-galerie_-La-gay-pride-a-Nantes_2681_GaleriePhoto.Htm'>Cliquez pour voir le site de l'événement></a>",
+        "desc":"<p>• 8 000 Participants</p><p>• Inscription de l'événement sur une plateforme de covoiturage</p>",
+        "src":"<a href=img/pride-nantes.png target=_blank> <img src=img/pride-nantes.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5591627359390259,
+          47.21740749490987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Festival Charivari Vertou</strong></br></br>",
+        "link": "<strong>Festival Charivari Vertou</strong></br></br>• <a  target='_blank' href='http://festivalcharivari.fr/'>Cliquez pour voir le site de l'événement></a>",
+        "desc": "<p>• 20 000 Festivaliers</p><p>• 3 Scènes</p><p>• 32 Spectacles gratuits</p><p>• 120 Bénévoles</p><p>• L'accès au festival à pied ou à vélo favorisé par de nombreux aménagements dont 3 parkings à vélo !</p>",
+        "src": "<a href=img/charivari-vertou-2017.jpg target=_blank> <img src=img/charivari-vertou-2017.jpg></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.4795172214508057,
+          47.16684287656919
+        ]
+      }
+    },
+
+
+
+
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Challenge contre la faim</strong></br></br>",
+         "link": "<strong>Challenge contre la faim 2018</strong></br></br>• <a  target='_blank' href='https://www.challengecontrelafaim.org/'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/challenge_contre_la_faim/'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Mise en place d'un forfait spécial pour les participants venant à vélo</p>",
+        "src": "<a href=img/challenge-faim.png target=_blank> <img src=img/challenge-faim.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5093541145324707,
+          47.229695971150925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Soy Festival 2017</strong></br></br>",
+        "link": "<strong>Soy Festival 2017</strong></br></br>• <a  target='_blank' href='https://festival.soy/carte-interactive'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://festival.soy/carte-interactive'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Festival de musiques indés du mercredi 25 au dimanche 29 octobre 2017</p><p>• Les concerts se déroulent dans des lieux culturels variés de la ville de Nantes</p><p>• La carte intéractive créée en 2017 est réutilisée pour l'édition 2019 du festival</p>",
+        "src": "<a href=img/soy-festival-carte.png target=_blank> <img src=img/soy-festival-carte.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5471839904785156,
+          47.2122223827094
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Le Héron Voyageur - 18 et 19 Mai 2019</strong></br></br>",
+        "link": "<strong>Le Héron Voyageur - 18 et 19 Mai 2019</strong></br></br>• <a  target='_blank' href='http://www.bouaye.fr/En-1-clic/Toute-l-actualite/Dossiers/2017/Le-Heron-Voyageur-deux-jours-de-fete'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/H%C3%A9ron_voyageur/'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• La quatrième édition du festival organisée par la Ville de Bouaye</p><p>• Création d'une carte intéractive pour indiquer les emplacements des parkings véo</p>",
+        "src": "<a href=img/heron-voyageur-affiche.png target=_blank> <img src=img/heron-voyageur-affiche.png></a>"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.679427623748779,
+          47.1520774274227
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Jour de fête au MiN Nantes Métropole - Samedi 27 avril 2019</strong></br></br>",
+        "link": "<strong>Jour de fête au MiN Nantes Métropole - Samedi 27 avril 2019</strong></br></br>• <a  target='_blank' href='https://www.minnantes.com/le-min/jour-de-fete-au-min-inauguration'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/Min_Nantes_Metropole/'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• XXX 000 participants</p>• Mise en place d'une navette gratuite toutes les 15 minutes pour rejoindre le MiN depuis le Chronobus C4 ou les parkings</p><p>• Événement inscrit sur la plateforme de covoiturage Ouestgo</p>",
+        "src": "<a href=img/inauguration-min.png target=_blank> <img src=img/inauguration-min.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5543293952941892,
+          47.15776086023044
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Débord de Loire - Du 23 au 26 Mai 2019</strong></br></br>",
+        "link":"<strong>Débord de Loire - Du 23 au 26 Mai 2019</strong></br></br>• <a  target='_blank' href='https://www.deborddeloire.fr/pratique/pratique-a-nantes/'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/Debord_de_Loire/index.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• XXX XXX Participants</p><p>• Actions mises en place pour favoriser l'éco-mobilité :</p><p>• Navette fluviale gratuite Gare Maritime - Ponton des Chantiers. Toutes les 15 min.</p><p>• Installation de 3 Parkings vélos avec Gardiennage vélo le samedi de 19h à 2h du matin.</p><p>• Mise en place d'une piste cyclable pour l'événement</p><p>• Accès en navibus depuis Trentemoult</p><p>• Communication pour encourager l'utilisation des parkings relais et des plateformes de covoiturage</p><p>• Accès à l'événement en Proxi’tan : service de minibus adapté aux personnes en situation de handicap, proposé par la TAN.</p>",
+        "src": "<a href=img/debord-de-loire.png target=_blank> <img src=img/debord-de-loire.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5674775838851926,
+          47.20845074228021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>La Folie des Plantes 2017</strong></br></br>",
+        "link": "<strong>La Folie des Plantes 2017</strong></br></br>• <a  target='_blank' href='https://jardins.nantes.fr/N/Manifestation/Folie-des-plantes/Informations-pratiques-Folie.asp'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/2017/folie_des_plantes.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Principale manifestation florale du grand ouest</p><p>• La folie des plantes réunit en un même lieu 180 exposants, producteurs de plantes, associations horticoles, jardins familiaux</p><p>• Elle attire chaque année, le temps du weekend, 40000 visiteurs, dans le cadre prestigieux du parc du Château du Grand Blottereau, folie nantaise du XVIIIème siècle.</p>",
+        "src": "<a href=img/folie-plantes.png target=_blank> <img src=img/folie-plantes.png></a>"
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.5094828605651855,
+          47.22793284275448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Festi'Folies d'Automne 2017</strong></br></br>",
+        "link": "<strong>Festi'Folies d'Automne 2017</strong></br></br>• <a  target='_blank' href='http://www.saint-aignan-grandlieu.fr/mes-loisirs/culture/grands-rendez-vous-719.html'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/2017/festifolies.html'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Tous les 3 ans, à l'automne, la commune de Saint-Aignan de Grand Lieu organise le festival les Festifolies d'automne</p><p>• Destiné aux familles, dédié aux arts de la rue, il est 100% gratuit et attire en moyenne 20 000 spectateurs</p><p>• L'édition 2017 a rassemblé plus de 200 artistes, soit une quarantaine de compagnies qui ont donné au total une cinquantaine de représentations</p>",
+        "src": "<a href=img/festifolies.png target=_blank> <img src=img/festifolies.png></a>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.6343021392822266,
+          47.11996446827065
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "circle",
+        "title": "<strong>Fête du Vélo et Véloparade 2019</strong></br></br>",
+        "link": "<strong>Fête du Vélo et Véloparade 2019</strong></br></br>• <a  target='_blank' href='https://feteduvelo-nantes.fr/la-veloparade-et-parade-nautique-coueron-nantes/'>Cliquez pour voir le site de l'événement></a></br>• <a  target='_blank' href='https://reeve.c-mobilite.fr/Debord_de_Loire/#12.01/47.20482/-1.64169'>Cliquez pour voir la carte intéractive</a>",
+        "desc": "<p>• Communication pour favoriser l'écomobilité :</p><p>• À vélo : création de pistes cyclables pour l'événement, parkings vélo et itinéraire avec Geovélo</p><p>• En transports en commun avec Destineo</p><p>• En  covoiturage avec Ouestgo</p>",
+        "src": "<a href=img/veloparade.png target=_blank> <img src=img/veloparade.png></a>"
+
+
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.7185020446777344,
+          47.21198916827907
+        ]
+      }
+    }
+  ]
+}

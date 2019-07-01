@@ -1,0 +1,644 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "name": "Stationnement vélo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68367624551,
+          47.15115810059
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "manège",
+        "name": "Manège «La Chevauchée fantastique»",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68103963405,
+          47.14991406308
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "girafe",
+        "name": "Scène du Cèdre<br>THÉÂTRE JEUNE PUBLIC <br>A R T D E R U E",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68157071143,
+          47.14974077109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "lion",
+        "name": "Scène du Jardin<br> A C R O B A T I E S",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68129712611,
+          47.15014937446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "name": "Place des échoppes<br> Parking",
+        "marker-symbol": "car",
+        "stroke-opacity": "1",
+        "stroke-width": "2",
+        "fill": "BLUE",
+        "fill-opacity": 0.5,
+        "marker-size": "medium",
+        "stroke": "#555555",
+        "zoom": "large"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6873897,
+              47.1439681
+            ],
+            [
+              -1.6872931,
+              47.1436306
+            ],
+            [
+              -1.6868412,
+              47.1435257
+            ],
+            [
+              -1.6867487,
+              47.1435403
+            ],
+            [
+              -1.6866333,
+              47.1436352
+            ],
+            [
+              -1.686699,
+              47.1436626
+            ],
+            [
+              -1.6866722,
+              47.143699
+            ],
+            [
+              -1.686801,
+              47.143752
+            ],
+            [
+              -1.68686,
+              47.1436826
+            ],
+            [
+              -1.6869123,
+              47.1436872
+            ],
+            [
+              -1.6870504,
+              47.1437164
+            ],
+            [
+              -1.6871014,
+              47.1437437
+            ],
+            [
+              -1.6871604,
+              47.1437082
+            ],
+            [
+              -1.6872073,
+              47.1437693
+            ],
+            [
+              -1.68721,
+              47.1438423
+            ],
+            [
+              -1.6870786,
+              47.143845
+            ],
+            [
+              -1.6870812,
+              47.1438952
+            ],
+            [
+              -1.6870035,
+              47.1438997
+            ],
+            [
+              -1.6870088,
+              47.1439864
+            ],
+            [
+              -1.6872529,
+              47.1439855
+            ],
+            [
+              -1.6873897,
+              47.1439681
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#3dd6f5",
+        "marker-size": "medium",
+        "marker-symbol": "walk",
+        "name": "<b>Accès Sud de l'événement</b>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68271475924,
+          47.14831985868
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#3dd6f5",
+        "marker-size": "medium",
+        "marker-symbol": "walk",
+        "name": "<b>Accès Nord de l'événement</b>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68477595389,
+          47.15130038051
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "desc": "",
+        "marker-color": "#3dd6f5",
+        "marker-size": "medium",
+        "marker-symbol": "bus",
+        "name": "<strong>Bus 88 : échoppes</strong></br>Bus Aléhop 12",
+        "zoom": "large"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68689479164,
+          47.14413023551
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "zèbre",
+        "name": "Scène du Château<br>M U S I Q U E",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68177187711,
+          47.15041569461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "capacity": "156",
+        "name": "Parking Les Ormeaux",
+        "parking": "surface",
+        "marker-symbol": "car",
+        "stroke-opacity": "1",
+        "marker-color": "#2905f8",
+        "stroke-width": "2",
+        "fill": "BLUE",
+        "fill-opacity": 0.5,
+        "marker-size": "medium",
+        "stroke": "#555555",
+        "zoom": "large"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6833434,
+              47.1554788
+            ],
+            [
+              -1.6816486,
+              47.155524
+            ],
+            [
+              -1.6816731,
+              47.1561089
+            ],
+            [
+              -1.683395,
+              47.1560586
+            ],
+            [
+              -1.6833434,
+              47.1554788
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "chapiteau",
+        "name": "Scène de spectacle sous chapiteau",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68234586984,
+          47.14923366075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "marker-symbol": "car",
+        "stroke-opacity": "1",
+        "stroke-width": "2",
+        "fill": "BLUE",
+        "fill-opacity": 0.5,
+        "marker-size": "medium",
+        "stroke": "#555555",
+        "name": "Place des échoppes<br> Parking",
+        "zoom": "large"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6867352,
+              47.143897
+            ],
+            [
+              -1.6866642,
+              47.1438778
+            ],
+            [
+              -1.6866896,
+              47.1438231
+            ],
+            [
+              -1.6865783,
+              47.1437328
+            ],
+            [
+              -1.6864791,
+              47.1438997
+            ],
+            [
+              -1.6865274,
+              47.1439417
+            ],
+            [
+              -1.6865274,
+              47.1439937
+            ],
+            [
+              -1.6865461,
+              47.1440274
+            ],
+            [
+              -1.6865944,
+              47.144022
+            ],
+            [
+              -1.6866494,
+              47.1440019
+            ],
+            [
+              -1.6867352,
+              47.143897
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "héron",
+        "name": "Scène de la Cour<br>C I R Q U E",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68134272367,
+          47.15069113391
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "name": "Parking face au Super-U",
+        "access": "customers",
+        "marker-symbol": "car",
+        "stroke-opacity": 1,
+        "stroke-width": 2,
+        "fill": "BLUE",
+        "fill-opacity": 0.5,
+        "marker-size": "medium",
+        "stroke": "#555555",
+        "zoom": "large"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.679357886314392,
+              47.14381384302371
+            ],
+            [
+              -1.678694781475821,
+              47.143839814777614
+            ],
+            [
+              -1.6785259814758209,
+              47.143977912341725
+            ],
+            [
+              -1.678330981475821,
+              47.144350805764184
+            ],
+            [
+              -1.678386281475821,
+              47.14440280484697
+            ],
+            [
+              -1.678462781475821,
+              47.14442970437251
+            ],
+            [
+              -1.6791823814758209,
+              47.14453370253802
+            ],
+            [
+              -1.679357886314392,
+              47.14381384302371
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "amenity": "parking",
+        "name": "Parking PMR",
+        "zoom": "large",
+        "marker-symbol": "car",
+        "stroke-opacity": "1",
+        "stroke-width": "2",
+        "fill": "BLUE",
+        "fill-opacity": 0.5,
+        "marker-size": "medium",
+        "stroke": "#555555"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.6850833,
+              47.1441466
+            ],
+            [
+              -1.6848813,
+              47.1440909
+            ],
+            [
+              -1.6847049,
+              47.1443869
+            ],
+            [
+              -1.6849068,
+              47.1444426
+            ],
+            [
+              -1.6850833,
+              47.1441466
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "buvette",
+        "name": "Buvette et restauration",
+        "zoom": "max"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68202132255,
+          47.14993412844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#005ffd",
+        "marker-size": "medium",
+        "marker-symbol": "bicycle",
+        "name": "Stationnement vélo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.68230295181,
+          47.14956018017
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "LIGHTGREEN",
+        "fill-opacity": 0.4,
+        "marker-symbol": "",
+        "name": "",
+        "marker-color": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -1.685076355934143,
+              47.15137698798475
+            ],
+            [
+              -1.6851729154586792,
+              47.15105230198894
+            ],
+            [
+              -1.6855645179748535,
+              47.15042846153129
+            ],
+            [
+              -1.6867929697036743,
+              47.14872107125559
+            ],
+            [
+              -1.6872864961624146,
+              47.14823948972273
+            ],
+            [
+              -1.687345504760742,
+              47.148170170809536
+            ],
+            [
+              -1.6874206066131592,
+              47.14775060703698
+            ],
+            [
+              -1.687447428703308,
+              47.14753170288442
+            ],
+            [
+              -1.6875386238098145,
+              47.146477301920676
+            ],
+            [
+              -1.6863852739334104,
+              47.14652108369177
+            ],
+            [
+              -1.685274839401245,
+              47.14645905950542
+            ],
+            [
+              -1.684529185295105,
+              47.146389738270294
+            ],
+            [
+              -1.6835474967956543,
+              47.14620001653299
+            ],
+            [
+              -1.6816323995590208,
+              47.145981105994665
+            ],
+            [
+              -1.6809403896331787,
+              47.14737117259957
+            ],
+            [
+              -1.6797709465026855,
+              47.14707929811229
+            ],
+            [
+              -1.6788804531097412,
+              47.1469114695564
+            ],
+            [
+              -1.6776251792907715,
+              47.149888523527885
+            ],
+            [
+              -1.6770350933074951,
+              47.150479536463855
+            ],
+            [
+              -1.6766166687011719,
+              47.15112891347012
+            ],
+            [
+              -1.6760158538818357,
+              47.15168343137474
+            ],
+            [
+              -1.6790628433227537,
+              47.15270489658007
+            ],
+            [
+              -1.680436134338379,
+              47.15298214803386
+            ],
+            [
+              -1.6816914081573486,
+              47.151967984369016
+            ],
+            [
+              -1.6832900047302246,
+              47.15117998772955
+            ],
+            [
+              -1.685076355934143,
+              47.15137698798475
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
