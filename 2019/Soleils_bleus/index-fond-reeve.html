@@ -72,7 +72,7 @@ var map = new mapboxgl.Map({
     container: 'map',
     //style: 'mapbox://styles/mapbox/streets-v10',
 
-	style: 'mapbox://styles/mapbox/streets-v10',
+	style: 'mapbox://styles/corentinlemaitre/cj8okzm2e8tlf2rqngrdg4or9',
 
 
     center: [-1.613764, 47.2320285],
@@ -158,7 +158,7 @@ map.on('load', function (){
                     },
                     "geometry": {
                         "type": "Point",
-                        "coordinates": [-1.6119145, 47.2332232]
+                        "coordinates": [-1.61372129, 47.23190432]
                     }
                 }]
             }
@@ -168,13 +168,13 @@ map.on('load', function (){
             "icon-allow-overlap": true,
             "icon-anchor": "bottom-left",
             "icon-size": {
-                "base": 1.5,
-                "stops": [[12, 0.5], [16, 1]]
+                "base": 1,
+                "stops": [[12, 0.35], [16, 0.7]]
             }
         },
         "paint": {
             "icon-opacity": {
-                "base": 1.5,
+                "base": 1,
                 "stops": [[12, 1], [19, 0]]
             }
         }
@@ -194,14 +194,14 @@ map.on('load', function (){
 			"icon-anchor": "bottom",
 
             "icon-size": {
-                    "base": 1.5,
+                    "base": 1,
                     "stops": [[15, 0.5], [19, 0.8]]
                 }
         },
         "paint": {
             "icon-opacity": {
                 "base": 1,
-                "stops": [[12, 0], [14, 1]]
+                "stops": [[13, 0], [14, 1]]
             }
         }
     });
@@ -443,6 +443,8 @@ map.getCanvas().style.cursor = '';
 });
 
 
+
+
 // When a click event occurs on a feature in the polygones layer, open a popup at the
 // location of the feature, with description HTML from its properties.
 map.on('click','polygones', function (e) {
@@ -494,9 +496,10 @@ changeFunction();
 
 
 
-    var arrival = [-1.615306 , 47.231089]; // #14.85/47.14894/-1.68182/84.8/3
+
+    var arrival = [-1.61454 , 47.23189]; // #14.85/47.14894/-1.68182/84.8/3
     var index = 0
-    var flyzoom = 16.74;
+    var flyzoom = 18;
     var flypitch = 42;
     var flybearing = 0;
 
@@ -517,9 +520,9 @@ changeFunction();
         flybearing = 0;
         index = 1;
         }else{
-        arrival = [-1.615306 , 47.231089];
+        arrival = [-1.61454 , 47.23189];
         index = 0
-        flyzoom = 16.74;
+        flyzoom = 18;
         flypitch = 42;
         flybearing = 0;
         }
