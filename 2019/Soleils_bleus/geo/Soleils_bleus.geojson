@@ -113,7 +113,8 @@
             "type": "Feature",
             "properties": {
                 "name": "Espace Food-truck",
-                "amenity": "parking"
+                "amenity": "parking",
+                "fill" : "blue"
             },
             "geometry": {
                 "type": "Polygon",
@@ -251,7 +252,10 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Parking vélo"
+                "name": "Parking vélo",
+                "marker-symbol": "bicycle"
+
+
             },
             "geometry": {
                 "type": "Point",
@@ -4594,7 +4598,8 @@
             "type": "Feature",
             "properties": {
                 "name": "Scène duboudebou",
-                "amenity": "parking"
+                "amenity": "parking",
+                "fill" : "red"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4627,7 +4632,9 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Entrée public"
+                "name": "Entrée public",
+                "marker-symbol": "walk"
+
             },
             "geometry": {
                 "type": "Point",
@@ -4713,7 +4720,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Point Information/Accessibilité"
+                "name": "Point Information/Accessibilité",
+                "marker-symbol": "info"
             },
             "geometry": {
                 "type": "Point",
@@ -5135,7 +5143,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Bus"
+                "name": "Bus",
+                "marker-symbol" : "bus"
             },
             "geometry": {
                 "type": "Point",
@@ -5352,7 +5361,9 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Entrée public"
+                "name": "Entrée public",
+                "marker-symbol": "walk"
+
             },
             "geometry": {
                 "type": "Point",
@@ -5513,6 +5524,8 @@
                 ]
             }
         },
+
+
         {
             "type": "Feature",
             "properties": {
@@ -5528,6 +5541,21 @@
                 ]
             }
         },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "PMR",
+                "marker-symbol": "car"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.6155937,
+                    47.2299679
+                ]
+            }
+        },
+
         {
             "type": "Feature",
             "properties": {
@@ -5569,7 +5597,7 @@
                 "name": "Bus 59",
                 "stroke":"blue",
                 "stroke-opacity": 1,
-                "stroke-width": 6
+                "stroke-width": 3
             },
             "geometry": {
                 "type": "LineString",

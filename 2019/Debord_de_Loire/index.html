@@ -230,7 +230,7 @@ map.on('load', function (){
 
 
     map.addLayer({
-        'id': 'TC',
+        'id': 'tan',
         'type': 'line',
         'source': {
             'type': 'geojson',
@@ -570,7 +570,7 @@ map.getCanvas().style.cursor = '';
 });
 
 
-map.on('click','parade', function (e) {
+map.on('click','tan', function (e) {
 var coordinates = e.features[0].geometry.coordinates.slice();
 var description = e.features[0].properties.name;
  
@@ -588,12 +588,12 @@ new mapboxgl.Popup()
 });
  
 // Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter','parade', function () {
+map.on('mouseenter','tan', function () {
 map.getCanvas().style.cursor = 'pointer';
 });
  
 // Change it back to a pointer when it leaves.
-map.on('mouseleave','parade', function () {
+map.on('mouseleave','tan', function () {
 map.getCanvas().style.cursor = '';
 });
 
