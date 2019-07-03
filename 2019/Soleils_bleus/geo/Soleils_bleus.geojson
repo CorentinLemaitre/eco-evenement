@@ -63,9 +63,11 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Scène dubalaba",
-                "amenity": "parking",
-                "fill":"red"
+            "stroke": "lightgrey",
+            "stroke-opacity": 0.3,
+            "name": "Scène dubalaba",
+            "amenity": "parking",
+            "fill":"red"
             },
             "geometry": {
                 "type": "Polygon",
@@ -114,7 +116,9 @@
             "properties": {
                 "name": "Espace Food-truck",
                 "amenity": "parking",
-                "fill" : "blue"
+                "fill" : "blue",
+                "stroke": "lightgrey",
+                "stroke-opacity": 0.3
             },
             "geometry": {
                 "type": "Polygon",
@@ -558,7 +562,9 @@
             "properties": {
                 "name": "Scène duboudebou",
                 "amenity": "parking",
-                "fill" : "red"
+                "fill" : "red",
+                "stroke": "lightgrey",
+                "stroke-opacity": 0.3
             },
             "geometry": {
                 "type": "Polygon",
@@ -1520,7 +1526,9 @@
             "properties": {
                 "amenity": "parking",
                 "name": "Parking PMR",
-                "fill": "green"
+                "fill": "purple",
+                "stroke": "lightgrey",
+                "stroke-opacity": 0.3
             },
             "geometry": {
                 "type": "Polygon",
