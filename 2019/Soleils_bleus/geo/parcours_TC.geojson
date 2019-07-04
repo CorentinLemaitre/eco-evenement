@@ -10921,7 +10921,7 @@
             "type": "Feature",
             "properties": {
                 "name": "Chronobus C6",
-                "stroke":"red",
+                "stroke":"rgb(167, 119, 176)",
                 "stroke-opacity": 1,
                 "stroke-width": 6
             },
@@ -14965,7 +14965,7 @@
             "type": "Feature",
             "properties": {
                 "name": "Bus 59",
-                "stroke":"blue",
+                "stroke":"rgb(244, 180, 210)",
                 "stroke-opacity": 1,
                 "stroke-width": 3
             },
